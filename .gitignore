@@ -5,6 +5,6 @@ dist/
 .env
 .env.*
 !.env.example
-coverage/
+/coverage/
 *.tsbuildinfo
 .vercel
