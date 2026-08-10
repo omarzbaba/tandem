@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// GitHub Pages serves a project site from /<repo>/, so assets must be
-// repo-relative. Overridable for a custom domain or a local preview.
-const base = process.env.VITE_BASE ?? "/tandem/";
+// Vercel serves from the root. Overridable for a sub-path host such as a
+// GitHub Pages project site, which would need "/<repo>/".
+const base = process.env.VITE_BASE ?? "/";
 
 export default defineConfig({
   base,

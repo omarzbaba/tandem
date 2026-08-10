@@ -57,21 +57,27 @@ export default function App() {
         vascularIds: m.vascularIds.filter((id) => allowed.has(id)),
         radiologyIds: m.radiologyIds.filter((id) => allowed.has(id)),
       }))
-      .map((m) => ({
-        ...m,
-        vascularCount: m.vascularIds.length,
-        radiologyCount: m.radiologyIds.length,
-        isTogether: m.vascularIds.length > 0 && m.radiologyIds.length > 0,
-        missingSide: (m.vascularIds.length > 0 && m.radiologyIds.length > 0
-          ? null
-          : m.vascularIds.length > 0
-            ? "radiology"
-            : "vascular") as "radiology" | "vascular" | null,
-      }))
+      .map((m) => {
+        const isTogether = m.vascularIds.length > 0 && m.radiologyIds.length > 0;
+        return {
+          ...m,
+          vascularCount: m.vascularIds.length,
+          radiologyCount: m.radiologyIds.length,
+          isTogether,
+          // Filtering away the surgical side also removes the remote route:
+          // there is nothing for her to be remote alongside.
+          remoteUnlocked: !isTogether && m.vascularIds.length > 0 && m.remotePartnerCount > 0,
+          missingSide: (isTogether
+            ? null
+            : m.vascularIds.length > 0
+              ? "radiology"
+              : "vascular") as "radiology" | "vascular" | null,
+        };
+      })
       .filter((m) => m.vascularIds.length + m.radiologyIds.length > 0);
   }, [metros, filtered, filters]);
 
-  const togetherCount = visibleMetros.filter((m) => m.isTogether).length;
+  const togetherCount = visibleMetros.filter((m) => m.isTogether || m.remoteUnlocked).length;
   const pinnedRoles = data.roles.filter((r) => marks[r.id]?.pinned);
 
   const identity: OutreachIdentity = useMemo(() => {
@@ -227,7 +233,7 @@ export default function App() {
                 marks={marks}
                 emptyMessage={
                   backendKind === "local"
-                    ? "Nothing pinned yet. Pins are stored in this browser — add Supabase keys to config.json to share them between the two of you."
+                    ? "Nothing pinned yet. Pins are stored in this browser only — deploy with a shared board id to sync them between the two of you."
                     : "Nothing pinned yet. Anything either of you pins shows up here."
                 }
                 onOpenRole={setOpenRoleId}

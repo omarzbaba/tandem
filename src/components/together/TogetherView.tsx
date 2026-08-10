@@ -1,5 +1,6 @@
 import type { Marks, Metro, Role } from "../../lib/types";
 import { MetroCard } from "./MetroCard";
+import { RemoteUnlockedCard } from "./RemoteUnlockedCard";
 import "./together-view.css";
 
 interface Props {
@@ -32,12 +33,15 @@ export function TogetherView({
   onTogglePin,
 }: Props) {
   const together = metros.filter((m) => m.isTogether);
+  // Places the surgeon can take where she reads remotely. A real option, kept
+  // in its own band so it is never counted as both-on-site.
+  const remoteUnlocked = metros.filter((m) => !m.isTogether && m.remoteUnlocked);
   const oneSided = metros
-    .filter((m) => !m.isTogether)
+    .filter((m) => !m.isTogether && !m.remoteUnlocked)
     .sort((a, b) => Math.max(b.bestVascularScore, b.bestRadiologyScore) - Math.max(a.bestVascularScore, a.bestRadiologyScore))
     .slice(0, 12);
 
-  if (together.length === 0) {
+  if (together.length === 0 && remoteUnlocked.length === 0) {
     return (
       <div className="empty">
         <h2 className="empty__title display">No overlap this week</h2>
@@ -68,6 +72,36 @@ export function TogetherView({
           </li>
         ))}
       </ol>
+
+      {remoteUnlocked.length > 0 && (
+        <section className="remote-band">
+          <h2 className="remote-band__title">
+            <span className="display">
+              {partnerALabel} on site, {partnerBLabel.toLowerCase()} remote
+            </span>
+            <span className="remote-band__sub">
+              Diagnostic radiology reads from anywhere and vascular surgery does not, so a remote
+              post on her side makes every one of these surgical jobs workable. Distance stops
+              being the constraint.
+            </span>
+          </h2>
+          <ul className="remote-band__grid">
+            {remoteUnlocked.map((m) => (
+              <li key={m.key}>
+                <RemoteUnlockedCard
+                  metro={m}
+                  rolesById={rolesById}
+                  marks={marks}
+                  partnerALabel={partnerALabel}
+                  partnerBLabel={partnerBLabel}
+                  onOpenRole={onOpenRole}
+                  onTogglePin={onTogglePin}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {oneSided.length > 0 && (
         <section className="one-sided">

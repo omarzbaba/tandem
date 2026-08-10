@@ -84,16 +84,25 @@ export interface Metro {
   approximate: boolean;
   score: number;
   missingSide: Specialty | null;
+  /**
+   * The surgeon has a post here and the radiologist could take one of the
+   * remote posts. Deliberately distinct from `isTogether`, which means both are
+   * physically on site.
+   */
+  remoteUnlocked: boolean;
+  remotePartnerCount: number;
+  bestRemoteRadiologyScore: number;
 }
 
 export interface Pair {
   id: string;
   vascularId: string;
   radiologyId: string;
-  miles: number;
+  miles: number | null;
   driveMinutes: number | null;
   sameOrg: boolean;
-  confidence: "pinpoint" | "country-scale" | "approximate";
+  remotePartner: boolean;
+  confidence: "pinpoint" | "country-scale" | "approximate" | "remote-partner";
   confidenceNote: string;
   score: number;
 }

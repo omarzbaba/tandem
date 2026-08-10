@@ -71,7 +71,17 @@ function proximityFactor(miles, radius) {
 }
 
 /**
- * Build every commutable vascular↔radiology pair.
+ * Build every workable vascular↔radiology pair.
+ *
+ * Two kinds of pair, and the difference is the whole shape of this search:
+ *
+ *  1. Both on-site — the classic case, gated by a real commutable distance.
+ *  2. Surgeon on-site, radiologist remote — geography stops being a constraint
+ *     at all. Diagnostic radiology is one of the few specialties that reads
+ *     from anywhere, and vascular surgery is one of the few that cannot. That
+ *     asymmetry means a single remote radiology post unlocks EVERY vascular
+ *     opening in the country, which is a far larger opportunity space than
+ *     physical co-location will ever produce.
  *
  * @param {Array} roles
  * @param {{radiusMiles?: number}} [opts]
@@ -83,6 +93,31 @@ export function buildPairs(roles, opts = {}) {
   const radiology = located.filter((r) => r.specialty === "radiology");
 
   const pairs = [];
+
+  // --- Remote-partner pairs -------------------------------------------------
+  const remoteRadiology = roles.filter(
+    (r) => r.specialty === "radiology" && r.workModel === "remote"
+  );
+  for (const v of vascular) {
+    for (const r of remoteRadiology) {
+      const quality = balancedMean(v.score ?? 0, r.score ?? 0);
+      pairs.push({
+        id: `${v.id}~${r.id}`,
+        vascularId: v.id,
+        radiologyId: r.id,
+        miles: null,
+        driveMinutes: null,
+        sameOrg: false,
+        remotePartner: true,
+        confidence: "remote-partner",
+        confidenceNote: "Radiology post is remote — the surgical job decides where you live",
+        // No proximity term to earn: distance is simply not a constraint here,
+        // so quality carries the score, with a premium for removing the
+        // geographic problem outright.
+        score: Math.round(Math.min(100, quality * 0.86 + 14)),
+      });
+    }
+  }
   for (const v of vascular) {
     for (const r of radiology) {
       const miles = haversineMiles(v.geo, r.geo);
@@ -111,6 +146,7 @@ export function buildPairs(roles, opts = {}) {
         miles: Math.round(miles * 10) / 10,
         driveMinutes: estimatedDriveMinutes(miles),
         sameOrg,
+        remotePartner: false,
         confidence: confidence.key,
         confidenceNote: confidence.label,
         score,
@@ -138,6 +174,13 @@ function normOrg(s) {
  */
 export function buildMetros(roles, opts = {}) {
   const radius = opts.radiusMiles ?? DEFAULT_RADIUS_MILES;
+
+  // The remote radiology pool is location-independent, so it applies equally to
+  // every cluster rather than belonging to any one of them.
+  const remotePool = roles
+    .filter((r) => r.specialty === "radiology" && r.workModel === "remote")
+    .sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+
   const located = roles
     .filter((r) => r.geo && r.geo.lat != null && r.geo.lon != null)
     .slice()
@@ -174,10 +217,10 @@ export function buildMetros(roles, opts = {}) {
     target.lon = target.members.reduce((s, m) => s + m.geo.lon, 0) / target.members.length;
   }
 
-  return clusters.map((c) => summarizeMetro(c, radius)).sort((a, b) => b.score - a.score);
+  return clusters.map((c) => summarizeMetro(c, radius, remotePool)).sort((a, b) => b.score - a.score);
 }
 
-function summarizeMetro(cluster, radius) {
+function summarizeMetro(cluster, radius, remotePool = []) {
   const members = cluster.members;
   const vascular = members.filter((m) => m.specialty === "vascular");
   const radiology = members.filter((m) => m.specialty === "radiology");
@@ -240,6 +283,14 @@ function summarizeMetro(cluster, radius) {
     )
   );
 
+  // A metro with a surgical opening but no local radiology is still fully
+  // workable if she reads remotely — so it is a real option, not a near miss.
+  const remoteUnlocked = !isTogether && vascular.length > 0 && remotePool.length > 0;
+  const bestRemote = remotePool[0]?.score ?? 0;
+  const remoteScore = remoteUnlocked
+    ? Math.round(Math.min(100, balancedMean(bestV, bestRemote) * 0.8 + (depthBonus ? 4 : 0)))
+    : 0;
+
   return {
     key,
     label,
@@ -258,8 +309,17 @@ function summarizeMetro(cluster, radius) {
     spanDriveMinutes: estimatedDriveMinutes(span),
     sameOrg,
     approximate: anyApproximate,
-    score,
+    score: remoteUnlocked ? Math.max(score, remoteScore) : score,
     /** Which side is missing, so a one-sided metro can still be actioned. */
     missingSide: isTogether ? null : vascular.length ? "radiology" : "vascular",
+    /**
+     * True when the surgeon has a post here and the radiologist could take one
+     * of the remote posts. Kept separate from `isTogether` so the board never
+     * implies two people are physically working in the same place when one of
+     * them is reading from home.
+     */
+    remoteUnlocked,
+    remotePartnerCount: remoteUnlocked ? remotePool.length : 0,
+    bestRemoteRadiologyScore: remoteUnlocked ? bestRemote : 0,
   };
 }

@@ -81,6 +81,82 @@ describe("buildPairs", () => {
   });
 });
 
+describe("remote radiology unlocks the map", () => {
+  // Diagnostic radiology reads from anywhere; vascular surgery does not. One
+  // remote radiology post therefore makes every surgical opening workable,
+  // which is a much larger opportunity space than physical co-location.
+  const remoteRad = (score = 70) => ({
+    id: `rad-remote-${score}`,
+    specialty: "radiology",
+    org: "National Reads",
+    score,
+    workModel: "remote",
+    geo: geocode("Remote"),
+  });
+
+  const onsite = (specialty, place, score = 70) => ({
+    ...role(specialty, place, score),
+    workModel: "onsite",
+  });
+
+  test("a remote radiology post pairs with a surgical job anywhere", () => {
+    const pairs = buildPairs([onsite("vascular", "Boise, ID"), remoteRad()]);
+    expect(pairs).toHaveLength(1);
+    expect(pairs[0].remotePartner).toBe(true);
+    expect(pairs[0].miles).toBeNull();
+    expect(pairs[0].confidence).toBe("remote-partner");
+  });
+
+  test("it pairs with every surgical location, not just nearby ones", () => {
+    const pairs = buildPairs([
+      onsite("vascular", "Boise, ID"),
+      onsite("vascular", "Miami, FL"),
+      onsite("vascular", "Bangor, ME"),
+      remoteRad(),
+    ]);
+    expect(pairs.filter((p) => p.remotePartner)).toHaveLength(3);
+  });
+
+  test("a remote pair outscores a mediocre on-site pair of the same quality", () => {
+    // Removing the geographic constraint entirely is worth a premium.
+    const remote = buildPairs([onsite("vascular", "Boise, ID", 70), remoteRad(70)]);
+    const onsitePair = buildPairs([
+      onsite("vascular", "Cleveland, OH", 70),
+      { ...onsite("radiology", "Akron, OH", 70), org: "Other" },
+    ]);
+    expect(remote[0].score).toBeGreaterThan(onsitePair[0].score);
+  });
+
+  test("a metro with only a surgical post is flagged as remote-unlocked", () => {
+    const metros = buildMetros([onsite("vascular", "Boise, ID"), remoteRad()]);
+    const boise = metros.find((m) => m.label.startsWith("Boise"));
+    expect(boise.isTogether).toBe(false);
+    expect(boise.remoteUnlocked).toBe(true);
+    expect(boise.remotePartnerCount).toBe(1);
+  });
+
+  test("remote-unlocked is never conflated with both being on site", () => {
+    // The board must not imply two people are working in the same building
+    // when one of them is reading from home.
+    const metros = buildMetros([onsite("vascular", "Boise, ID"), remoteRad()]);
+    const boise = metros.find((m) => m.label.startsWith("Boise"));
+    expect(boise.isTogether).toBe(false);
+    expect(boise.radiologyCount).toBe(0);
+  });
+
+  test("a radiology-only metro is not remote-unlocked — she cannot cover his side", () => {
+    const metros = buildMetros([onsite("radiology", "Boise, ID"), remoteRad()]);
+    const boise = metros.find((m) => m.label.startsWith("Boise"));
+    expect(boise.remoteUnlocked).toBe(false);
+  });
+
+  test("with no remote posts available nothing is unlocked", () => {
+    const metros = buildMetros([onsite("vascular", "Boise, ID")]);
+    expect(metros[0].remoteUnlocked).toBe(false);
+    expect(metros[0].remotePartnerCount).toBe(0);
+  });
+});
+
 describe("buildMetros", () => {
   test("groups nearby posts into one area with both sides", () => {
     const metros = buildMetros([

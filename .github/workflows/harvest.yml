@@ -69,13 +69,5 @@ jobs:
             }
           ' >> "$GITHUB_STEP_SUMMARY"
 
-  # A commit made with GITHUB_TOKEN does not trigger other workflows, so the
-  # deploy is called directly rather than relying on a push event.
-  deploy:
-    needs: harvest
-    if: needs.harvest.outputs.changed == 'true'
-    uses: ./.github/workflows/deploy.yml
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
+  # Pushing the new data is enough: Vercel redeploys from the repository
+  # automatically, so there is no deploy job to chain here.

@@ -3,10 +3,9 @@
   "boardTagline": "Two careers, one map.",
   "partnerALabel": "Vascular surgery",
   "partnerBLabel": "Diagnostic radiology",
-  "partnerAName": "",
-  "partnerBName": "",
+  "partnerAName": "RWW",
+  "partnerBName": "SSW",
   "defaultRadiusMiles": 45,
-  "supabaseUrl": "",
-  "supabaseAnonKey": "",
-  "boardId": "default"
+  "sharedBoard": true,
+  "boardId": "3a6f25b4-bbc4-4b09-9290-aa7d121f79bd"
 }

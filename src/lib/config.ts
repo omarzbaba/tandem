@@ -25,9 +25,8 @@ export const FALLBACK_CONFIG: AppConfig = {
   partnerAName: "",
   partnerBName: "",
   defaultRadiusMiles: 45,
-  supabaseUrl: "",
-  supabaseAnonKey: "",
-  boardId: "default",
+  sharedBoard: false,
+  boardId: "",
 };
 
 export async function loadConfig(basePath: string): Promise<AppConfig> {

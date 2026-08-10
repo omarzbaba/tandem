@@ -2,13 +2,14 @@
  * Pins, statuses and notes — shared between the two of them.
  *
  * Two backends behind one interface:
- *   Supabase  — when public/config.json carries a project URL + anon key, marks
- *               live in one table and both partners see the same board from any
- *               device. Talks to PostgREST directly rather than pulling in the
- *               supabase-js client, which would cost ~30 KB gzipped for two
- *               endpoints.
- *   Local     — otherwise, marks live in localStorage. The board is fully
- *               usable on day one; syncing turns on the moment keys are added.
+ *   Shared — talks to this app's own /api/marks function, which holds the
+ *            database credential server-side. The browser therefore ships with
+ *            no key of any kind; the only thing the page knows is an
+ *            unguessable board id. Both partners see the same board on every
+ *            device.
+ *   Local  — otherwise, marks live in localStorage. The board is fully usable
+ *            with no backend at all, and gains syncing the moment it is
+ *            deployed somewhere that can run the function.
  *
  * Writes are optimistic and last-write-wins. For two people casually pinning
  * jobs that is the right trade: no conflict UI, no locking, and the worst case
@@ -22,15 +23,16 @@ const STORAGE_KEY = "tandem:marks:v1";
 const WHO_KEY = "tandem:who:v1";
 
 export interface RemoteConfig {
-  supabaseUrl?: string;
-  supabaseAnonKey?: string;
+  /** Turn on the shared board. Requires the app to be deployed with /api/marks. */
+  sharedBoard?: boolean;
+  /** Unguessable id that both partners share. It is the only secret the page holds. */
   boardId?: string;
   partnerALabel?: string;
   partnerBLabel?: string;
 }
 
 export interface SharedStateBackend {
-  readonly kind: "supabase" | "local";
+  readonly kind: "shared" | "local";
   load(): Promise<Marks>;
   save(roleId: string, mark: RoleMark): Promise<void>;
 }
@@ -81,84 +83,58 @@ class LocalBackend implements SharedStateBackend {
   }
 }
 
-class SupabaseBackend implements SharedStateBackend {
-  readonly kind = "supabase" as const;
+/**
+ * Talks to this app's own /api/marks route. The database credential lives in
+ * that function's environment, so nothing sensitive is ever shipped to the
+ * browser — the page holds only the board id.
+ */
+class ApiBackend implements SharedStateBackend {
+  readonly kind = "shared" as const;
 
-  constructor(
-    private readonly url: string,
-    private readonly key: string,
-    private readonly boardId: string
-  ) {}
-
-  private get endpoint() {
-    return `${this.url.replace(/\/+$/, "")}/rest/v1/marks`;
-  }
-
-  private get headers() {
-    return {
-      apikey: this.key,
-      authorization: `Bearer ${this.key}`,
-      "content-type": "application/json",
-    };
-  }
+  constructor(private readonly boardId: string) {}
 
   async load(): Promise<Marks> {
-    const res = await fetch(
-      `${this.endpoint}?board_id=eq.${encodeURIComponent(this.boardId)}&select=role_id,pinned,status,note,by,updated_at`,
-      { headers: this.headers }
-    );
-    if (!res.ok) throw new Error(`load failed: HTTP ${res.status}`);
-    const rows = (await res.json()) as Array<{
-      role_id: string;
-      pinned: boolean;
-      status: RoleMark["status"];
-      note: string | null;
-      by: string | null;
-      updated_at: string;
-    }>;
-    const marks: Marks = {};
-    for (const r of rows) {
-      marks[r.role_id] = {
-        pinned: r.pinned,
-        status: r.status ?? "new",
-        note: r.note ?? "",
-        by: r.by ?? "",
-        updatedAt: r.updated_at,
-      };
-    }
-    return marks;
+    const res = await fetch(`${API_ROUTE}?board=${encodeURIComponent(this.boardId)}`, {
+      headers: { accept: "application/json" },
+    });
+    if (!res.ok) throw new Error(await describe(res));
+    const body = (await res.json()) as { marks?: Marks };
+    return body.marks ?? {};
   }
 
   async save(roleId: string, mark: RoleMark): Promise<void> {
-    const res = await fetch(`${this.endpoint}?on_conflict=board_id,role_id`, {
+    const res = await fetch(API_ROUTE, {
       method: "POST",
-      headers: { ...this.headers, prefer: "resolution=merge-duplicates,return=minimal" },
-      body: JSON.stringify({
-        board_id: this.boardId,
-        role_id: roleId,
-        pinned: mark.pinned,
-        status: mark.status,
-        note: mark.note,
-        by: mark.by,
-        updated_at: new Date().toISOString(),
-      }),
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ boardId: this.boardId, roleId, ...mark }),
     });
-    if (!res.ok) throw new Error(`save failed: HTTP ${res.status}`);
+    if (!res.ok) throw new Error(await describe(res));
+  }
+}
+
+const API_ROUTE = "/api/marks";
+
+async function describe(res: Response): Promise<string> {
+  try {
+    const body = (await res.json()) as { error?: string };
+    return body.error ?? `HTTP ${res.status}`;
+  } catch {
+    return `HTTP ${res.status}`;
   }
 }
 
 /**
- * Picks a backend from the runtime config. Falls back to local storage rather
- * than failing, so a bad key degrades the board to per-device marks instead of
- * breaking it.
+ * Picks a backend from the runtime config.
+ *
+ * `sharedBoardId` turns on the shared board. Without it — or on a static host
+ * with no API route — marks stay in this browser, so the page is always usable
+ * and simply gains syncing once it is deployed somewhere that can run the
+ * function.
  */
 export function createBackend(config: RemoteConfig | null): SharedStateBackend {
-  if (config?.supabaseUrl && config?.supabaseAnonKey) {
-    return new SupabaseBackend(
-      config.supabaseUrl,
-      config.supabaseAnonKey,
-      config.boardId ?? "default"
-    );
+  const boardId = config?.boardId?.trim();
+  if (config?.sharedBoard && boardId && boardId.length >= 8) {
+    return new ApiBackend(boardId);
   }
   return new LocalBackend();
 }
