@@ -1,0 +1,201 @@
+.metro-card {
+  position: relative;
+  padding: var(--space-5);
+  background: var(--paper-raised);
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  /* The overlap hue keeps the "together" idea attached to a colour, not a word. */
+  border-top: 2px solid var(--together-line);
+  box-shadow: var(--shadow-raised);
+  transition:
+    box-shadow var(--duration-normal) var(--ease-out),
+    transform var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out);
+}
+
+.metro-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-float);
+  border-top-color: var(--together);
+}
+
+.metro-card:focus-within {
+  border-top-color: var(--together);
+}
+
+/* The strongest area of the week gets more room and larger type. */
+.metro-card--lead {
+  grid-column: 1 / -1;
+  padding: var(--space-6);
+  background: linear-gradient(
+    to bottom,
+    color-mix(in oklch, var(--together-soft) 55%, var(--paper-raised)),
+    var(--paper-raised) 40%
+  );
+  border-top-width: 3px;
+  border-top-color: var(--together);
+}
+
+.metro-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.metro-card__name {
+  font-size: var(--text-title);
+  font-weight: 400;
+}
+
+.metro-card--lead .metro-card__name {
+  font-size: clamp(1.75rem, 1.2rem + 2.2vw, 3rem);
+}
+
+.metro-card__meta {
+  margin-block-start: var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.metro-card__pinned {
+  color: var(--accent-pin);
+}
+
+.metro-card__score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1;
+}
+
+.metro-card__score-value {
+  font-size: clamp(2rem, 1.5rem + 1.6vw, 2.75rem);
+  color: var(--together);
+}
+
+.metro-card__score-label {
+  margin-block-start: var(--space-1);
+}
+
+.metro-card__flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block: var(--space-4);
+}
+
+.flag {
+  padding: 2px var(--space-2);
+  font-size: var(--text-micro);
+  font-weight: 500;
+  color: var(--ink-muted);
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+}
+
+.flag--strong {
+  color: var(--together);
+  background: var(--together-soft);
+  border-color: var(--together-line);
+  font-weight: 600;
+}
+
+.flag--caution {
+  color: var(--caution);
+  border-color: color-mix(in oklch, var(--caution) 40%, transparent);
+}
+
+/*
+ * Two columns joined by a hairline: the layout itself says "these two things
+ * are connected", which is the whole proposition of the card.
+ */
+.metro-card__split {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.metro-card__side h4 {
+  padding-block-end: var(--space-2);
+  margin-block-end: var(--space-2);
+  border-block-end: 1px solid var(--rule);
+}
+
+.metro-card__side--a h4 {
+  color: var(--vascular);
+  border-block-end-color: var(--vascular-line);
+}
+
+.metro-card__side--b h4 {
+  color: var(--radiology);
+  border-block-end-color: var(--radiology-line);
+}
+
+.metro-card__side ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.metro-card__link {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  padding-block-start: var(--space-6);
+}
+
+.metro-card__link-line {
+  inline-size: 1px;
+  block-size: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--vascular-line),
+    var(--together-line),
+    var(--radiology-line)
+  );
+  opacity: 0.7;
+}
+
+.metro-card__more {
+  margin-block-start: var(--space-2);
+  font-size: var(--text-micro);
+  color: var(--ink-faint);
+}
+
+@media (max-width: 720px) {
+  .metro-card__split {
+    grid-template-columns: 1fr;
+  }
+
+  /* Vertical hairline becomes a horizontal rule between the two sides. */
+  .metro-card__link {
+    padding-block-start: 0;
+    padding-block: var(--space-2);
+  }
+
+  .metro-card__link-line {
+    inline-size: 100%;
+    block-size: 1px;
+    background: linear-gradient(
+      to right,
+      var(--vascular-line),
+      var(--together-line),
+      var(--radiology-line)
+    );
+  }
+}
+
+/* Counts inherit the specialty hue so "2 vascular / 3 radiology" is readable
+   at a glance without reading the words. */
+.metro-card__count--a {
+  color: var(--vascular);
+  font-weight: 550;
+}
+
+.metro-card__count--b {
+  color: var(--radiology);
+  font-weight: 550;
+}

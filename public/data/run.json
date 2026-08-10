@@ -1,0 +1,305 @@
+{
+  "ranAt": "2026-08-10T14:40:18.816Z",
+  "today": "2026-08-10",
+  "radiusMiles": 45,
+  "counts": {
+    "sourcesRegistered": 84,
+    "sourcesAttempted": 39,
+    "sourcesFailed": 10,
+    "rawPostings": 2156,
+    "irrelevant": 1558,
+    "duplicates": 37,
+    "unlocated": 212,
+    "roles": 561,
+    "vascular": 62,
+    "radiology": 499,
+    "newThisRun": 1,
+    "carriedOver": 0,
+    "pairs": 102,
+    "metros": 95,
+    "togetherMetros": 12
+  },
+  "failedSources": [
+    {
+      "name": "Allina Health",
+      "url": "https://allina.wd5.myworkdayjobs.com/External",
+      "error": "HTTP 500"
+    },
+    {
+      "name": "Cardiovascular Institute of the South (CIS) — careers",
+      "url": "https://www.cardio.com/career-opportunities/",
+      "error": "no job array found in payload"
+    },
+    {
+      "name": "Careerjet Public Job Search API",
+      "url": "http://public.api.careerjet.net/search",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "Emory Healthcare / Emory University",
+      "url": "https://careers.emory.edu/",
+      "error": "no job array found in payload"
+    },
+    {
+      "name": "Novant Health",
+      "url": "https://jobs.novanthealth.org/careers-home",
+      "error": "no job array found in payload"
+    },
+    {
+      "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+      "url": "https://www.vrad.com/remote-radiologist-jobs/",
+      "error": "feed contained no items"
+    },
+    {
+      "name": "Adzuna Jobs API",
+      "url": "https://developer.adzuna.com/",
+      "error": "HTTP 401"
+    },
+    {
+      "name": "JSearch (RapidAPI, Google-for-Jobs index)",
+      "url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch",
+      "error": "HTTP 401"
+    },
+    {
+      "name": "Jooble REST API",
+      "url": "https://jooble.org/api/about",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "USAJOBS REST API (federal / VA / DHA)",
+      "url": "https://developer.usajobs.gov/",
+      "error": "HTTP 401"
+    }
+  ],
+  "emptySources": [
+    "Care Bridge — GCC Clinician Recruitment (Job Openings)",
+    "IHR Canada — Gulf Consultant Vacancy Board (KFSH&RC / KFMC listings)"
+  ],
+  "sweepOnlySources": [
+    {
+      "name": "AAMC CareerConnect",
+      "url": "https://careerconnect.aamc.org/jobs/",
+      "query": "radiology / vascular surgery"
+    },
+    {
+      "name": "AAWR Career Center (American Association for Women Radiologists)",
+      "url": "https://aawr.careerwebsite.com/jobs/",
+      "query": "radiologist"
+    },
+    {
+      "name": "ACR Career Center (American College of Radiology)",
+      "url": "https://jobs.acr.org/jobs/",
+      "query": "radiologist"
+    },
+    {
+      "name": "AHA Professional Heart Daily Job Board (vascular filter)",
+      "url": "https://professionaljobs.heart.org/jobs/function/vascular/",
+      "query": "vascular"
+    },
+    {
+      "name": "ARRS Career Center (American Roentgen Ray Society)",
+      "url": "https://careercenter.arrs.org/jobs/",
+      "query": "radiologist"
+    },
+    {
+      "name": "ASER Career Center (American Society of Emergency Radiology)",
+      "url": "https://aser.careerwebsite.com/jobs/",
+      "query": "emergency radiologist"
+    },
+    {
+      "name": "Allocation Assist Middle East — GoHire Job Board",
+      "url": "https://jobs.gohire.io/allocation-assist-middle-east-bohk6gw2/",
+      "query": null
+    },
+    {
+      "name": "American College of Surgeons — Surgery Career Connection (vascular filter)",
+      "url": "https://surgeonjobs.facs.org/jobs/function/vascular/",
+      "query": "vascular"
+    },
+    {
+      "name": "American Venous Forum Career Center",
+      "url": "https://veinforum.careerwebsite.com/jobs/function/vascular/",
+      "query": "vascular"
+    },
+    {
+      "name": "Ash International — Middle East Medical Recruitment (Available Jobs)",
+      "url": "https://ashinternational.uk.com/available-jobs?pag=1",
+      "query": null
+    },
+    {
+      "name": "AuntMinnie Career Center",
+      "url": "https://auntminnie.careerwebsite.com/jobs/",
+      "query": "radiologist"
+    },
+    {
+      "name": "Badr Al Samaa Group of Hospitals (Oman) — Careers",
+      "url": "https://badralsamaahospitals.com/careers/",
+      "query": null
+    },
+    {
+      "name": "Ben Khan & Associates — Physician (MD) Jobs, Gulf",
+      "url": "https://benkhan.com/category/2/md-jobs",
+      "query": null
+    },
+    {
+      "name": "Ben White — Radiology Jobs (curated independent practices)",
+      "url": "https://www.benwhite.com/radiology/jobs/",
+      "query": "independent private practice radiology"
+    },
+    {
+      "name": "Cardiovascular Associates of America (CVAUSA) — physician careers",
+      "url": "https://cvausa.com/cardiovascular-careers/job-openings",
+      "query": "vascular surgeon"
+    },
+    {
+      "name": "CompHealth (CHG Healthcare)",
+      "url": "https://comphealth.com/jobs/physician/vascular-surgery",
+      "query": "vascular surgery"
+    },
+    {
+      "name": "Doximity Career Center",
+      "url": "https://www.doximity.com/careers/jobs/radiology",
+      "query": "radiology"
+    },
+    {
+      "name": "Eastern Vascular Society Career Center",
+      "url": "https://careers.easternvascular.org/jobs/function/vascular/",
+      "query": "vascular"
+    },
+    {
+      "name": "Health eCareers",
+      "url": "https://www.healthecareers.com/search-jobs",
+      "query": "vascular surgeon / diagnostic radiologist"
+    },
+    {
+      "name": "HospitalRecruiting — Vascular Surgery Jobs",
+      "url": "https://www.hospitalrecruiting.com/jobs/Vascular-Surgery-Jobs/",
+      "query": "vascular surgery"
+    },
+    {
+      "name": "HospitalRecruiting.com",
+      "url": "https://www.hospitalrecruiting.com/jobs/Radiology-Jobs/",
+      "query": "radiology"
+    },
+    {
+      "name": "International Society for Women Vascular Surgeons Career Center",
+      "url": "https://wvs.careerwebsite.com/jobs/function/vascular/",
+      "query": "vascular"
+    },
+    {
+      "name": "Jackson Physician Search",
+      "url": "https://jobs.jacksonphysiciansearch.com/sitemap.xml",
+      "query": "radiology / vascular surgery"
+    },
+    {
+      "name": "Johns Hopkins Aramco Healthcare (JHAH) Careers",
+      "url": "https://careers.jhah.com/search/?q=&sortColumn=referencedate&sortDirection=desc",
+      "query": null
+    },
+    {
+      "name": "King Faisal Specialist Hospital & Research Centre (KFSH&RC) — Vacancies List",
+      "url": "https://services.kfshrc.edu.sa/en/Home/careers/vacancieslist",
+      "query": null
+    },
+    {
+      "name": "LinkedIn Jobs — Saudi Arabia / Gulf healthcare (public listing pages)",
+      "url": "https://www.linkedin.com/jobs/radiology-jobs-saudi-arabia",
+      "query": "radiology-jobs-saudi-arabia; vascular-surgery-jobs-saudi-arabia"
+    },
+    {
+      "name": "LocumTenens.com",
+      "url": "https://www.locumtenens.com/vascular-surgery-jobs",
+      "query": "vascular surgery"
+    },
+    {
+      "name": "New Mowasat Hospital (Salmiya, Kuwait) — Job Opportunities",
+      "url": "https://www.newmowasat.com/careers/job-opportunities",
+      "query": null
+    },
+    {
+      "name": "OEIS — Outpatient Endovascular and Interventional Society Job Board",
+      "url": "https://members.oeisweb.com/jobs/",
+      "query": "vascular"
+    },
+    {
+      "name": "PhysEmp",
+      "url": "https://www.physemp.com/physician/jobs/vascular-surgery/all/all",
+      "query": "vascular surgery"
+    },
+    {
+      "name": "PracticeLink",
+      "url": "https://jobs.practicelink.com/jobs/search/",
+      "query": "vascular surgery / radiology"
+    },
+    {
+      "name": "PracticeLink — Vascular Surgery",
+      "url": "https://jobs.practicelink.com/jobs/vascular-surgery",
+      "query": "vascular surgery"
+    },
+    {
+      "name": "PracticeMatch",
+      "url": "https://www.practicematch.com/physicians/jobs/radiology",
+      "query": "radiology"
+    },
+    {
+      "name": "PracticeMatch — Vascular Physician Jobs",
+      "url": "https://www.practicematch.com/physicians/jobs/vascular",
+      "query": "vascular"
+    },
+    {
+      "name": "Prospect Health — Doctor Jobs Saudi Arabia",
+      "url": "https://www.prospect-health.com/doctor-jobs-saudi-arabia",
+      "query": null
+    },
+    {
+      "name": "RAYUS Radiology — Careers",
+      "url": "https://jobiak.rayusradiology.com/",
+      "query": "radiologist"
+    },
+    {
+      "name": "RSNA Career Connect",
+      "url": "https://jobs.rsna.org/jobs/",
+      "query": "radiologist"
+    },
+    {
+      "name": "SVS Job Board (Society for Vascular Surgery Job Bank)",
+      "url": "https://svs.careerwebsite.com/jobs/function/vascular/",
+      "query": "vascular surgery"
+    },
+    {
+      "name": "Society for Advanced Body Imaging (SABI / SCBT-MR) Career Center",
+      "url": "https://scbtmr.careerwebsite.com/jobs/",
+      "query": "body imaging radiologist"
+    },
+    {
+      "name": "Society for Vascular Medicine Career Center",
+      "url": "https://vascularmed.careerwebsite.com/jobs/function/vascular/",
+      "query": "vascular"
+    },
+    {
+      "name": "Society of Abdominal Radiology (SAR) Career Center",
+      "url": "https://rad.abdom.associationcareernetwork.com/jobs/",
+      "query": "abdominal radiologist"
+    },
+    {
+      "name": "Society of Breast Imaging (SBI) Career Center",
+      "url": "https://rad.sbi.associationcareernetwork.com/jobs/",
+      "query": "breast imaging radiologist"
+    },
+    {
+      "name": "StatRad — Teleradiologist openings",
+      "url": "https://www.statrad.com/jobs/",
+      "query": "teleradiologist"
+    },
+    {
+      "name": "Texas Society of Vascular and Endovascular Surgery Career Center",
+      "url": "https://tsves.careerwebsite.com/jobs/function/vascular/",
+      "query": "vascular"
+    },
+    {
+      "name": "Weatherby Healthcare (CHG Healthcare)",
+      "url": "https://weatherbyhealthcare.com/locum-tenens-jobs",
+      "query": "radiology"
+    }
+  ]
+}

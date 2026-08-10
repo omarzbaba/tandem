@@ -1,0 +1,198 @@
+.role-card {
+  display: grid;
+  grid-template-columns: 3px 1fr auto;
+  gap: var(--space-4);
+  padding: 0;
+  background: var(--paper-raised);
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.role-card:hover,
+.role-card:focus-within {
+  border-color: var(--rule-strong);
+  box-shadow: var(--shadow-raised);
+}
+
+/* The spine is the only place the specialty hue appears at full strength. */
+.role-card__bar {
+  background: var(--rule);
+}
+
+.role-card--vascular .role-card__bar {
+  background: var(--vascular);
+}
+
+.role-card--radiology .role-card__bar {
+  background: var(--radiology);
+}
+
+.role-card__body {
+  padding-block: var(--space-4);
+  min-inline-size: 0;
+}
+
+.role-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.role-card__open {
+  text-align: start;
+  min-inline-size: 0;
+}
+
+.role-card__title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  letter-spacing: -0.011em;
+  overflow-wrap: anywhere;
+}
+
+.role-card__open:hover .role-card__title {
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+}
+
+.role-card__org {
+  margin-block-start: var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.role-card__dot {
+  margin-inline: var(--space-2);
+  color: var(--ink-faint);
+}
+
+.role-card__place {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.role-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block-start: var(--space-3);
+}
+
+.tag {
+  padding: 1px var(--space-2);
+  font-size: var(--text-micro);
+  color: var(--ink-muted);
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+}
+
+.tag--tier-strong {
+  color: var(--positive);
+  border-color: color-mix(in oklch, var(--positive) 40%, transparent);
+  background: color-mix(in oklch, var(--positive) 10%, transparent);
+  font-weight: 600;
+}
+
+.tag--tier-worth-a-look {
+  color: var(--ink);
+  border-color: var(--rule-strong);
+}
+
+.tag--accent {
+  color: var(--together);
+  border-color: var(--together-line);
+  background: var(--together-soft);
+}
+
+.tag--new {
+  color: var(--accent-pin);
+  border-color: color-mix(in oklch, var(--accent-pin) 45%, transparent);
+  font-weight: 600;
+}
+
+.tag--stale {
+  color: var(--caution);
+  border-color: color-mix(in oklch, var(--caution) 40%, transparent);
+}
+
+.tag--status {
+  color: var(--paper);
+  background: var(--ink-muted);
+  border-color: var(--ink-muted);
+  font-weight: 600;
+}
+
+.role-card__excerpt {
+  margin-block-start: var(--space-3);
+  max-inline-size: var(--measure);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.role-card__foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin-block-start: var(--space-3);
+  font-size: var(--text-micro);
+  color: var(--ink-faint);
+}
+
+.role-card__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding-inline: var(--space-5);
+  border-inline-start: 1px solid var(--rule);
+  background: var(--paper-sunk);
+}
+
+.role-card__score-value {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.role-card--vascular .role-card__score-value {
+  color: var(--vascular);
+}
+
+.role-card--radiology .role-card__score-value {
+  color: var(--radiology);
+}
+
+@media (max-width: 640px) {
+  .role-card {
+    grid-template-columns: 3px 1fr;
+  }
+
+  .role-card__score {
+    grid-column: 2;
+    flex-direction: row;
+    gap: var(--space-2);
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: var(--space-2) 0 var(--space-3);
+    border-inline-start: none;
+    background: none;
+  }
+
+  .role-card__score-value {
+    font-size: 1.375rem;
+  }
+}
+
+/* An RSS board supplies no employer; saying so is better than printing the
+   board's own name as though it were the hiring organisation. */
+.role-card__no-org {
+  font-style: italic;
+  color: var(--ink-faint);
+}

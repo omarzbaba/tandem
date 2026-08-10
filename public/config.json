@@ -1,0 +1,12 @@
+{
+  "boardTitle": "Tandem",
+  "boardTagline": "Two careers, one map.",
+  "partnerALabel": "Vascular surgery",
+  "partnerBLabel": "Diagnostic radiology",
+  "partnerAName": "",
+  "partnerBName": "",
+  "defaultRadiusMiles": 45,
+  "supabaseUrl": "",
+  "supabaseAnonKey": "",
+  "boardId": "default"
+}

@@ -1,0 +1,430 @@
+/**
+ * ATS adapters.
+ *
+ * Every adapter takes a registry source and returns raw postings in one shape:
+ *   { title, org, location, description, url, datePosted, department }
+ *
+ * Adapters never throw. A source that is down, rate-limited, or has changed its
+ * response shape returns `{ postings: [], error }`, and the harvester records
+ * the gap in the run report instead of silently shipping a thinner board.
+ */
+
+import { getJson, request, htmlToText } from "../http.mjs";
+
+/**
+ * Registry endpoints are written by researchers, not by a form, so they arrive
+ * in several shapes:
+ *   "https://host/path"
+ *   "POST https://host/path body {\"limit\":20}"
+ *   "POST https://host/path  body: {...}"
+ * Parsing that here keeps every adapter free of the same defensive string
+ * handling — and a POST body recorded in the registry is genuinely useful
+ * information, because it is how the researcher confirmed the feed works.
+ */
+export function parseEndpoint(raw) {
+  const text = String(raw ?? "").trim();
+  if (!text) return { method: "GET", url: "", body: null };
+
+  const m = text.match(/^(GET|POST)\s+(\S+)\s*(?:body\s*:?\s*([\s\S]+))?$/i);
+  if (m) {
+    return {
+      method: m[1].toUpperCase(),
+      url: m[2],
+      body: m[3] ? m[3].trim() : null,
+    };
+  }
+  // A bare URL with a trailing body but no verb.
+  const b = text.match(/^(\S+)\s+body\s*:?\s*([\s\S]+)$/i);
+  if (b) return { method: "POST", url: b[1], body: b[2].trim() };
+
+  return { method: "GET", url: text, body: null };
+}
+
+/** Pull the first array of job-like objects out of an unfamiliar JSON payload. */
+function findJobArray(node, depth = 0) {
+  if (!node || depth > 6) return null;
+  if (Array.isArray(node)) {
+    const looksLikeJobs = node.some(
+      (x) => x && typeof x === "object" && (x.title || x.name || x.Title || x.jobTitle || x.PostingTitle)
+    );
+    return looksLikeJobs ? node : null;
+  }
+  if (typeof node !== "object") return null;
+  // Named keys first, so a payload with both facets and jobs picks the jobs.
+  const preferred = [
+    "jobs", "jobList", "requisitionList", "postings", "items", "results",
+    "data", "content", "hits", "docs", "positions", "openings", "refineSearch",
+  ];
+  for (const key of preferred) {
+    if (key in node) {
+      const hit = findJobArray(node[key], depth + 1);
+      if (hit) return hit;
+    }
+  }
+  for (const value of Object.values(node)) {
+    const hit = findJobArray(value, depth + 1);
+    if (hit) return hit;
+  }
+  return null;
+}
+
+const pickField = (obj, keys) => {
+  for (const k of keys) {
+    const v = obj?.[k];
+    if (typeof v === "string" && v.trim()) return v.trim();
+    if (typeof v === "number") return String(v);
+  }
+  return "";
+};
+
+const shape = (p) => ({
+  title: p.title ?? "",
+  org: p.org ?? "",
+  location: p.location ?? "",
+  description: p.description ?? "",
+  url: p.url ?? "",
+  datePosted: p.datePosted ?? null,
+  department: p.department ?? "",
+});
+
+const ok = (postings) => ({ postings: postings.filter((p) => p.title && p.url), error: null });
+const fail = (error) => ({ postings: [], error });
+
+/** Greenhouse — https://boards-api.greenhouse.io/v1/boards/{token}/jobs?content=true */
+async function greenhouse(src) {
+  const res = await getJson(parseEndpoint(src.machineReadable.endpoint).url);
+  if (!res.ok) return fail(res.error);
+  const jobs = res.data?.jobs;
+  if (!Array.isArray(jobs)) return fail("unexpected payload: no jobs[]");
+  return ok(
+    jobs.map((j) =>
+      shape({
+        title: j.title,
+        org: src.name,
+        location: j.location?.name ?? "",
+        description: htmlToText(j.content ?? ""),
+        url: j.absolute_url,
+        datePosted: j.updated_at ?? j.first_published ?? null,
+        department: (j.departments ?? []).map((d) => d.name).join(", "),
+      })
+    )
+  );
+}
+
+/** Lever — https://api.lever.co/v0/postings/{token}?mode=json */
+async function lever(src) {
+  const res = await getJson(parseEndpoint(src.machineReadable.endpoint).url);
+  if (!res.ok) return fail(res.error);
+  if (!Array.isArray(res.data)) return fail("unexpected payload: not an array");
+  return ok(
+    res.data.map((j) =>
+      shape({
+        title: j.text,
+        org: src.name,
+        location: j.categories?.location ?? "",
+        description: htmlToText(j.descriptionPlain ?? j.description ?? ""),
+        url: j.hostedUrl ?? j.applyUrl,
+        datePosted: j.createdAt ? new Date(j.createdAt).toISOString() : null,
+        department: j.categories?.team ?? j.categories?.department ?? "",
+      })
+    )
+  );
+}
+
+/** Ashby — https://api.ashbyhq.com/posting-api/job-board/{token} */
+async function ashby(src) {
+  const res = await getJson(parseEndpoint(src.machineReadable.endpoint).url);
+  if (!res.ok) return fail(res.error);
+  const jobs = res.data?.jobs;
+  if (!Array.isArray(jobs)) return fail("unexpected payload: no jobs[]");
+  return ok(
+    jobs.map((j) =>
+      shape({
+        title: j.title,
+        org: src.name,
+        location: j.location ?? "",
+        description: htmlToText(j.descriptionHtml ?? j.descriptionPlain ?? ""),
+        url: j.jobUrl ?? j.applyUrl,
+        datePosted: j.publishedAt ?? null,
+        department: j.department ?? j.team ?? "",
+      })
+    )
+  );
+}
+
+/** SmartRecruiters — postings list is a summary, so detail is fetched per hit. */
+async function smartrecruiters(src) {
+  const res = await getJson(parseEndpoint(src.machineReadable.endpoint).url);
+  if (!res.ok) return fail(res.error);
+  const content = res.data?.content;
+  if (!Array.isArray(content)) return fail("unexpected payload: no content[]");
+  return ok(
+    content.map((j) =>
+      shape({
+        title: j.name,
+        org: src.name,
+        location: [j.location?.city, j.location?.region, j.location?.country]
+          .filter(Boolean)
+          .join(", "),
+        // The summary endpoint carries no body; the classifier falls back to
+        // the title, which is where the specialty signal lives anyway.
+        description: j.jobAd?.sections?.jobDescription?.text
+          ? htmlToText(j.jobAd.sections.jobDescription.text)
+          : "",
+        url: j.applyUrl ?? `https://jobs.smartrecruiters.com/${j.company?.identifier ?? ""}/${j.id}`,
+        datePosted: j.releasedDate ?? null,
+        department: j.department?.label ?? "",
+      })
+    )
+  );
+}
+
+/**
+ * Generic JSON board. Covers Oracle Cloud Recruiting and Phenom (both very
+ * common in US health systems and the Gulf) plus any bespoke JSON endpoint,
+ * by locating the job array structurally rather than hard-coding one shape.
+ */
+async function json(src) {
+  const { method, url, body } = parseEndpoint(src.machineReadable.endpoint);
+  if (!url) return fail("no endpoint");
+
+  const res = await request(url, {
+    method,
+    headers: { "content-type": "application/json", accept: "application/json" },
+    body: method === "POST" ? (body ?? "{}") : null,
+  });
+  if (!res.ok) return fail(res.error);
+
+  let payload;
+  try {
+    payload = JSON.parse(res.body);
+  } catch {
+    return fail("invalid JSON");
+  }
+
+  const rows = findJobArray(payload);
+  if (!rows) return fail("no job array found in payload");
+
+  const origin = (() => {
+    try {
+      return new URL(url).origin;
+    } catch {
+      return "";
+    }
+  })();
+
+  return ok(
+    rows.map((j) => {
+      // Oracle ORC nests the useful bits; Phenom and friends are flat.
+      const loc =
+        pickField(j, ["primaryLocation", "location", "locationsText", "city", "jobLocation", "PrimaryLocation"]) ||
+        [pickField(j, ["city"]), pickField(j, ["state", "region"]), pickField(j, ["country"])]
+          .filter(Boolean)
+          .join(", ");
+      const href = pickField(j, ["applyUrl", "url", "jobUrl", "detailUrl", "canonicalUrl", "externalPath", "link"]);
+      return shape({
+        title: pickField(j, ["title", "name", "Title", "jobTitle", "PostingTitle"]),
+        org: pickField(j, ["companyName", "company", "organization"]) || src.name,
+        location: loc,
+        description: htmlToText(
+          pickField(j, ["description", "jobDescription", "shortDescription", "summary", "externalDescriptionStr"])
+        ),
+        url: href.startsWith("http") ? href : origin + href,
+        datePosted: pickField(j, ["postedDate", "postedOn", "PostedDate", "releasedDate", "createdDate", "publishedDate"]) || null,
+        department: pickField(j, ["department", "category", "jobFamily", "businessUnit"]),
+      });
+    })
+  );
+}
+
+/**
+ * Workday — POST to /wday/cxs/{tenant}/{site}/jobs, paged 20 at a time.
+ * `searchText` narrows to physician roles so a 40,000-posting tenant does not
+ * have to be walked end to end.
+ */
+async function workday(src) {
+  const { url: endpoint } = parseEndpoint(src.machineReadable.endpoint);
+  if (!endpoint) return fail("no endpoint");
+  const terms = src.query ? src.query.split("|") : ["radiologist", "vascular surgeon", "physician"];
+  const seen = new Map();
+  let anyOk = false;
+  let lastError = null;
+
+  for (const term of terms) {
+    for (let offset = 0; offset < 100; offset += 20) {
+      const res = await request(endpoint, {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({ limit: 20, offset, searchText: term.trim(), appliedFacets: {} }),
+      });
+      if (!res.ok) {
+        lastError = res.error;
+        break;
+      }
+      anyOk = true;
+      let data;
+      try {
+        data = JSON.parse(res.body);
+      } catch {
+        lastError = "invalid JSON";
+        break;
+      }
+      const postings = data?.jobPostings ?? [];
+      for (const j of postings) {
+        const path = j.externalPath ?? "";
+        const base = endpoint.split("/wday/cxs/")[0];
+        const site = endpoint.split("/").slice(-2, -1)[0];
+        const url = path.startsWith("http") ? path : `${base}/${site}${path}`;
+        if (!seen.has(url)) {
+          seen.set(
+            url,
+            shape({
+              title: j.title,
+              org: src.name,
+              location: j.locationsText ?? j.bulletFields?.[0] ?? "",
+              description: "",
+              url,
+              datePosted: j.postedOn ?? null,
+              department: "",
+            })
+          );
+        }
+      }
+      if (postings.length < 20) break;
+    }
+  }
+  if (!anyOk) return fail(lastError ?? "no successful page");
+  return ok([...seen.values()]);
+}
+
+/** Jobvite — https://jobs.jobvite.com/api/jobs?companyId={id}&careerSiteId=1 */
+async function jobvite(src) {
+  const res = await getJson(parseEndpoint(src.machineReadable.endpoint).url);
+  if (!res.ok) return fail(res.error);
+  const jobs = res.data?.requisitions ?? res.data?.jobs ?? [];
+  if (!Array.isArray(jobs)) return fail("unexpected payload");
+  return ok(
+    jobs.map((j) =>
+      shape({
+        title: j.title,
+        org: src.name,
+        location: j.location ?? [j.city, j.state].filter(Boolean).join(", "),
+        description: htmlToText(j.jobDescription ?? ""),
+        url: j.applyUrl ?? j.detailUrl,
+        datePosted: j.postedDate ?? null,
+        department: j.department ?? j.category ?? "",
+      })
+    )
+  );
+}
+
+/** RSS / Atom — covers iCIMS, Taleo, and most society job boards. */
+async function rss(src) {
+  const res = await request(parseEndpoint(src.machineReadable.endpoint).url);
+  if (!res.ok) return fail(res.error);
+  const xml = res.body ?? "";
+  const items = xml.match(/<(item|entry)\b[\s\S]*?<\/\1>/gi) ?? [];
+  if (!items.length) return fail("feed contained no items");
+
+  const pick = (chunk, tag) => {
+    const m = chunk.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, "i"));
+    if (!m) return "";
+    return m[1]
+      .replace(/^\s*<!\[CDATA\[/, "")
+      .replace(/\]\]>\s*$/, "")
+      .trim();
+  };
+
+  return ok(
+    items.map((chunk) => {
+      const linkTag = pick(chunk, "link");
+      const hrefAttr = chunk.match(/<link[^>]*href="([^"]+)"/i)?.[1];
+      const description = htmlToText(pick(chunk, "description") || pick(chunk, "summary") || pick(chunk, "content"));
+      return shape({
+        title: htmlToText(pick(chunk, "title")),
+        org: src.name,
+        // Feeds rarely have a location field; the title usually carries it and
+        // the harvester re-parses it out of title + description downstream.
+        location: pick(chunk, "location") || pick(chunk, "job:location") || "",
+        description,
+        url: linkTag || hrefAttr || "",
+        datePosted: pick(chunk, "pubDate") || pick(chunk, "published") || pick(chunk, "updated") || null,
+        department: pick(chunk, "category"),
+      });
+    })
+  );
+}
+
+/** Adzuna — aggregator covering boards with no direct feed. Requires free creds. */
+async function adzuna(src, env) {
+  const id = env?.ADZUNA_APP_ID;
+  const key = env?.ADZUNA_APP_KEY;
+  if (!id || !key) return fail("ADZUNA_APP_ID / ADZUNA_APP_KEY not set — source skipped");
+
+  const country = src.query?.includes("gb") ? "gb" : "us";
+  const terms = ["vascular surgeon", "diagnostic radiologist"];
+  const out = [];
+  for (const what of terms) {
+    for (let page = 1; page <= 3; page++) {
+      const url =
+        `https://api.adzuna.com/v1/api/jobs/${country}/search/${page}` +
+        `?app_id=${encodeURIComponent(id)}&app_key=${encodeURIComponent(key)}` +
+        `&results_per_page=50&what_phrase=${encodeURIComponent(what)}&content-type=application/json`;
+      const res = await getJson(url);
+      if (!res.ok) return out.length ? ok(out) : fail(res.error);
+      const results = res.data?.results ?? [];
+      for (const j of results) {
+        out.push(
+          shape({
+            title: j.title,
+            org: j.company?.display_name ?? "",
+            location: j.location?.display_name ?? "",
+            description: htmlToText(j.description ?? ""),
+            url: j.redirect_url,
+            datePosted: j.created ?? null,
+            department: j.category?.label ?? "",
+          })
+        );
+      }
+      if (results.length < 50) break;
+    }
+  }
+  return ok(out);
+}
+
+const ADAPTERS = {
+  greenhouse,
+  lever,
+  ashby,
+  smartrecruiters,
+  workday,
+  jobvite,
+  rss,
+  "icims-rss": rss,
+  "taleo-rss": rss,
+  json,
+  adzuna,
+};
+
+/**
+ * Run the adapter a source declares. Sources without a confirmed endpoint are
+ * reported as `skipped` so the run report can say what was NOT covered — a
+ * board silently contributing zero rows is indistinguishable from a board with
+ * no openings, and those are very different facts.
+ */
+export async function harvestSource(src, env) {
+  const kind = src.machineReadable?.kind;
+  if (!kind || kind === "none" || !src.machineReadable?.endpoint) {
+    return { postings: [], error: null, skipped: "no machine-readable endpoint" };
+  }
+  const adapter = ADAPTERS[kind];
+  if (!adapter) return { postings: [], error: `no adapter for "${kind}"`, skipped: null };
+  try {
+    const res = await adapter(src, env);
+    return { ...res, skipped: null };
+  } catch (err) {
+    return { postings: [], error: String(err?.message ?? err), skipped: null };
+  }
+}
+
+export const ADAPTER_KINDS = Object.keys(ADAPTERS);

@@ -1,0 +1,1701 @@
+{
+ "generatedFrom": "tandem-source-registry wf_7e2cff85-405 (5 of 6 lanes)",
+ "sources": [
+  {
+   "name": "Allina Health",
+   "url": "https://allina.wd5.myworkdayjobs.com/External",
+   "category": "health-system",
+   "specialty": "general",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "workday",
+    "endpoint": "POST https://allina.wd5.myworkdayjobs.com/wday/cxs/allina/External/jobs body {\"limit\":20,\"offset\":0,\"searchText\":\"\"}",
+    "confirmed": true
+   },
+   "yield": "low",
+   "evidence": "Re-fetched independently: HTTP 200, total=629. Endpoint is genuine and the board does carry employed-physician postings ('Internal Medicine Physician' Richfield Clinic, 'Cardiac Surgeon' 3 locations, 'Plastic and Reconstructive Surgeon' Woodbury, multiple 'Family Medicine Physician'). But retagged from 'both' to 'general': zero radiologist MD and zero vascular surgery MD postings at verification \u2014 closest hits were 'Interventional Radiology Technologist' and 'Physician Assistant- Thoracic Surgery'.",
+   "note": "Kept only because it demonstrably carries MD postings that rotate; contributed nothing on-lane today. Deprioritize."
+  },
+  {
+   "name": "Almoosa Health Group (Al Ahsa) \u2014 Oracle Cloud Recruiting",
+   "url": "https://edns.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+   "category": "health-system",
+   "specialty": "general",
+   "geos": [
+    "saudi"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://edns.fa.em2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation&finder=findReqs;siteNumber=CX_1,limit=50",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "Independently re-fetched the endpoint 2026-08-09 \u2014 the prior claim holds. Returns real JSON: 32 requisitions, employer 'Al Moosa Specialist Hospital', 26 in Al Ahsa (Eastern Province), 1 in Khobar, 5 elsewhere in Saudi Arabia. Titles include 'Orthopedic Surgery Consultant', 'Radiology Technologists', 'Pharmacist', 'Lab Specialist', 'Cardiac Technology / ECG'.",
+   "note": "machineReadable.confirmed=true survives independent verification. Specialty stays 'general': the only radiology role is technologist-level and there is no vascular surgery requisition today. Cheapest source in the lane to sweep \u2014 one GET, structured output."
+  },
+  {
+   "name": "Ascension",
+   "url": "https://jobs.ascension.org/us/en",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "POST https://jobs.ascension.org/widgets body {\"lang\":\"en_us\",\"deviceType\":\"desktop\",\"country\":\"us\",\"pageName\":\"search-results\",\"ddoKey\":\"refineSearch\",\"from\":0,\"size\":50,\"jobs\":true,\"counts\":true,\"keywords\":\"radiologist\",\"siteType\":\"external\",\"global\":true,\"selected_fields\":{},\"locationData\":{}}",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "Re-fetched independently: HTTP 200, totalHits=956 for keywords=radiology. MD-level confirmed on the narrower keyword: 'Interventional Radiologist' (Indianapolis IN), 'Diagnostic Radiologist' (Baltimore MD), 'Vascular Surgeon' (Tulsa OK), 'Cardiovascular Surgeon' (Pensacola FL). Signal-to-noise is poor at keywords=radiology (top 50 are all Radiology Technologist) \u2014 sweep with keywords=radiologist and vascular surgeon instead.",
+   "note": "Requires a Referer header on the POST; keyword 'radiology' returns almost entirely tech roles."
+  },
+  {
+   "name": "Baylor Scott & White Health",
+   "url": "https://jobs.bswhealth.com/us/en",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "POST https://jobs.bswhealth.com/widgets body {\"lang\":\"en_us\",\"deviceType\":\"desktop\",\"country\":\"us\",\"pageName\":\"search-results\",\"ddoKey\":\"refineSearch\",\"from\":0,\"size\":50,\"jobs\":true,\"counts\":true,\"keywords\":\"radiologist\",\"siteType\":\"external\",\"global\":true,\"selected_fields\":{},\"locationData\":{}}",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "Re-fetched independently: HTTP 200, totalHits=164 for keywords=radiology. MD-level confirmed: 'Diagnostic Radiologist', 'Interventional Radiologist' and 'Interventional Radiologist - PRN' (all Round Rock TX); vascular: 'Vascular Surgery Physician' (Fort Worth), 'Vascular Surgery, Lakeway', 'Vascular Surgery, College Station'. Texas-only geography.",
+   "note": "All postings are Texas \u2014 drop from any sweep filtered to other states."
+  },
+  {
+   "name": "Cardiovascular Institute of the South (CIS) \u2014 careers",
+   "url": "https://www.cardio.com/career-opportunities/",
+   "category": "specialty-group",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://recruiting.ultipro.com/CAR1022CIS/JobBoard/97f02cc1-98a9-4655-8137-e220d3e8a5d6/JobBoardView/LoadSearchResults",
+    "confirmed": true
+   },
+   "yield": "low",
+   "evidence": "Endpoint INDEPENDENTLY RE-VERIFIED 2026-08-09 via POST with body {\"opportunitySearch\":{\"Top\":200,\"Skip\":0,...}}: HTTP 200, application/json, totalCount=52, all 52 returned. BUT the original entry's value claim does not survive: there are ZERO vascular surgery and ZERO radiology physician postings. Pulling the full category list \u2014 ADMINISTRATIVE SUPPORT, CALL CENTER, CATH LAB/ASC/OBL, CT, FRONT OFFICE, LPN, MEDICAL ASSISTANT, MEDICAL RECORDS, NON PHYSICIAN PROVIDER, PHYSICIAN, REGISTERED NURSE, REVENUE CYCLE \u2014 only 2 of 52 sit in PHYSICIAN, and both are cardiology, not vascular: 'Non-Invasive Cardiologist' (Norristown/Blue Bell/Yardley/Lansdale/Paoli, PA) and 'Electrophysiologist' (Clifton Park/Troy/Niskayuna/Saratoga, NY). The other 50 are LPN, RN, medical assistant, sonographer, and clerical roles.",
+   "note": "DOWNGRADED from the original framing. Endpoint genuinely works, so it is kept as a low-cost poll, but at verification it contributed nothing to this lane. Note the tenant is shared beyond Louisiana \u2014 its physician reqs are in PA and NY, indicating the CAR1022CIS UltiPro tenant hosts other CVAUSA-affiliated practices, so it partly duplicates the CVAUSA entry.",
+   "query": "vascular surgeon"
+  },
+  {
+   "name": "Care Bridge \u2014 GCC Clinician Recruitment (Job Openings)",
+   "url": "https://carebridge.ae/job-openings/",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "uae",
+    "saudi",
+    "qatar",
+    "gulf"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://carebridge.ae/wp-json/wp/v2/awsm_job_openings?per_page=100&orderby=date&order=desc",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "UPGRADED from mr=none. I found and verified a WordPress REST endpoint on 2026-08-09: response header X-WP-Total: 119 openings, returning real JSON with title/date/link. Eight radiology roles including 'Consultant Interventional Radiologist (UK, CCT)', 'Consultant Neuro Interventional Radiologist', 'Consultant Breast Radiologist', 'Consultant Pediatric Radiologist', 'Consultant Radiologist MSK (UK / US Certified)', plus 'Consultant Vascular Surgeon (Hyperbaric Medicine)'.",
+   "note": "Post type is the WP Job Openings plugin (awsm_job_openings) \u2014 supports &search= filtering, which I used to isolate vascular and radiology hits. STALENESS WARNING: newest posting is dated 2025-10-20 and the bulk are 2025-05-10, so this board has not refreshed in roughly 10 months; treat hits as leads to re-confirm, not as live reqs."
+  },
+  {
+   "name": "Careerjet Public Job Search API",
+   "url": "http://public.api.careerjet.net/search",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "us",
+    "qatar",
+    "uae",
+    "saudi",
+    "kuwait",
+    "gulf",
+    "global"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "http://public.api.careerjet.net/search?keywords=vascular+surgeon&location=United+States&affid={AFFID}&user_ip={IP}&user_agent=Mozilla&url=http://example.com/&pagesize=99&locale_code=en_US",
+    "confirmed": true
+   },
+   "yield": "high",
+   "query": "vascular surgeon / radiologist",
+   "evidence": "Re-fetched live. CORRECTION: the endpoint as originally written FAILS \u2014 a bare call returns {\"error\":\"Undeclared referrer. Please add a Referer header...\"}. With `Referer: http://example.com/` added it returns JSON. Verified counts: United States/en_US hits=678 for \"vascular surgeon\" (e.g. \"Locum Physician (MD/DO) - Surgery - Vascular in Roanoke, VA\", LocumJobsOnline). Gulf verified for \"radiologist\": UAE/en_GB hits=38 (\"Consultant Cardiothoracic Radiologist in Dubai\", \"Consultant Radiologist - PET-CT Imaging\", Dubai); Saudi hits=3 (\"Consultant MSK Radiologists - Riyadh\"); Kuwait hits=3 (\"Radiologist | Kuwait\", \"Registrar - Radiology\"); Qatar returns \"Consultant Radiologist\" and \"RADIOLOGIST (MESAIEED)\". Best Gulf-capable source in this lane.",
+   "note": "MUST send a Referer header or every call errors out. affid is required; the public demo affid worked. locale_code drives geo (en_US, en_GB for Gulf)."
+  },
+  {
+   "name": "Cedars-Sinai",
+   "url": "https://careers.cshs.org/",
+   "category": "academic",
+   "specialty": "radiology",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://hdkk.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,facetsList=LOCATIONS;TITLES;CATEGORIES,limit=100,keyword=radiologist,sortBy=POSTING_DATES_DESC",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "Re-fetched independently: HTTP 200, TotalJobsCount=79 for keyword=radiology. 5 MD radiologist roles, all Los Angeles: 'Breast Imaging Radiologist', 'Diagnostic Neuroradiologist', 'Interventional Neuroradiologist', 'Pediatric Radiologist', 'Body Imaging Radiologist'. Retagged from 'both' to 'radiology': keyword=vascular returns 32 jobs but zero vascular surgery MD roles (top vascular hit is 'LVN - Vascular Surgery - Outpatient Comprehensive Surgery Center').",
+   "note": "Specialty corrected from 'both' \u2014 no vascular surgery physician postings at verification."
+  },
+  {
+   "name": "Corewell Health",
+   "url": "https://careers.corewellhealth.org/us/en",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "POST https://careers.corewellhealth.org/widgets body {\"lang\":\"en_us\",\"deviceType\":\"desktop\",\"country\":\"us\",\"pageName\":\"search-results\",\"ddoKey\":\"refineSearch\",\"from\":0,\"size\":50,\"jobs\":true,\"counts\":true,\"keywords\":\"radiologist\",\"siteType\":\"external\",\"global\":true,\"selected_fields\":{},\"locationData\":{}}",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "Re-fetched independently: HTTP 200, totalHits=210 for keywords=radiology. Only 2 MD-level roles open at check time, but both are directly on-lane: 'Physician - Neurointerventional Radiologist - Royal Oak' (Royal Oak MI) and 'Physician - Regional Division Chief, Vascular Surgery - Royal Oak' (Berkley MI). Michigan-only.",
+   "note": "Thin but precisely on-target; consistent 'Physician - ' title prefix makes filtering trivial."
+  },
+  {
+   "name": "Diversified Radiology (Lumexa Imaging partner practice, Lever)",
+   "url": "https://jobs.lever.co/DiversifiedRadiology",
+   "category": "teleradiology",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "lever",
+    "endpoint": "https://api.lever.co/v0/postings/DiversifiedRadiology?mode=json",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "query": "radiologist",
+   "evidence": "Independently re-fetched the Lever API: HTTP 200, 170KB, 15 postings \u2014 and all 15 are radiologist roles, the cleanest signal-to-noise ratio in this lane. Live titles: '7 Nights on / 14 Nights Off, Overnight Remote Body Imaging/Emergency Radiologist' (Remote), '7 Nights On / 21 Nights Off, Overnight Emergency Body Imaging Radiologist 10p-' (Remote), 'Body Imaging Radiologist Opportunity in Vail, CO ($75k Sign On Bonus)' (Vail CO), 'Daytime Body Imaging Radiologist Partner-Track - Denver, CO' (Denver CO). Posting text self-describes as 'Diversified Radiology | 24hr Subspecialized Teleradiology (divrad.com)'.",
+   "note": "Name corrected: the parent now brands as Lumexa Imaging (formerly US Radiology Specialists). 100% physician postings \u2014 no filtering needed."
+  },
+  {
+   "name": "DocCafe",
+   "url": "https://www.doccafe.com/",
+   "category": "aggregator",
+   "specialty": "general",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://www.doccafe.com/jobs/rss",
+    "confirmed": true
+   },
+   "yield": "low",
+   "query": "(feed is unfilterable \u2014 no keyword support)",
+   "evidence": "Feed is genuinely live (HTTP 200, application/rss+xml, 22KB, exactly 30 <item>s with real jobs and pay rates). BUT SPECIALTY CORRECTED from \"both\" to \"general\": the feed is an unfilterable 30-item most-recent list containing ZERO radiology and ZERO vascular postings \u2014 actual contents are \"CRNA Locums Needed in WV\", \"OBGYN Locums needed in MO-$2,900.00/day\", and 14 near-duplicate \"VA Disability Evaluation Provider \u2013 Nurse Practitioner (NP)\" entries. I tested ?specialty=Radiology, ?keywords=radiology and ?q=radiology \u2014 all three return byte-identical output, so the feed ignores every filter param.",
+   "note": "Low value for this lane. The site claims 170,262 jobs and has a Radiology specialty (id 323), but /jobs/search?specialties=Radiology renders no server-side job titles \u2014 the only radiology strings in that HTML are the specialty dropdown JSON. Path forms /radiology-jobs, /jobs/radiology, /physician-jobs/radiology all 404. Keep only as a low-priority general feed."
+  },
+  {
+   "name": "Emory Healthcare / Emory University",
+   "url": "https://careers.emory.edu/",
+   "category": "academic",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://careers.emory.edu/api/jobs?keywords=radiologist&limit=50&page=1&sortBy=relevance",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "Re-fetched independently: HTTP 200, clean JSON with full description text inline. keyword=radiologist returns count=29 with 14 MD-level titles: 'Pediatric Interventional Radiologist', 'Neuroradiologist (Onsite or Remote): Flexible and Customizable Schedules', 'NEW COMP - Remote Overnight Acute Care Radiologist', 'Remote Cardiothoracic Radiologist: Work 17 Weeks of Evenings per Year', 'Community Multispecialty Radiologist'. keyword=vascular surgery returns count=45 incl. 'Vascular Surgeon, Emory Warner Robins Hospital'.",
+   "note": "Best single academic source verified in this lane \u2014 returns full job descriptions in the same payload, no detail-page fetch needed."
+  },
+  {
+   "name": "Geisinger",
+   "url": "https://jobs.geisinger.org/",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "workday",
+    "endpoint": "POST https://geisinger.wd5.myworkdayjobs.com/wday/cxs/geisinger/GeisingerExternal/jobs body {\"limit\":20,\"offset\":0,\"searchText\":\"\"}",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "Re-fetched independently: HTTP 200, total=1466. 7 MD radiologist titles with unusually detailed comp/schedule in the title string, e.g. 'Interventional Radiologist | 100% IR | No Call | 7-on/7-off | $140K Starting Bonus' (Lewistown, PA), 'Emergency Radiologist \u2013 $150K Starting Bonus | 100% Remote Nights | 7-On/14-Off' (Danville), 'Breast Imaging Radiologist \u2013 1 week on / 1 week off' (Scranton). Vascular confirmed: 'Vascular Surgeon' (Danville) and 'Department Director, Vascular Surgeon' (Wilkes-Barre).",
+   "note": "Includes teleradiology/remote radiologist roles, so it also feeds a remote-geo sweep."
+  },
+  {
+   "name": "Houston Methodist",
+   "url": "https://www.houstonmethodistcareers.org/",
+   "category": "health-system",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "workday",
+    "endpoint": "POST https://houstonmethodist.wd12.myworkdayjobs.com/wday/cxs/houstonmethodist/GTI/jobs body {\"limit\":20,\"offset\":0,\"searchText\":\"\"}",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "Re-fetched independently: HTTP 200, total=1393. Vascular confirmed with 3 MD roles: 'Vascular Surgeon - Houston Methodist Willowbrook', 'Vascular Surgeon - Houston Methodist Baytown', 'Cardiovascular Surgeon - Houston Methodist Sugarland'. Retagged from 'both' to 'vascular': keyword=radiologist returns zero MD radiologist postings \u2014 all radiology hits are RN/tech/manager ('RN II Interventional Radiology Department', 'Manager of Nursing - Interventional Radiology').",
+   "note": "Specialty corrected from 'both'. Site name 'GTI' is unusual but is the correct external site for this tenant."
+  },
+  {
+   "name": "IHR Canada \u2014 Gulf Consultant Vacancy Board (KFSH&RC / KFMC listings)",
+   "url": "https://ihrcanada.com/king-faisal-specialist-hospital-research-center-in-riyadh-vacancies/",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "saudi",
+    "uae",
+    "qatar",
+    "gulf"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://ihrcanada.com/wp-json/wp/v2/job-listings?per_page=100&orderby=date&order=desc",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "UPGRADED from mr=none. The listed page loaded 2026-08-09 with 45+ KFSH&RC Riyadh consultant vacancies including 'Vascular Surgery Consultant', 'Interventional Radiology Consultant', 'Abdominal Radiology Consultant', 'Pediatric Radiology Consultant', 'Women Imaging Consultant' \u2014 but that page is entirely undated. I then found the site's WP REST job CPT (rest_base 'job-listings'): X-WP-Total: 293, with real dates \u2014 'Pediatric Radiology Consultant' 2026-07-14 (SEHA), 'Pediatric Vascular Surgery Consultant' 2026-06-17, 'Interventional Radiology Consultant' 2026-06-17.",
+   "note": "GEO TAG CORRECTED from saudi-only. The API shows employers across Saudi (KAMC Riyadh, KFMMC), Qatar (HMC) and UAE (SEHA, SSMC, SKMC) \u2014 this is a Gulf-wide board, not a KFSH&RC mirror. Sweep the API, not the undated static KFSH&RC page, which cannot be aged."
+  },
+  {
+   "name": "Intermountain Health",
+   "url": "https://imh.wd108.myworkdayjobs.com/IntermountainCareers",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "workday",
+    "endpoint": "POST https://imh.wd108.myworkdayjobs.com/wday/cxs/imh/IntermountainCareers/jobs body {\"limit\":20,\"offset\":0,\"searchText\":\"\"}",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "Re-fetched independently: HTTP 200, total=1405. 4 MD radiologist titles ('Radiologist' \u2013 Salt Lake Clinic, 'Radiologist Mammography' \u2013 St James, 'Pediatric Radiologist' and 'Pediatric Neuroradiologist' \u2013 Primary Children's Hospital) plus vascular: 'Vascular Surgeon' (St George Regional) and 'Vascular Surgeon PRN' (Good Samaritan). Covers UT/CO/MT/NV.",
+   "note": "Absorbed SCL Health sites (Good Samaritan, St. Mary's, Lutheran, St. James) into the same tenant."
+  },
+  {
+   "name": "JAMA Career Center (AMA)",
+   "url": "https://careers.jamanetwork.com/",
+   "category": "society-board",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://careers.jamanetwork.com/jobsrss/?keywords=radiology&countrycode=US",
+    "confirmed": true
+   },
+   "yield": "high",
+   "query": "radiology / vascular surgery",
+   "evidence": "Independently re-fetched: valid RSS 2.0, <generator>JAMA Career Center</generator>, <opensearch:totalResults>1539</opensearch:totalResults> for radiology/US. First item \"Defense Health Agency (DHA): Physician (Radiology) Ft Riley, KS\" at Irwin Army Community Hospital. Keyword filtering verified real: vascular+surgery/US=544, no-keyword=18139. Largest single verified US feed in this lane.",
+   "note": "Highest raw volume of any confirmed feed here (18,139 total jobs). Main site returns HTTP 200."
+  },
+  {
+   "name": "JAMA Career Center \u2014 Surgery, Vascular",
+   "url": "https://careers.jamanetwork.com/jobs/surgery-vascular/",
+   "category": "aggregator",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://careers.jamanetwork.com/jobsrss/?Specialty=43&countrycode=US",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "RSS INDEPENDENTLY RE-VERIFIED 2026-08-09: HTTP 200, text/xml, 16,013 bytes, <generator>JAMA Career Center</generator>, <opensearch:totalResults>85</opensearch:totalResults>, 20 <item> elements per page. First item 'Mass General Brigham: Vascular Medicine Physician - Heart and Vascular Institute'. The feed's totalResults (85) exactly matches the HTML page's '85 jobs found', confirming Specialty=43 really is the vascular filter. HTML page also confirmed live with 'Vascular Surgeon' (Mayo Clinic), 'Physician - Vascular Surgery' (MultiCare Health System), 'Vascular Surgeon, Emory Hospital Warner Robins'.",
+   "note": "Best machine-readable source in this lane alongside NEJM. Feed paginates 20/page against 85 total. Includes locums (LocumTenens.com, CompHealth) \u2014 filter if only permanent roles are wanted.",
+   "query": "surgery vascular"
+  },
+  {
+   "name": "Mass General Brigham",
+   "url": "https://massgeneralbrigham.wd1.myworkdayjobs.com/MGBExternal",
+   "category": "academic",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "workday",
+    "endpoint": "POST https://massgeneralbrigham.wd1.myworkdayjobs.com/wday/cxs/massgeneralbrigham/MGBExternal/jobs body {\"limit\":20,\"offset\":0,\"searchText\":\"\"}",
+    "confirmed": true
+   },
+   "yield": "low",
+   "evidence": "Re-fetched independently: HTTP 200, total=2000 (capped). Physician postings do exist here ('Infectious Disease Physician' Dover NH, 'Primary Care Physician' Concord MA, 'Orthopedic Spine Surgeon' Somersworth NH), but on-lane yield is thin: exactly one relevant MD role, 'Per Diem Vascular Surgeon - Dover, NH'. Retagged from 'both' to 'vascular' \u2014 keyword=radiologist returns zero MD radiologists; all 286 radiology hits are 'Radiologic Technologist' and similar.",
+   "note": "Specialty corrected from 'both' and yield downgraded. MGB academic/faculty radiology appointments are recruited outside this Workday site, so this endpoint under-represents the system."
+  },
+  {
+   "name": "Mayo Clinic",
+   "url": "https://jobs.mayoclinic.org/",
+   "category": "academic",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=Mayo-US,facetsList=LOCATIONS;TITLES;CATEGORIES,limit=100,keyword=radiologist,sortBy=POSTING_DATES_DESC",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "Re-fetched independently: HTTP 200, TotalJobsCount=48 for keyword=radiologist, 24 distinct MD radiologist titles \u2014 'Abdominal Imaging Radiologist \u2013 Ultrasound Emphasis' (Rochester MN), 'Neuroradiologist' (Jacksonville FL), 'Cardiothoracic Radiologist' (Phoenix AZ), 'Breast Imaging Radiologist' (Phoenix), 'Diagnostic Radiologist - Daytime Role (No Evenings or Nights)' (Albert Lea MN). Vascular confirmed separately: keyword=vascular returns 'Vascular Surgeon' x2 plus 'Neurointerventionalist (Endovascular Neurosurgery / Interventional Neurology / Neurointerventional Radiology)'.",
+   "note": "The finder keyword must not contain URL-encoded spaces \u2014 %20 breaks the Oracle finder syntax and returns nothing. Use single-word keywords."
+  },
+  {
+   "name": "NEJM CareerCenter",
+   "url": "https://www.nejmcareercenter.org/",
+   "category": "society-board",
+   "specialty": "both",
+   "geos": [
+    "us",
+    "global"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://www.nejmcareercenter.org/jobsrss/?keywords=vascular+surgery&countrycode=US",
+    "confirmed": true
+   },
+   "yield": "high",
+   "query": "vascular surgery / radiology",
+   "evidence": "Independently re-fetched: valid RSS 2.0 with <opensearch:totalResults>379</opensearch:totalResults> for vascular+surgery/US. First items: \"The University of Texas at Austin Dell Medical Center: Division Chief of Vascular Surgery\", \"UF Health: Vascular Surgeon & Clinical Assistant/Associate Professor\", \"PeaceHealth: Vascular Surgeon Opportunity in Beautiful Bellingham\". Keyword param genuinely filters \u2014 radiology/US returns 948, no keyword returns 11744, and top result differs per query (\"Cambridge Health Alliance: Chair of Radiology\"). Confirmed distinct from JAMA's pool.",
+   "note": "Swap keywords= to sweep both specialties off one feed. Same platform family as JAMA but different job pools \u2014 dedupe by employer+title anyway."
+  },
+  {
+   "name": "NEJM CareerCenter \u2014 Surgery, Vascular",
+   "url": "https://www.nejmcareercenter.org/jobs/surgery-vascular/",
+   "category": "aggregator",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://www.nejmcareercenter.org/jobsrss/?Specialty=57&countrycode=US",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "RSS INDEPENDENTLY RE-VERIFIED 2026-08-09: HTTP 200, text/xml, 16,793 bytes, <generator>NEJM CareerCenter</generator>, <opensearch:totalResults>71</opensearch:totalResults>, 20 <item> elements. First item 'Northwell Health: Vascular Surgery Opportunity \u2013 Norwalk, Connecticut' (pubDate Thu, 07 May 2026). Feed total (71) matches the HTML page's '71 jobs found' across 4 pages, confirming Specialty=57 is the correct vascular code. Page listings include 'Physician - Vascular Surgery' (WVU Medicine), 'Vascular Surgeon' (Intermountain Health), 'Chief of Vascular Surgery | Western Montana Mountains'.",
+   "note": "Distinct inventory from JAMA despite both being YM Careers \u2014 NEJM surfaces Northwell, WVU, Intermountain, UF Health postings not in the JAMA feed. Run both.",
+   "query": "surgery vascular"
+  },
+  {
+   "name": "Novant Health",
+   "url": "https://jobs.novanthealth.org/careers-home",
+   "category": "health-system",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://jobs.novanthealth.org/api/jobs?keywords=vascular%20surgery&limit=50&page=1&sortBy=relevance",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "Re-fetched independently: HTTP 200, clean iCIMS JSON with descriptions inline. keywords=vascular surgery returns count=41, top hit 'Busy From Start! Vascular Surgeon Needed in Wilmington, NC' with full recruiting body text. Retagged from 'both' to 'vascular': keywords=radiologist returns only count=15 with zero MD radiologist roles, and keywords=radiology (count=317) is entirely tech/support ('Care Associate-Diagnostic Radiology').",
+   "note": "Specialty corrected from 'both' \u2014 no diagnostic radiology physician postings at verification."
+  },
+  {
+   "name": "Ochsner Health",
+   "url": "https://careers.ochsner.org/",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "workday",
+    "endpoint": "POST https://ochsner.wd1.myworkdayjobs.com/wday/cxs/ochsner/Ochsner/jobs body {\"limit\":20,\"offset\":0,\"searchText\":\"\"}",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "Re-fetched independently: HTTP 200, total=1885 postings. Richest radiology board verified in this lane \u2014 18 distinct MD radiologist titles incl. 'Physician - Musculoskeletal Radiologist', 'Chest Radiologist - Section Head', 'Physician - Interventional Radiologist - Full Time Academic' (Shreveport), 'Physician-Breast Radiologist' (Lafayette), 'PRN Radiologist'. Vascular confirmed: 'Physician - Vascular Surgeon'. Note limit is capped at 20 per call \u2014 page via offset.",
+   "note": "Workday caps limit at 20; requests with limit=50 silently return nothing."
+  },
+  {
+   "name": "RadWorking.com",
+   "url": "https://www.radworking.com/jobs/radiology-jobs.html",
+   "category": "aggregator",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://www.radworking.com/Jobs/radiology-jobs.html?feed=1",
+    "confirmed": true
+   },
+   "yield": "high",
+   "query": "radiologist",
+   "evidence": "Independently re-fetched the feed: HTTP 200, content-type application/rss+xml, 2.0 MB, 500 <item> entries. Channel title 'Radiologist Jobs from RadWorking.com'. Sample live titles: 'Irving Radiology-Day Shift Teleradiologist Opportunity 10am-5pm est', 'Remote ED Radiology Days 6am-11am EST, $60 per wRVU, Managed by Radia PS', '1099 ED Teleradiology Evening, 5pm \u2013 11pm PST, $65 per wRVU, Managed by Radia PS'.",
+   "note": "fetchable=partial (corrected): the HTML page at the listed URL is Cloudflare-gated (HTTP 403 'Just a moment...'), but the RSS feed is wide open and is the better sweep target anyway. Heavy recruiter/locums content \u2014 expect duplicate agency reposts of the same underlying role."
+  },
+  {
+   "name": "Radiology Partners \u2014 Careers Marketplace (Avature)",
+   "url": "https://radpartners.avature.net/careersmarketplace/SearchJobsPhysicians",
+   "category": "teleradiology",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://radpartners.avature.net/careersmarketplace/SearchJobsPhysicians/feed/?jobRecordsPerPage=100&",
+    "confirmed": true
+   },
+   "yield": "high",
+   "query": "radiologist",
+   "evidence": "Board loads with no login and reports '1-6 of 485 results'. Live postings seen: 'Regional Breast Imaging Radiologist-RP Palmetto' (Remote), 'Remote Neuro/Diagnostic Radiologist - Empire State Radiology' (Remote NY), 'Interventional Radiologist - Jefferson Radiology' (Hartford CT). I then fetched the feed I discovered: HTTP 200, text/xml, 20 items with real titles and per-job JobDetail links \u2014 'Remote Evening General Radiologist - Radiology Partners Valley', 'Remote Overnight Radiologist - Radiology Partners Gulf Coast', 'General Radiologist - Warren - Columbus Radiology', 'Body Radiologist - Toledo - Columbus Radiology'.",
+   "note": "UPGRADED from mr=none. Endpoint found via an RSS autodiscovery <link rel=\"alternate\"> tag in the board HTML (bare /rss paths 404 or return HTML). Largest single-employer radiology source in this lane at 485 openings. Subspecialty facet paths also exist (/SearchJobsBodyImaging, /SearchJobsBreastImaging, /SearchJobsCardiothoracicImaging, /RadiologyResidents) and each should carry its own /feed/."
+  },
+  {
+   "name": "Sanford Health (incl. Marshfield Clinic)",
+   "url": "https://sanfordcareers.com/",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "workday",
+    "endpoint": "POST https://sanford.wd5.myworkdayjobs.com/wday/cxs/sanford/SanfordHealth/jobs body {\"limit\":20,\"offset\":0,\"searchText\":\"\"}",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "Re-fetched independently: HTTP 200, total=2000 (capped). Consistent 'Physician - Diagnostic Radiology - <subspecialty>' naming makes title parsing easy: 'Physician - Diagnostic Radiology - Neuroradiologist' (Marshfield WI), '- General Body Imaging' (Sioux Falls SD), '- Pediatric Radiologist', '- Non-Interv/Non-Invasive' (Bemidji MN), 'Physician - Remote Emergency Radiologist'. Vascular confirmed: 'Physician - Vascular Surgery - Sioux Falls, SD'. Marshfield Clinic roles appear in the same tenant, confirming the merger claim.",
+   "note": "Post-merger Marshfield Clinic postings are in the same Workday tenant \u2014 one endpoint covers both."
+  },
+  {
+   "name": "SimonMed Imaging (Lever)",
+   "url": "https://jobs.lever.co/simonmed",
+   "category": "teleradiology",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "lever",
+    "endpoint": "https://api.lever.co/v0/postings/simonmed?mode=json",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "query": "radiologist",
+   "evidence": "Independently re-fetched the Lever API: HTTP 200, 2.6 MB, 255 total postings parsed as JSON. 14 are radiologist roles (team='Radiologist'), including '100% Abdominal || Remote Flexible Hours No Commute', '100% Body | Remote | Flexible Hours | No Commute', '100% Breast Imaging Hybrid Radiologist', and '100% General Radiologist | Fully Remote | No Commute'. Corporate location string is 14901 N Scottsdale Rd Ste 101, Scottsdale AZ 85254.",
+   "note": "Yield corrected to medium: only 14 of 255 postings are physician radiology \u2014 the other ~241 are technologist, front-desk and corporate roles. Filter on categories.team=='Radiologist' rather than sweeping the whole board."
+  },
+  {
+   "name": "Society of Skeletal Radiology (SSR) Job Opportunities",
+   "url": "https://skeletalrad.org/job-opportunities/",
+   "category": "specialty-group",
+   "specialty": "radiology",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://skeletalrad.org/feed/",
+    "confirmed": true
+   },
+   "yield": "low",
+   "query": "musculoskeletal radiologist",
+   "evidence": "Independently re-fetched the feed: HTTP 200, 71KB, application/rss+xml, 10 items \u2014 and every single item is a job posting, not blog content. Titles and pubDates: 'Stanford University \u2013 MSK Imaging Faculty' (03 Aug 2026), 'UCI School of Medicine \u2013 Health Sciences Clinical Professor' (03 Aug 2026), 'Mayo Clinic Florida \u2013 MSK Radiologist' (03 Aug 2026), 'Oregon Health and Science University \u2013 Attending Radiologist' (03 Aug 2026), 'Montefiore Medical Center \u2013 Musculoskeletal Section Chief' (29 Jul 2026), 'BIDMC/Dana-Farber \u2013 Section Chief, MSK Imaging', 'Stony Brook \u2013 Musculoskeletal Radiologist (Hybrid On-Site/Remote)', 'Vanderbilt Health \u2013 Vice Chair, Education'. HTML page shows 12 current listings. Attending-physician/faculty roles, not fellowship slots.",
+   "note": "The RSS claim survived scrutiny \u2014 the WordPress site feed genuinely carries the job post type rather than blog articles. Low volume (~12 live) and almost entirely academic MSK faculty/leadership; feed caps at 10 items so page-scrape for the full set."
+  },
+  {
+   "name": "Society of Thoracic Radiology (STR) Jobs and Fellowships",
+   "url": "https://thoracicrad.org/?portfolio=jobs-and-fellowships",
+   "category": "specialty-group",
+   "specialty": "radiology",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://thoracicrad.org/?post_type=careers&feed=rss2",
+    "confirmed": true
+   },
+   "yield": "low",
+   "query": "cardiothoracic radiologist",
+   "evidence": "Page fetched HTTP 200, 97KB, title 'Jobs and Fellowships - Society of Thoracic Radiology', with dated live postings: 'Cardiovascular/Cardiothoracic Radiologist \u2013 Cleveland Clinic Main Campus Radiology' (04 Aug 2026, ~50% cardiac / 50% aorta-vascular, Mon-Fri 7:30-5, onsite Cleveland with hybrid potential) and 'Assistant, Associate, or Full Professor (WOT) in Radiology, Cardiothoracic Imaging' (03 Aug 2026). Postings are tagged Academic/Community-Private-Practice/Careers.",
+   "note": "UPGRADED from mr=none. The entry claimed no endpoint; I found one. /feed/ and /category/careers/feed/ both 404, and ?post_type=portfolio&feed=rss2 returns non-job content (Case of the Month, Research), but ?post_type=careers&feed=rss2 returns HTTP 200 application/rss+xml with 10 real job items matching the page."
+  },
+  {
+   "name": "Sutter Health",
+   "url": "https://jobs.sutterhealth.org/us/en",
+   "category": "health-system",
+   "specialty": "general",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "POST https://jobs.sutterhealth.org/widgets body {\"lang\":\"en_us\",\"deviceType\":\"desktop\",\"country\":\"us\",\"pageName\":\"search-results\",\"ddoKey\":\"refineSearch\",\"from\":0,\"size\":50,\"jobs\":true,\"counts\":true,\"keywords\":\"physician\",\"siteType\":\"external\",\"global\":true,\"selected_fields\":{},\"locationData\":{}}",
+    "confirmed": true
+   },
+   "yield": "low",
+   "evidence": "Re-fetched independently: HTTP 200, totalHits=140 for keywords=radiology and 149 for keywords=physician. Board does carry employed-physician roles ('Physician, Oncology' Lakeport, 'Physician, Family Medicine', 'Clinical Physician, Senior Care' Sacramento). Retagged from 'both' to 'general': zero MD radiologist and zero vascular surgery MD postings \u2014 radiology results are entirely 'Interventional Radiology Technologist', 'Radiology Technologist II', 'Registered Nurse II, Radiology'.",
+   "note": "Kept only as a rotating general-physician source; zero on-lane hits at verification. Deprioritize."
+  },
+  {
+   "name": "The Vascular Care Group \u2014 physician careers (Greenhouse)",
+   "url": "https://job-boards.greenhouse.io/thevascularcaregroup",
+   "category": "specialty-group",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "greenhouse",
+    "endpoint": "https://boards-api.greenhouse.io/v1/boards/thevascularcaregroup/jobs?content=true",
+    "confirmed": true
+   },
+   "yield": "high",
+   "evidence": "Greenhouse API INDEPENDENTLY RE-VERIFIED 2026-08-09: HTTP 200, application/json, 400,955 bytes, meta.total=50, 50 job objects with full content. Contains FOUR named vascular surgeon openings \u2014 'Vascular Surgeon - Hyannis, MA', 'Vascular Surgeon - Leominster, Massachusetts', 'Vascular Surgeon - Lowell, Massachusetts', 'Vascular Surgeon - Portland, ME' \u2014 plus 'GENERAL APPLICATION: Vascular Surgeon' (New England) and 2 Physician Assistant roles.",
+   "note": "Best single-employer source in the lane: a clean unauthenticated JSON API with 4 real, location-specific vascular surgeon reqs. Caveat: 44 of the 50 postings are allied health (sonographers, rad techs, procedural nurses, MAs) \u2014 filter titles on /surgeon|physician assistant/i to avoid flooding results.",
+   "query": "vascular surgeon"
+  },
+  {
+   "name": "Trinity Health",
+   "url": "https://jobs.trinity-health.org/",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "POST https://jobs.trinity-health.org/widgets body {\"lang\":\"en_us\",\"deviceType\":\"desktop\",\"country\":\"us\",\"pageName\":\"search-results\",\"ddoKey\":\"refineSearch\",\"from\":0,\"size\":50,\"jobs\":true,\"counts\":true,\"keywords\":\"radiologist\",\"siteType\":\"external\",\"global\":true,\"selected_fields\":{},\"locationData\":{}}",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "evidence": "Re-fetched independently: HTTP 200, totalHits=518 for keywords=radiology. MD-level confirmed: 'Physician (Interventional Radiologist)' and 'Physician (Diagnostic Radiologist)' both Silver Spring MD; vascular: 'Vascular Surgery - MD/DO - Top-Tier Vascular Surgery Opportunity in Affordable, Family-Friendly Iowa' (Davenport IA), 'Vascular Surgeon - Des Moines - $150,000 Recruitment Incentive'.",
+   "note": "Recruiter-style marketing titles \u2014 match on 'MD/DO' and 'Vascular Surgery' rather than exact role nouns."
+  },
+  {
+   "name": "Vituity \u2014 Radiology physician jobs (Phenom)",
+   "url": "https://careers.vituity.com/search-results?keyword=radiology",
+   "category": "health-system",
+   "specialty": "radiology",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "POST https://careers.vituity.com/widgets  body: {\"lang\":\"en_us\",\"deviceType\":\"desktop\",\"country\":\"us\",\"pageName\":\"search-results\",\"ddoKey\":\"refineSearch\",\"from\":0,\"jobs\":true,\"counts\":true,\"size\":25,\"keywords\":\"radiology\",\"global\":true,\"selected_fields\":{},\"locationData\":{}}",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "query": "radiology",
+   "evidence": "Independently re-issued the POST: HTTP 200, application/json, 68KB, parsed under refineSearch.data.jobs. Real physician radiology postings returned: 'Physician - Radiology - Emeryville' (California), 'Physician - Interventional Radiology - Inter-Community Hospital' (Covina CA), 'Physician - Diagnostic Radiology - Inter-Community Hospital' (Covina CA), 'Physician - Diagnostic Radiology - Foothill Presbyterian Hospital' (Glendora CA), 'Physician - Interventional Radiology - California Hospital Medical Center' (Los Angeles CA), plus 'Senior Director, Operations Radiology - Remote - Nationwide'.",
+   "note": "Endpoint verified working exactly as specified. Radiology postings skew heavily to California hospital sites; geo trimmed to 'us' only (no 'remote') since the physician roles are site-based \u2014 the one remote hit was a non-clinical ops director. Paginate via the 'from' field."
+  },
+  {
+   "name": "vRad (Virtual Radiologic) \u2014 Remote Radiologist Jobs",
+   "url": "https://www.vrad.com/remote-radiologist-jobs/",
+   "category": "teleradiology",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "rss",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "rss",
+    "endpoint": "https://www.vrad.com/remote-rad-job-sitemap.xml",
+    "confirmed": true
+   },
+   "yield": "medium",
+   "query": "remote radiologist",
+   "evidence": "Independently re-fetched the endpoint: HTTP 200, text/xml, 1,870 bytes, 8 <url> entries, generated by the Yoast SEO sitemap plugin. Real job URLs returned: /remote-radiologist-jobs/remote-breast-imaging-radiologist/, /remote-neuroradiologist/, /mid-shift-remote-diagnostic-radiologist/, /day-shift-remote-diagnostic-radiologist/, /overnight-remote-emergency-teleradiologist/.",
+   "note": "Two caveats the original entry hid. (1) fetchable=partial: the listed HTML page returns HTTP 403 'Attention Required! | Cloudflare' \u2014 only the sitemap is reachable. (2) The endpoint is an XML sitemap, not an RSS feed, and it enumerates 8 evergreen role-type landing pages rather than individual dated requisitions, so it tells you which shift/subspecialty tracks vRad is hiring for, not how many seats are open."
+  },
+  {
+   "name": "AAMC CareerConnect",
+   "url": "https://careerconnect.aamc.org/jobs/",
+   "category": "academic",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "blocked",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "radiology / vascular surgery",
+   "evidence": "CORRECTION to fetchability: returns HTTP 403 Cloudflare \"Just a moment...\" to BOTH curl and WebFetch \u2014 it is not scrapable by ordinary means. Loaded successfully in a real browser: \"All Jobs (564)\" overall, and ?keywords=radiology gives \"All Jobs (39)\" including \"Chair of Radiology\" (Cambridge Health Alliance), \"Musculoskeletal Radiologist (M60195)\" (VCU Health), \"Pediatric Radiologist, Open Rank\" (UVA), \"Assistant, Associate or Full Professor of Neuroradiology\".",
+   "note": "Requires a headless/real browser \u2014 Cloudflare blocks plain HTTP. I tested the /jobsrss/ pattern that works on NEJM/JAMA: careerconnect.aamc.org/jobsrss/ returns document.contentType text/html (the site homepage), NOT an RSS feed. Academic faculty/leadership skew, plus fellowship listings."
+  },
+  {
+   "name": "AAWR Career Center (American Association for Women Radiologists)",
+   "url": "https://aawr.careerwebsite.com/jobs/",
+   "category": "specialty-group",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "radiologist",
+   "evidence": "Fetched HTTP 200, 340KB. Page title 'Recent Jobs - American Association for Women Radiologists', counter reads 'All Jobs (1,665)'. Job cards render with 'Hiring Company' and 'Job Location' fields and 'This job is Preferred' badges.",
+   "note": "Despite the AAWR branding this is a general radiology pool, not women-specific postings \u2014 1,665 jobs is essentially the full careerwebsite.com network feed, so it near-duplicates AuntMinnie (1,789) and ARRS (1,621). Dedupe against those before treating as an independent source. No RSS available."
+  },
+  {
+   "name": "ACR Career Center (American College of Radiology)",
+   "url": "https://jobs.acr.org/jobs/",
+   "category": "society-board",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "blocked",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "query": "radiologist",
+   "evidence": "Direct fetch returns HTTP 403 with Cloudflare 'Just a moment...' interstitial (both WebFetch and curl with a browser UA). Existence and live listings independently confirmed via search-engine index, which surfaces working faceted board paths including /jobs/function/Abdominal/, /jobs/function/Breast-Imaging/, /jobs/state/maryland/ and /jobs/?keywords=interventional+radiologist, plus ACR's own note that employers must now disclose salary ranges to post. Board is Boxwood/YM Careers-backed. Bot wall, not a login wall.",
+   "note": "Cloudflare-gated: needs a real browser session or headless driver to sweep. Probed /jobs/rss/ and /rss/ \u2014 both 403, no feed reachable."
+  },
+  {
+   "name": "AHA Professional Heart Daily Job Board (vascular filter)",
+   "url": "https://professionaljobs.heart.org/jobs/function/vascular/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "blocked",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "evidence": "curl and WebFetch both returned HTTP 403 Cloudflare 'Just a moment...'; verified in a real browser. URL CORRECTED \u2014 the original entry's /jobs/ carries no filter and shows 'All Jobs (1,785)' of overwhelmingly cardiology inventory. Adding /function/vascular/ narrows it to 'All Jobs (11)', of which only about four are genuinely vascular: 'Assistant, Associate, or full Professor: Division of Vascular Surgery/Cardiovascular' (Stanford), 'Vascular Surgery (MD/DO)' (UNC Health Southeastern, Lumberton NC), '100% Outpatient PAD' (PAD Specialists), 'Vascular Medicine - Beautiful Reno/Lake Tahoe' (Renown Health). The rest are cardiac EP. /jobsrss/ is also 403-blocked.",
+   "note": "Weakest society board for this lane: Cloudflare-blocked AND only ~4 true vascular surgery roles, all of which also appear on SVS. Low priority unless a browser sweep is already running for FACS.",
+   "query": "vascular"
+  },
+  {
+   "name": "ARRS Career Center (American Roentgen Ray Society)",
+   "url": "https://careercenter.arrs.org/jobs/",
+   "category": "society-board",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "query": "radiologist",
+   "evidence": "Loaded cleanly, no redirect, no login. Header reads 'All Jobs (1,621)'. Current postings seen include 'Pediatric Radiologist' (UT Southwestern Medical Center, Dallas TX, posted 9 days ago), 'Pediatric Interventional Radiologist' (UT Southwestern & Children's Health, Dallas TX), and 'Emergency Radiologist' (University of Texas Medical Branch, Galveston TX, posted 11 days ago). Momentive Software / YM Careers platform with workplace-type, discipline and location facets.",
+   "note": "Probed /jobs/rss/ (returns HTML job page, not a feed), /jobseeker/searchresults_rss.cfm (HTTP 500), and RSS autodiscovery link tags (none present). Scrape the HTML."
+  },
+  {
+   "name": "ASER Career Center (American Society of Emergency Radiology)",
+   "url": "https://aser.careerwebsite.com/jobs/",
+   "category": "specialty-group",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "emergency radiologist",
+   "evidence": "Fetched HTTP 200, 325KB. Page title 'Recent Jobs - American Society of Emergency Radiology', counter reads 'All Jobs (235)'. Extracted live posting titles from the HTML: '$600K+ Breast Imaging Radiologist (Leadership Opportunity) | Hybrid Option | No Weekends' and '$400k - $650k Remote Swing Shift Radiology Illinois'.",
+   "note": "Smallest filtered pool of the careerwebsite.com family (235 vs 1,665 for AAWR) \u2014 the ASER tenant applies a tighter filter. Probed /jobs/rss/, /jobseeker/searchresults_rss.cfm and autodiscovery \u2014 no feed."
+  },
+  {
+   "name": "Adzuna Jobs API",
+   "url": "https://developer.adzuna.com/",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id={APP_ID}&app_key={APP_KEY}&results_per_page=50&what=vascular%20surgeon",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "vascular surgeon / diagnostic radiologist",
+   "evidence": "Developer portal loads (HTTP 200) and is a working API portal \u2014 copy reads \"Register for an API key now\" with docs and a \"Get ad listings\" search endpoint. Could NOT confirm job payload: calling the endpoint without app_id/app_key returns an HTML error page (\"Uh oh, something isn't right\"), not a clean JSON 401, so liveness of the search route itself is inferred from docs rather than observed.",
+   "note": "Self-serve free-tier registration. Geo tag left at [us] and NOT expanded to Gulf \u2014 Adzuna's country coverage is US/UK/AU/CA/EU/IN/SG/ZA/MX/BR and does not include Qatar, UAE, Saudi, Kuwait, Bahrain or Oman. Use Careerjet for Gulf instead."
+  },
+  {
+   "name": "Allocation Assist Middle East \u2014 GoHire Job Board",
+   "url": "https://jobs.gohire.io/allocation-assist-middle-east-bohk6gw2/",
+   "category": "recruiter",
+   "specialty": "radiology",
+   "geos": [
+    "uae",
+    "saudi",
+    "qatar",
+    "gulf"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "evidence": "Loaded 2026-08-09 showing 131 open positions at Allocation Assist DMCC across 14 pages. Relevant hit: 'Consultant Pediatric Radiology - Abu Dhabi', displayed as posted 9 August 2026 \u2014 the freshest content of any source in this lane. Also live: Immunology Consultant (Jeddah), IVF Specialist (Doha), Neurosurgeon (Dubai), ENT Surgeon (Dubai), Neonatologists (Abu Dhabi and KSA), Palliative Care Consultant (Abu Dhabi).",
+   "note": "Specialty narrowed from 'both' to 'radiology' \u2014 a site search for 'vascular' returned no vascular surgery posting across the visible set. Endpoint hunt failed: api.gohire.io/v1/jobs returns 404 with {\"error\":null}, /rss and /feed both 404, /jobs.json 301s to HTML. GoHire exposes no public read API for this board."
+  },
+  {
+   "name": "American College of Surgeons \u2014 Surgery Career Connection (vascular filter)",
+   "url": "https://surgeonjobs.facs.org/jobs/function/vascular/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "blocked",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "evidence": "WebFetch and curl both returned HTTP 403 with a Cloudflare 'Just a moment...' interstitial, so I verified it in a real browser instead. Live: title 'Recent Jobs - Vascular - American College of Surgeons Surgery Career Connection', 'All Jobs (31)', including 'Full-Time Academic Positions - Divisions of Vascular Surgery' (Stanford), 'Vascular Surgeon' (Geisinger, Danville PA), 'Seeking Peripheral Vascular Surgeons' (Logan Health, Kalispell MT), '100% Outpatient PAD' (PAD Specialists). /jobsrss/ also 403s behind Cloudflare, so no feed is reachable.",
+   "note": "NOT scriptable \u2014 Cloudflare bot challenge blocks curl/WebFetch entirely. Requires a headless browser session. Its 31 postings are the same pool as SVS, so it adds little unique inventory for the extra cost.",
+   "query": "vascular"
+  },
+  {
+   "name": "American Venous Forum Career Center",
+   "url": "https://veinforum.careerwebsite.com/jobs/function/vascular/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "evidence": "Fetched 2026-08-09, American Venous Forum branding confirmed in header. 35 jobs, 24 visible on page 1 and overwhelmingly on-target: 'Professor: Vascular Surgery' (Stanford), 'Vascular Surgeon' (Mayo Clinic, Rochester MN), 'Vascular Surgeon' (Geisinger, Danville PA), 'Vascular Surgeon' (UPMC Altoona), 'Vascular Medicine Physician' (Mass General Brigham). /jobsrss/ 404s; no feed available.",
+   "note": "Highest signal-to-noise of the society boards \u2014 nearly every listing is a true vascular/venous physician role. Venous focus surfaces some unique postings.",
+   "query": "vascular"
+  },
+  {
+   "name": "Ash International \u2014 Middle East Medical Recruitment (Available Jobs)",
+   "url": "https://ashinternational.uk.com/available-jobs?pag=1",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "saudi",
+    "qatar",
+    "uae",
+    "gulf"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "evidence": "Loaded 2026-08-09 with working pagination across 25 pages. Page 1 carries 'Consultant Radiology (Subspeciality in Neuroradiology)' \u2014 Riyadh and 'Consultant Radiology (Imaging with MSK experience)' \u2014 Riyadh. Page 2 returns a distinct result set including 'Consultant Vascular Surgery' \u2014 Taif (ref 1025), plus Consultant NICU (Jeddah), Consultant General Surgery (Jeddah), Consultant Nephrology (Al Ahsa).",
+   "note": "GEO TAG CORRECTED. Previous tags claimed kuwait, bahrain and oman \u2014 I saw none of those. Actual coverage observed: Saudi Arabia (Riyadh, Dhahran, Jeddah, Taif, Qassim, Madinah, Al Ahsa), Qatar (Doha), UAE (Dubai, Sharjah). Endpoint hunt failed: /wp-json/wp/v2/posts returns [] and wp/v2/types exposes only post/page/attachment/wp_block (no job CPT); /feed is a blog RSS with no postings. Paginate the HTML."
+  },
+  {
+   "name": "AuntMinnie Career Center",
+   "url": "https://auntminnie.careerwebsite.com/jobs/",
+   "category": "aggregator",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "query": "radiologist",
+   "evidence": "Loaded without login. Shows 1,789 total jobs. Current postings seen: 'Full or Part time Radiologists' (Pontchartrain Diagnostic Imaging, Covington LA, posted 1 day ago), 'Breast Radiologist' (Samaritan Medical Center, Watertown NY, posted 2 days ago), 'Diagnostic Radiologist' (Hamilton Medical Center, Dalton GA, posted 5 days ago). Mix of partnership-track, remote and subspecialty (IR, neuro, breast) roles across the US.",
+   "note": "Largest pool of the careerwebsite.com family. Probed /jobs/rss/, /jobseeker/searchresults_rss.cfm and autodiscovery tags \u2014 no feed exists; HTML scrape only."
+  },
+  {
+   "name": "Badr Al Samaa Group of Hospitals (Oman) \u2014 Careers",
+   "url": "https://badralsamaahospitals.com/careers/",
+   "category": "health-system",
+   "specialty": "radiology",
+   "geos": [
+    "oman"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "evidence": "Loaded 2026-08-09 with 6 openings, one on-target: 'Radiologist' requiring 'MD (Radiology) or Equivalent' with 3+ years experience, posted across nine Oman locations (Ruwi, Al Khuwair, Al Khoud, Barka, Nizwa, Sur, Sohar, Falaj Al Qabail, Salalah). Others: Ophthalmic Surgeon, Neonatologist, Plastic Surgeon, General Practitioner, Staff Nurses. No vascular surgery.",
+   "note": "Only surviving Oman source in this lane and the only one anywhere in the set with an explicit MD-level Radiologist req. Postings carry no dates, so age is unverifiable. Endpoint hunt failed: /wp-json/wp/v2/types 404s \u2014 not a WP REST site; page is static HTML plus a CV-upload form."
+  },
+  {
+   "name": "Ben Khan & Associates \u2014 Physician (MD) Jobs, Gulf",
+   "url": "https://benkhan.com/category/2/md-jobs",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "saudi",
+    "uae",
+    "qatar",
+    "gulf"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "evidence": "Loaded 2026-08-09, deepest match in the lane for both target specialties simultaneously. Vascular: 'Consultant - Vascular Surgery - Riyadh', 'Consultant - Vascular Surgery - Al Ahsa', 'Consultant, Vascular Surgery - Medina'. Radiology: 'Consultant - Abdominal Imaging - Riyadh', 'Consultant Neuroradiology - Medina', 'Consultant, Pediatric Radiology - Riyadh', 'Consultant Chest Radiology - Riyadh'. Page 2 loads a further distinct set (e.g. 'Chair of Medicine - Riyadh').",
+   "note": "Geos narrowed to what I actually saw: Saudi (Riyadh, Jeddah, Medina, Dammam, Dhahran, Al Ahsa), UAE (Dubai, Abu Dhabi), Qatar (Doha). Note the board also mixes in US/Florida postings \u2014 filter by location on ingest. Endpoint hunt failed: /feed and /rss both return the HTML page, and sitemap.xml contains zero /job/ URLs. Custom CMS, server-rendered \u2014 scrape job/{id}/{slug} links."
+  },
+  {
+   "name": "Ben White \u2014 Radiology Jobs (curated independent practices)",
+   "url": "https://www.benwhite.com/radiology/jobs/",
+   "category": "aggregator",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "query": "independent private practice radiology",
+   "evidence": "Loads fine and is current \u2014 dated 08.01.26 (1 Aug 2026). It is an editorially curated blog post, NOT a job board: ~12 named radiologist-owned private practices actively recruiting, each with location, position type (partnership track / employee / contractor), compensation, shift options and a recruiting contact email. Named practices seen: Reno Radiological Associates, Vantage Radiology & Diagnostic Services, South Texas Radiology Group, Kettering Network Radiologists, RAPA, Eastern Radiologists, Radiology and Imaging Specialists, Midwest Radiology, Radiology of Huntsville, Radiology Imaging Associates, Inland Imaging.",
+   "note": "Reclassified: this is a sponsored/curated article, not a structured board \u2014 no per-posting URLs, no counts, no dates per listing. Value is signal on independent private-practice groups that never post to the big boards. Probed /feed/ (HTTP 200 but it is the general blog feed: 'Writing Takes Time', 'Please Use AI' \u2014 not jobs), so mr stays none. The post points to a larger sibling board (independentradiology.com, ~160 groups) that was not part of this list and I did not verify."
+  },
+  {
+   "name": "Cardiovascular Associates of America (CVAUSA) \u2014 physician careers",
+   "url": "https://cvausa.com/cardiovascular-careers/job-openings",
+   "category": "specialty-group",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "evidence": "Fetched 2026-08-09; parsed the raw HTML and counted exactly 77 job cards server-rendered in div.findca_item. Physician-dense, unlike most group career pages. One true vascular role: 'Vascular Surgeon \u2014 Miami or Orlando, FL' (slug job_20260717191446, posted 2026-07-17). Remainder is cardiology-adjacent: Interventional Cardiologist (Cumming GA, Davenport IA, Moline IL), Electrophysiologist (Gainesville FL, Ocala FL, Cranston RI, Chicago), multiple Non-Invasive Cardiologist and Cardiovascular APP roles across FL/GA/AZ/IL/IA/RI/SC.",
+   "note": "HubSpot CMS, server-rendered \u2014 no ATS behind it. I checked every <script src>, iframe, and searched for greenhouse/lever/ashby/workday/icims/taleo/jobvite/ultipro fingerprints and wp-json/admin-ajax endpoints: zero matches. Scrape div.findca_item h3 + span.location. mr=none is correct.",
+   "query": "vascular surgeon"
+  },
+  {
+   "name": "CompHealth (CHG Healthcare)",
+   "url": "https://comphealth.com/jobs/physician/vascular-surgery",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "vascular surgery",
+   "evidence": "Loads (HTTP 200, 1.59MB) and server-renders the count \"32 Vascular Surgery jobs\" with real listing copy: \"Excellent Vascular Surgeon Opportunity With a Thriving Practice in Florida\", \"A very established practice located in Nebraska is seeking a vascular surgeon\", plus detail text \"100% vascular surgery scope with full spectrum of endovascular procedures\" and \"40% dialysis access and 60% general and endovascular vascular surgery\".",
+   "note": "Swap the URL slug for other specialties (/jobs/physician/radiology). CompHealth postings also syndicate to HospitalRecruiting tagged \"CPH# JOB-xxxxxxx\" \u2014 dedupe against that source."
+  },
+  {
+   "name": "Doximity Career Center",
+   "url": "https://www.doximity.com/careers/jobs/radiology",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "radiology",
+   "evidence": "Checked specifically for the misclassification risk that /careers/ is Doximity's own corporate hiring page \u2014 it is NOT. It is a multi-employer physician job board. Raw HTML embeds a server-side JSON \"searchJobs\" array with real third-party postings: \"Locums Diagnostic Radiology Physician in Georgia - Remote Opportunity, No Call\" (Curative, posted 19 days ago) and \"Locum Tenens Diagnostic Radiology Opportunity in Tampa, FL\", each with uuid and jobCardPath.",
+   "note": "No public API, but the page ships a parseable JSON blob (props.searchJobs with uuid, title, location, posted, compensationAvailable) plus per-job /careers/job_cards/{uuid} routes \u2014 far easier to sweep than the rendered DOM. Carries remote/teleradiology roles."
+  },
+  {
+   "name": "Eastern Vascular Society Career Center",
+   "url": "https://careers.easternvascular.org/jobs/function/vascular/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "evidence": "Fetched 2026-08-09, loads fine. URL CORRECTED: original /jobs/ reported 134 jobs but that is unfiltered network inventory (it included vascular neurologists and neurohospitalists); /jobs/function/vascular/ returns 'All Jobs (19)'. Real postings seen: 'Medical Director - Vascular Surgery' (AdventHealth Medical Group, Daytona Beach FL), 'Division Director, Vascular & Endovascular Surgery' (Jefferson Health), 'Academic Vascular Surgeon' (Vandalia Health-CAMC, Charleston WV). /jobsrss/ returns 404; no RSS link tags in HTML.",
+   "note": "Smallest of the society boards after filtering (19). Nearly all 19 also appear on SVS. Low marginal value.",
+   "query": "vascular"
+  },
+  {
+   "name": "Health eCareers",
+   "url": "https://www.healthecareers.com/search-jobs",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "query": "vascular surgeon / diagnostic radiologist",
+   "evidence": "Loads (HTTP 200, 350KB) and server-renders both target specialties in raw HTML. Verified live postings: \"General Diagnostic Radiologist - Loma Linda University (Southern California)\" (/job/.../13597053), \"Vascular Surgeon\" (/job/vascular-surgeon/13441281), and \"Vascular Surgeon - UPMC Altoona, PA - Visa Sponsorship - Sign on Bonus\". Cards carry machine-usable attributes data-specialties=\"General Radiology|Radiology\" and data-specialties=\"General Vascular Surgery|Vascular Surgery\".",
+   "note": "Server-rendered with data-specialties attributes, so plain HTML scraping works well. Probed /rss, /feed, /jobs/rss, /jobs.rss, /search-jobs/rss \u2014 none are feeds."
+  },
+  {
+   "name": "HospitalRecruiting \u2014 Vascular Surgery Jobs",
+   "url": "https://www.hospitalrecruiting.com/jobs/Vascular-Surgery-Jobs/",
+   "category": "aggregator",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "evidence": "Fetched 2026-08-09, page states 'Showing 117 Vascular Surgeon opportunities' with working pagination. Confirmed listings: 'Wesley Chapel, Florida - Vascular Surgeon for AdventHealth' (AdventHealth Medical Group), 'Newark Vascular Surgery Opportunity' (Curare Physician Recruiting), 'Vascular Surgery | Community practice; 30mins to Birmingham' (Capstone Recruiting Advisors), 'Vascular Surgeon \u2014 Program-Lead Opportunity (Denver Metro NW)' (AAS Healthcare Staffing). Probed /rss, /feed, /jobs.rss, /rss/jobs (all 404) and /jobs/feed, /jobs/rss (both return the 234KB HTML jobs page); /sitemap.xml is a 760-byte XML index containing no job feed. mr=none confirmed.",
+   "note": "Recruiter-intermediated rather than direct-employer \u2014 many postings come via Weatherby, CompHealth, Curare, Capstone, so employer names are often masked and locum roles are heavily represented. Dedupe against PracticeLink.",
+   "query": "vascular surgery"
+  },
+  {
+   "name": "HospitalRecruiting.com",
+   "url": "https://www.hospitalrecruiting.com/jobs/Radiology-Jobs/",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "radiology",
+   "evidence": "Loads (HTTP 200, 240KB), rendered page states \"Showing 307 General Radiology Physician opportunities.\" Verified titles: \"Chief of Radiology (Physician) \u2014 Brown University Health, Providence Region\", \"Locum Tenens Radiologist \u2014 High Clinical Focus (95% Patient Care)\", \"Radiologist Needed in Augusta, Georgia CPH# JOB-3364867\", \"A Facility in Hawaii Seeks a Locum Tenens Radiologist WBY# JOB-3364754\".",
+   "note": "DEDUPE WARNING: a large share of inventory is syndicated from Weatherby (\"WBY# JOB-\") and CompHealth (\"CPH# JOB-\") which are separate entries in this same lane \u2014 expect heavy overlap. Feed also mixes in non-physician tech roles (\"Multi Modality Technologist\"). Client-side rendered."
+  },
+  {
+   "name": "International Society for Women Vascular Surgeons Career Center",
+   "url": "https://wvs.careerwebsite.com/jobs/function/vascular/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "evidence": "Fetched 2026-08-09. Header branding confirms 'International Society For Women Vascular Surgeons (ISWVS)'. Shows '1 - 25 Results of 44'. Genuine vascular postings present ('Vascular Surgeon' Cleveland Clinic, 'Vascular/Endovascular Surgery at Mercy Springfield Missouri', 'Vascular Surgeon - Des Moines' Trinity Health), but the 44 is diluted by cardiac electrophysiology and cardiology roles that are not vascular surgery. /jobsrss/ 404s.",
+   "note": "Despite already using the /function/vascular/ filter, this board leaks EP and cardiology postings into the count \u2014 treat 44 as an overstatement of true vascular surgery inventory.",
+   "query": "vascular"
+  },
+  {
+   "name": "JSearch (RapidAPI, Google-for-Jobs index)",
+   "url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "us",
+    "global"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://jsearch.p.rapidapi.com/search?query=vascular%20surgeon%20in%20Qatar&page=1&num_pages=1",
+    "confirmed": false
+   },
+   "yield": "low",
+   "query": "vascular surgeon / radiologist",
+   "evidence": "RapidAPI marketplace page loads (HTTP 200, 429KB). The API host is live \u2014 an unauthenticated call returns a clean {\"message\":\"Invalid API key...\"} with HTTP 401, confirming the route resolves. Could NOT verify any job payload without a key, so no physician listing was actually observed from this source.",
+   "note": "GEOS TRIMMED: the original entry asserted qatar, uae, saudi, kuwait, bahrain, oman and gulf coverage \u2014 none of that is verifiable without a key and I am not carrying it forward as fact. Also note this is a third-party reseller scraping Google for Jobs, not a first-party board: results will duplicate other entries in this lane and are subject to RapidAPI quota/ToS. Prefer Careerjet for Gulf, which I verified directly."
+  },
+  {
+   "name": "Jackson Physician Search",
+   "url": "https://jobs.jacksonphysiciansearch.com/sitemap.xml",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "radiology / vascular surgery",
+   "evidence": "URL CORRECTED. The originally listed root (jobs.jacksonphysiciansearch.com/) is a JS-only search landing page that renders ZERO listings \u2014 rendered text reads \"Your search resulted in: 0\" and /jobs, /job-search/, /search/ all 404. The board is real, but only reachable via sitemap.xml: 1,144 <loc> entries including 1,119 /job-details/ URLs, 9 matching vascular. Real slugs seen: \"outpatient-vascular-surgery-or-interventional-radiology-new-jersey-1mm\", \"100-interventional-radiology-island-of-hawaii-650k\", \"100-remote-radiologist-global-teleradiology-company-700k-average-income\", \"breast-imaging-radiology-greater-los-angeles-partnership-track-4-day-week\".",
+   "note": "TRAP: the page declares <link rel=alternate application/rss+xml href=/feed/rss2>, but that feed is the BLOG, not jobs \u2014 its items are articles like \"How to Navigate Your Physician Job Resignation\". Do not wire it as a job feed. Duda-hosted site; sitemap.xml is the only working enumeration."
+  },
+  {
+   "name": "Johns Hopkins Aramco Healthcare (JHAH) Careers",
+   "url": "https://careers.jhah.com/search/?q=&sortColumn=referencedate&sortDirection=desc",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "saudi"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "evidence": "Loaded 2026-08-09 showing 'Results 1 \u2013 21 of 21'. Directly relevant hit: 'Senior Staff Surgeon, Vascular'. Other physician roles: 'Emergency Medicine Consultant', 'Adult Intensivist - Cardiac ICU', 'Adult Psychiatrist - AlAhsa', 'Ophthalmology Subspecialist (Locum)', 'Senior Staff Physician - Pediatrics'. A separate ?q=radiology query returned 3 results, none of them radiology.",
+   "note": "Platform confirmed as SAP SuccessFactors Career Site Builder. Endpoint hunt failed: /rss, /feed, /jobs.rss and &rss=1 all return HTTP 200 with the identical SPA HTML shell (CSB serves 200 for any unknown path), so a 200 here is not evidence of a feed. Small board \u2014 sweep all 21 rows each pass."
+  },
+  {
+   "name": "Jooble REST API",
+   "url": "https://jooble.org/api/about",
+   "category": "aggregator",
+   "specialty": "general",
+   "geos": [
+    "us",
+    "global"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "blocked",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://jooble.org/api/{API_KEY}",
+    "confirmed": false
+   },
+   "yield": "low",
+   "query": "vascular surgeon / radiologist",
+   "evidence": "Cloudflare returns HTTP 403 to curl on both jooble.org/api/about and the API path \u2014 no programmatic access at all. Loaded in a real browser to confirm it is not dead: the page is genuine and titled \"Jooble REST API\" with working code samples (PHP, JS, Ruby, C#, Python 2.7/3.5). Observed ZERO physician job listings from this source \u2014 the URL is an API docs page, and the payload could not be reached.",
+   "note": "Weakest entry in the lane, kept only because it is real and documented. Barrier is material: the key is NOT self-serve \u2014 jooble.org/api/about gates it behind a manual business-contact form (name, position, email, website, phone) requiring approval. Combined with the Cloudflare block and no physician specialisation, deprioritise behind Careerjet and USAJOBS."
+  },
+  {
+   "name": "King Faisal Specialist Hospital & Research Centre (KFSH&RC) \u2014 Vacancies List",
+   "url": "https://services.kfshrc.edu.sa/en/Home/careers/vacancieslist",
+   "category": "health-system",
+   "specialty": "general",
+   "geos": [
+    "saudi"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "evidence": "Loaded 2026-08-09 as 18.6 KB of fully server-rendered HTML \u2014 no JS gate. 12 live postings across a Riyadh/Jeddah/Madinah branch filter, including 'CONSULTANT, COLORECTAL SURGERY' (Riyadh), 'CONSULTANT, MEDICAL ONCOLOGY' (Madinah), 'ASSISTANT CONSULTANT, CRITICAL CARE' (Jeddah), 'ASSISTANT CONSULTANT, ANESTHESIOLOGY' (Madinah). Radiology appears only as 'Radiography Technologist' and 'Angiography/Fluoroscopy Technologist' \u2014 technologist, not physician. No vascular surgery posting today.",
+   "note": "Specialty re-tagged general (was general) \u2014 confirmed correct: zero radiology-physician or vascular postings in the current cycle, though KFSH&RC consultant vacancies in both specialties surface via the IHR Canada mirror. Endpoint hunt failed: /vacancieslist/rss returns the site's 200-OK HTML fallback; page source has no AJAX/API path, no <link rel=alternate>, and no ATS vendor fingerprint (no Oracle/Workday/Taleo/SuccessFactors/iCIMS). Scrape the HTML table."
+  },
+  {
+   "name": "LinkedIn Jobs \u2014 Saudi Arabia / Gulf healthcare (public listing pages)",
+   "url": "https://www.linkedin.com/jobs/radiology-jobs-saudi-arabia",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "saudi",
+    "gulf",
+    "uae"
+   ],
+   "query": "radiology-jobs-saudi-arabia; vascular-surgery-jobs-saudi-arabia",
+   "sweepMethod": "search-site",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "evidence": "Confirmed publicly readable without login on 2026-08-09. The radiology URL rendered '133 Radiology Jobs in Saudi Arabia' with named employers: 'Consultant Radiologist' at Dr Sulaiman AlHabib Medical Centers, 'Radiology Specialist' at AMAD Hospital (Riyadh, 6 days ago), 'Diagnostic Radiology Registrar' at Nahdi Medical Co., 'Radiology Registrar' at My Clinic KSA. The parallel /jobs/vascular-surgery-jobs-saudi-arabia URL rendered '70 Vascular Surgery jobs' including 'Chairman Surgery' at King Faisal Specialist Hospital and Research Center.",
+   "note": "fetchable set to 'partial': a sign-in prompt overlays the page and LinkedIn rate-limits and challenges automated clients, so listings are readable on a good request but not reliably on every pass. Highest-recall source in the lane and the only one that surfaced employers absent from every other source (AMAD Hospital, Nahdi, National Medical Care). Also the only working proxy for HMG postings now that the HMG portal itself is unreadable."
+  },
+  {
+   "name": "LocumTenens.com",
+   "url": "https://www.locumtenens.com/vascular-surgery-jobs",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "vascular surgery",
+   "evidence": "Loads (HTTP 200, 296KB) with real vascular listings server-rendered: \"BC/BE Vascular Surgeon - near Nashville, TN\", \"100% Vascular Surgery Position with established Independent Vascular Surgery Group practice.\", \"A hospital-employed practice with two full-time Vascular Surgeons...\", \"100% Vascular Surgery call (No ...)\".",
+   "note": "Locums-weighted inventory. URL pattern is /{specialty}-jobs, so /radiology-jobs should mirror this for the other target specialty."
+  },
+  {
+   "name": "New Mowasat Hospital (Salmiya, Kuwait) \u2014 Job Opportunities",
+   "url": "https://www.newmowasat.com/careers/job-opportunities",
+   "category": "health-system",
+   "specialty": "radiology",
+   "geos": [
+    "kuwait"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "evidence": "Loaded 2026-08-09 with 11 postings, two of them on-target: 'Consultant Radiologist' and 'Registrar \u2013 Radiology' (the latter stamped 12 May 2025). Others: Consultant Orthopedics, Consultant Plastic Surgery, Registrar Emergency (Female), Registrar OB/GYN, Registrar Dermatology, Specialist Orthodontist. No vascular surgery. Applications go by email to Recruitment@newmowasat.com \u2014 no ATS.",
+   "note": "STALENESS WARNING: the only dated posting is 12 May 2025, roughly 15 months old, so this page may be a static shortlist rather than a live req feed. Kept only because it names radiology consultant and registrar roles explicitly. Endpoint hunt failed: /wp-json/wp/v2/types returns 404 \u2014 not WordPress-exposed, no feed."
+  },
+  {
+   "name": "OEIS \u2014 Outpatient Endovascular and Interventional Society Job Board",
+   "url": "https://members.oeisweb.com/jobs/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "evidence": "Fetched 2026-08-09. Publicly readable, NOT a login wall despite the members.* hostname. But it is tiny: only 4 total postings, and one is spam ('Pay For Assignment in UK'). Genuinely relevant: 'Vascular Surgeon opportunity in Nashville, TN' (American Vascular Associates) and 'Vascular Surgeon in Kentucky' (Southern Kentucky Vascular). Also 'Outpatient Development Architect' (Siemens Healthineers), which is not a physician role. Most recent posting dated August 2.",
+   "note": "Real but near-empty, and unmoderated (spam listings present). Its 2 vascular postings are from small OBL/office-based-lab employers that do NOT appear on the big society boards, so it has some unique-inventory value despite the tiny size.",
+   "query": "vascular"
+  },
+  {
+   "name": "PhysEmp",
+   "url": "https://www.physemp.com/physician/jobs/vascular-surgery/all/all",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "vascular surgery",
+   "evidence": "Loads (HTTP 200, 330KB) and shows 46 total vascular surgery jobs across all states. Verified titles include \"Full Time Vascular Surgery Job Lima, OH\", \"Full Time Vascular Surgery Job Hartford, CT\", \"Locum Tenens Vascular Surgery Job Springfield, MO\", \"Full Time Vascular Surgery Job Phoenix, AZ\", \"Full Time Vascular Surgery Job Fairbanks, AK\", \"Locum Tenens Vascular Surgery Job Fredericksburg, VA\".",
+   "note": "Listings are client-side rendered \u2014 raw curl grep returned only nav text, a rendering fetch was required. No rel=alternate RSS link in the page head. URL path is /{specialty}/{state}/{subspecialty}."
+  },
+  {
+   "name": "PracticeLink",
+   "url": "https://jobs.practicelink.com/jobs/search/",
+   "category": "aggregator",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "query": "vascular surgery / radiology",
+   "evidence": "Loads (HTTP 200, 285KB). Rendered page states 27,851 total jobs with a sidebar specialty facet reading \"Vascular Surgery (227)\". Raw HTML shows specialty facets \"Neurology - Vascular (25)\", \"Pediatrics - Radiology (30)\", \"Cardiac Surgery - Cardiovascular Surgery (117)\" and live titles \"Physician - MD/DO - Breast Imaging Radiologist\" and \"Physician-Radiology - Women's Imager\". Search is publicly accessible; sign-in only needed to save jobs.",
+   "note": "I probed /jobs/rss, /rss, /feed, /jobs.rss, /jobs/feed and /jobsrss/ \u2014 ALL returned text/html soft-404s, not feeds. mr=none is genuine, not unexamined."
+  },
+  {
+   "name": "PracticeLink \u2014 Vascular Surgery",
+   "url": "https://jobs.practicelink.com/jobs/vascular-surgery",
+   "category": "aggregator",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "evidence": "Fetched 2026-08-09, loads with 173 vascular surgery positions \u2014 the largest single vascular inventory of any source verified. Confirmed listings: 'Vascular Surgeon - AdventHealth Sebring' (Sebring FL), 'Vascular Surgeon for growing non-profit hospital system at the coast, McLeod Health!' (Little River SC), 'PHYSICIAN - Vascular Surgery - Duluth, MN' (Essentia Health), 'Division Chief \u2013 Vascular Surgery' (Charleston Area Medical Center, WV). Probed /rss, /feed, /jobs.rss, /jobs/feed, /jobs/rss, /rss/jobs, /sitemap.xml \u2014 every one returns text/html (the site soft-serves the HTML app for unknown paths), never XML. mr=none confirmed.",
+   "note": "Highest-volume source in the lane. Direct-employer-heavy (hospitals post themselves), so it complements the society boards rather than duplicating them.",
+   "query": "vascular surgery"
+  },
+  {
+   "name": "PracticeMatch",
+   "url": "https://www.practicematch.com/physicians/jobs/radiology",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "radiology",
+   "evidence": "Loads (HTTP 200, 375KB) and server-renders real postings in raw HTML: \"*Chest Radiologist - PRN - Indiana University Health Medical Group, Indianapolis, IN\", \"*Community Radiologist - Bloomington Hospital - Indiana University Health Medical Group, Bloomington, Indiana\", \"100% Breast Imaging Radiologist Opportunity at Brand New Imaging Center | Columbia, South Carolina\". Page copy confirms coverage of \"diagnostic radiology, interventional radiology and medical physics\".",
+   "note": "Server-rendered, so plain HTTP scraping works. Supports facet params (e.g. ?loanrepaymentoptionid=N). No RSS autodiscovery link present."
+  },
+  {
+   "name": "PracticeMatch \u2014 Vascular Physician Jobs",
+   "url": "https://www.practicematch.com/physicians/jobs/vascular",
+   "category": "aggregator",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "search-site",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "evidence": "Fetched 2026-08-09, loads with 106 open positions spanning 36 states. Confirmed listings: 'Methodist Le Bonheur Healthcare seeks a Vascular Surgeon (LEADERSHIP OPPORTUNITY)' (Memphis TN), 'Vascular/Endovascular Surgery at Mercy Springfield Missouri, $700k guarantee', 'Vascular Surgeon \u2013 MUSC Health in Coastal Murrells Inlet, SC', 'Vascular Surgeon' (St. Joseph's Hospital, Tucson AZ). Probed /rss, /feed, /jobs.rss, /jobs/feed, /jobs/rss, /rss/jobs \u2014 all return the same 31,855-byte HTML page, not XML; /sitemap.xml is a 829-byte index with no job feed. mr=none confirmed.",
+   "note": "Filter noise: the 106 includes vein-clinic roles open to FM/IM/EM (e.g. 'Physician for Modern Vein Clinic (FM, IM, EM, GS)') that are not vascular surgery reqs. Salary/guarantee figures are unusually well exposed here.",
+   "query": "vascular"
+  },
+  {
+   "name": "Prospect Health \u2014 Doctor Jobs Saudi Arabia",
+   "url": "https://www.prospect-health.com/doctor-jobs-saudi-arabia",
+   "category": "recruiter",
+   "specialty": "both",
+   "geos": [
+    "saudi"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "evidence": "Loaded 2026-08-09 with 10 Saudi postings on the landing view, both target specialties present: 'Consultant Vascular Surgery' (Riyadh, listed at USD15K\u2013USD19K/month) and 'Consultant Radiologist' (Riyadh, same salary band). Remainder are Consultant Pulmonology, OB/GYN, Plastic Surgery, Paediatrics, Endocrinology and paediatric subspecialties in Riyadh and Al Qassim.",
+   "note": "Salary bands published inline, which is unusual and useful. Endpoint hunt failed: /wp-json/wp/v2/job returns rest_no_route, wp/v2/types exposes no job CPT (only Elementor/core types), /jobs.rss 404s, and /feed is a 376 KB blog RSS containing no vacancies."
+  },
+  {
+   "name": "RAYUS Radiology \u2014 Careers",
+   "url": "https://jobiak.rayusradiology.com/",
+   "category": "health-system",
+   "specialty": "radiology",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "query": "radiologist",
+   "evidence": "Loads HTTP 200, title 'RAYUS Radiology', 'Showing 4680 Jobs'. Overwhelmingly technologist and staff roles \u2014 visible titles were 'MRI Technologist - Pendleton, IN', 'MRI Technologist - Boxford, MA', 'Ultrasound Technologist' \u2014 with physician roles present but sparse; the one confirmed physician posting seen was 'Breast Imaging Radiologist - Newcastle, WA'.",
+   "note": "Two corrections. (1) The original 'RAYUS Radiology / Foundation Radiology Group' name is unsupported \u2014 the site is RAYUS-branded only and I found no Foundation Radiology Group content; dropped that claim. (2) Yield downgraded to low: physician radiologist roles are a tiny fraction of 4,680 mostly-technologist postings, so this needs an aggressive title filter to be useful. Probed /sitemap.xml, /feed and /jobs.rss (all 404), found no JSON-LD JobPosting markup and no feed/API references in the HTML \u2014 the listings are JS-rendered, so this needs a headless browser."
+  },
+  {
+   "name": "RSNA Career Connect",
+   "url": "https://jobs.rsna.org/jobs/",
+   "category": "society-board",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "blocked",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "radiologist",
+   "evidence": "Direct fetch returns a bot-check screen ('Please click here to confirm you're not a robot', 'One moment...' title, HTTP 200 but only 3.2KB shell). Live listings confirmed via search index, which surfaces working facet URLs /jobs/category/radiologist, /jobs/type/full-time/level/entry-level and a specific current posting 'Remote Breast Radiologist | Flexible Day Scheduling | NO Call or Weekend Requirements' (Remote, TX \u2014 Radiology Partners). Board support address is customerservice+939913@support.boxwoodtech.com, confirming Boxwood backend.",
+   "note": "Smaller pool than ACR/ARRS. Probed /jobs/rss/ (returns the 3.2KB bot shell) and /rss/ (404) \u2014 no feed."
+  },
+  {
+   "name": "SVS Job Board (Society for Vascular Surgery Job Bank)",
+   "url": "https://svs.careerwebsite.com/jobs/function/vascular/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "high",
+   "evidence": "Fetched 2026-08-09. URL CORRECTED: original /jobs/ showed 'All Jobs (321)' but that is the whole YM Careers network, not vascular. /jobs/function/vascular/ returns 'All Jobs (31)' true vascular postings, e.g. 'Vascular Surgeon - $1M 1st Year Income, No Call' (Clinical Strategy Partners, TX), 'Vascular Surgeon' (Cleveland Clinic, Stuart FL), 'Division Director, Vascular & Endovascular Surgery' (Jefferson Health, Philadelphia). Probed 11 RSS/JSON paths (/jobsrss/, /jobs/rss/, /rss, /feed, /jobs.rss, /jobs/feed, ?view=rss ...): /jobsrss/ 404s, /jobs/rss/ silently returns the HTML jobs page, and the page HTML contains zero application/rss+xml link tags. mr=none confirmed correct.",
+   "note": "Flagship US vascular board. Shares one job pool with entries 2-7 (FACS vascular filter returns the identical count of 31) \u2014 expect heavy cross-source duplication; dedupe by employer+title.",
+   "query": "vascular surgery"
+  },
+  {
+   "name": "Society for Advanced Body Imaging (SABI / SCBT-MR) Career Center",
+   "url": "https://scbtmr.careerwebsite.com/jobs/",
+   "category": "specialty-group",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "body imaging radiologist",
+   "evidence": "Fetched HTTP 200, 350KB. Page title 'Recent Jobs - Society for Advanced Body Imaging', counter reads 'All Jobs (355)'. Legacy scbtmr.careerwebsite.com host still serves the current SABI-branded board.",
+   "note": "Filtered body-imaging subset of the careerwebsite.com pool. Probed /jobs/rss/ and /jobseeker/searchresults_rss.cfm \u2014 no feed."
+  },
+  {
+   "name": "Society for Vascular Medicine Career Center",
+   "url": "https://vascularmed.careerwebsite.com/jobs/function/vascular/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "evidence": "Fetched 2026-08-09. URL CORRECTED: original /jobs/ claimed 'All Jobs (690)' \u2014 that is the entire YM Careers network across all specialties, badly overstating this source. /jobs/function/vascular/ returns 'All Jobs (36)'. Confirmed listings include 'Section Chief of Vascular & Aortic Surgery and Director of the Aortic Center' (Carilion Clinic), 'Cleveland Clinic Florida - Vascular Surgeon', 'Vascular Surgeon' (White Plains Hospital, NY). /jobsrss/ 404s.",
+   "note": "The '690' in the original entry was the single most inflated number in the list. Vascular-medicine slant surfaces some non-surgical vascular roles the surgery boards miss.",
+   "query": "vascular"
+  },
+  {
+   "name": "Society of Abdominal Radiology (SAR) Career Center",
+   "url": "https://rad.abdom.associationcareernetwork.com/jobs/",
+   "category": "specialty-group",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "blocked",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "abdominal radiologist",
+   "evidence": "Direct fetch blocked by Cloudflare (HTTP 403, 'Just a moment...'). Board confirmed live and SAR-branded ('SAR Jobs' / 'Recent Jobs - Society of Abdominal Radiology') via search index, which also surfaces working state facets (/jobs/state/Washington/, /jobs/state/california/). Live postings visible in index include a fully-remote daytime fellowship-trained Body Imaging Radiologist role (CT, MRI, US, PET-CT, advanced oncologic imaging) and a partnership-track BC/BE abdominal-fellowship radiologist with a group of 12 body imagers.",
+   "note": "YM Careers/associationcareernetwork tenant \u2014 draws on the same shared radiology pool as the careerwebsite.com boards, so expect heavy overlap with ARRS/AuntMinnie. Needs a browser session to sweep."
+  },
+  {
+   "name": "Society of Breast Imaging (SBI) Career Center",
+   "url": "https://rad.sbi.associationcareernetwork.com/jobs/",
+   "category": "specialty-group",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "blocked",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "breast imaging radiologist",
+   "evidence": "Direct fetch blocked by Cloudflare (HTTP 403, 'Just a moment...'). Confirmed live and SBI-branded ('Breast Imaging Jobs - Society of Breast Imaging Inc.', 'SBI Career Center') via search index, with working facets /jobs/function/breast/ and /jobs/state/California/. Current postings surfaced include 'No Call - No Weekends | Breast Radiologist (Offering Hybrid Schedule) | Partnership Track', 'Build a Breast Radiology Program | Monday-Friday | Wilmington, NC', Kaiser Permanente breast imaging roles in Northern/Central California, and POOL Breast Imagers for Orlando Health Cancer Institute.",
+   "note": "Same YM Careers shared-pool caveat as SAR. Cloudflare-gated; requires a browser session."
+  },
+  {
+   "name": "StatRad \u2014 Teleradiologist openings",
+   "url": "https://www.statrad.com/jobs/",
+   "category": "teleradiology",
+   "specialty": "radiology",
+   "geos": [
+    "us",
+    "remote"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "query": "teleradiologist",
+   "evidence": "Loads and shows a small but genuine openings list, not a generic recruiting pitch. Three positions with individual Apply links: 'Part-Time Teleradiologist' (Remote), 'Full-Time Teleradiologist' (Remote), and 'DevOps Engineer' (Hybrid, San Diego CA). Page states 'We are actively hiring several positions within our teleradiology operations team.'",
+   "note": "Yield low \u2014 only 2 of 3 openings are physician roles. Made a genuine endpoint hunt and found nothing: api.lever.co/v0/postings/statrad returns {\"ok\":false,\"error\":\"Document not found\"}, boards-api.greenhouse.io/v1/boards/statrad/jobs 404s, api.ashbyhq.com/posting-api/job-board/statrad 404s, and the page HTML contains no links to any third-party ATS (lever/greenhouse/ashby/workday/icims/jobvite/smartrecruiters/bamboo/paylocity/adp). Self-hosted; scrape the page."
+  },
+  {
+   "name": "Texas Society of Vascular and Endovascular Surgery Career Center",
+   "url": "https://tsves.careerwebsite.com/jobs/function/vascular/",
+   "category": "society-board",
+   "specialty": "vascular",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "direct-board",
+   "fetchable": "yes",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "low",
+   "evidence": "Fetched 2026-08-09, branded 'Texas Society of Vascular and Endovascular'. URL CORRECTED: original /jobs/ showed 406 (network-wide, and despite the Texas branding the listings are national \u2014 Bassett Healthcare NY, Cleveland Clinic FL, Jefferson Health PA). /jobs/function/vascular/ returns 'All Jobs (14)', the smallest vascular count of any board checked.",
+   "note": "Geo tag corrected in spirit: this is a Texas society but the board is NOT Texas-scoped \u2014 it serves national inventory. Only 14 vascular postings, essentially all duplicated on SVS.",
+   "query": "vascular"
+  },
+  {
+   "name": "USAJOBS REST API (federal / VA / DHA)",
+   "url": "https://developer.usajobs.gov/",
+   "category": "government",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "json",
+    "endpoint": "https://data.usajobs.gov/api/search?Keyword=diagnostic%20radiologist&ResultsPerPage=500",
+    "confirmed": false
+   },
+   "yield": "high",
+   "query": "diagnostic radiologist / vascular surgeon",
+   "evidence": "Endpoint is live and correct but key-gated: unauthenticated call returns a clean JSON 401 {\"title\":\"Unauthorized\",\"status\":401}, proving the route exists. Developer portal (HTTP 200) documents \"GET /api/Search\" plus RSS feeds and job exports. Confirmed the underlying data is real and highly relevant by loading the public search in a browser: \"1 \u2013 25 of 152 jobs\" for diagnostic radiologist, e.g. \"Diagnostic Radiologist \u2014 Veterans Health Administration, Fayetteville NC, starting $360,000/yr (VM 15)\" and Durham NC at $380,000/yr.",
+   "note": "Free self-serve API key from developer.usajobs.gov; requires Authorization-Key header plus a User-Agent set to the registered email. Nearly all hits are VA/VHA \u2014 strong, uncontested lane with real posted salaries."
+  },
+  {
+   "name": "Weatherby Healthcare (CHG Healthcare)",
+   "url": "https://weatherbyhealthcare.com/locum-tenens-jobs",
+   "category": "recruiter",
+   "specialty": "radiology",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "partial",
+   "machineReadable": {
+    "kind": "none",
+    "endpoint": "",
+    "confirmed": false
+   },
+   "yield": "medium",
+   "query": "radiology",
+   "evidence": "Base URL loads and DOES server-render inventory: \"Showing 1 - 25 of 1585 jobs\" with real cards, e.g. \"Facility in Indiana Seeks a Locums Anesthesiologist\", Carmel IN, JOB-3370949. SPECIALTY CORRECTED from \"both\" to radiology-only: I pulled Weatherby's own 81-slug specialty list from the page and there is NO vascular-surgery slug \u2014 the closest are cardiovascular-surgery and cardio-thoracic-surgery. Valid radiology slugs exist (radiology, interventional-radiology, pediatric-radiology).",
+   "note": "Sweep the BASE /locum-tenens-jobs URL only. The specialty subpages (/locum-tenens-jobs/physician/radiology etc.) are Livewire-hydrated and server-render zero job IDs \u2014 they render \"No results found\" to any fetcher, which is a rendering artifact, not an empty board. Weatherby jobs also surface on HospitalRecruiting tagged \"WBY# JOB-\" \u2014 dedupe."
+  }
+ ]
+}

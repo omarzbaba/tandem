@@ -1,0 +1,57 @@
+.score-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.score-bars__row {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.score-bars__row dt {
+  font-size: var(--text-micro);
+  color: var(--ink-muted);
+}
+
+.score-bars__row dd {
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+}
+
+.score-bars__track {
+  block-size: 5px;
+  background: var(--paper-sunk);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.score-bars__fill {
+  display: block;
+  block-size: 100%;
+  border-radius: 999px;
+  /* Width is the only animated property — no layout thrash. */
+  transition: inline-size var(--duration-slow) var(--ease-out-expo);
+}
+
+.score-bars__value {
+  font-size: var(--text-micro);
+  text-align: end;
+  color: var(--ink-muted);
+}
+
+.score-bars__max {
+  color: var(--ink-faint);
+}
+
+@media (max-width: 480px) {
+  .score-bars__row {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+}

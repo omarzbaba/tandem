@@ -1,0 +1,107 @@
+.filters {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 10;
+  padding-block: var(--space-3);
+  margin-block-end: var(--space-5);
+  background: color-mix(in oklch, var(--paper) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-block-end: 1px solid var(--rule);
+}
+
+.filters__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.filters__row--radius {
+  margin-block-start: var(--space-3);
+  padding-block-start: var(--space-3);
+  border-block-start: 1px dashed var(--rule);
+}
+
+.filters__search {
+  flex: 1 1 14rem;
+  min-inline-size: 0;
+}
+
+.filters__search input {
+  inline-size: 100%;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  background: var(--paper-raised);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.filters__field {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-micro);
+  color: var(--ink-faint);
+}
+
+.filters__field select,
+.who select {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--ink);
+  background: var(--paper-raised);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.filters__toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+
+.filters__toggle input {
+  accent-color: var(--together);
+}
+
+.filters__clear {
+  font-size: var(--text-sm);
+  color: var(--together);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.filters__radius {
+  display: flex;
+  flex: 1 1 22rem;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.filters__radius input[type="range"] {
+  flex: 1;
+  min-inline-size: 8rem;
+  accent-color: var(--together);
+}
+
+.filters__count {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+
+.filters__count--inline {
+  margin-block-start: var(--space-2);
+}
+
+@media (max-width: 560px) {
+  .filters__radius {
+    flex-wrap: wrap;
+  }
+}

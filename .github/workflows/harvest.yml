@@ -1,0 +1,81 @@
+name: Weekly harvest
+
+# Monday 06:00 UTC — the board is fresh before anyone looks at it on Monday
+# morning in either the US or the Gulf. Also runnable on demand.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      radius:
+        description: Commutable radius in miles
+        required: false
+        default: "45"
+
+# Only one harvest at a time: two concurrent runs would race on the same commit.
+concurrency:
+  group: harvest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      # The harvester has no runtime dependencies, so no install step is
+      # needed — it runs on the standard library and fetch alone.
+      - name: Harvest
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: node scout/harvest.mjs --radius "${{ github.event.inputs.radius || '45' }}"
+
+      - name: Commit the new board
+        id: commit
+        run: |
+          git config user.name "tandem-bot"
+          git config user.email "tandem-bot@users.noreply.github.com"
+          git add public/data
+          if git diff --staged --quiet; then
+            echo "No change in this week's data."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: weekly harvest $(date -u +%Y-%m-%d)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Summary
+        run: |
+          echo "### Weekly harvest" >> "$GITHUB_STEP_SUMMARY"
+          node -e '
+            const r = require("./public/data/run.json");
+            const c = r.counts;
+            console.log(`| metric | value |\n| --- | --- |`);
+            for (const [k, v] of Object.entries(c)) console.log(`| ${k} | ${v} |`);
+            if (r.failedSources.length) {
+              console.log(`\n**${r.failedSources.length} sources failed:**\n`);
+              for (const f of r.failedSources) console.log(`- ${f.name} — ${f.error}`);
+            }
+          ' >> "$GITHUB_STEP_SUMMARY"
+
+  # A commit made with GITHUB_TOKEN does not trigger other workflows, so the
+  # deploy is called directly rather than relying on a push event.
+  deploy:
+    needs: harvest
+    if: needs.harvest.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

@@ -1,0 +1,58 @@
+.role-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  margin-inline: calc(var(--space-2) * -1);
+  border-radius: var(--radius);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.role-row:hover,
+.role-row:focus-within {
+  background: var(--paper-sunk);
+}
+
+.role-row__main {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  text-align: start;
+  min-inline-size: 0;
+}
+
+.role-row__title {
+  font-size: var(--text-sm);
+  font-weight: 550;
+  line-height: var(--leading-snug);
+  overflow-wrap: anywhere;
+}
+
+.role-row:hover .role-row__title {
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+}
+
+.role-row__org {
+  font-size: var(--text-micro);
+  color: var(--ink-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* The score sits on the specialty hue — colour carries meaning, not decoration. */
+.role-row__score {
+  font-size: var(--text-sm);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.role-row--vascular .role-row__score {
+  color: var(--vascular);
+}
+
+.role-row--radiology .role-row__score {
+  color: var(--radiology);
+}

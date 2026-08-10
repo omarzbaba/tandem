@@ -1,0 +1,34 @@
+{
+  "name": "tandem",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Weekly job board for a two-physician couple — finds the places where both can work.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "harvest": "node scout/harvest.mjs",
+    "harvest:sample": "node scout/harvest.mjs --limit-sources 8",
+    "gazetteer": "node tools/build-gazetteer.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.7.2",
+    "vite": "^7.0.0",
+    "vitest": "^3.0.0"
+  }
+}
