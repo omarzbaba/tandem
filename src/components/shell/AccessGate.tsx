@@ -26,8 +26,8 @@ export function AccessGate({ partnerAName, partnerBName, onEntered }: Props) {
   async function submit(e: FormEvent) {
     e.preventDefault();
     const trimmed = code.trim();
-    if (trimmed.length < 8) {
-      setError("The code is at least 8 characters.");
+    if (trimmed.length < 4) {
+      setError("The code is at least 4 characters.");
       return;
     }
     if (!who) {

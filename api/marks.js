@@ -19,7 +19,7 @@ const STATUSES = new Set(["new", "interested", "contacted", "applied", "passed"]
 const TABLE = "tandem_marks";
 
 const LIMITS = {
-  board: { min: 8, max: 64 },
+  board: { min: 4, max: 64 },
   roleId: 400,
   note: 2000,
   by: 80,

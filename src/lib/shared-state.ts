@@ -174,7 +174,7 @@ async function describe(res: Response): Promise<string> {
  */
 export function createBackend(accessCode: string | null): SharedStateBackend {
   const code = accessCode?.trim();
-  if (code && code.length >= 8) return new ApiBackend(code);
+  if (code && code.length >= 4) return new ApiBackend(code);
   return new LocalBackend();
 }
 
