@@ -3658,59 +3658,6 @@
    "isNew": false
   },
   {
-   "id": "url https www doccafe com job physician radiology 20256351 locum to perm general radiologist nuclear radiology focus no call 5x8 days in massachusetts::locum to perm general radiologist nuclear radiology focus no call 5x8 days in massachusetts::springfield",
-   "fingerprint": "url https www doccafe com job physician radiology 20256351 locum to perm general radiologist nuclear radiology focus no call 5x8 days in massachusetts::locum to perm general radiologist nuclear radiology focus no call 5x8 days in massachusetts::springfield",
-   "title": "🚀 Locum-to-Perm General Radiologist 🩻 | Nuclear Radiology Focus | No Call | 5x8 Days in Massachusetts 🌟",
-   "org": "",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": true,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "Springfield, Massachusetts",
-   "geo": {
-    "lat": 42.1015,
-    "lon": -72.5898,
-    "city": "Springfield",
-    "region": "MA",
-    "country": "US",
-    "population": 154341,
-    "precision": "city",
-    "raw": "Springfield, Massachusetts"
-   },
-   "url": "https://www.doccafe.com/job/physician/radiology/20256351/locum-to-perm-general-radiologist-nuclear-radiology-focus-no-call-5x8-days-in-massachusetts",
-   "datePosted": "2026-08-10",
-   "description": "Exciting Locum-to-Perm General Radiology opportunity in Springfield, Massachusetts beginning February 2026. This position offers a consistent weekday schedule with no call and no weekends, providing excellent work-life balance.\nPractice in a collabo…",
-   "source": {
-    "name": "DocCafe",
-    "url": "https://www.doccafe.com/",
-    "category": "aggregator"
-   },
-   "score": 64,
-   "tier": "worth-a-look",
-   "subscores": {
-    "specialtyFit": 26,
-    "seniority": 4,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 10,
-    "signal": 1
-   },
-   "reasons": [
-    "general diagnostic scope",
-    "call covered or none",
-    "posted within two weeks"
-   ],
-   "concerns": [
-    "locum / temporary, not a permanent post",
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 0,
-   "alsoSeenOn": [],
-   "isNew": true
-  },
-  {
    "id": "url http www radworking com radiology jobs 602938 html::diagnostic radiologist opportunity at mercyhealth salary 650k 765k::rockford",
    "fingerprint": "url http www radworking com radiology jobs 602938 html::diagnostic radiologist opportunity at mercyhealth salary 650k 765k::rockford",
    "title": "Diagnostic Radiologist Opportunity at Mercyhealth – Salary $650k-$765k",
@@ -5189,6 +5136,256 @@
    "ageDays": 66,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "baylor scott white::vascular surgery lakeway::lakeway",
+   "fingerprint": "baylor scott white::vascular surgery lakeway::lakeway",
+   "title": "Vascular Surgery, Lakeway",
+   "org": "Baylor Scott & White Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Lakeway, Texas, United States",
+   "geo": {
+    "lat": 30.3638,
+    "lon": -97.9796,
+    "city": "Lakeway",
+    "region": "TX",
+    "country": "US",
+    "population": 14217,
+    "precision": "city",
+    "raw": "Lakeway, Texas, United States"
+   },
+   "url": "https://bswhealth.taleo.net/careersection/expa/jobapply.ftl?job=26012290&lang=en&csNo=10060&portal=8100025590",
+   "datePosted": "2026-07-27",
+   "description": "",
+   "source": {
+    "name": "Baylor Scott & White Health",
+    "url": "https://jobs.bswhealth.com/us/en",
+    "category": "health-system"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 14,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "baylor scott white::vascular surgery college station::college station",
+   "fingerprint": "baylor scott white::vascular surgery college station::college station",
+   "title": "Vascular Surgery, College Station",
+   "org": "Baylor Scott & White Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "College Station, Texas, United States",
+   "geo": {
+    "lat": 30.628,
+    "lon": -96.3344,
+    "city": "College Station",
+    "region": "TX",
+    "country": "US",
+    "population": 107889,
+    "precision": "city",
+    "raw": "College Station, Texas, United States"
+   },
+   "url": "https://bswhealth.taleo.net/careersection/expa/jobapply.ftl?job=26008385&lang=en&csNo=10060&portal=8100025590",
+   "datePosted": "2026-07-27",
+   "description": "",
+   "source": {
+    "name": "Baylor Scott & White Health",
+    "url": "https://jobs.bswhealth.com/us/en",
+    "category": "health-system"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 14,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "corewell::medical assistant ii vascular surgery::trenton",
+   "fingerprint": "corewell::medical assistant ii vascular surgery::trenton",
+   "title": "Medical Assistant II Vascular Surgery",
+   "org": "Corewell Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Trenton, Michigan, United States of America",
+   "geo": {
+    "lat": 42.1395,
+    "lon": -83.1783,
+    "city": "Trenton",
+    "region": "MI",
+    "country": "US",
+    "population": 18380,
+    "precision": "city",
+    "raw": "Trenton, Michigan, United States of America"
+   },
+   "url": "https://spectrumhealth.wd5.myworkdayjobs.com/CorewellHealthCareers/job/Trenton-MI/Medical-Assistant-II-Vascular-Surgery_R212837/apply",
+   "datePosted": "2026-08-04",
+   "description": "",
+   "source": {
+    "name": "Corewell Health",
+    "url": "https://careers.corewellhealth.org/us/en",
+    "category": "health-system"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 6,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "corewell::physician regional division chief vascular surgery royal oak::berkley",
+   "fingerprint": "corewell::physician regional division chief vascular surgery royal oak::berkley",
+   "title": "Physician - Regional Division Chief, Vascular Surgery - Royal Oak",
+   "org": "Corewell Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": true,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Berkley, Michigan, United States of America",
+   "geo": {
+    "lat": 42.5031,
+    "lon": -83.1835,
+    "city": "Berkley",
+    "region": "MI",
+    "country": "US",
+    "population": 15268,
+    "precision": "city",
+    "raw": "Berkley, Michigan, United States of America"
+   },
+   "url": "https://spectrumhealth.wd5.myworkdayjobs.com/CorewellHealthCareers/job/Berkley-MI/Physician---Regional-Division-Chief--Vascular-Surgery---Royal-Oak_R211718/apply",
+   "datePosted": "2026-05-19",
+   "description": "",
+   "source": {
+    "name": "Corewell Health",
+    "url": "https://careers.corewellhealth.org/us/en",
+    "category": "health-system"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 15,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "leadership scope (chief / director / division head)"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 83,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "corewell::medical assistant i vascular surgery center::farmington hills",
+   "fingerprint": "corewell::medical assistant i vascular surgery center::farmington hills",
+   "title": "Medical Assistant I Vascular Surgery Center",
+   "org": "Corewell Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Farmington Hills, Michigan, United States of America",
+   "geo": {
+    "lat": 42.4853,
+    "lon": -83.3772,
+    "city": "Farmington Hills",
+    "region": "MI",
+    "country": "US",
+    "population": 81330,
+    "precision": "city",
+    "raw": "Farmington Hills, Michigan, United States of America"
+   },
+   "url": "https://spectrumhealth.wd5.myworkdayjobs.com/CorewellHealthCareers/job/Farmington-Hills-MI/Medical-Assistant-I-Cardiology_R222285/apply",
+   "datePosted": "2026-07-29",
+   "description": "",
+   "source": {
+    "name": "Corewell Health",
+    "url": "https://careers.corewellhealth.org/us/en",
+    "category": "health-system"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 12,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "url https careers jamanetwork com job 110708220 vascular medicine physician heart and vascular institute mass general brigham trackid 24 amp utm source rss amp utm medium feed amp utm campaign general::mass general brigham vascular medicine physician heart and vascular institute mass general brigham::boston",
@@ -6984,6 +7181,56 @@
    "isNew": false
   },
   {
+   "id": "sutter::medical assistant ii vascular surgery::sacramento",
+   "fingerprint": "sutter::medical assistant ii vascular surgery::sacramento",
+   "title": "Medical Assistant II, Vascular Surgery",
+   "org": "Sutter Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Sacramento, California, United States of America",
+   "geo": {
+    "lat": 38.5816,
+    "lon": -121.4944,
+    "city": "Sacramento",
+    "region": "CA",
+    "country": "US",
+    "population": 524943,
+    "precision": "city",
+    "raw": "Sacramento, California, United States of America"
+   },
+   "url": "https://wd1.myworkdaysite.com/recruiting/sutterhealth/SH/job/Sacramento/Medical-Assistant-II--Vascular-Surgery_R-137060/apply",
+   "datePosted": "2026-07-31",
+   "description": "",
+   "source": {
+    "name": "Sutter Health",
+    "url": "https://jobs.sutterhealth.org/us/en",
+    "category": "health-system"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 10,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "vascular care physician careers greenhouse::general application vascular surgeon::",
    "fingerprint": "vascular care physician careers greenhouse::general application vascular surgeon::",
    "title": "GENERAL APPLICATION: Vascular Surgeon",
@@ -8008,9 +8255,9 @@
    "isNew": false
   },
   {
-   "id": "vituity radiology physician jobs phenom::physician diagnostic radiology loma linda university medical center murrieta::murrieta",
-   "fingerprint": "vituity radiology physician jobs phenom::physician diagnostic radiology loma linda university medical center murrieta::murrieta",
-   "title": "Physician - Diagnostic Radiology - Loma Linda University Medical Center - Murrieta",
+   "id": "vituity radiology physician jobs phenom::physician breast imaging radiologist loma linda university medical center murrieta::murrieta",
+   "fingerprint": "vituity radiology physician jobs phenom::physician breast imaging radiologist loma linda university medical center murrieta::murrieta",
+   "title": "Physician - Breast Imaging Radiologist - Loma Linda University Medical Center - Murrieta",
    "org": "Vituity — Radiology physician jobs (Phenom)",
    "specialty": "radiology",
    "isInterventional": false,
@@ -8029,7 +8276,7 @@
     "precision": "city",
     "raw": "Murrieta, California"
    },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=260001X2",
+   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=260001X4",
    "datePosted": "2026-06-18",
    "description": "",
    "source": {
@@ -8055,7 +8302,7 @@
    ],
    "ageDays": 53,
    "alsoSeenOn": [],
-   "isNew": false
+   "isNew": true
   },
   {
    "id": "corewell::physician neurointerventional radiologist royal oak::royal oak",
@@ -9411,200 +9658,6 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 18,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
-   "id": "vituity radiology physician jobs phenom::physician diagnostic radiology inter community hospital::covina",
-   "fingerprint": "vituity radiology physician jobs phenom::physician diagnostic radiology inter community hospital::covina",
-   "title": "Physician - Diagnostic Radiology - Inter-Community Hospital",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "Covina, California",
-   "geo": {
-    "lat": 34.09,
-    "lon": -117.8903,
-    "city": "Covina",
-    "region": "CA",
-    "country": "US",
-    "population": 48984,
-    "precision": "city",
-    "raw": "Covina, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=2600017R",
-   "datePosted": "2026-07-21",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 59,
-   "tier": "worth-a-look",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 8,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 20,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
-   "id": "vituity radiology physician jobs phenom::physician diagnostic radiology california hospital medical center::los angeles",
-   "fingerprint": "vituity radiology physician jobs phenom::physician diagnostic radiology california hospital medical center::los angeles",
-   "title": "Physician - Diagnostic Radiology - California Hospital Medical Center",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "Los Angeles, California",
-   "geo": {
-    "lat": 34.0522,
-    "lon": -118.2437,
-    "city": "Los Angeles",
-    "region": "CA",
-    "country": "US",
-    "population": 3820914,
-    "precision": "city",
-    "raw": "Los Angeles, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=2600017T",
-   "datePosted": "2026-07-21",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 59,
-   "tier": "worth-a-look",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 8,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 20,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
-   "id": "vituity radiology physician jobs phenom::physician diagnostic radiology queen of the valley hospital::west covina",
-   "fingerprint": "vituity radiology physician jobs phenom::physician diagnostic radiology queen of the valley hospital::west covina",
-   "title": "Physician - Diagnostic Radiology - Queen of the Valley Hospital",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "West Covina, California",
-   "geo": {
-    "lat": 34.0686,
-    "lon": -117.9389,
-    "city": "West Covina",
-    "region": "CA",
-    "country": "US",
-    "population": 108484,
-    "precision": "city",
-    "raw": "West Covina, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=2600017Q",
-   "datePosted": "2026-07-21",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 59,
-   "tier": "worth-a-look",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 8,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 20,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
-   "id": "vituity radiology physician jobs phenom::physician teleradiology remote nationwide::sacramento",
-   "fingerprint": "vituity radiology physician jobs phenom::physician teleradiology remote nationwide::sacramento",
-   "title": "Physician - Teleradiology - Remote - Nationwide",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "remote",
-   "locationText": "Sacramento, California",
-   "geo": {
-    "lat": 38.5816,
-    "lon": -121.4944,
-    "city": "Sacramento",
-    "region": "CA",
-    "country": "US",
-    "population": 524943,
-    "precision": "city",
-    "raw": "Sacramento, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=25000359",
-   "datePosted": "2026-07-06",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 59,
-   "tier": "worth-a-look",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 8,
-    "signal": 1
-   },
-   "reasons": [
-    "remote / teleradiology"
-   ],
-   "concerns": [
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 35,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -11824,6 +11877,54 @@
    "isNew": false
   },
   {
+   "id": "corewell::physician cardiothoracic vascular anesthesiologist west michigan::grand rapids",
+   "fingerprint": "corewell::physician cardiothoracic vascular anesthesiologist west michigan::grand rapids",
+   "title": "Physician – Cardiothoracic & Vascular Anesthesiologist – West Michigan",
+   "org": "Corewell Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Grand Rapids, Michigan, United States of America",
+   "geo": {
+    "lat": 42.9634,
+    "lon": -85.6681,
+    "city": "Grand Rapids",
+    "region": "MI",
+    "country": "US",
+    "population": 195097,
+    "precision": "city",
+    "raw": "Grand Rapids, Michigan, United States of America"
+   },
+   "url": "https://spectrumhealth.wd5.myworkdayjobs.com/CorewellHealthCareers/job/Grand-Rapids-MI/Physician---Cardiac-Anesthesiology---West-Michigan_R168596/apply",
+   "datePosted": "2026-05-19",
+   "description": "",
+   "source": {
+    "name": "Corewell Health",
+    "url": "https://careers.corewellhealth.org/us/en",
+    "category": "health-system"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 83,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "geisinger::geisinger neuroradiology 150k starting bonus 7 on 14 off overnight schedule 100 remote::danville",
    "fingerprint": "geisinger::geisinger neuroradiology 150k starting bonus 7 on 14 off overnight schedule 100 remote::danville",
    "title": "Geisinger Neuroradiology | $150K Starting Bonus | 7-on / 14-off Overnight Schedule | 100% Remote",
@@ -13899,150 +14000,6 @@
    "isNew": false
   },
   {
-   "id": "vituity radiology physician jobs phenom::physician diagnostic radiology foothill presbyterian hospital::glendora",
-   "fingerprint": "vituity radiology physician jobs phenom::physician diagnostic radiology foothill presbyterian hospital::glendora",
-   "title": "Physician - Diagnostic Radiology - Foothill Presbyterian Hospital",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "Glendora, California",
-   "geo": {
-    "lat": 34.1361,
-    "lon": -117.8653,
-    "city": "Glendora",
-    "region": "CA",
-    "country": "US",
-    "population": 52009,
-    "precision": "city",
-    "raw": "Glendora, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=2600017S",
-   "datePosted": "2026-06-22",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 56,
-   "tier": "worth-a-look",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 5,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 49,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
-   "id": "vituity radiology physician jobs phenom::physician diagnostic radiology memorialcare long beach medical center::long beach",
-   "fingerprint": "vituity radiology physician jobs phenom::physician diagnostic radiology memorialcare long beach medical center::long beach",
-   "title": "Physician - Diagnostic Radiology - MemorialCare Long Beach Medical Center",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "Long Beach, California",
-   "geo": {
-    "lat": 33.767,
-    "lon": -118.1892,
-    "city": "Long Beach",
-    "region": "CA",
-    "country": "US",
-    "population": 474140,
-    "precision": "city",
-    "raw": "Long Beach, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=2600015T",
-   "datePosted": "2026-05-27",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 56,
-   "tier": "worth-a-look",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 5,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 75,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
-   "id": "vituity radiology physician jobs phenom::physician diagnostic radiology miller children s women s hospital::long beach",
-   "fingerprint": "vituity radiology physician jobs phenom::physician diagnostic radiology miller children s women s hospital::long beach",
-   "title": "Physician - Diagnostic Radiology - Miller Children's & Women's Hospital",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "Long Beach, California",
-   "geo": {
-    "lat": 33.767,
-    "lon": -118.1892,
-    "city": "Long Beach",
-    "region": "CA",
-    "country": "US",
-    "population": 474140,
-    "precision": "city",
-    "raw": "Long Beach, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=2600015Z",
-   "datePosted": "2026-05-27",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 56,
-   "tier": "worth-a-look",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 5,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 75,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
    "id": "vituity radiology physician jobs phenom::physician pediatric radiologist memorialcare long beach medical center::long beach",
    "fingerprint": "vituity radiology physician jobs phenom::physician pediatric radiologist memorialcare long beach medical center::long beach",
    "title": "Physician - Pediatric Radiologist - MemorialCare Long Beach Medical Center",
@@ -14137,6 +14094,54 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 53,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "vituity radiology physician jobs phenom::physician diagnostic radiology miller children s women s hospital::long beach",
+   "fingerprint": "vituity radiology physician jobs phenom::physician diagnostic radiology miller children s women s hospital::long beach",
+   "title": "Physician - Diagnostic Radiology - Miller Children's & Women's Hospital",
+   "org": "Vituity — Radiology physician jobs (Phenom)",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Long Beach, California",
+   "geo": {
+    "lat": 33.767,
+    "lon": -118.1892,
+    "city": "Long Beach",
+    "region": "CA",
+    "country": "US",
+    "population": 474140,
+    "precision": "city",
+    "raw": "Long Beach, California"
+   },
+   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=2600015Z",
+   "datePosted": "2026-05-27",
+   "description": "",
+   "source": {
+    "name": "Vituity — Radiology physician jobs (Phenom)",
+    "url": "https://careers.vituity.com/search-results?keyword=radiology",
+    "category": "health-system"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 75,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -15208,6 +15213,56 @@
    "isNew": false
   },
   {
+   "id": "ascension::vascular surgeon::",
+   "fingerprint": "ascension::vascular surgeon::",
+   "title": "Vascular Surgeon",
+   "org": "Ascension",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Tulsa, Oklahoma, 74104",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Tulsa, Oklahoma, 74104"
+   },
+   "url": "https://providerjobs-ascension.icims.com/jobs/434736/vascular-surgeon/login",
+   "datePosted": "2026-07-30",
+   "description": "",
+   "source": {
+    "name": "Ascension",
+    "url": "https://jobs.ascension.org/us/en",
+    "category": "health-system"
+   },
+   "score": 54,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 4,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 11,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "diversified radiology lumexa imaging partner practice lever::remote overnight pediatric radiologist 7 on 14 off 75k sign on::",
    "fingerprint": "diversified radiology lumexa imaging partner practice lever::remote overnight pediatric radiologist 7 on 14 off 75k sign on::",
    "title": "Remote Overnight Pediatric Radiologist | 7 On/14 Off | $75K Sign-On",
@@ -15255,57 +15310,6 @@
    "ageDays": 32,
    "alsoSeenOn": [],
    "isNew": false
-  },
-  {
-   "id": "url https www doccafe com job physician radiology 20256620 work from anywhere msk radiologist high volume remote reads west virginia license required::work from anywhere msk radiologist high volume remote reads west virginia license required::",
-   "fingerprint": "url https www doccafe com job physician radiology 20256620 work from anywhere msk radiologist high volume remote reads west virginia license required::work from anywhere msk radiologist high volume remote reads west virginia license required::",
-   "title": "💻 Work From Anywhere MSK Radiologist 🦴🔥 | High-Volume Remote Reads | West Virginia License Required",
-   "org": "",
-   "specialty": "radiology",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "remote",
-   "locationText": "",
-   "geo": {
-    "lat": null,
-    "lon": null,
-    "city": null,
-    "region": null,
-    "country": null,
-    "precision": "remote",
-    "raw": ""
-   },
-   "url": "https://www.doccafe.com/job/physician/radiology/20256620/work-from-anywhere-msk-radiologist-high-volume-remote-reads-west-virginia-license-required",
-   "datePosted": "2026-08-10",
-   "description": "Exciting Remote Tele-Radiology opportunity for an MSK-focused Radiologist licensed in West Virginia. This position offers weekday coverage with a steady, high-volume caseload in a fully remote setting.\nIdeal candidates will have MSK fellowship train…",
-   "source": {
-    "name": "DocCafe",
-    "url": "https://www.doccafe.com/",
-    "category": "aggregator"
-   },
-   "score": 54,
-   "tier": "stretch",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 4,
-    "recency": 10,
-    "signal": 1
-   },
-   "reasons": [
-    "remote / teleradiology",
-    "posted within two weeks"
-   ],
-   "concerns": [
-    "location is vague — resolved only to a state or country",
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 0,
-   "alsoSeenOn": [],
-   "isNew": true
   },
   {
    "id": "url http www radworking com radiology jobs 605169 html::1099 ed teleradiology evening 5pm 11pm pst 65 per wrvu managed by radia ps::",
@@ -16935,6 +16939,105 @@
    "isNew": false
   },
   {
+   "id": "trinity::medical assistant vascular surgery::",
+   "fingerprint": "trinity::medical assistant vascular surgery::",
+   "title": "Medical Assistant - Vascular Surgery",
+   "org": "Trinity Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Springfield, Massachusetts, 01104",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Springfield, Massachusetts, 01104"
+   },
+   "url": "https://trinityhealth.wd1.myworkdayjobs.com/Jobs/job/Mercy-Medical-Center---Springfield-MA/Medical-Assistant---Vascular-Surgery_00685044/apply",
+   "datePosted": "2026-08-03",
+   "description": "",
+   "source": {
+    "name": "Trinity Health",
+    "url": "https://jobs.trinity-health.org/",
+    "category": "health-system"
+   },
+   "score": 54,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 4,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 7,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "baylor scott white::vascular surgery physician::fort worth",
+   "fingerprint": "baylor scott white::vascular surgery physician::fort worth",
+   "title": "Vascular Surgery Physician",
+   "org": "Baylor Scott & White Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Fort Worth, Texas, United States",
+   "geo": {
+    "lat": 32.7254,
+    "lon": -97.3208,
+    "city": "Fort Worth",
+    "region": "TX",
+    "country": "US",
+    "population": 1008106,
+    "precision": "city",
+    "raw": "Fort Worth, Texas, United States"
+   },
+   "url": "https://bswhealth.taleo.net/careersection/expa/jobapply.ftl?job=25021817&lang=en&csNo=10060&portal=8100025590",
+   "datePosted": "2025-12-18",
+   "description": "",
+   "source": {
+    "name": "Baylor Scott & White Health",
+    "url": "https://jobs.bswhealth.com/us/en",
+    "category": "health-system"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 235 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 235,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "intermountain::vascular surgeon prn::lafayette",
    "fingerprint": "intermountain::vascular surgeon prn::lafayette",
    "title": "Vascular Surgeon PRN",
@@ -18346,7 +18449,7 @@
    ],
    "ageDays": 55,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "url http www radworking com radiology jobs 605493 html::full time remote radiologist balanced 7 on 7 off evenings 100k incentive potential::",
@@ -18790,7 +18893,7 @@
    ],
    "ageDays": 614,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "ochsner::physician body imaging radiologist::",
@@ -21075,6 +21178,54 @@
    "ageDays": 566,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "trinity::vascular surgeon des moines 150 000 recruitment incentive::",
+   "fingerprint": "trinity::vascular surgeon des moines 150 000 recruitment incentive::",
+   "title": "Vascular Surgeon - Des Moines - $150,000 Recruitment Incentive",
+   "org": "Trinity Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "WEST DES MOINES, Iowa, 50266",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "WEST DES MOINES, Iowa, 50266"
+   },
+   "url": "https://trinityhealth.wd1.myworkdayjobs.com/Jobs/job/MMCIA---MercyOne-IHC-West-University--Central-IA/Vascular-Surgeon---Des-Moines----150-000-Recruitment-Incentive_00680668/apply",
+   "datePosted": "2026-07-14",
+   "description": "",
+   "source": {
+    "name": "Trinity Health",
+    "url": "https://jobs.trinity-health.org/",
+    "category": "health-system"
+   },
+   "score": 51,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 4,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 27,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "geisinger::interventional radiologist 100 ir no call 7 on 7 off 140k starting bonus::lewistown",
@@ -24272,7 +24423,7 @@
    ],
    "ageDays": 109,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "url https careers jamanetwork com job 110709208 vascular surgeon needed for locum tenens coverage at inpatient facility in virginia trackid 24 amp utm source rss amp utm medium feed amp utm campaign general::locumtenens com vascular surgeon needed for locum tenens coverage at inpatient facility in virginia::",
@@ -25087,6 +25238,102 @@
    "isNew": false
   },
   {
+   "id": "trinity::vascular surgery::",
+   "fingerprint": "trinity::vascular surgery::",
+   "title": "Vascular Surgery",
+   "org": "Trinity Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Ft. Lauderdale, Florida, 33308",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Ft. Lauderdale, Florida, 33308"
+   },
+   "url": "https://trinityhealth.wd1.myworkdayjobs.com/Jobs/job/Holy-Cross-Hospital---Ft-Lauderdale-Florida/Vascular-Surgery_00664875-1/apply",
+   "datePosted": "2026-05-12",
+   "description": "",
+   "source": {
+    "name": "Trinity Health",
+    "url": "https://jobs.trinity-health.org/",
+    "category": "health-system"
+   },
+   "score": 48,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 90,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "trinity::vascular surgery md do top tier vascular surgery opportunity in affordable family friendly iowa::",
+   "fingerprint": "trinity::vascular surgery md do top tier vascular surgery opportunity in affordable family friendly iowa::",
+   "title": "Vascular Surgery - MD/DO - Top-Tier Vascular Surgery Opportunity in Affordable, Family-Friendly Iowa",
+   "org": "Trinity Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Davenport, Iowa, 52803",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Davenport, Iowa, 52803"
+   },
+   "url": "https://trinityhealth.wd1.myworkdayjobs.com/Jobs/job/MOQ---GHG-Davenport/Vascular-Surgery---MD-DO---Top-Tier-Vascular-Surgery-Opportunity-in-Affordable--Family-Friendly-Iowa_00672700/apply",
+   "datePosted": "2026-06-08",
+   "description": "",
+   "source": {
+    "name": "Trinity Health",
+    "url": "https://jobs.trinity-health.org/",
+    "category": "health-system"
+   },
+   "score": 48,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 63,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "url http www radworking com radiology jobs 605106 html::500 hr 100 breast imaging locum tenens::",
    "fingerprint": "url http www radworking com radiology jobs 605106 html::500 hr 100 breast imaging locum tenens::",
    "title": "$500/hr - 100% Breast Imaging Locum Tenens",
@@ -25727,7 +25974,7 @@
    ],
    "ageDays": 89,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "simonmed imaging lever::remote body radiologist::",
@@ -25830,55 +26077,6 @@
    "isNew": false
   },
   {
-   "id": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
-   "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
-   "title": "Physician - Interventional Radiology - Inter-Community Hospital",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": true,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "Covina, California",
-   "geo": {
-    "lat": 34.09,
-    "lon": -117.8903,
-    "city": "Covina",
-    "region": "CA",
-    "country": "US",
-    "population": 48984,
-    "precision": "city",
-    "raw": "Covina, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=260000M1",
-   "datePosted": "2026-06-01",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 46,
-   "tier": "stretch",
-   "subscores": {
-    "specialtyFit": 9,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 5,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "interventional-only — outside a diagnostic/general practice",
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 70,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
    "id": "vituity radiology physician jobs phenom::physician interventional radiology queen of the valley hospital::west covina",
    "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology queen of the valley hospital::west covina",
    "title": "Physician - Interventional Radiology - Queen of the Valley Hospital",
@@ -25924,6 +26122,55 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 47,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
+   "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
+   "title": "Physician - Interventional Radiology - Inter-Community Hospital",
+   "org": "Vituity — Radiology physician jobs (Phenom)",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Covina, California",
+   "geo": {
+    "lat": 34.09,
+    "lon": -117.8903,
+    "city": "Covina",
+    "region": "CA",
+    "country": "US",
+    "population": 48984,
+    "precision": "city",
+    "raw": "Covina, California"
+   },
+   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=260000M1",
+   "datePosted": "2026-06-01",
+   "description": "",
+   "source": {
+    "name": "Vituity — Radiology physician jobs (Phenom)",
+    "url": "https://careers.vituity.com/search-results?keyword=radiology",
+    "category": "health-system"
+   },
+   "score": 46,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 70,
    "alsoSeenOn": [],
    "isNew": false
   },

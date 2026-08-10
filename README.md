@@ -18,6 +18,12 @@ front page here.
   specialty, scored on how good both sides are, how far apart they sit, and
   whether one employer is hiring for both. A slider redraws the map live from 15
   to 120 miles.
+- **Remote-unlocked areas.** Diagnostic radiology reads from anywhere; vascular
+  surgery does not. One remote post on her side makes *every* surgical opening
+  workable, which is a far larger opportunity space than physical co-location
+  will ever produce. These get their own band — never counted as both-on-site,
+  because "you can both work here" and "he works here, she reads from home" are
+  different claims.
 - **Half an opportunity.** Areas where only one of them has a post. Not mixed in
   with the real matches — these are phone calls, not places to move to.
 - **Two specialty tabs**, filterable by country, setting, work model, fit score
@@ -66,7 +72,7 @@ overstating what it knows.
 - Depth counts. A second opening on each side is a fallback if one offer
   evaporates, and real leverage in a negotiation.
 
-Geocoding is fully offline, from a GeoNames-derived gazetteer of ~7,900 US and
+Geocoding is fully offline, from a GeoNames-derived gazetteer of ~17,300 US and
 Gulf places committed to `geo/`. No geocoding API means no key, no rate limit,
 and byte-identical results in CI and on a laptop. Arabic transliteration is
 handled by canonicalising both the index and the query, so "Al Khobar", "Khobar"
@@ -81,33 +87,45 @@ npm run dev
 
 ### Deploying
 
-1. Push to GitHub, then **Settings → Pages → Source: GitHub Actions**.
-2. Run the **Weekly harvest** workflow once by hand to populate the board.
+Deployed on Vercel, which builds from the repository. The weekly harvest commits
+new data and Vercel redeploys on the push, so the board refreshes with no manual
+step.
 
-`VITE_BASE` is set automatically from the repository name. For a custom domain,
-set it to `/`.
+Run the **Weekly harvest** workflow once by hand to populate a fresh deployment.
 
-### Sharing pins between two people
+### Shared pins
 
-Without this, pins live in each browser separately and the board still works.
+Pins, statuses and notes are shared through `/api/marks`, a serverless function
+that holds the database credential in its own environment. **The browser ships
+with no key of any kind.** The store is a dedicated `tandem_marks` table whose
+grants exclude `anon` and `authenticated` entirely, so the endpoint cannot reach
+any other table even in principle.
 
-1. Create a free Supabase project.
-2. Run `supabase/schema.sql` in the SQL editor.
-3. Run `select gen_random_uuid();` and keep the result — it is what protects the
-   board.
-4. Put the project URL, the **anon** key, and that UUID into
-   `public/config.json`.
+Three environment variables on the host:
 
-Read the security note at the top of `supabase/schema.sql` first. There is no
-login: the board id is the secret, the anon key is public by design, and the
-policies allow no deletes and no enumeration. That is a deliberate trade for a
-two-person board, and it is the wrong trade for anything larger.
+| Variable | Purpose |
+| --- | --- |
+| `SUPABASE_URL` | Project URL (server-side only) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Store credential (server-side only) |
+| `VITE_BOARD_ID` | Unguessable board id, injected at build time |
+
+`VITE_BOARD_ID` is deliberately **not** committed — a board id in a public
+repository is not a capability, it is a published one.
+
+**What actually protects the board.** There is no login, so the board id does
+reach the browser in the built bundle. That is unavoidable for a keyless
+client-side app, and it means the real boundary is *who has the site URL*. For
+two people sharing a link to a list of public job postings that is a sound
+trade. It would be the wrong trade for anything sensitive, and adding real auth
+means putting a login in front of `/api/marks` and scoping rows by user.
+
+Without a board id the app falls back to per-browser `localStorage`, so it is
+fully usable with no backend at all.
 
 ### Making it theirs
 
 `public/config.json` also carries the board title, tagline, and the two partner
-labels. Names are blank by default so nothing personal is committed to a public
-repository — fill them in if you would rather the board greeted them by name.
+labels. Set to initials rather than full names, since the repository is public.
 
 ## Layout
 
@@ -126,7 +144,7 @@ scout/          the weekly harvester
 geo/            committed gazetteer
 src/            the board (React + Vite)
 public/data/    what the harvester writes; what the board reads
-supabase/       schema for shared pins
+api/            the shared-pins endpoint (credential stays server-side)
 ```
 
 ## Testing

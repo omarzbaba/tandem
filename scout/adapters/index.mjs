@@ -68,6 +68,32 @@ function findJobArray(node, depth = 0) {
   return null;
 }
 
+/**
+ * Search terms swept on every keyword-driven feed.
+ *
+ * The registry was assembled per-source by researchers, and several endpoints
+ * arrived with "radiologist" hard-coded into their query. Honouring that
+ * verbatim silently under-searched the surgical half of the board — 62 vascular
+ * posts against 500 radiology ones — which for a two-body search is the failure
+ * that matters most: it hands one partner a worse board than the other. Both
+ * specialties are therefore always swept, whatever a single entry happens to say.
+ */
+const SPECIALTY_TERMS = ["radiologist", "vascular surgeon"];
+
+/** Rewrite a recorded POST body once per specialty term. */
+function bodiesForEachSpecialty(rawBody) {
+  if (!rawBody) return [null];
+  let parsed;
+  try {
+    parsed = JSON.parse(rawBody);
+  } catch {
+    return [rawBody];
+  }
+  const field = ["keywords", "searchText", "q", "query", "keyword"].find((k) => k in parsed);
+  if (!field) return [rawBody];
+  return SPECIALTY_TERMS.map((term) => JSON.stringify({ ...parsed, [field]: term }));
+}
+
 const pickField = (obj, keys) => {
   for (const k of keys) {
     const v = obj?.[k];
@@ -188,22 +214,35 @@ async function json(src) {
   const { method, url, body } = parseEndpoint(src.machineReadable.endpoint);
   if (!url) return fail("no endpoint");
 
-  const res = await request(url, {
-    method,
-    headers: { "content-type": "application/json", accept: "application/json" },
-    body: method === "POST" ? (body ?? "{}") : null,
-  });
-  if (!res.ok) return fail(res.error);
+  // A keyword-driven endpoint is swept once per specialty; anything else runs
+  // a single time.
+  const bodies = method === "POST" ? bodiesForEachSpecialty(body ?? "{}") : [null];
+  const rows = [];
+  let lastError = null;
 
-  let payload;
-  try {
-    payload = JSON.parse(res.body);
-  } catch {
-    return fail("invalid JSON");
+  for (const b of bodies) {
+    const res = await request(url, {
+      method,
+      headers: { "content-type": "application/json", accept: "application/json" },
+      body: method === "POST" ? (b ?? "{}") : null,
+    });
+    if (!res.ok) {
+      lastError = res.error;
+      continue;
+    }
+    let payload;
+    try {
+      payload = JSON.parse(res.body);
+    } catch {
+      lastError = "invalid JSON";
+      continue;
+    }
+    const found = findJobArray(payload);
+    if (found) rows.push(...found);
+    else lastError = "no job array found in payload";
   }
 
-  const rows = findJobArray(payload);
-  if (!rows) return fail("no job array found in payload");
+  if (!rows.length) return fail(lastError ?? "no rows returned");
 
   const origin = (() => {
     try {
@@ -245,7 +284,7 @@ async function json(src) {
 async function workday(src) {
   const { url: endpoint } = parseEndpoint(src.machineReadable.endpoint);
   if (!endpoint) return fail("no endpoint");
-  const terms = src.query ? src.query.split("|") : ["radiologist", "vascular surgeon", "physician"];
+  const terms = SPECIALTY_TERMS;
   const seen = new Map();
   let anyOk = false;
   let lastError = null;
