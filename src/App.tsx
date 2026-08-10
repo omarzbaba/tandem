@@ -306,6 +306,10 @@ export default function App() {
           Distances are straight-line with a road-circuity estimate, not routed drive times. Place
           data from GeoNames (CC BY 4.0).
         </p>
+        <p className="board__dedication">
+          Created for Dr. Rashad W. Wehbe &amp; Dr. Samia K. Al Sayyid Wehbe ·
+          © 2026 Omar Z. Baba, MD. All rights reserved.
+        </p>
       </footer>
 
       {openRole && (

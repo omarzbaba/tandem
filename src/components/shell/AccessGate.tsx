@@ -101,6 +101,11 @@ export function AccessGate({ partnerAName, partnerBName, onEntered }: Props) {
         <p className="gate__note">
           You only do this once on each device — the board remembers you after that.
         </p>
+
+        <p className="gate__dedication">
+          Made for Dr. Rashad W. Wehbe &amp; Dr. Samia K. Al Sayyid Wehbe
+          <span className="gate__copyright">© 2026 Omar Z. Baba, MD</span>
+        </p>
       </form>
     </main>
   );

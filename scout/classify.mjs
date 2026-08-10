@@ -17,9 +17,23 @@ const VASCULAR_STRONG = [
   /\bvascular surgery\b/i,
   /\bendovascular\b/i,
   /\bvascular (?:and |& )?endovascular\b/i,
-  /\bcardiothoracic (?:and |& )?vascular\b/i,
-  /\bvascular (?:medicine|specialist)\b/i,
+  // Must reach a surgery word: "Cardiothoracic & Vascular Anesthesiologist"
+  // is an anesthesia post, not a surgical one.
+  /\bcardiothoracic (?:and |& )?vascular surg/i,
+  // Deliberately absent: "vascular medicine" and "vascular specialist" — that
+  // is a cardiology / internal-medicine specialty. A fellowship-trained
+  // vascular SURGEON cannot take those posts, and showing them as strong
+  // matches quietly pads his side of the board with jobs he cannot have.
 ];
+
+/**
+ * Physician titles that name a DIFFERENT specialty. A posting whose title says
+ * what it is ("Orthopedic Spine Surgeon", "Vascular Medicine - Cardiology",
+ * "…Anesthesiologist") must never acquire our specialty from a stray keyword
+ * in its body text.
+ */
+const OTHER_SPECIALTY_RE =
+  /\b(anesthesiolog|orthopa?edic|neurosurg|podiatr|urolog|plastic surg|cardiolog|vascular medicine|radiation oncolog|dermatolog|ophthalmolog|otolaryngolog|psychiatr|hospitalist|pediatric(?!\s+(?:vascular|radiolog))|obstetric|gynecolog|family (?:medicine|physician)|internal medicine|emergency medicine physician)\b/i;
 
 const RADIOLOGY_STRONG = [
   /\bdiagnostic radiolog(?:y|ist)\b/i,
@@ -46,6 +60,11 @@ const IR_RE = /\binterventional radiolog(?:y|ist)\b|\bIR\/DR\b|\bvascular (?:and
 const NON_ATTENDING = [
   /\b(resident|residency|fellow(?:ship)?|intern|medical student|observer|elective)\b/i,
   /\b(nurse|nursing|\bRN\b|\bLPN\b|\bNP\b|nurse practitioner|physician assistant|\bPA-C\b)\b/i,
+  // "Medical Assistant II, Vascular Surgery" is an MA in a vascular clinic —
+  // the department name must not make it a surgeon. "Clinical Assistant
+  // Professor" stays: the rank word follows immediately.
+  /\b(?:medical|technical|surgical|nursing|patient care|physician office|clinic) assistant\b(?!\s*\/?\s*(?:professor|prof\b))/i,
+  /\b(?:practice|office|imaging|radiology|clinic|department|operations|business) (?:manager|supervisor)\b/i,
   /\b(technologist|technician|\btech\b|sonographer|ultrasonographer|radiographer|\bRT\b\(?R?\)?)\b/i,
   /\b(scheduler|coordinator|registrar|receptionist|clerk|transcription|biller|coder|coding)\b/i,
   /\b(assistant professor of nursing|research assistant|research coordinator|study coordinator)\b/i,
@@ -121,7 +140,10 @@ export function classify(posting) {
   if (!isAttending) reasons.push("title is not an attending-level physician role");
 
   let specialty = null;
-  if (anyMatch(VASCULAR_STRONG, titleish)) {
+  const titleNamesOtherSpecialty = OTHER_SPECIALTY_RE.test(titleish);
+  if (titleNamesOtherSpecialty && !/\bvascular surg|radiolog/i.test(titleish)) {
+    // e.g. "Cardiothoracic & Vascular Anesthesiologist" — leave unassigned.
+  } else if (anyMatch(VASCULAR_STRONG, titleish)) {
     specialty = "vascular";
     reasons.push("vascular surgery term in title");
   } else if (anyMatch(RADIOLOGY_STRONG, titleish)) {
@@ -130,7 +152,13 @@ export function classify(posting) {
   } else if (IR_RE.test(titleish)) {
     specialty = "radiology";
     reasons.push("interventional radiology term in title");
-  } else if (isAttending && /\b(physician|surgeon|md\b|do\b|consultant)\b/i.test(titleish)) {
+  } else if (
+    isAttending &&
+    /\b(physician|surgeon|md\b|do\b|consultant)\b/i.test(titleish) &&
+    // A title that names a different specialty is already answered — an
+    // orthopedic surgeon whose ad mentions "vascular" stays orthopedic.
+    !OTHER_SPECIALTY_RE.test(titleish)
+  ) {
     // Generic physician titles ("Consultant — Department of Radiology") only
     // earn a specialty from the body, and only when the body is unambiguous.
     const vascHit = anyMatch(VASCULAR_STRONG, full);

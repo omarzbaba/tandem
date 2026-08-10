@@ -53,6 +53,70 @@ describe("classify — rejecting non-attending posts", () => {
   });
 });
 
+describe("classify — real misclassifications caught on the live board", () => {
+  // Every title here appeared on the production board on 2026-08-10. Each is a
+  // job Rashad or Samia cannot take, so each was diluting the board's claim.
+
+  test.each([
+    "Medical Assistant II, Vascular Surgery",
+    "Medical Assistant II Vascular Surgery",
+    "Medical Assistant I Vascular Surgery Center",
+    "Medical Assistant - Vascular Surgery",
+    "Per Diem Technical Assistant - Diagnostic Radiology (X-Ray)",
+  ])("an assistant in a specialty clinic is not a physician: %s", (title) => {
+    expect(isRelevant(at(title))).toBe(false);
+  });
+
+  test.each([
+    "UVA Vascular Medicine Physician",
+    "Vascular Medicine - Cardiology",
+    "Vascular Medicine Physician - Heart and Vascular Institute",
+  ])("vascular medicine is cardiology, not surgery: %s", (title) => {
+    // A fellowship-trained vascular surgeon cannot take these posts.
+    expect(at(title).specialty).toBeNull();
+  });
+
+  test("a cardiothoracic-and-vascular ANESTHESIOLOGIST is not a surgeon", () => {
+    expect(at("Physician – Cardiothoracic & Vascular Anesthesiologist – West Michigan").specialty).toBeNull();
+  });
+
+  test("an orthopedic title never becomes vascular via its body text", () => {
+    const c = classify({
+      title: "Orthopedic Spine Surgeon/Neurosurgeon needed in Salisbury, NC!",
+      description:
+        "Work alongside our vascular surgery and endovascular colleagues in a busy surgical service line.",
+      org: "Example Health",
+    });
+    expect(c.specialty).toBeNull();
+  });
+
+  test("cardiothoracic AND VASCULAR SURGERY still counts", () => {
+    expect(at("Cardiothoracic and Vascular Surgeon").specialty).toBe("vascular");
+  });
+
+  test("a faculty rank is not an assistant job", () => {
+    // "Clinical Assistant Professor" is a rank; the surgeon post must survive.
+    const c = at("Vascular Surgeon & Clinical Assistant/Associate Professor/Full Professor");
+    expect(c.specialty).toBe("vascular");
+    expect(isRelevant(c)).toBe(true);
+  });
+
+  test("a vascular-surgery title survives a cardiology department name", () => {
+    expect(
+      at("Vascular Surgery (MD/DO) - UNC Health Southeastern Cardiology and Cardiovascular Care").specialty
+    ).toBe("vascular");
+  });
+
+  test("pediatric radiology is still radiology", () => {
+    expect(at("Pediatric Interventional Radiologist").specialty).toBe("radiology");
+    expect(at("Consultant Pediatric Vascular Surgery (SKMC)").specialty).toBe("vascular");
+  });
+
+  test("an imaging manager is administration, not a radiologist", () => {
+    expect(isRelevant(at("Imaging Manager, Diagnostic Radiology"))).toBe(false);
+  });
+});
+
 describe("classify — generic titles fall back to the body", () => {
   test("an unambiguous body assigns the specialty", () => {
     const c = classify({

@@ -128,3 +128,22 @@
   font-size: var(--text-micro);
   color: var(--ink-faint);
 }
+
+.gate__dedication {
+  margin-block-start: var(--space-4);
+  padding-block-start: var(--space-3);
+  border-block-start: 1px solid var(--rule);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.gate__copyright {
+  display: block;
+  margin-block-start: var(--space-1);
+  font-family: var(--font-ui);
+  font-style: normal;
+  font-size: var(--text-micro);
+  color: var(--ink-faint);
+}

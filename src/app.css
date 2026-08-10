@@ -197,3 +197,11 @@
     align-items: flex-start;
   }
 }
+
+.board__dedication {
+  margin-block-start: var(--space-3);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}

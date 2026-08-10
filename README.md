@@ -1,5 +1,9 @@
 # Tandem
 
+> Created for Dr. Rashad W. Wehbe (vascular surgery) and
+> Dr. Samia K. Al Sayyid Wehbe (diagnostic radiology).
+> © 2026 Omar Z. Baba, MD. Code under the MIT License.
+
 A weekly job board for a two-physician couple. It sweeps vascular surgery and
 diagnostic radiology posts across the United States and the Gulf, then leads
 with the thing a couple actually needs and no ordinary job board will tell them:
@@ -125,7 +129,7 @@ the app runs with no backend at all.
 ### Making it theirs
 
 `public/config.json` also carries the board title, tagline, and the two partner
-labels. Set to initials rather than full names, since the repository is public.
+labels. Partner names and the dedication live in `public/config.json` and the footer.
 
 ## Layout
 
