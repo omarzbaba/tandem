@@ -1,0 +1,52 @@
+{
+ "today": "2026-08-10",
+ "ranAt": "2026-08-10T23:42:30.519Z",
+ "siteUrl": "https://tandem-rs.vercel.app",
+ "counts": {
+  "totalRoles": 620,
+  "newThisRun": 0,
+  "newVascular": 0,
+  "newRadiology": 0,
+  "togetherMetros": 16,
+  "failedSources": 6
+ },
+ "newVascular": [],
+ "newRadiology": [],
+ "topTogether": [
+  {
+   "label": "Detroit, MI",
+   "score": 70,
+   "vascularCount": 1,
+   "radiologyCount": 5,
+   "sameOrg": true
+  },
+  {
+   "label": "Austin, TX",
+   "score": 70,
+   "vascularCount": 2,
+   "radiologyCount": 3,
+   "sameOrg": true
+  },
+  {
+   "label": "College Station, TX",
+   "score": 68,
+   "vascularCount": 1,
+   "radiologyCount": 1,
+   "sameOrg": true
+  },
+  {
+   "label": "Abu Dhabi, UAE",
+   "score": 64,
+   "vascularCount": 1,
+   "radiologyCount": 1,
+   "sameOrg": true
+  },
+  {
+   "label": "Jacksonville, FL",
+   "score": 63,
+   "vascularCount": 2,
+   "radiologyCount": 7,
+   "sameOrg": false
+  }
+ ]
+}

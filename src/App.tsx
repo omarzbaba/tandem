@@ -77,6 +77,18 @@ export default function App() {
     [data.roles]
   );
 
+  // The weekly email links straight to a posting: #role=<id> opens its drawer
+  // as soon as the data arrives (and after the gate, on a first visit).
+  useEffect(() => {
+    if (status !== "ready" || !accessCode) return;
+    const m = window.location.hash.match(/^#role=(.+)$/);
+    if (!m) return;
+    const id = decodeURIComponent(m[1] ?? "");
+    if (rolesById.has(id)) setOpenRoleId(id);
+    // Consume the hash so closing the drawer doesn't reopen it on reload.
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }, [status, accessCode, rolesById]);
+
   const filtered = useMemo(() => applyFilters(data.roles, filters), [data.roles, filters]);
   const openRole = openRoleId ? rolesById.get(openRoleId) ?? null : null;
 

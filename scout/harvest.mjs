@@ -20,6 +20,7 @@ import { harvestSource } from "./adapters/index.mjs";
 import { normalizeAll } from "./normalize.mjs";
 import { buildPairs, buildMetros, DEFAULT_RADIUS_MILES } from "./pair.mjs";
 import { mapLimit } from "./http.mjs";
+import { buildDigest } from "./digest.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const CONCURRENCY = 6;
@@ -149,7 +150,14 @@ async function main() {
     ).map((s) => ({ name: s.name, url: s.url, query: s.query ?? null })),
   };
 
+  const digest = buildDigest(roles, metros, run, {
+    siteUrl: process.env.SITE_URL || "https://tandem-rs.vercel.app",
+    today,
+  });
+
   mkdirSync(outDir, { recursive: true });
+  writeFileSync(resolve(outDir, "digest.json"), JSON.stringify(digest.json, null, 1));
+  writeFileSync(resolve(outDir, "digest.html"), digest.html);
   writeFileSync(resolve(outDir, "roles.json"), JSON.stringify({ today, roles }, null, 1));
   writeFileSync(resolve(outDir, "metros.json"), JSON.stringify({ today, radiusMiles: args.radius, metros, pairs }, null, 1));
   writeFileSync(resolve(outDir, "run.json"), JSON.stringify(run, null, 2));

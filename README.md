@@ -84,6 +84,23 @@ and byte-identical results in CI and on a laptop. Arabic transliteration is
 handled by canonicalising both the index and the query, so "Al Khobar", "Khobar"
 and "Al-Khobar" all land on the same city.
 
+## Weekly digest email
+
+Every harvest writes `public/data/digest.{json,html}` — the week's new posts,
+each linking to the original ad and to its drawer on the board (`#role=` deep
+link). The email itself never contains the access code.
+
+Two ways to send it, pick one:
+
+1. **GitHub Action** — set three repo secrets and the harvest emails on any
+   week the board changed: `MAIL_USERNAME` (a Gmail address),
+   `MAIL_PASSWORD` (a Gmail App Password), `MAIL_TO` (comma-separated
+   recipients). No secrets → the step is skipped silently.
+2. **Apps Script** (`tools/tandem-digest.gs`) — sends from your own Gmail,
+   no app password. Paste at script.google.com, edit `RECIPIENTS`, run
+   `setup()` once. It checks `digest.json` every Monday and never
+   double-sends the same run.
+
 ## Setup
 
 ```bash

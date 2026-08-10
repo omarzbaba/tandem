@@ -80,7 +80,7 @@ const LEADERSHIP_RE =
 const ACADEMIC_RE =
   /\b(professor|faculty|academic|university|school of medicine|college of medicine|tenure|research|fellowship program|residency program|\bNIH\b)\b/i;
 const PRIVATE_RE =
-  /\b(private practice|partnership track|partner track|group practice|\bLLC\b|\bLLP\b|associates|physician[- ]owned|independent practice)\b/i;
+  /\b(private practice|private group|partnership track|partner track|group practice|\bLLC\b|\bLLP\b|associates|physician[- ]owned|physician[- ]led|independent (?:practice|group)|democratic group|single[- ]specialty group|office[- ]based lab|\bOBL\b|(?:vein|vascular|surgical|radiology|imaging)[\w ]{0,14}(?:group|specialists|partners)\b)/i;
 const GOVERNMENT_RE =
   /\b(veterans affairs|\bVA\b medical|veterans health|department of defense|\bDoD\b|army|navy|air force|indian health|public health service|ministry of health)\b/i;
 
@@ -176,10 +176,16 @@ export function classify(posting) {
 
   const isInterventional = IR_RE.test(titleish) || (specialty === "radiology" && IR_RE.test(full));
 
+  // Ordered by strength of evidence. The employer's NAME beats its prose: a
+  // private group whose ad boasts an "academic affiliation" is still a private
+  // group, and that ordering bug once relabelled every Vascular Care Group
+  // post as academic.
   let setting = "unknown";
   if (GOVERNMENT_RE.test(`${org} ${full}`)) setting = "government";
-  else if (ACADEMIC_RE.test(`${org} ${titleish}`) || ACADEMIC_RE.test(body)) setting = "academic";
-  else if (PRIVATE_RE.test(`${org} ${full}`)) setting = "private";
+  else if (PRIVATE_RE.test(org)) setting = "private";
+  else if (ACADEMIC_RE.test(`${org} ${titleish}`)) setting = "academic";
+  else if (PRIVATE_RE.test(full)) setting = "private";
+  else if (ACADEMIC_RE.test(body)) setting = "academic";
   else if (org) setting = "hospital-employed";
 
   const location = String(posting?.location ?? "");

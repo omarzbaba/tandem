@@ -199,3 +199,52 @@ describe("classify — attributes", () => {
     ).toBe("onsite");
   });
 });
+
+describe("classify — private practice detection", () => {
+  test.each([
+    ["Vascular Surgeon", "The Vascular Care Group"],
+    ["Diagnostic Radiologist", "Radiology Partners"],
+    ["Vascular Surgeon", "Coastal Vein & Vascular Specialists"],
+  ])("%s at %s reads as private", (title, org) => {
+    expect(classify({ title, org }).setting).toBe("private");
+  });
+
+  test("body phrases mark private when the org name does not", () => {
+    expect(
+      classify({
+        title: "Vascular Surgeon",
+        org: "Wilmington Health",
+        description: "Join our physician-led, independent group with a two-year partnership track.",
+      }).setting
+    ).toBe("private");
+  });
+
+  test("an employed health system stays hospital-employed", () => {
+    expect(classify({ title: "Vascular Surgeon", org: "Henry Ford Health" }).setting).toBe("hospital-employed");
+  });
+});
+
+describe("classify — the employer's name beats its prose", () => {
+  test("a private group advertising an academic affiliation stays private", () => {
+    // The exact Vascular Care Group failure: body text about teaching and
+    // research relabelled a private group's posts as academic.
+    expect(
+      classify({
+        title: "Vascular Surgeon",
+        org: "The Vascular Care Group",
+        description:
+          "Enjoy an academic affiliation with a nearby university and resident teaching opportunities.",
+      }).setting
+    ).toBe("private");
+  });
+
+  test("a university employer stays academic even with partnership words in the body", () => {
+    expect(
+      classify({
+        title: "Assistant Professor, Vascular Surgery",
+        org: "University of Example School of Medicine",
+        description: "Collaborate with private practice partners across the region.",
+      }).setting
+    ).toBe("academic");
+  });
+});

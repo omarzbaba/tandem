@@ -55,6 +55,25 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # Optional: email the digest to the couple. Sends only when the three
+      # MAIL_* secrets exist AND this run actually changed the board. Gmail
+      # wants an App Password (Google account → Security → App passwords).
+      - name: Email the digest
+        if: steps.commit.outputs.changed == 'true' && env.MAIL_USERNAME != ''
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+        uses: dawidd6/action-send-mail@v6
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: Tandem <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ secrets.MAIL_TO }}
+          subject: "Tandem — new postings this week"
+          html_body: file://public/data/digest.html
+
       - name: Summary
         run: |
           echo "### Weekly harvest" >> "$GITHUB_STEP_SUMMARY"

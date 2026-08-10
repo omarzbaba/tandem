@@ -309,6 +309,16 @@ export function normalizeAll(harvested, ctx) {
         _rank: sourceRank(source),
       };
 
+      // The ad text often never says "private practice" — but the registry
+      // already knows the employer is one. A specialty group or teleradiology
+      // company is by definition not a hospital-employed post.
+      if (
+        (role.setting === "hospital-employed" || role.setting === "unknown") &&
+        (source.category === "specialty-group" || source.category === "teleradiology")
+      ) {
+        role.setting = "private";
+      }
+
       const scored = scoreRole(role, classified.specialty, ctx);
       Object.assign(role, {
         score: scored.score,
