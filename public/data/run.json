@@ -1,21 +1,21 @@
 {
-  "ranAt": "2026-08-10T20:26:13.367Z",
+  "ranAt": "2026-08-10T20:43:03.624Z",
   "today": "2026-08-10",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 89,
     "sourcesAttempted": 44,
-    "sourcesFailed": 6,
-    "rawPostings": 2371,
-    "irrelevant": 1696,
+    "sourcesFailed": 7,
+    "rawPostings": 1871,
+    "irrelevant": 1564,
     "duplicates": 43,
-    "unlocated": 226,
-    "roles": 632,
+    "unlocated": 110,
+    "roles": 630,
     "vascular": 79,
-    "radiology": 553,
-    "newThisRun": 27,
-    "carriedOver": 0,
-    "pairs": 10347,
+    "radiology": 551,
+    "newThisRun": 0,
+    "carriedOver": 366,
+    "pairs": 10346,
     "metros": 104,
     "togetherMetros": 19
   },
@@ -28,6 +28,11 @@
     {
       "name": "Careerjet Public Job Search API",
       "url": "http://public.api.careerjet.net/search",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "RadWorking.com",
+      "url": "https://www.radworking.com/jobs/radiology-jobs.html",
       "error": "HTTP 403"
     },
     {
