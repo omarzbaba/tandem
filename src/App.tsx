@@ -71,18 +71,6 @@ export default function App() {
     }
   }, [tab, filters, radius]);
 
-  if (!accessCode) {
-    return (
-      <AccessGate
-        partnerAName={config.partnerAName || config.partnerALabel}
-        partnerBName={config.partnerBName || config.partnerBLabel}
-        onEntered={(code) => {
-          setAccessCodeState(code);
-          setWhoState(getWho());
-        }}
-      />
-    );
-  }
 
   const rolesById = useMemo(
     () => new Map(data.roles.map((r) => [r.id, r])),
@@ -136,6 +124,21 @@ export default function App() {
       partnerLine: `My spouse is a ${(isA ? config.partnerBLabel : config.partnerALabel).toLowerCase()} attending, and we are looking to move together — so I am particularly interested in areas where both of us can practise.`,
     };
   }, [who, config]);
+
+  // Rendered after every hook above has run, so entering the code cannot
+  // change the hook count between renders (React #310).
+  if (!accessCode) {
+    return (
+      <AccessGate
+        partnerAName={config.partnerAName || config.partnerALabel}
+        partnerBName={config.partnerBName || config.partnerBLabel}
+        onEntered={(code) => {
+          setAccessCodeState(code);
+          setWhoState(getWho());
+        }}
+      />
+    );
+  }
 
   return (
     <>
