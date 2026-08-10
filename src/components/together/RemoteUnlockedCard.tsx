@@ -50,9 +50,7 @@ export function RemoteUnlockedCard({
 
       <p className="remote-card__premise">
         <span className="remote-card__badge">Remote</span>
-        {partnerBLabel} from anywhere — {metro.remotePartnerCount} remote{" "}
-        {metro.remotePartnerCount === 1 ? "post" : "posts"} on the board, best scoring{" "}
-        <strong className="tnum">{metro.bestRemoteRadiologyScore}</strong>.
+        {partnerBLabel} from anywhere
       </p>
 
       <ul className="remote-card__roles">

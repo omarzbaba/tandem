@@ -36,6 +36,9 @@ export function TogetherView({
   // Places the surgeon can take where she reads remotely. A real option, kept
   // in its own band so it is never counted as both-on-site.
   const remoteUnlocked = metros.filter((m) => !m.isTogether && m.remoteUnlocked);
+  // Stated once for the whole band rather than repeated on every card.
+  const remotePool = remoteUnlocked[0]?.remotePartnerCount ?? 0;
+  const bestRemoteScore = remoteUnlocked[0]?.bestRemoteRadiologyScore ?? 0;
   const oneSided = metros
     .filter((m) => !m.isTogether && !m.remoteUnlocked)
     .sort((a, b) => Math.max(b.bestVascularScore, b.bestRadiologyScore) - Math.max(a.bestVascularScore, a.bestRadiologyScore))
@@ -83,6 +86,14 @@ export function TogetherView({
               Diagnostic radiology reads from anywhere and vascular surgery does not, so a remote
               post on her side makes every one of these surgical jobs workable. Distance stops
               being the constraint.
+              {remotePool > 0 && (
+                <>
+                  {" "}
+                  <strong className="tnum">{remotePool}</strong> remote{" "}
+                  {remotePool === 1 ? "post" : "posts"} on the board right now, the best scoring{" "}
+                  <strong className="tnum">{bestRemoteScore}</strong>.
+                </>
+              )}
             </span>
           </h2>
           <ul className="remote-band__grid">
