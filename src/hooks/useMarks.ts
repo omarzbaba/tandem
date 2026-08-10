@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { createBackend, getWho, type RemoteConfig, type SharedStateBackend } from "../lib/shared-state";
 import { EMPTY_MARK, type Marks, type RoleMark } from "../lib/types";
 
@@ -10,9 +10,14 @@ import { EMPTY_MARK, type Marks, type RoleMark } from "../lib/types";
  * share, a silently-dropped pin is worse than a visible failure.
  */
 export function useMarks(config: RemoteConfig | null) {
-  const backendRef = useRef<SharedStateBackend | null>(null);
-  if (!backendRef.current) backendRef.current = createBackend(config);
-  const backend = backendRef.current;
+  // The config arrives asynchronously, so the backend has to be rebuilt when
+  // the board id lands. Pinning it on first render would permanently strand
+  // the app on local storage, which looks exactly like a working board right
+  // up until the two of them compare pins and find nothing shared.
+  const backend: SharedStateBackend = useMemo(
+    () => createBackend(config),
+    [config?.sharedBoard, config?.boardId]
+  );
 
   const [marks, setMarks] = useState<Marks>({});
   const [syncing, setSyncing] = useState(true);
