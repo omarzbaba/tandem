@@ -47,7 +47,14 @@ function findJobArray(node, depth = 0) {
     const looksLikeJobs = node.some(
       (x) => x && typeof x === "object" && (x.title || x.name || x.Title || x.jobTitle || x.PostingTitle)
     );
-    return looksLikeJobs ? node : null;
+    if (looksLikeJobs) return node;
+    // Oracle Cloud Recruiting wraps the real list one level down, as
+    // items[0].requisitionList. Recursing into a non-job array is what finds it.
+    for (const child of node) {
+      const hit = findJobArray(child, depth + 1);
+      if (hit) return hit;
+    }
+    return null;
   }
   if (typeof node !== "object") return null;
   // Named keys first, so a payload with both facets and jobs picks the jobs.
@@ -357,6 +364,85 @@ async function jobvite(src) {
   );
 }
 
+/**
+ * SuccessFactors Recruiting career sites (careers.<host>/<site>/search/…).
+ *
+ * SF is everywhere in the Gulf and exposes no JSON or RSS — the documented
+ * feed paths all return the HTML shell. The markup is however standardised
+ * across every SF tenant (`jobTitle-link`, `section-field facility`,
+ * `section-field location`), so parsing it is stable rather than site-specific
+ * guesswork. Paginated with `startrow`, and swept once per specialty.
+ */
+async function successfactors(src) {
+  const { url } = parseEndpoint(src.machineReadable.endpoint);
+  if (!url) return fail("no endpoint");
+
+  let origin;
+  try {
+    origin = new URL(url).origin;
+  } catch {
+    return fail("invalid endpoint URL");
+  }
+
+  const seen = new Map();
+  let anyOk = false;
+  let lastError = null;
+
+  for (const term of SPECIALTY_TERMS) {
+    for (let startrow = 0; startrow < 100; startrow += 25) {
+      const page = `${url}${url.includes("?") ? "&" : "?"}q=${encodeURIComponent(term)}&startrow=${startrow}`;
+      const res = await request(page);
+      if (!res.ok) {
+        lastError = res.error;
+        break;
+      }
+      anyOk = true;
+
+      // Split on the anchor that opens each hit, then parse each chunk. A
+      // single regex spanning one whole row is brittle here: the distance
+      // between two hits varies with how many section fields SF renders.
+      const chunks = res.body.split(/<a[^>]*class="[^"]*jobTitle-link/i).slice(1);
+      if (!chunks.length) break;
+
+      for (const chunk of chunks) {
+        const rawHref = chunk.match(/href="([^"]+)"/)?.[1];
+        const title = htmlToText(chunk.match(/>([\s\S]{1,200}?)<\/a>/)?.[1] ?? "");
+        if (!rawHref || !title) continue;
+
+        const href = rawHref.startsWith("http") ? rawHref : origin + rawHref;
+        if (seen.has(href)) continue;
+
+        // SF renders labelled section fields ("Facility", "City", "Country")
+        // after the anchor. Reading the labels is far more reliable than
+        // pattern-matching prose, and the markup is identical across tenants.
+        const context = htmlToText(chunk.slice(0, 4000));
+        const field = (label) =>
+          context.match(new RegExp(`\\b${label}\\s*\\n+\\s*([^\\n]{2,60})`, "i"))?.[1]?.trim() ?? "";
+
+        const city = field("City");
+        const country = field("Country");
+        const location = [city, country].filter(Boolean).join(", ") || field("Location");
+        const facility = field("Facility");
+
+        seen.set(
+          href,
+          shape({
+            title,
+            org: facility || src.name,
+            location,
+            description: context.slice(0, 800),
+            url: href,
+          })
+        );
+      }
+      if (chunks.length < 25) break;
+    }
+  }
+
+  if (!anyOk) return fail(lastError ?? "no page fetched");
+  return ok([...seen.values()]);
+}
+
 /** RSS / Atom — covers iCIMS, Taleo, and most society job boards. */
 async function rss(src) {
   const res = await request(parseEndpoint(src.machineReadable.endpoint).url);
@@ -437,6 +523,7 @@ const ADAPTERS = {
   ashby,
   smartrecruiters,
   workday,
+  successfactors,
   jobvite,
   rss,
   "icims-rss": rss,

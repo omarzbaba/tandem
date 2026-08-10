@@ -5185,7 +5185,7 @@
    ],
    "ageDays": 14,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "baylor scott white::vascular surgery college station::college station",
@@ -5235,7 +5235,7 @@
    ],
    "ageDays": 14,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "corewell::medical assistant ii vascular surgery::trenton",
@@ -5285,7 +5285,7 @@
    ],
    "ageDays": 6,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "corewell::physician regional division chief vascular surgery royal oak::berkley",
@@ -5335,7 +5335,7 @@
    ],
    "ageDays": 83,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "corewell::medical assistant i vascular surgery center::farmington hills",
@@ -5385,7 +5385,7 @@
    ],
    "ageDays": 12,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "url https careers jamanetwork com job 110708220 vascular medicine physician heart and vascular institute mass general brigham trackid 24 amp utm source rss amp utm medium feed amp utm campaign general::mass general brigham vascular medicine physician heart and vascular institute mass general brigham::boston",
@@ -5734,6 +5734,56 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 13,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::breast imaging radiologist::phoenix",
+   "fingerprint": "mayo::breast imaging radiologist::phoenix",
+   "title": "Breast Imaging Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Phoenix, AZ, United States",
+   "geo": {
+    "lat": 33.4484,
+    "lon": -112.074,
+    "city": "Phoenix",
+    "region": "AZ",
+    "country": "US",
+    "population": 1650070,
+    "precision": "city",
+    "raw": "Phoenix, AZ, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-08-04",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 6,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -7228,7 +7278,7 @@
    ],
    "ageDays": 10,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "vascular care physician careers greenhouse::general application vascular surgeon::",
@@ -7278,6 +7328,57 @@
     "location is vague — resolved only to a state or country"
    ],
    "ageDays": 82,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "seha abu dhabi services oracle cloud recruiting::consultant pediatric vascular surgery skmc::abu dhabi",
+   "fingerprint": "seha abu dhabi services oracle cloud recruiting::consultant pediatric vascular surgery skmc::abu dhabi",
+   "title": "Consultant Pediatric Vascular Surgery (SKMC)",
+   "org": "SEHA — Abu Dhabi Health Services (Oracle Cloud Recruiting)",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Abu Dhabi, United Arab Emirates",
+   "geo": {
+    "lat": 24.4512,
+    "lon": 54.397,
+    "city": "Abu Dhabi",
+    "region": "Abu Dhabi",
+    "country": "AE",
+    "population": 1807000,
+    "precision": "city",
+    "raw": "Abu Dhabi, United Arab Emirates"
+   },
+   "url": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-08-06",
+   "description": "",
+   "source": {
+    "name": "SEHA — Abu Dhabi Health Services (Oracle Cloud Recruiting)",
+    "url": "https://www.seha.ae/careers",
+    "category": "health-system"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "Requires DOH Abu Dhabi / DHA Dubai / MOHAP licensure",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 4,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -8302,7 +8403,7 @@
    ],
    "ageDays": 53,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "corewell::physician neurointerventional radiologist royal oak::royal oak",
@@ -11781,6 +11882,54 @@
    "isNew": false
   },
   {
+   "id": "mediclinic parkview::consultant radiologist msk::dubai",
+   "fingerprint": "mediclinic parkview::consultant radiologist msk::dubai",
+   "title": "Consultant Radiologist (MSK)",
+   "org": "Mediclinic Parkview Hospital",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Dubai",
+   "geo": {
+    "lat": 25.0773,
+    "lon": 55.3093,
+    "city": "Dubai",
+    "region": "Dubai",
+    "country": "AE",
+    "population": 3790000,
+    "precision": "city",
+    "raw": "Dubai"
+   },
+   "url": "https://careers.mediclinic.com/MiddleEast/job/Mediclinic-Parkview-Hospital-Consultant-Radiologist-%28MSK%29-Duba-505004/1424612533/",
+   "datePosted": null,
+   "description": "fontcolorc63bfd23\" data-focus-tile=\".job-id-1424612533\" aria-describedby=\"jobSearchTileHelpText-1424612533\" href=\"/MiddleEast/job/Mediclinic-Parkview-Hospital-Consultant-Radiologist-%28MSK%29-Duba-505004/1424612533/\">\n Consultant Radiologist (MSK)\n \n \n \n\n \n\n \n \n \n Facility\n \n \n Mediclinic Parkview Hospital\n \n \n\n \n\n \n \n City\n \n Dubai\n \n\n \n\n \n\n \n\n \n \n \n \n Title",
+   "source": {
+    "name": "Mediclinic Middle East (SuccessFactors)",
+    "url": "https://careers.mediclinic.com/MiddleEast/",
+    "category": "health-system"
+   },
+   "score": 57,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 2
+   },
+   "reasons": [],
+   "concerns": [
+    "Requires DOH Abu Dhabi / DHA Dubai / MOHAP licensure"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "baylor scott white::diagnostic radiologist::round rock",
    "fingerprint": "baylor scott white::diagnostic radiologist::round rock",
    "title": "Diagnostic Radiologist",
@@ -11877,6 +12026,57 @@
    "isNew": false
   },
   {
+   "id": "cedars sinai::body imaging radiologist::los angeles",
+   "fingerprint": "cedars sinai::body imaging radiologist::los angeles",
+   "title": "Body Imaging Radiologist",
+   "org": "Cedars-Sinai",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Los Angeles, CA, United States",
+   "geo": {
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "city": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "population": 3820914,
+    "precision": "city",
+    "raw": "Los Angeles, CA, United States"
+   },
+   "url": "https://hdkk.fa.us6.oraclecloud.com",
+   "datePosted": "2025-09-18",
+   "description": "",
+   "source": {
+    "name": "Cedars-Sinai",
+    "url": "https://careers.cshs.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 22,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [
+    "body / cross-sectional emphasis"
+   ],
+   "concerns": [
+    "posting is 326 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 326,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
    "id": "corewell::physician cardiothoracic vascular anesthesiologist west michigan::grand rapids",
    "fingerprint": "corewell::physician cardiothoracic vascular anesthesiologist west michigan::grand rapids",
    "title": "Physician – Cardiothoracic & Vascular Anesthesiologist – West Michigan",
@@ -11922,7 +12122,7 @@
    ],
    "ageDays": 83,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "geisinger::geisinger neuroradiology 150k starting bonus 7 on 14 off overnight schedule 100 remote::danville",
@@ -12725,6 +12925,486 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 13,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::diagnostic radiologist::eau claire",
+   "fingerprint": "mayo::diagnostic radiologist::eau claire",
+   "title": "Diagnostic Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Eau Claire, WI, United States",
+   "geo": {
+    "lat": 44.8114,
+    "lon": -91.4985,
+    "city": "Eau Claire",
+    "region": "WI",
+    "country": "US",
+    "population": 67778,
+    "precision": "city",
+    "raw": "Eau Claire, WI, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-06-24",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 47,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::abdominal imaging radiologist ultrasound emphasis::rochester",
+   "fingerprint": "mayo::abdominal imaging radiologist ultrasound emphasis::rochester",
+   "title": "Abdominal Imaging Radiologist – Ultrasound Emphasis",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-06-22",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 49,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::pediatric radiologist::rochester",
+   "fingerprint": "mayo::pediatric radiologist::rochester",
+   "title": "Pediatric Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-06-16",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 55,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::abdominal imaging radiologist::phoenix",
+   "fingerprint": "mayo::abdominal imaging radiologist::phoenix",
+   "title": "Abdominal Imaging Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Phoenix, AZ, United States",
+   "geo": {
+    "lat": 33.4484,
+    "lon": -112.074,
+    "city": "Phoenix",
+    "region": "AZ",
+    "country": "US",
+    "population": 1650070,
+    "precision": "city",
+    "raw": "Phoenix, AZ, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-06-02",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 69,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::emergency radiologist::phoenix",
+   "fingerprint": "mayo::emergency radiologist::phoenix",
+   "title": "Emergency Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Phoenix, AZ, United States",
+   "geo": {
+    "lat": 33.4484,
+    "lon": -112.074,
+    "city": "Phoenix",
+    "region": "AZ",
+    "country": "US",
+    "population": 1650070,
+    "precision": "city",
+    "raw": "Phoenix, AZ, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-05-19",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 83,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::cardiothoracic radiologist::phoenix",
+   "fingerprint": "mayo::cardiothoracic radiologist::phoenix",
+   "title": "Cardiothoracic Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Phoenix, AZ, United States",
+   "geo": {
+    "lat": 33.4484,
+    "lon": -112.074,
+    "city": "Phoenix",
+    "region": "AZ",
+    "country": "US",
+    "population": 1650070,
+    "precision": "city",
+    "raw": "Phoenix, AZ, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-05-18",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 84,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::diagnostic radiologist daytime role no evenings or nights::austin",
+   "fingerprint": "mayo::diagnostic radiologist daytime role no evenings or nights::austin",
+   "title": "Diagnostic Radiologist - Daytime Role (No Evenings or Nights)",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Austin, MN, United States",
+   "geo": {
+    "lat": 43.6666,
+    "lon": -92.9746,
+    "city": "Austin",
+    "region": "MN",
+    "country": "US",
+    "population": 24563,
+    "precision": "city",
+    "raw": "Austin, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-05-15",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 87,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::neuroradiologist::phoenix",
+   "fingerprint": "mayo::neuroradiologist::phoenix",
+   "title": "Neuroradiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Phoenix, AZ, United States",
+   "geo": {
+    "lat": 33.4484,
+    "lon": -112.074,
+    "city": "Phoenix",
+    "region": "AZ",
+    "country": "US",
+    "population": 1650070,
+    "precision": "city",
+    "raw": "Phoenix, AZ, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-05-15",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 87,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::neuroradiologist daytime role no evenings or nights::la crosse",
+   "fingerprint": "mayo::neuroradiologist daytime role no evenings or nights::la crosse",
+   "title": "Neuroradiologist – Daytime Role (No Evenings or Nights)",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "La Crosse, WI, United States",
+   "geo": {
+    "lat": 43.8014,
+    "lon": -91.2396,
+    "city": "La Crosse",
+    "region": "WI",
+    "country": "US",
+    "population": 52306,
+    "precision": "city",
+    "raw": "La Crosse, WI, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-05-14",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 88,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::musculoskeletal radiologist::jacksonville",
+   "fingerprint": "mayo::musculoskeletal radiologist::jacksonville",
+   "title": "Musculoskeletal Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Jacksonville, FL, United States",
+   "geo": {
+    "lat": 30.3322,
+    "lon": -81.6556,
+    "city": "Jacksonville",
+    "region": "FL",
+    "country": "US",
+    "population": 1009833,
+    "precision": "city",
+    "raw": "Jacksonville, FL, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-05-13",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 89,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -14146,6 +14826,55 @@
    "isNew": false
   },
   {
+   "id": "seha abu dhabi services oracle cloud recruiting::consultant physician breast imaging::al ain city",
+   "fingerprint": "seha abu dhabi services oracle cloud recruiting::consultant physician breast imaging::al ain city",
+   "title": "Consultant Physician Breast Imaging",
+   "org": "SEHA — Abu Dhabi Health Services (Oracle Cloud Recruiting)",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Al Ain, United Arab Emirates",
+   "geo": {
+    "lat": 24.1917,
+    "lon": 55.7606,
+    "city": "Al Ain City",
+    "region": "Abu Dhabi",
+    "country": "AE",
+    "population": 846747,
+    "precision": "city",
+    "raw": "Al Ain, United Arab Emirates"
+   },
+   "url": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-06-17",
+   "description": "",
+   "source": {
+    "name": "SEHA — Abu Dhabi Health Services (Oracle Cloud Recruiting)",
+    "url": "https://www.seha.ae/careers",
+    "category": "health-system"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "Requires DOH Abu Dhabi / DHA Dubai / MOHAP licensure",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 54,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
    "id": "diversified radiology lumexa imaging partner practice lever::daytime neuroradiologist partner track 85 remote::denver",
    "fingerprint": "diversified radiology lumexa imaging partner practice lever::daytime neuroradiologist partner track 85 remote::denver",
    "title": "Daytime Neuroradiologist Partner-Track - 85% Remote",
@@ -15260,7 +15989,56 @@
    ],
    "ageDays": 11,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
+  },
+  {
+   "id": "cedars sinai::per diem technical assistant diagnostic radiology x ray 8 hour day shift::los angeles",
+   "fingerprint": "cedars sinai::per diem technical assistant diagnostic radiology x ray 8 hour day shift::los angeles",
+   "title": "Per Diem Technical Assistant - Diagnostic Radiology (X-Ray) - 8-Hour Day Shift",
+   "org": "Cedars-Sinai",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": true,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Los Angeles, CA, United States",
+   "geo": {
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "city": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "population": 3820914,
+    "precision": "city",
+    "raw": "Los Angeles, CA, United States"
+   },
+   "url": "https://hdkk.fa.us6.oraclecloud.com",
+   "datePosted": "2026-07-06",
+   "description": "",
+   "source": {
+    "name": "Cedars-Sinai",
+    "url": "https://careers.cshs.org/",
+    "category": "academic"
+   },
+   "score": 54,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 4,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "locum / temporary, not a permanent post",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 35,
+   "alsoSeenOn": [],
+   "isNew": false
   },
   {
    "id": "diversified radiology lumexa imaging partner practice lever::remote overnight pediatric radiologist 7 on 14 off 75k sign on::",
@@ -15308,6 +16086,56 @@
     "location is vague — resolved only to a state or country"
    ],
    "ageDays": 32,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "url https www doccafe com job physician surgery vascular 20520492 high demand vascular surgeon needed in nd mf::high demand vascular surgeon needed in nd mf::",
+   "fingerprint": "url https www doccafe com job physician surgery vascular 20520492 high demand vascular surgeon needed in nd mf::high demand vascular surgeon needed in nd mf::",
+   "title": "🔥 High-Demand Vascular Surgeon Needed in ND (MF)!",
+   "org": "",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": ""
+   },
+   "url": "https://www.doccafe.com/job/physician/surgery-vascular/20520492/high-demand-vascular-surgeon-needed-in-nd-mf",
+   "datePosted": "2026-08-10",
+   "description": "Locum Tenens Vascular Surgeon – North Dakota\nPosition Overview\nA hospital in North Dakota is seeking a Board-Certified Vascular Surgeon for a locum tenens assignment. The physician will provide hospital-based call coverage focused on urgent and emer…",
+   "source": {
+    "name": "DocCafe",
+    "url": "https://www.doccafe.com/",
+    "category": "aggregator"
+   },
+   "score": 54,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 4,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 0,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -16986,7 +17814,7 @@
    ],
    "ageDays": 7,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "baylor scott white::vascular surgery physician::fort worth",
@@ -17035,7 +17863,203 @@
    ],
    "ageDays": 235,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
+  },
+  {
+   "id": "cedars sinai::breast imaging radiologist::los angeles",
+   "fingerprint": "cedars sinai::breast imaging radiologist::los angeles",
+   "title": "Breast Imaging Radiologist",
+   "org": "Cedars-Sinai",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Los Angeles, CA, United States",
+   "geo": {
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "city": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "population": 3820914,
+    "precision": "city",
+    "raw": "Los Angeles, CA, United States"
+   },
+   "url": "https://hdkk.fa.us6.oraclecloud.com",
+   "datePosted": "2026-04-28",
+   "description": "",
+   "source": {
+    "name": "Cedars-Sinai",
+    "url": "https://careers.cshs.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 104 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 104,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "cedars sinai::diagnostic neuroradiologist::los angeles",
+   "fingerprint": "cedars sinai::diagnostic neuroradiologist::los angeles",
+   "title": "Diagnostic Neuroradiologist",
+   "org": "Cedars-Sinai",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Los Angeles, CA, United States",
+   "geo": {
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "city": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "population": 3820914,
+    "precision": "city",
+    "raw": "Los Angeles, CA, United States"
+   },
+   "url": "https://hdkk.fa.us6.oraclecloud.com",
+   "datePosted": "2025-09-20",
+   "description": "",
+   "source": {
+    "name": "Cedars-Sinai",
+    "url": "https://careers.cshs.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 324 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 324,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "cedars sinai::interventional neuroradiologist::los angeles",
+   "fingerprint": "cedars sinai::interventional neuroradiologist::los angeles",
+   "title": "Interventional Neuroradiologist",
+   "org": "Cedars-Sinai",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Los Angeles, CA, United States",
+   "geo": {
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "city": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "population": 3820914,
+    "precision": "city",
+    "raw": "Los Angeles, CA, United States"
+   },
+   "url": "https://hdkk.fa.us6.oraclecloud.com",
+   "datePosted": "2025-09-20",
+   "description": "",
+   "source": {
+    "name": "Cedars-Sinai",
+    "url": "https://careers.cshs.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 324 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 324,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "cedars sinai::pediatric radiologist::los angeles",
+   "fingerprint": "cedars sinai::pediatric radiologist::los angeles",
+   "title": "Pediatric Radiologist",
+   "org": "Cedars-Sinai",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Los Angeles, CA, United States",
+   "geo": {
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "city": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "population": 3820914,
+    "precision": "city",
+    "raw": "Los Angeles, CA, United States"
+   },
+   "url": "https://hdkk.fa.us6.oraclecloud.com",
+   "datePosted": "2025-09-18",
+   "description": "",
+   "source": {
+    "name": "Cedars-Sinai",
+    "url": "https://careers.cshs.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 326 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 326,
+   "alsoSeenOn": [],
+   "isNew": false
   },
   {
    "id": "intermountain::vascular surgeon prn::lafayette",
@@ -17090,6 +18114,643 @@
      "category": "aggregator"
     }
    ],
+   "isNew": false
+  },
+  {
+   "id": "mayo::diagnostic radiologist daytime role no evenings or nights::albert lea",
+   "fingerprint": "mayo::diagnostic radiologist daytime role no evenings or nights::albert lea",
+   "title": "Diagnostic Radiologist - Daytime Role (No Evenings or Nights)",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Albert Lea, MN, United States",
+   "geo": {
+    "lat": 43.648,
+    "lon": -93.3683,
+    "city": "Albert Lea",
+    "region": "MN",
+    "country": "US",
+    "population": 17674,
+    "precision": "city",
+    "raw": "Albert Lea, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-05-04",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 98 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 98,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::neuroradiologist daytime role no evenings or nights::mankato",
+   "fingerprint": "mayo::neuroradiologist daytime role no evenings or nights::mankato",
+   "title": "Neuroradiologist - Daytime Role (No Evenings or Nights)",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Mankato, MN, United States",
+   "geo": {
+    "lat": 44.1591,
+    "lon": -94.0091,
+    "city": "Mankato",
+    "region": "MN",
+    "country": "US",
+    "population": 41044,
+    "precision": "city",
+    "raw": "Mankato, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-05-04",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 98 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 98,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::breast imaging radiologist::jacksonville",
+   "fingerprint": "mayo::breast imaging radiologist::jacksonville",
+   "title": "Breast Imaging Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Jacksonville, FL, United States",
+   "geo": {
+    "lat": 30.3322,
+    "lon": -81.6556,
+    "city": "Jacksonville",
+    "region": "FL",
+    "country": "US",
+    "population": 1009833,
+    "precision": "city",
+    "raw": "Jacksonville, FL, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-04-21",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 111 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 111,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::ehr neuroradiologist::jacksonville",
+   "fingerprint": "mayo::ehr neuroradiologist::jacksonville",
+   "title": "EHR - Neuroradiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Jacksonville, FL, United States",
+   "geo": {
+    "lat": 30.3322,
+    "lon": -81.6556,
+    "city": "Jacksonville",
+    "region": "FL",
+    "country": "US",
+    "population": 1009833,
+    "precision": "city",
+    "raw": "Jacksonville, FL, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-04-20",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 112 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 112,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::cardiothoracic radiologist::jacksonville",
+   "fingerprint": "mayo::cardiothoracic radiologist::jacksonville",
+   "title": "Cardiothoracic Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Jacksonville, FL, United States",
+   "geo": {
+    "lat": 30.3322,
+    "lon": -81.6556,
+    "city": "Jacksonville",
+    "region": "FL",
+    "country": "US",
+    "population": 1009833,
+    "precision": "city",
+    "raw": "Jacksonville, FL, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-02-17",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 174 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 174,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::breast imaging radiologist::mankato",
+   "fingerprint": "mayo::breast imaging radiologist::mankato",
+   "title": "Breast Imaging Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Mankato, MN, United States",
+   "geo": {
+    "lat": 44.1591,
+    "lon": -94.0091,
+    "city": "Mankato",
+    "region": "MN",
+    "country": "US",
+    "population": 41044,
+    "precision": "city",
+    "raw": "Mankato, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2025-08-21",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 354 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 354,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::breast imaging radiologist::rochester",
+   "fingerprint": "mayo::breast imaging radiologist::rochester",
+   "title": "Breast Imaging Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2025-06-23",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 413 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 413,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::hospital emergency radiologist::rochester",
+   "fingerprint": "mayo::hospital emergency radiologist::rochester",
+   "title": "Hospital/Emergency Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2025-06-20",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 416 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 416,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::musculoskeletal radiologist::rochester",
+   "fingerprint": "mayo::musculoskeletal radiologist::rochester",
+   "title": "Musculoskeletal Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2025-04-01",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 496 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 496,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::abdominal radiologist procedural::rochester",
+   "fingerprint": "mayo::abdominal radiologist procedural::rochester",
+   "title": "Abdominal Radiologist - Procedural",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2025-02-16",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 540 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 540,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::cardiovascular radiologist::rochester",
+   "fingerprint": "mayo::cardiovascular radiologist::rochester",
+   "title": "Cardiovascular Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2024-10-13",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 666 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 666,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::thoracic radiologist::rochester",
+   "fingerprint": "mayo::thoracic radiologist::rochester",
+   "title": "Thoracic Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2024-09-17",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 692 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 692,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::nuclear medicine radiologist::rochester",
+   "fingerprint": "mayo::nuclear medicine radiologist::rochester",
+   "title": "Nuclear Medicine Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2024-07-16",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is 755 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 755,
+   "alsoSeenOn": [],
    "isNew": false
   },
   {
@@ -21225,7 +22886,7 @@
    ],
    "ageDays": 27,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "geisinger::interventional radiologist 100 ir no call 7 on 7 off 140k starting bonus::lewistown",
@@ -24326,6 +25987,102 @@
    "isNew": false
   },
   {
+   "id": "cleveland incl cleveland abu dhabi workday::radiologist assistant gi procedures::",
+   "fingerprint": "cleveland incl cleveland abu dhabi workday::radiologist assistant gi procedures::",
+   "title": "Radiologist Assistant - GI Procedures",
+   "org": "Cleveland Clinic incl. Cleveland Clinic Abu Dhabi (Workday)",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Cleveland Clinic Main Campus",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Cleveland Clinic Main Campus"
+   },
+   "url": "https://ccf.wd1.myworkdayjobs.com/ClevelandClinicCareers/job/Cleveland-Clinic-Main-Campus/Radiologist-Assistant----GI-Procedures_333273",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "Cleveland Clinic incl. Cleveland Clinic Abu Dhabi (Workday)",
+    "url": "https://jobs.clevelandclinic.org/",
+    "category": "health-system"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "cleveland incl cleveland abu dhabi workday::radiologist assistant::",
+   "fingerprint": "cleveland incl cleveland abu dhabi workday::radiologist assistant::",
+   "title": "Radiologist Assistant",
+   "org": "Cleveland Clinic incl. Cleveland Clinic Abu Dhabi (Workday)",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Cleveland Clinic Main Campus",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Cleveland Clinic Main Campus"
+   },
+   "url": "https://ccf.wd1.myworkdayjobs.com/ClevelandClinicCareers/job/Cleveland-Clinic-Main-Campus/Radiologist-Assistant_271811",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "Cleveland Clinic incl. Cleveland Clinic Abu Dhabi (Workday)",
+    "url": "https://jobs.clevelandclinic.org/",
+    "category": "health-system"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
    "id": "diversified radiology lumexa imaging partner practice lever::evening neuroradiologist partner track remote 5p 2a mst 7 on 14 off::",
    "fingerprint": "diversified radiology lumexa imaging partner practice lever::evening neuroradiologist partner track remote 5p 2a mst 7 on 14 off::",
    "title": "Evening Neuroradiologist Partner-Track (REMOTE) 5p-2a MST, 7 on/14 off",
@@ -25283,7 +27040,7 @@
    ],
    "ageDays": 90,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "trinity::vascular surgery md do top tier vascular surgery opportunity in affordable family friendly iowa::",
@@ -25331,7 +27088,7 @@
    ],
    "ageDays": 63,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "url http www radworking com radiology jobs 605106 html::500 hr 100 breast imaging locum tenens::",
@@ -26077,55 +27834,6 @@
    "isNew": false
   },
   {
-   "id": "vituity radiology physician jobs phenom::physician interventional radiology queen of the valley hospital::west covina",
-   "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology queen of the valley hospital::west covina",
-   "title": "Physician - Interventional Radiology - Queen of the Valley Hospital",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": true,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "West Covina, California",
-   "geo": {
-    "lat": 34.0686,
-    "lon": -117.9389,
-    "city": "West Covina",
-    "region": "CA",
-    "country": "US",
-    "population": 108484,
-    "precision": "city",
-    "raw": "West Covina, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=260000XI",
-   "datePosted": "2026-06-24",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 46,
-   "tier": "stretch",
-   "subscores": {
-    "specialtyFit": 9,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 5,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "interventional-only — outside a diagnostic/general practice",
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 47,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
    "id": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
    "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
    "title": "Physician - Interventional Radiology - Inter-Community Hospital",
@@ -26175,6 +27883,55 @@
    "isNew": false
   },
   {
+   "id": "vituity radiology physician jobs phenom::physician interventional radiology queen of the valley hospital::west covina",
+   "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology queen of the valley hospital::west covina",
+   "title": "Physician - Interventional Radiology - Queen of the Valley Hospital",
+   "org": "Vituity — Radiology physician jobs (Phenom)",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "West Covina, California",
+   "geo": {
+    "lat": 34.0686,
+    "lon": -117.9389,
+    "city": "West Covina",
+    "region": "CA",
+    "country": "US",
+    "population": 108484,
+    "precision": "city",
+    "raw": "West Covina, California"
+   },
+   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=260000XI",
+   "datePosted": "2026-06-24",
+   "description": "",
+   "source": {
+    "name": "Vituity — Radiology physician jobs (Phenom)",
+    "url": "https://careers.vituity.com/search-results?keyword=radiology",
+    "category": "health-system"
+   },
+   "score": 46,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 47,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
    "id": "vituity radiology physician jobs phenom::physician interventional radiology miller children s women s hospital::long beach",
    "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology miller children s women s hospital::long beach",
    "title": "Physician - Interventional Radiology - Miller Children's & Women's Hospital",
@@ -26220,6 +27977,56 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 75,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "seha abu dhabi services oracle cloud recruiting::consultant interventional radiologist::abu dhabi",
+   "fingerprint": "seha abu dhabi services oracle cloud recruiting::consultant interventional radiologist::abu dhabi",
+   "title": "Consultant Interventional Radiologist",
+   "org": "SEHA — Abu Dhabi Health Services (Oracle Cloud Recruiting)",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Abu Dhabi, United Arab Emirates",
+   "geo": {
+    "lat": 24.4512,
+    "lon": 54.397,
+    "city": "Abu Dhabi",
+    "region": "Abu Dhabi",
+    "country": "AE",
+    "population": 1807000,
+    "precision": "city",
+    "raw": "Abu Dhabi, United Arab Emirates"
+   },
+   "url": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-06-10",
+   "description": "",
+   "source": {
+    "name": "SEHA — Abu Dhabi Health Services (Oracle Cloud Recruiting)",
+    "url": "https://www.seha.ae/careers",
+    "category": "health-system"
+   },
+   "score": 46,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "Requires DOH Abu Dhabi / DHA Dubai / MOHAP licensure",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 61,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -27211,6 +29018,106 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::interventional radiologist::jacksonville",
+   "fingerprint": "mayo::interventional radiologist::jacksonville",
+   "title": "Interventional Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Jacksonville, FL, United States",
+   "geo": {
+    "lat": 30.3322,
+    "lon": -81.6556,
+    "city": "Jacksonville",
+    "region": "FL",
+    "country": "US",
+    "population": 1009833,
+    "precision": "city",
+    "raw": "Jacksonville, FL, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-04-21",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 43,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "posting is 111 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 111,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "mayo::vascular interventional radiologist::rochester",
+   "fingerprint": "mayo::vascular interventional radiologist::rochester",
+   "title": "Vascular Interventional Radiologist",
+   "org": "Mayo Clinic",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Rochester, MN, United States",
+   "geo": {
+    "lat": 44.0216,
+    "lon": -92.4699,
+    "city": "Rochester",
+    "region": "MN",
+    "country": "US",
+    "population": 112225,
+    "precision": "city",
+    "raw": "Rochester, MN, United States"
+   },
+   "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com",
+   "datePosted": "2026-01-22",
+   "description": "",
+   "source": {
+    "name": "Mayo Clinic",
+    "url": "https://jobs.mayoclinic.org/",
+    "category": "academic"
+   },
+   "score": 43,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 2,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "posting is 200 days old",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 200,
    "alsoSeenOn": [],
    "isNew": false
   },

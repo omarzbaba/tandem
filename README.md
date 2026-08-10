@@ -41,8 +41,10 @@ Two independent layers, so the board is never at the mercy of one of them.
 
 **Automated (GitHub Actions, every Monday 06:00 UTC).** `scout/harvest.mjs`
 walks the registry, pulling from confirmed machine-readable endpoints —
-Greenhouse, Lever, Ashby, SmartRecruiters, Workday CXS, Jobvite, and iCIMS /
-Taleo / society RSS. It classifies, geocodes, scores, deduplicates, rebuilds the
+Greenhouse, Lever, Ashby, SmartRecruiters, Workday CXS, Oracle Cloud Recruiting,
+SuccessFactors, Jobvite, and iCIMS / Taleo / society RSS. Oracle ORC and
+SuccessFactors matter disproportionately: between them they run most of the Gulf
+health systems. It classifies, geocodes, scores, deduplicates, rebuilds the
 co-location clusters, commits the result, and redeploys. No API keys required,
 no browser, no model call, and nobody's laptop needs to be open.
 

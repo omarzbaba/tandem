@@ -20,6 +20,7 @@ export const ADAPTER_KINDS = new Set([
   "ashby",
   "smartrecruiters",
   "workday",
+  "successfactors",
   "jobvite",
   "rss",
   "icims-rss",

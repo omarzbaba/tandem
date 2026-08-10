@@ -135,6 +135,72 @@ describe("rss", () => {
   });
 });
 
+describe("json — Oracle Cloud Recruiting", () => {
+  test("finds the list nested inside items[0].requisitionList", async () => {
+    // ORC wraps the real list one level down. Not recursing into a non-job
+    // array missed every Gulf employer on Oracle, which is most of them.
+    respond({
+      items: [
+        {
+          requisitionList: [
+            {
+              Title: "Consultant Vascular Surgery",
+              PrimaryLocation: "Abu Dhabi, United Arab Emirates",
+              Id: "REQ-1",
+              postedDate: "2026-08-01",
+            },
+          ],
+        },
+      ],
+    });
+    const res = await harvestSource(
+      src("json", "https://x.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?finder=findReqs;siteNumber=CX_1"),
+      {}
+    );
+    expect(res.postings).toHaveLength(1);
+    expect(res.postings[0]).toMatchObject({
+      title: "Consultant Vascular Surgery",
+      location: "Abu Dhabi, United Arab Emirates",
+    });
+  });
+});
+
+describe("successfactors", () => {
+  const ROW = (id, title, facility, city) => `
+    <a class="jobTitle-link fontcolor" data-focus-tile=".job-id-${id}" href="/MiddleEast/job/slug-${id}/${id}/"> ${title} </a>
+    <div class="section-field facility"><span class="section-label">Facility</span>
+      <div>${facility}</div></div>
+    <div class="section-field city"><span class="section-label">City</span>
+      <div>${city}</div></div>
+    <div class="section-field country"><span class="section-label">Country</span>
+      <div>United Arab Emirates</div></div>`;
+
+  test("reads titles, labelled city and facility from the standard markup", async () => {
+    respond(
+      `<html><body>${ROW(1, "Consultant Radiologist (MSK)", "Mediclinic Parkview Hospital", "Dubai")}
+       ${ROW(2, "Consultant Vascular Surgeon", "Mediclinic Airport Road Hospital", "Abu Dhabi")}</body></html>`
+    );
+    const res = await harvestSource(
+      src("successfactors", "https://careers.example.com/MiddleEast/search/"),
+      {}
+    );
+    expect(res.postings).toHaveLength(2);
+    expect(res.postings[0]).toMatchObject({
+      title: "Consultant Radiologist (MSK)",
+      location: "Dubai, United Arab Emirates",
+      org: "Mediclinic Parkview Hospital",
+      url: "https://careers.example.com/MiddleEast/job/slug-1/1/",
+    });
+  });
+
+  test("a page with no job anchors yields nothing rather than throwing", async () => {
+    respond("<html><body><p>No results</p></body></html>");
+    const res = await harvestSource(src("successfactors", "https://careers.example.com/MiddleEast/search/"), {});
+    expect(res.postings).toEqual([]);
+    expect(res.error).toBeNull();
+  });
+});
+
 describe("workday", () => {
   test("builds absolute URLs from externalPath and stops on a short page", async () => {
     globalThis.fetch = vi.fn(async () => ({

@@ -1696,6 +1696,107 @@
    "query": "radiology",
    "evidence": "Base URL loads and DOES server-render inventory: \"Showing 1 - 25 of 1585 jobs\" with real cards, e.g. \"Facility in Indiana Seeks a Locums Anesthesiologist\", Carmel IN, JOB-3370949. SPECIALTY CORRECTED from \"both\" to radiology-only: I pulled Weatherby's own 81-slug specialty list from the page and there is NO vascular-surgery slug \u2014 the closest are cardiovascular-surgery and cardio-thoracic-surgery. Valid radiology slugs exist (radiology, interventional-radiology, pediatric-radiology).",
    "note": "Sweep the BASE /locum-tenens-jobs URL only. The specialty subpages (/locum-tenens-jobs/physician/radiology etc.) are Livewire-hydrated and server-render zero job IDs \u2014 they render \"No results found\" to any fetcher, which is a rendering artifact, not an empty board. Weatherby jobs also surface on HospitalRecruiting tagged \"WBY# JOB-\" \u2014 dedupe."
+  },
+  {
+   "name": "SEHA \u2014 Abu Dhabi Health Services (Oracle Cloud Recruiting)",
+   "url": "https://www.seha.ae/careers",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "uae",
+    "gulf"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "yield": "high",
+   "machineReadable": {
+    "kind": "json",
+    "confirmed": true,
+    "endpoint": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber=CX_1,limit=200"
+   },
+   "note": "Largest UAE public health system. DOH Abu Dhabi licensure required.",
+   "evidence": "Fetched 2026-08-10: HTTP 200, 129 requisitions incl. 'Consultant Critical Care Medicine' and Al Dhafra Hospitals roles, each with a United Arab Emirates PrimaryLocation."
+  },
+  {
+   "name": "NMC Healthcare (Oracle Cloud Recruiting)",
+   "url": "https://nmc.ae/careers",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "uae",
+    "gulf"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "yield": "medium",
+   "machineReadable": {
+    "kind": "json",
+    "confirmed": true,
+    "endpoint": "https://eiby.fa.em2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber=CX_1,limit=200"
+   },
+   "note": "Private UAE network across Abu Dhabi, Dubai and Sharjah. DOH/DHA licensure.",
+   "evidence": "Fetched 2026-08-10: HTTP 200, 141 requisitions with Abu Dhabi and Dubai locations."
+  },
+  {
+   "name": "Sidra Medicine, Qatar (Oracle Cloud Recruiting)",
+   "url": "https://www.sidra.org/career-opportunities/",
+   "category": "academic",
+   "specialty": "both",
+   "geos": [
+    "qatar",
+    "gulf"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "yield": "high",
+   "machineReadable": {
+    "kind": "json",
+    "confirmed": true,
+    "endpoint": "https://fa-epxn-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber=CX_7001,limit=200"
+   },
+   "note": "Tertiary academic hospital in Doha. QCHP licensure required.",
+   "evidence": "Fetched 2026-08-10: HTTP 200, 21 requisitions incl. 'Division Chief - Hematology, Oncology, BMT' and 'Physician - Pediatric Hematology, Oncology, BMT', all located Qatar."
+  },
+  {
+   "name": "Mediclinic Middle East (SuccessFactors)",
+   "url": "https://careers.mediclinic.com/MiddleEast/",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "uae",
+    "gulf"
+   ],
+   "sweepMethod": "careers-page",
+   "fetchable": "yes",
+   "yield": "high",
+   "machineReadable": {
+    "kind": "successfactors",
+    "confirmed": true,
+    "endpoint": "https://careers.mediclinic.com/MiddleEast/search/"
+   },
+   "note": "Seven UAE hospitals incl. Parkview Dubai. DHA/DOH licensure.",
+   "evidence": "Fetched 2026-08-10: HTTP 200, search for 'radiologist' returns 'Consultant Radiologist (MSK)' at Mediclinic Parkview Hospital, Dubai."
+  },
+  {
+   "name": "Cleveland Clinic incl. Cleveland Clinic Abu Dhabi (Workday)",
+   "url": "https://jobs.clevelandclinic.org/",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us",
+    "uae",
+    "gulf"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "yield": "high",
+   "machineReadable": {
+    "kind": "workday",
+    "confirmed": true,
+    "endpoint": "https://ccf.wd1.myworkdayjobs.com/wday/cxs/ccf/ClevelandClinicCareers/jobs"
+   },
+   "note": "CCAD physician vacancies are posted through the main Cleveland Clinic Workday tenant, so this covers both the US system and Abu Dhabi.",
+   "evidence": "Fetched 2026-08-10: HTTP 200, 66 results for 'radiologist' across Cleveland Clinic sites."
   }
  ]
 }
