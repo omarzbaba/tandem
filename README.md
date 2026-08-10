@@ -109,20 +109,18 @@ Three environment variables on the host:
 | --- | --- |
 | `SUPABASE_URL` | Project URL (server-side only) |
 | `SUPABASE_SERVICE_ROLE_KEY` | Store credential (server-side only) |
-| `VITE_BOARD_ID` | Unguessable board id, injected at build time |
+| `BOARD_ID` | The shared access code, held server-side only |
 
-`VITE_BOARD_ID` is deliberately **not** committed — a board id in a public
-repository is not a capability, it is a published one.
+**Sign-in.** First visit shows a gate: one shared access code, checked by
+`/api/marks` against the server-held `BOARD_ID` (constant-time compare, 403 on
+mismatch) and then remembered by that browser — each device asks exactly once.
+The code appears nowhere in the shipped JavaScript. There are no accounts: the
+code is the boundary, and the "who are you" choice on the gate only attributes
+pins to each partner. Sound for a two-person board of public job postings; the
+wrong trade for anything sensitive.
 
-**What actually protects the board.** There is no login, so the board id does
-reach the browser in the built bundle. That is unavoidable for a keyless
-client-side app, and it means the real boundary is *who has the site URL*. For
-two people sharing a link to a list of public job postings that is a sound
-trade. It would be the wrong trade for anything sensitive, and adding real auth
-means putting a login in front of `/api/marks` and scoping rows by user.
-
-Without a board id the app falls back to per-browser `localStorage`, so it is
-fully usable with no backend at all.
+Without a code (local dev), marks fall back to per-browser `localStorage`, so
+the app runs with no backend at all.
 
 ### Making it theirs
 
