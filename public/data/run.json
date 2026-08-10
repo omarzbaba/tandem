@@ -1,23 +1,23 @@
 {
-  "ranAt": "2026-08-10T18:30:30.434Z",
+  "ranAt": "2026-08-10T20:26:13.367Z",
   "today": "2026-08-10",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 89,
     "sourcesAttempted": 44,
-    "sourcesFailed": 8,
-    "rawPostings": 2244,
-    "irrelevant": 1595,
+    "sourcesFailed": 6,
+    "rawPostings": 2371,
+    "irrelevant": 1696,
     "duplicates": 43,
     "unlocated": 226,
-    "roles": 606,
-    "vascular": 77,
-    "radiology": 529,
-    "newThisRun": 1,
+    "roles": 632,
+    "vascular": 79,
+    "radiology": 553,
+    "newThisRun": 27,
     "carriedOver": 0,
-    "pairs": 8785,
-    "metros": 102,
-    "togetherMetros": 18
+    "pairs": 10347,
+    "metros": 104,
+    "togetherMetros": 19
   },
   "failedSources": [
     {
@@ -26,19 +26,9 @@
       "error": "HTTP 500"
     },
     {
-      "name": "Cardiovascular Institute of the South (CIS) — careers",
-      "url": "https://www.cardio.com/career-opportunities/",
-      "error": "no job array found in payload"
-    },
-    {
       "name": "Careerjet Public Job Search API",
       "url": "http://public.api.careerjet.net/search",
       "error": "HTTP 403"
-    },
-    {
-      "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
-      "url": "https://www.vrad.com/remote-radiologist-jobs/",
-      "error": "feed contained no items"
     },
     {
       "name": "Adzuna Jobs API",

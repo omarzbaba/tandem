@@ -33,6 +33,22 @@ function send(res, status, body) {
   res.status(status).send(JSON.stringify(body));
 }
 
+/**
+ * The one credential the couple holds. When BOARD_ID is set, every request
+ * must present exactly that id — a wrong code is 403, and the correct code
+ * never appears in the shipped JavaScript. Entering it once per device is the
+ * whole sign-in.
+ */
+function boardAuthorized(candidate) {
+  const expected = process.env.BOARD_ID ?? "";
+  if (!expected) return true; // unset → open board (local dev)
+  if (typeof candidate !== "string" || candidate.length !== expected.length) return false;
+  // Constant-time comparison; the code is low-entropy enough to care.
+  let diff = 0;
+  for (let i = 0; i < expected.length; i++) diff |= candidate.charCodeAt(i) ^ expected.charCodeAt(i);
+  return diff === 0;
+}
+
 function config() {
   const url = process.env.SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -95,6 +111,9 @@ export default async function handler(req, res) {
       if (board.length < LIMITS.board.min || board.length > LIMITS.board.max) {
         return send(res, 400, { error: "board query parameter is required" });
       }
+      if (!boardAuthorized(board)) {
+        return send(res, 403, { error: "That access code is not right." });
+      }
 
       const url =
         `${cfg.endpoint}?board_id=eq.${encodeURIComponent(board)}` +
@@ -122,6 +141,9 @@ export default async function handler(req, res) {
       const body = typeof req.body === "string" ? JSON.parse(req.body) : (req.body ?? {});
       const { row, error } = validateMark(body);
       if (error) return send(res, 400, { error });
+      if (!boardAuthorized(row.board_id)) {
+        return send(res, 403, { error: "That access code is not right." });
+      }
 
       const upstream = await fetch(`${cfg.endpoint}?on_conflict=board_id,role_id`, {
         method: "POST",

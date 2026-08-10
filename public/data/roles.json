@@ -106,6 +106,158 @@
    "isNew": false
   },
   {
+   "id": "emory emory::community multispecialty radiologist::atlanta",
+   "fingerprint": "emory emory::community multispecialty radiologist::atlanta",
+   "title": "Community Multispecialty Radiologist",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/170191/login",
+   "datePosted": "2026-07-31",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description The Department of Radiology and Imaging Sciences at Emory University School of Medicine is seeking a full-time radiologist to join its rapidly growing Community Radiology Specialists (CRS) Division. CRS offers a distinctive practice model that combines the strengths of an academic department with the efficiency, autonomy, and clinical breadth of a high-performing community practice. Our faculty enjoy a collaborative environment, meaningful subspecialty practice, flexible hybrid work, and opportunities for professional growth within one of the nation’s leading academic health systems. Whether your interests are primarily clinical or include teaching, leadership, quality improvement, research, or innovation, Emory provides the resources and support to help you build the career you want. Job Description: The Community Radiology Specialists Division provides imaging services across Emory Healthcare, including: Emory Saint Joseph’s Hospital, Emory Johns Creek Hospital, Emory Decatur Hospital, Emory Hillandale Hospital, and multiple outpatient imaging centers. Continued expansion is planned across the health system. We are seeking fellowship-trained radiologists in: Body Imaging Musculosk",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 74,
+   "tier": "strong",
+   "subscores": {
+    "specialtyFit": 22,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 10,
+    "signal": 7
+   },
+   "reasons": [
+    "body / cross-sectional emphasis",
+    "academic setting",
+    "remote / teleradiology",
+    "posted within two weeks"
+   ],
+   "concerns": [],
+   "ageDays": 10,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "emory emory::new comp remote overnight acute care radiologist::atlanta",
+   "fingerprint": "emory emory::new comp remote overnight acute care radiologist::atlanta",
+   "title": "NEW COMP - Remote Overnight Acute Care Radiologist",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/170670/login",
+   "datePosted": "2026-08-04",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Reach New Career Heights at Emory University Emory University is a leading academic institution that promotes excellence and attracts world-class talent. Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. We welcome candidates who can contribute to the excellence of our community across our clinical, educational, and research missions. Description Join the 30+ faculty in the Division of Emergency and Trauma Imaging in the Department of Radiology and Imaging Sciences at Emory University. The division provides clinical services across 7 hospitals, including Georgia’s largest Level 1 trauma center. Details: 13 weeks of clinical duty per year, consisting of 7-day blocks of overnight shifts (10pm-7am) followed by 21 days off. Work remotely from home anywhere in the USA except Alaska, Hawaii, and New Jersey. Microsoft Teams used for communication with assistance from 24-hour reading room coordinator. Shifts involve whole-body acute care imaging (ED & Inpatient). Mainly CT, US, and XR with a small component of M",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 73,
+   "tier": "strong",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 17,
+    "location": 12,
+    "recency": 10,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "Level I trauma centre",
+    "remote / teleradiology",
+    "posted within two weeks"
+   ],
+   "concerns": [],
+   "ageDays": 6,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "emory emory::remote trauma radiologist work 17 weeks of early overnights per year::atlanta",
+   "fingerprint": "emory emory::remote trauma radiologist work 17 weeks of early overnights per year::atlanta",
+   "title": "Remote Trauma Radiologist: Work 17 weeks of Early Overnights per Year",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/157140/login",
+   "datePosted": "2026-07-27",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Emory University is a leading academic institution that promotes excellence and attracts world-class talent. Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. We welcome candidates who can contribute to the excellence of our community across our clinical, educational, and research missions. Description: Join the 30+ faculty in the Division of Emergency and Trauma Imaging in the Department of Radiology and Imaging Sciences at Emory University/Grady Memorial Hospital. We are seeking a full-time remote Trauma Radiologist to read high volume, high acuity trauma cases at one of the most renowned teaching Level 1 Trauma hospitals in the Southeast. Position opening is for expansion due to increased volume. This early overnight position rotates 1 week on (7 days, 9-hour shifts, 6p-3am EST M-F, 4-Midnight EST Sat-Sun) and 2 weeks off (inclusive of recovery, vacation, CME, academic days). This equates to 17 weeks per year. Remote from anywhere in the USA except New Jersey, Hawaii, or Alaska. Read exclusively for G",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 73,
+   "tier": "strong",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 17,
+    "location": 12,
+    "recency": 10,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "Level I trauma centre",
+    "posted within two weeks"
+   ],
+   "concerns": [],
+   "ageDays": 14,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "url http www radworking com radiology jobs 582321 html::body imager hybrid role in tyler texas with physician owned private practice::tyler",
    "fingerprint": "url http www radworking com radiology jobs 582321 html::body imager hybrid role in tyler texas with physician owned private practice::tyler",
    "title": "Body Imager - Hybrid Role in Tyler, Texas with Physician-Owned Private Practice",
@@ -209,6 +361,57 @@
    "ageDays": 66,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "emory emory::trauma radiologist site director grady memorial hospital::atlanta",
+   "fingerprint": "emory emory::trauma radiologist site director grady memorial hospital::atlanta",
+   "title": "Trauma Radiologist: Site Director Grady Memorial Hospital",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": true,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/168055/login",
+   "datePosted": "2026-06-16",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Emory University is a leading academic institution that promotes excellence and attracts world-class talent. Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. We welcome candidates who can contribute to the excellence of our community across our clinical, educational, and research missions. Description: Join the 30+ faculty in the Division of Emergency and Trauma Imaging in the Department of Radiology and Imaging Sciences at Emory University/Grady Memorial Hospital. We are seeking a full-time Trauma Radiologist to read high volume, high acuity trauma cases at one of the most renowned teaching Level 1 Trauma hospitals in the Southeast and to serve as the Clinical Site Director. This hybrid position rotates through a mixture of on-site day and afternoon teaching shifts, and remote early overnight shifts. No overnight work required unless desired. Leadership position as Clinical Site Director will: Oversee and maintain clinical operations within the ETI reading room at the Grady campus, collaborating closel",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 72,
+   "tier": "strong",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 13,
+    "practiceQuality": 17,
+    "location": 12,
+    "recency": 5,
+    "signal": 7
+   },
+   "reasons": [
+    "leadership scope (chief / director / division head)",
+    "academic setting",
+    "Level I trauma centre",
+    "remote / teleradiology"
+   ],
+   "concerns": [],
+   "ageDays": 55,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "url http www radworking com radiology jobs 600071 html::neuroradiologist private practice hybrid::colorado springs",
@@ -368,6 +571,56 @@
    "ageDays": 895,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "emory emory::remote cardiothoracic radiologist work 17 weeks of evenings per year::atlanta",
+   "fingerprint": "emory emory::remote cardiothoracic radiologist work 17 weeks of evenings per year::atlanta",
+   "title": "Remote Cardiothoracic Radiologist: Work 17 Weeks of Evenings per Year",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/164032/login",
+   "datePosted": "2026-07-27",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. The department has a strong commitment to faculty development and academic advancement. We welcome candidates with a variety of backgrounds and experiences who can contribute to the excellence of our community through its clinical, educational, and/or research missions. The Division of Cardiothoracic Imaging is seeking full-time fellowship-trained Cardiothoracic Radiologists for evening emergency department, inpatient, and outpatient work. This evening position rotates 1 week on (7 days, 9-hour shift, 6p-3a) and 2 weeks off (inclusive of recovery, vacation, CME, academic). This equates to 121 clinical shifts per year. 17 weeks of remote clinical evenings per year! These can be remote from anywhere in the USA except New Jersey, Hawaii, or Alaska. If applicants desire an in-person component, that can be accommodated, but the work can be 100% remote. This evening Cardiothoracic Radiologist will focus their clinical care on imaging obtained as part of the Emo",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 71,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 10,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "remote / teleradiology",
+    "posted within two weeks"
+   ],
+   "concerns": [],
+   "ageDays": 14,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "url http www radworking com radiology jobs 605766 html::1 week on 2 weeks off remote swing shift diagnostic radiologist::colorado springs",
@@ -1207,6 +1460,105 @@
    "isNew": false
   },
   {
+   "id": "emory emory::pediatric radiologist::atlanta",
+   "fingerprint": "emory emory::pediatric radiologist::atlanta",
+   "title": "Pediatric Radiologist",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/164007/login",
+   "datePosted": "2026-07-20",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description The Emory University Department of Radiology and Imaging Sciences and Children’s Healthcare of Atlanta are recruiting full-time, or part-time board certified or board eligible pediatric radiologists to join our large pediatric radiology division at the Emory + Children's Pediatric Institute. Qualifications Qualified applicants will have completed an ACGME-accredited fellowship in pediatric radiology. Additionally, candidates must have completed, or be eligible to take, the ABR Subspecialty Exam (CAQ) in pediatric radiology. Job Description New faculty members will join the Body division in a group of over 40 pediatric radiologists. Academic or clinical tracks are available allowing individuals to focus on areas of interest. Full-time or part-time option available. Nighttime coverage and call responsibilities are currently provided by designated internal night pediatric radiologists. This position requires some clinical effort dedicated to overnight work. Highlights • Children’s is one of the largest pediatric clinical care providers in the country with three hospitals, 673 licensed beds, and access to more than 60 pediatric specialties. • Our radiology team performs over 300,000 ima",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 68,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 8,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "remote / teleradiology"
+   ],
+   "concerns": [],
+   "ageDays": 21,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "emory emory::cardiothoracic radiologist onsite or remote flexible and customizable schedules::atlanta",
+   "fingerprint": "emory emory::cardiothoracic radiologist onsite or remote flexible and customizable schedules::atlanta",
+   "title": "Cardiothoracic Radiologist (Onsite or Remote): Flexible and Customizable Schedules",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/160599/login",
+   "datePosted": "2026-05-12",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Reach New Career Heights at Emory University Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. The department has a strong commitment to faculty development and academic advancement. We welcome candidates with a variety of backgrounds and experiences who can contribute to the excellence of our community through its clinical, educational, and/or research missions. Job Description: The Division of Cardiothoracic Imaging is seeking fellowship-trained Cardiothoracic Radiologists for full-time or part-time positions. Our large and well-staffed division provides on-site interpretive services for Emory University Hospital, Emory University Hospital Midtown, and Grady Memorial Hospital, and provides remote interpretive services for additional sites across Emory Healthcare and Grady Health Systems. State-of-the-art clinical equipment is present across the enterprise. Divisional duties include chest X-rays, chest CT including lung cancer screening and interstitial lund disease, cardiac CT and MR, and vascular imag",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 68,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 22,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 5,
+    "signal": 7
+   },
+   "reasons": [
+    "body / cross-sectional emphasis",
+    "academic setting",
+    "remote / teleradiology"
+   ],
+   "concerns": [],
+   "ageDays": 90,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "of texas at austin dell::division chief of vascular surgery::austin",
    "fingerprint": "of texas at austin dell::division chief of vascular surgery::austin",
    "title": "Division Chief of Vascular Surgery",
@@ -1307,6 +1659,54 @@
    "ageDays": 45,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "novant::orthopedic spine surgeon neurosurgeon needed in salisbury nc::salisbury",
+   "fingerprint": "novant::orthopedic spine surgeon neurosurgeon needed in salisbury nc::salisbury",
+   "title": "Orthopedic Spine Surgeon/Neurosurgeon needed in Salisbury, NC!",
+   "org": "Novant Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Salisbury, North Carolina",
+   "geo": {
+    "lat": 35.671,
+    "lon": -80.4742,
+    "city": "Salisbury",
+    "region": "NC",
+    "country": "US",
+    "population": 34017,
+    "precision": "city",
+    "raw": "Salisbury, North Carolina"
+   },
+   "url": "https://external-novanthealth.icims.com/jobs/242318/login",
+   "datePosted": "2026-07-06",
+   "description": "What We Offer Novant Health is looking for a compassionate and highly skilled experienced Neurosurgeon/ Ortho Spine Surgeon capable of managing cranial and spine pathology, to join our rapidly growing neuroscience team. Candidates must be BE/BC and preferably have a minimum of 5 years of experience in procedures including; cranial and spinal pathology including cranial and spine trauma, cranial and spine tumors, degenerative spine disease and deformity correction. This position is full time and located in Salisbury, NC. Our specialized, multidisciplinary care teams include: Neurosurgeons Neuroradiologists Neuropsychologists Neurologists (IP and OP) Neurointensivists Psychiatrists Neurosciences at Novant Health We optimize stroke care with a dedicated neurohospitalist team caring for stroke patients from ER to discharge. One of the highest Mechanical Thrombectomy Centers in the Southeast in Stroke Care. Neurointerventional Radiology Suites for our neurointerventional radiologists and endovascular neurosurgeon. Novant Health has two level 4 epilepsy centers certified by the NAEC, offering adult and pediatric epilepsy monitoring. Novant Health is the only health system in the state and one of few in the USA, to have three Comprehensive Stroke Centers, providing the highest level of stroke care. A leader in pursuing Artificial Intelligence to improve Health Care Quality Our neurosciences team includes more than 150 experts devoted to the art and science of brain and spine care an",
+   "source": {
+    "name": "Novant Health",
+    "url": "https://jobs.novanthealth.org/careers-home",
+    "category": "health-system"
+   },
+   "score": 68,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 8,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [],
+   "ageDays": 35,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "url http www radworking com radiology jobs 605276 html::pediatric radiologist guaranteed base salary::cleveland",
@@ -1454,6 +1854,56 @@
    "ageDays": 39,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "emory emory::emergency radiologist onsite or remote flexible and customizable schedules::atlanta",
+   "fingerprint": "emory emory::emergency radiologist onsite or remote flexible and customizable schedules::atlanta",
+   "title": "Emergency Radiologist (Onsite or Remote): Flexible and Customizable Schedules",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/160603/login",
+   "datePosted": "2026-05-12",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Reach New Career Heights at Emory University Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. The department has a strong commitment to faculty development and academic advancement. We welcome candidates with a variety of backgrounds and experiences who can contribute to the excellence of our community through its clinical, educational, and/or research missions. Job Description: The Division of Emergency and Trauma Imaging is seeking Radiologists for full-time or part-time positions to join the expanding Division of Emergency and Trauma Imaging (ETI), currently one of the largest such divisions in the United States. The Division provides emergent imaging interpretations at 6 Emory Healthcare hospitals and Grady Memorial Hospital, which is the state’s largest Level 1 trauma center. The division operates 24/7/365, and faculty staff a mix of remote and onsite shifts, including those with resident teaching responsibilities and fellow teaching and support. In collaboration with successful candidates, physici",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 67,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 17,
+    "location": 12,
+    "recency": 5,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "Level I trauma centre",
+    "remote / teleradiology"
+   ],
+   "concerns": [],
+   "ageDays": 90,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "diagnostic imaging services::on site diagnostic radiologist::",
@@ -2583,6 +3033,202 @@
    "ageDays": 1622,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "emory emory::remote emergency body radiologist work 17 weeks of early overnights per year::atlanta",
+   "fingerprint": "emory emory::remote emergency body radiologist work 17 weeks of early overnights per year::atlanta",
+   "title": "Remote Emergency Body Radiologist: Work 17 weeks of Early Overnights per Year",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/168223/login",
+   "datePosted": "2026-06-25",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Become a part of something special. Emory University is a leading academic institution that promotes excellence and attracts world-class talent. Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. We welcome candidates who can contribute to the excellence of our community across our clinical, educational, and research missions. Description: The Department of Radiology and Imaging Sciences at Emory University School of Medicine is seeking a full-time Radiologist to read evening emergency department and inpatient work. Position opening is for expansion due to increased volume, and eligible for remote work. This evening position rotates 1 week on (7 days, 9-hour shift, 6p-3am) and 2 weeks off (inclusive of recovery, vacation, CME, academic). This equates to 121 clinical shifts per year. 17 weeks of remote clinical evenings per year! Remote from anywhere in the USA except New Jersey, Hawaii, or Alaska. This evening radiologist will focus their clinical care exclusively at one of the Southeast’s busiest Level 1",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 65,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 5,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "remote / teleradiology"
+   ],
+   "concerns": [],
+   "ageDays": 46,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "emory emory::musculoskeletal radiologist onsite or remote flexible and customizable schedules::atlanta",
+   "fingerprint": "emory emory::musculoskeletal radiologist onsite or remote flexible and customizable schedules::atlanta",
+   "title": "Musculoskeletal Radiologist (Onsite or Remote): Flexible and Customizable Schedules",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/160723/login",
+   "datePosted": "2026-05-12",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Reach New Career Heights at Emory University Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. The department has a strong commitment to faculty development and academic advancement. We welcome candidates with a variety of backgrounds and experiences who can contribute to the excellence of our community through its clinical, educational, and/or research missions. JOB DESCRIPTION: The Division of Musculoskeletal Imaging is seeking Radiologists for full-time or part-time positions to join the expanding division of Musculoskeletal Imaging. Emory’s Musculoskeletal Division consists of 10 full and part-time faculty members who provide specialized MSK diagnostic and interventional services to several hospital and clinic sites including the Emory MSK Institute, Emory University Midtown Hospital and Grady Memorial Hospital. Faculty are actively involved in strong intra- and interdepartmental research collaborations and are committed to educating our MSK fellows and residents (one of the largest programs in the c",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 65,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 5,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "remote / teleradiology"
+   ],
+   "concerns": [],
+   "ageDays": 90,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "emory emory::breast imaging radiologist onsite or hybrid::atlanta",
+   "fingerprint": "emory emory::breast imaging radiologist onsite or hybrid::atlanta",
+   "title": "Breast Imaging Radiologist (Onsite or Hybrid)",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/160597/login",
+   "datePosted": "2026-05-12",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Reach New Career Heights at Emory University Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. The department has a strong commitment to faculty development and academic advancement. We welcome candidates with a variety of backgrounds and experiences who can contribute to the excellence of our community through its clinical, educational, and/or research missions. Job Description: The Division of Breast Imaging is seeking fellowship-trained Breast Imaging Radiologists for full-time or part-time positions across its multi-center breast imaging program. Our 22 current dedicated breast imaging faculty are collegial, collaborative, and innovative, creating an ideal and thriving work environment. At each center, collegial interdisciplinary patient care creates an environment of excellence. Each breast center site is staffed by a dedicated nurse navigator and technologist navigator. All breast imaging modalities including digital tomosynthesis are available within the Emory Healthcare and Grady systems, and ima",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 65,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 5,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "remote / teleradiology"
+   ],
+   "concerns": [],
+   "ageDays": 90,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "emory emory::abdominal radiologist onsite or remote flexible and customizable schedules::atlanta",
+   "fingerprint": "emory emory::abdominal radiologist onsite or remote flexible and customizable schedules::atlanta",
+   "title": "Abdominal Radiologist (Onsite or Remote): Flexible and Customizable Schedules",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "remote",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/160593/login",
+   "datePosted": "2026-05-12",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Reach New Career Heights at Emory University Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. The department has a strong commitment to faculty development and academic advancement. We welcome candidates with a variety of backgrounds and experiences who can contribute to the excellence of our community through its clinical, educational, and/or research missions. Job Description: The Division of Abdominal Imaging is seeking fellowship-trained Abdominal Radiologists for full-time or part-time positions. The Division provides on-site interpredivetive services for Emory University Hospital, Emory University Hospital Midtown, and Grady Memorial Hospital, and provides remote interpretive services for additional sites across Emory Healthcare and Grady Health Systems. State-of-the-art clinical equipment is present across the enterprise. Divisional duties include MRI, CT, ultrasound, radiographs, and fluoroscopy of the abdomen and pelvis. The Division does not perform image-guided invasive procedures. The divisi",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 65,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 5,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "remote / teleradiology"
+   ],
+   "concerns": [],
+   "ageDays": 90,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "ssm::physician md do breast imaging radiologist::bridgeton",
@@ -4478,6 +5124,106 @@
    "isNew": false
   },
   {
+   "id": "novant::busy from start vascular surgeon needed in wilmington nc::wilmington",
+   "fingerprint": "novant::busy from start vascular surgeon needed in wilmington nc::wilmington",
+   "title": "Busy From Start! Vascular Surgeon Needed in Wilmington, NC",
+   "org": "Novant Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Wilmington, North Carolina",
+   "geo": {
+    "lat": 34.2356,
+    "lon": -77.946,
+    "city": "Wilmington",
+    "region": "NC",
+    "country": "US",
+    "population": 115933,
+    "precision": "city",
+    "raw": "Wilmington, North Carolina"
+   },
+   "url": "https://external-novanthealth.icims.com/jobs/201516/login",
+   "datePosted": "2026-02-19",
+   "description": "What We Offer Novant Health Heart and Vascular is looking to add to their team of Vascular Surgeons in Wilmington, NC. We are recruiting a BC/BE vascular surgeon to join our rapidly growing team. Novant Health Heart and Vascular, the most comprehensive heart practice in southeastern North Carolina, continues to expand services offered. With fellowship trained specialists and convenient locations, Novant Health HVI - Coastal allows patients to receive excellent care with minimal travel. Our group currently has three vascular surgeons and we are recruiting a fourth. Call for our surgeons is 1:6. Novant Health Offers: 2 year salary guarantee NH Medical Group employed Medical and Retirement Benefits Relocation Allowance CME Allowance System wide EHR-Epic Malpractice Work-Life balance About Practice and Community: Established, high volume practice Excellent work culture & collegiality among providers and staff Affordable cost of living in a family-friendly community Excellent schools Coastal Living with Historic Charm: Wilmington is located in the heart of beautiful coastal Southeastern North Carolina. Ranked 7th out of the 25 Most Fun, Affordable U.S. Cities by Bloomberg Business Week, Wilmington has no shortage of activities to entertain tourists and the locals alike. It has a small southern coastal town charm with big city amenities. The mild climate, rich history and miles of coastline have made it one of the fastest growing areas of the Southeast. #NHMGphysicians Join us, and",
+   "source": {
+    "name": "Novant Health",
+    "url": "https://jobs.novanthealth.org/careers-home",
+    "category": "health-system"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 2,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "posting is 172 days old"
+   ],
+   "ageDays": 172,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "novant::physician heart vascular hilton head market::hilton head island",
+   "fingerprint": "novant::physician heart vascular hilton head market::hilton head island",
+   "title": "Physician Heart & Vascular - Hilton Head Market",
+   "org": "Novant Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Hilton Head Island, South Carolina",
+   "geo": {
+    "lat": 32.1938,
+    "lon": -80.7382,
+    "city": "Hilton Head Island",
+    "region": "SC",
+    "country": "US",
+    "population": 40512,
+    "precision": "city",
+    "raw": "Hilton Head Island, South Carolina"
+   },
+   "url": "https://external-novanthealth.icims.com/jobs/237513/login",
+   "datePosted": "2026-04-24",
+   "description": "What We Offer Novant Health is building a premier Heart & Vascular Institute across the South Carolina region, with a focus on Hilton Head, Bluffton, and Beaufort market. We are actively developing a pipeline of Cardiology physicians and subspecialists to support continued program growth across our expanding network of hospitals, outpatient clinics, and specialty care sites. This is an opportunity to be part of a high-growth, program-building environment with strong leadership support, modern facilities, and a commitment to delivering exceptional cardiovascular care to coastal communities. Opportunities across multiple cardiology roles, including: General Cardiology Interventional Cardiology Non-Invasive Cardiology Advanced Heart Failure (as program develops) Program Highlights: Employment through Novant Health Medical Group First-year salary guarantee Competitive compensation and comprehensive benefits Relocation assistance and CME allowance Paid malpractice coverage Strong focus on work-life balance Access to growing, state-of-the-art facilities and new hospital developments What You'll Do Provide cardiovascular care across clinic and hospital-based settings Participate in building and expanding a regional Heart & Vascular program Collaborate with multidisciplinary teams across cardiology, vascular surgery, and primary care Support patient-centered care initiatives focused on access, quality, and outcomes Contribute to program development, community engagement, and service ",
+   "source": {
+    "name": "Novant Health",
+    "url": "https://jobs.novanthealth.org/careers-home",
+    "category": "health-system"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 2,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "posting is 108 days old"
+   ],
+   "ageDays": 108,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "url http www radworking com radiology jobs 605721 html::diagnostic radiologist needed for locum tenens coverage at emergency department in bethesda maryla::bethesda",
    "fingerprint": "url http www radworking com radiology jobs 605721 html::diagnostic radiologist needed for locum tenens coverage at emergency department in bethesda maryla::bethesda",
    "title": "Diagnostic Radiologist Needed for Locum Tenens Coverage at Emergency Department in Bethesda, Maryla",
@@ -5386,6 +6132,56 @@
    "ageDays": 12,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "url https www doccafe com job physician radiology 20445462 remote diagnostic radiology physician needed in providence ri::remote diagnostic radiology physician needed in providence ri::providence",
+   "fingerprint": "url https www doccafe com job physician radiology 20445462 remote diagnostic radiology physician needed in providence ri::remote diagnostic radiology physician needed in providence ri::providence",
+   "title": "Remote Diagnostic Radiology Physician Needed in Providence, RI",
+   "org": "",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Providence, RI",
+   "geo": {
+    "lat": 41.824,
+    "lon": -71.4128,
+    "city": "Providence",
+    "region": "RI",
+    "country": "US",
+    "population": 190934,
+    "precision": "city",
+    "raw": "Providence, RI"
+   },
+   "url": "https://www.doccafe.com/job/physician/radiology/20445462/remote-diagnostic-radiology-physician-needed-in-providence-ri",
+   "datePosted": "2026-08-10",
+   "description": "",
+   "source": {
+    "name": "DocCafe",
+    "url": "https://www.doccafe.com/",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 0,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "url https careers jamanetwork com job 110708220 vascular medicine physician heart and vascular institute mass general brigham trackid 24 amp utm source rss amp utm medium feed amp utm campaign general::mass general brigham vascular medicine physician heart and vascular institute mass general brigham::boston",
@@ -9859,6 +10655,56 @@
    "isNew": false
   },
   {
+   "id": "emory emory::pediatric interventional radiologist::atlanta",
+   "fingerprint": "emory emory::pediatric interventional radiologist::atlanta",
+   "title": "Pediatric Interventional Radiologist",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/164881/login",
+   "datePosted": "2026-07-23",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description The Department of Radiology and Imaging Sciences at the Emory University School of Medicine is seeking a Board Eligible/Certified full-time faculty pediatric interventional radiologist for its Pediatric Radiology Division. Qualified applicants should have interventional radiology training and prior clinical experience appropriate for our dynamic and growing practice. Faculty rank will be commensurate with experience. Full/Part Time This position involves: Working with radioactive materials or devices. The Department of Radiology and Imaging Sciences is comprised of a large multi-specialty collaborative faculty, and is one of the preeminent academic radiology departments in the nation. Emory Healthcare is a high-quality care provider in the Southeast. The Division of Pediatric Radiology currently provides interventional radiology staffing for the Children’s Healthcare of Atlanta system, one of the largest pediatric health systems in the country. The pediatric interventional radiology group covers nearly 800 pediatric hospital beds and provides daily clinical services at both Arthur M. Blank and Scottish Rite Hospitals. State-of-the-art clinical equipment and extensive research facili",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 58,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 8,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice"
+   ],
+   "ageDays": 18,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "url http www radworking com radiology jobs 600992 html::100k starting bonus with up to 56 wrvu ed overnight teleradiology remote 10 and 8 hour options::",
    "fingerprint": "url http www radworking com radiology jobs 600992 html::100k starting bonus with up to 56 wrvu ed overnight teleradiology remote 10 and 8 hour options::",
    "title": "$100k starting bonus with up to $56 WRVU ED Overnight Teleradiology Remote, 10- and 8-hour options",
@@ -10572,6 +11418,57 @@
    "ageDays": 32,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "emory emory::interventional radiologist::atlanta",
+   "fingerprint": "emory emory::interventional radiologist::atlanta",
+   "title": "Interventional Radiologist",
+   "org": "Emory Healthcare / Emory University",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Atlanta, Georgia",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, Georgia"
+   },
+   "url": "https://faculty-emory.icims.com/jobs/160716/login",
+   "datePosted": "2026-05-12",
+   "description": "Discover Your Career at Emory University Emory University is a leading research university that fosters excellence and attracts world-class talent to innovate today and prepare leaders for the future. We welcome candidates who can contribute to the excellence of our academic community. Description Reach New Career Heights at Emory University Emory University School of Medicine’s Department of Radiology and Imaging Sciences is committed to fostering a culture that is healthy and sustainable, and a supportive environment for our people to thrive throughout their careers. The department has a strong commitment to faculty development and academic advancement. We welcome candidates with a variety of backgrounds and experiences who can contribute to the excellence of our community through its clinical, educational, and/or research missions. Job Description: The Emory University School of Medicine Department of Radiology and Imaging Sciences is seeking full-time interventional radiologists for an expanding Division of Interventional Radiology under new leadership. Our division is responsible for image guided interventions across a spectrum of clinical environments – including a quaternary academic transplant referral center, a dedicated cancer hospital, a high-volume Level I trauma center, small suburban hospitals, and evolving outpatient centers. Our intention is to match clinical, academic, leadership, and innovation interests with the appropriate practice setting for qualified ap",
+   "source": {
+    "name": "Emory Healthcare / Emory University",
+    "url": "https://careers.emory.edu/",
+    "category": "academic"
+   },
+   "score": 57,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 17,
+    "location": 12,
+    "recency": 5,
+    "signal": 7
+   },
+   "reasons": [
+    "academic setting",
+    "Level I trauma centre"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice"
+   ],
+   "ageDays": 90,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "ochsner::physician vascular surgeon director of limb salvage::",
@@ -11927,7 +12824,7 @@
    ],
    "ageDays": null,
    "alsoSeenOn": [],
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "baylor scott white::diagnostic radiologist::round rock",
@@ -16086,56 +16983,6 @@
     "location is vague — resolved only to a state or country"
    ],
    "ageDays": 32,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
-   "id": "url https www doccafe com job physician surgery vascular 20520492 high demand vascular surgeon needed in nd mf::high demand vascular surgeon needed in nd mf::",
-   "fingerprint": "url https www doccafe com job physician surgery vascular 20520492 high demand vascular surgeon needed in nd mf::high demand vascular surgeon needed in nd mf::",
-   "title": "🔥 High-Demand Vascular Surgeon Needed in ND (MF)!",
-   "org": "",
-   "specialty": "vascular",
-   "isInterventional": false,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "",
-   "geo": {
-    "lat": null,
-    "lon": null,
-    "city": null,
-    "region": null,
-    "country": null,
-    "precision": "none",
-    "raw": ""
-   },
-   "url": "https://www.doccafe.com/job/physician/surgery-vascular/20520492/high-demand-vascular-surgeon-needed-in-nd-mf",
-   "datePosted": "2026-08-10",
-   "description": "Locum Tenens Vascular Surgeon – North Dakota\nPosition Overview\nA hospital in North Dakota is seeking a Board-Certified Vascular Surgeon for a locum tenens assignment. The physician will provide hospital-based call coverage focused on urgent and emer…",
-   "source": {
-    "name": "DocCafe",
-    "url": "https://www.doccafe.com/",
-    "category": "aggregator"
-   },
-   "score": 54,
-   "tier": "stretch",
-   "subscores": {
-    "specialtyFit": 19,
-    "seniority": 10,
-    "practiceQuality": 10,
-    "location": 4,
-    "recency": 10,
-    "signal": 1
-   },
-   "reasons": [
-    "posted within two weeks"
-   ],
-   "concerns": [
-    "location is vague — resolved only to a state or country",
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 0,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -25987,6 +26834,406 @@
    "isNew": false
   },
   {
+   "id": "vrad virtual radiologic remote radiologist jobs::remote breast imaging radiologist::",
+   "fingerprint": "vrad virtual radiologic remote radiologist jobs::remote breast imaging radiologist::",
+   "title": "Remote Breast Imaging Radiologist",
+   "org": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://www.vrad.com/remote-radiologist-jobs/remote-breast-imaging-radiologist/",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+    "url": "https://www.vrad.com/remote-radiologist-jobs/",
+    "category": "teleradiology"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "vrad virtual radiologic remote radiologist jobs::remote neuroradiologist::",
+   "fingerprint": "vrad virtual radiologic remote radiologist jobs::remote neuroradiologist::",
+   "title": "Remote Neuroradiologist",
+   "org": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://www.vrad.com/remote-radiologist-jobs/remote-neuroradiologist/",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+    "url": "https://www.vrad.com/remote-radiologist-jobs/",
+    "category": "teleradiology"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "vrad virtual radiologic remote radiologist jobs::mid shift remote diagnostic radiologist::",
+   "fingerprint": "vrad virtual radiologic remote radiologist jobs::mid shift remote diagnostic radiologist::",
+   "title": "Mid Shift Remote Diagnostic Radiologist",
+   "org": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://www.vrad.com/remote-radiologist-jobs/mid-shift-remote-diagnostic-radiologist/",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+    "url": "https://www.vrad.com/remote-radiologist-jobs/",
+    "category": "teleradiology"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "vrad virtual radiologic remote radiologist jobs::day shift remote diagnostic radiologist::",
+   "fingerprint": "vrad virtual radiologic remote radiologist jobs::day shift remote diagnostic radiologist::",
+   "title": "Day Shift Remote Diagnostic Radiologist",
+   "org": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://www.vrad.com/remote-radiologist-jobs/day-shift-remote-diagnostic-radiologist/",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+    "url": "https://www.vrad.com/remote-radiologist-jobs/",
+    "category": "teleradiology"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "vrad virtual radiologic remote radiologist jobs::overnight remote emergency teleradiologist::",
+   "fingerprint": "vrad virtual radiologic remote radiologist jobs::overnight remote emergency teleradiologist::",
+   "title": "Overnight Remote Emergency Teleradiologist",
+   "org": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://www.vrad.com/remote-radiologist-jobs/overnight-remote-emergency-teleradiologist/",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+    "url": "https://www.vrad.com/remote-radiologist-jobs/",
+    "category": "teleradiology"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "vrad virtual radiologic remote radiologist jobs::part time remote diagnostic radiologist::",
+   "fingerprint": "vrad virtual radiologic remote radiologist jobs::part time remote diagnostic radiologist::",
+   "title": "Part Time Remote Diagnostic Radiologist",
+   "org": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://www.vrad.com/remote-radiologist-jobs/part-time-remote-diagnostic-radiologist/",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+    "url": "https://www.vrad.com/remote-radiologist-jobs/",
+    "category": "teleradiology"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "vrad virtual radiologic remote radiologist jobs::full time remote diagnostic radiologist::",
+   "fingerprint": "vrad virtual radiologic remote radiologist jobs::full time remote diagnostic radiologist::",
+   "title": "Full Time Remote Diagnostic Radiologist",
+   "org": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://www.vrad.com/remote-radiologist-jobs/full-time-remote-diagnostic-radiologist/",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+    "url": "https://www.vrad.com/remote-radiologist-jobs/",
+    "category": "teleradiology"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
+   "id": "vrad virtual radiologic remote radiologist jobs::weekend remote radiologist::",
+   "fingerprint": "vrad virtual radiologic remote radiologist jobs::weekend remote radiologist::",
+   "title": "Weekend Remote Radiologist",
+   "org": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://www.vrad.com/remote-radiologist-jobs/weekend-remote-radiologist/",
+   "datePosted": null,
+   "description": "",
+   "source": {
+    "name": "vRad (Virtual Radiologic) — Remote Radiologist Jobs",
+    "url": "https://www.vrad.com/remote-radiologist-jobs/",
+    "category": "teleradiology"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": null,
+   "alsoSeenOn": [],
+   "isNew": true
+  },
+  {
    "id": "cleveland incl cleveland abu dhabi workday::radiologist assistant gi procedures::",
    "fingerprint": "cleveland incl cleveland abu dhabi workday::radiologist assistant gi procedures::",
    "title": "Radiologist Assistant - GI Procedures",
@@ -28794,7 +30041,7 @@
     "raw": "Murfreesboro, Tennessee, 37129"
    },
    "url": "https://providerjobs-ascension.icims.com/jobs/429966/physician---interventional-radiology/login",
-   "datePosted": "2026-07-28",
+   "datePosted": "2026-08-10",
    "description": "",
    "source": {
     "name": "Ascension",
@@ -28819,7 +30066,7 @@
     "location is vague — resolved only to a state or country",
     "thin posting — little detail to evaluate"
    ],
-   "ageDays": 13,
+   "ageDays": 0,
    "alsoSeenOn": [],
    "isNew": false
   },
@@ -28872,6 +30119,57 @@
    "ageDays": 264,
    "alsoSeenOn": [],
    "isNew": false
+  },
+  {
+   "id": "url https www doccafe com job physician radiology interventional 20279171 interventional radiologist full time opportunity join a growing team dr::interventional radiologist full time opportunity join a growing team dr::",
+   "fingerprint": "url https www doccafe com job physician radiology interventional 20279171 interventional radiologist full time opportunity join a growing team dr::interventional radiologist full time opportunity join a growing team dr::",
+   "title": "🚨 Interventional Radiologist | Full-Time Opportunity | Join a Growing Team (DR)",
+   "org": "",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": ""
+   },
+   "url": "https://www.doccafe.com/job/physician/radiology-interventional/20279171/interventional-radiologist-full-time-opportunity-join-a-growing-team-dr",
+   "datePosted": "2026-08-10",
+   "description": "Interventional Radiologist – Full-Time Position\nWe are seeking a Board Certified/Board Eligible Interventional Radiologist to join a collaborative healthcare team. This role offers the opportunity to perform advanced image-guided procedures while wo…",
+   "source": {
+    "name": "DocCafe",
+    "url": "https://www.doccafe.com/",
+    "category": "aggregator"
+   },
+   "score": 43,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 0,
+   "alsoSeenOn": [],
+   "isNew": true
   },
   {
    "id": "intermountain::vascular surgeon prn::",

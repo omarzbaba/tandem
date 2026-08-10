@@ -3,7 +3,8 @@ import { useBoardData, useRadius } from "./hooks/useBoardData";
 import { useMarks } from "./hooks/useMarks";
 import { useTheme } from "./hooks/useTheme";
 import { loadConfig, FALLBACK_CONFIG, type AppConfig } from "./lib/config";
-import { getWho, setWho } from "./lib/shared-state";
+import { getAccessCode, getWho, setWho } from "./lib/shared-state";
+import { AccessGate } from "./components/shell/AccessGate";
 import { formatRunTime } from "./lib/format";
 import { TogetherView } from "./components/together/TogetherView";
 import { RoleList, applyFilters, DEFAULT_FILTERS, type RoleFilters } from "./components/roles/RoleList";
@@ -18,25 +19,70 @@ const BASE = import.meta.env.BASE_URL;
 const TABS = ["together", "vascular", "radiology", "pinned", "coverage"] as const;
 type Tab = (typeof TABS)[number];
 
+const UI_STATE_KEY = "tandem:ui:v1";
+
+/** Last tab, filters and radius — restored on the next visit, per device. */
+function loadUiState(): { tab: Tab; filters: RoleFilters; radius: number } | null {
+  try {
+    const raw = localStorage.getItem(UI_STATE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as { tab?: Tab; filters?: RoleFilters; radius?: number };
+    return {
+      tab: TABS.includes(parsed.tab as Tab) ? (parsed.tab as Tab) : "together",
+      filters: { ...DEFAULT_FILTERS, ...(parsed.filters ?? {}) },
+      radius: typeof parsed.radius === "number" ? parsed.radius : FALLBACK_CONFIG.defaultRadiusMiles,
+    };
+  } catch {
+    return null;
+  }
+}
+
 export default function App() {
+  const restored = useMemo(loadUiState, []);
   const [config, setConfig] = useState<AppConfig>(FALLBACK_CONFIG);
-  const [tab, setTab] = useState<Tab>("together");
-  const [filters, setFilters] = useState<RoleFilters>(DEFAULT_FILTERS);
-  const [radius, setRadius] = useState(FALLBACK_CONFIG.defaultRadiusMiles);
+  const [tab, setTab] = useState<Tab>(restored?.tab ?? "together");
+  const [filters, setFilters] = useState<RoleFilters>(restored?.filters ?? DEFAULT_FILTERS);
+  const [radius, setRadius] = useState(restored?.radius ?? FALLBACK_CONFIG.defaultRadiusMiles);
   const [openRoleId, setOpenRoleId] = useState<string | null>(null);
   const [who, setWhoState] = useState(getWho());
+  // Dev has no /api route, so the gate only guards real deployments.
+  const [accessCode, setAccessCodeState] = useState(() =>
+    import.meta.env.DEV ? "dev-local-board" : getAccessCode()
+  );
 
   const { status, data, error } = useBoardData(BASE);
   const { metros, pairs } = useRadius(data, radius);
-  const { marks, update, togglePin, error: markError, backendKind, pinnedCount } = useMarks(config);
+  const { marks, update, togglePin, error: markError, backendKind, pinnedCount } = useMarks(accessCode);
   const { theme, cycle } = useTheme();
 
   useEffect(() => {
     void loadConfig(BASE).then((c) => {
       setConfig(c);
-      setRadius(c.defaultRadiusMiles);
+      if (!restored) setRadius(c.defaultRadiusMiles);
     });
-  }, []);
+  }, [restored]);
+
+  // Persist the working state so the board reopens where they left it.
+  useEffect(() => {
+    try {
+      localStorage.setItem(UI_STATE_KEY, JSON.stringify({ tab, filters, radius }));
+    } catch {
+      /* private browsing */
+    }
+  }, [tab, filters, radius]);
+
+  if (!accessCode) {
+    return (
+      <AccessGate
+        partnerAName={config.partnerAName || config.partnerALabel}
+        partnerBName={config.partnerBName || config.partnerBLabel}
+        onEntered={(code) => {
+          setAccessCodeState(code);
+          setWhoState(getWho());
+        }}
+      />
+    );
+  }
 
   const rolesById = useMemo(
     () => new Map(data.roles.map((r) => [r.id, r])),

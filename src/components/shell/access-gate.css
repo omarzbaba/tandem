@@ -1,0 +1,130 @@
+.gate {
+  display: grid;
+  place-items: center;
+  min-block-size: 100dvh;
+  padding: var(--gutter);
+  background: var(--paper);
+}
+
+.gate__card {
+  inline-size: min(100%, 380px);
+  padding: var(--space-6);
+  background: var(--paper-raised);
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-float);
+}
+
+.gate__title {
+  font-size: 2.5rem;
+  line-height: 0.95;
+}
+
+/* Same two-hue mark as the masthead — this is the same product, before the door. */
+.gate__title::after {
+  content: "";
+  display: block;
+  inline-size: 3rem;
+  block-size: 2px;
+  margin-block-start: var(--space-2);
+  background: linear-gradient(to right, var(--vascular), var(--together), var(--radiology));
+}
+
+.gate__tagline {
+  margin-block: var(--space-2) var(--space-5);
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.gate__label {
+  display: block;
+  margin-block-end: var(--space-2);
+  font-size: var(--text-micro);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.gate__input {
+  inline-size: 100%;
+  padding: var(--space-3);
+  font-size: var(--text-base);
+  background: var(--paper);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.gate__input:focus-visible {
+  border-color: var(--together);
+}
+
+.gate__who {
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  border: none;
+}
+
+.gate__who-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+.gate__who-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  font-weight: 550;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    background var(--duration-fast) var(--ease-out);
+}
+
+.gate__who-option input {
+  accent-color: var(--together);
+}
+
+.gate__who-option--on {
+  border-color: var(--together);
+  background: var(--together-soft);
+}
+
+.gate__error {
+  margin-block-start: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--danger);
+}
+
+.gate__enter {
+  inline-size: 100%;
+  margin-block-start: var(--space-4);
+  padding: var(--space-3);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--paper);
+  background: var(--ink);
+  border-radius: var(--radius);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.gate__enter:hover {
+  background: var(--ink-muted);
+}
+
+.gate__enter:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.gate__note {
+  margin-block-start: var(--space-4);
+  font-size: var(--text-micro);
+  color: var(--ink-faint);
+}

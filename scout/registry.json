@@ -89,11 +89,11 @@
    "fetchable": "yes",
    "machineReadable": {
     "kind": "json",
-    "endpoint": "https://recruiting.ultipro.com/CAR1022CIS/JobBoard/97f02cc1-98a9-4655-8137-e220d3e8a5d6/JobBoardView/LoadSearchResults",
+    "endpoint": "POST https://recruiting.ultipro.com/CAR1022CIS/JobBoard/97f02cc1-98a9-4655-8137-e220d3e8a5d6/JobBoardView/LoadSearchResults body {\"opportunitySearch\":{\"Top\":100,\"Skip\":0,\"QueryString\":\"\",\"OrderBy\":[{\"Value\":\"postedDateDesc\",\"PropertyName\":\"PostedDate\",\"Ascending\":false}],\"Filters\":[]},\"matchCriteria\":{\"PreferredJobs\":[],\"Educations\":[],\"LicenseAndCertifications\":[],\"Skills\":[],\"hasNoLicenses\":false,\"SkippedSkills\":[]}}",
     "confirmed": true
    },
    "yield": "low",
-   "evidence": "Endpoint INDEPENDENTLY RE-VERIFIED 2026-08-09 via POST with body {\"opportunitySearch\":{\"Top\":200,\"Skip\":0,...}}: HTTP 200, application/json, totalCount=52, all 52 returned. BUT the original entry's value claim does not survive: there are ZERO vascular surgery and ZERO radiology physician postings. Pulling the full category list \u2014 ADMINISTRATIVE SUPPORT, CALL CENTER, CATH LAB/ASC/OBL, CT, FRONT OFFICE, LPN, MEDICAL ASSISTANT, MEDICAL RECORDS, NON PHYSICIAN PROVIDER, PHYSICIAN, REGISTERED NURSE, REVENUE CYCLE \u2014 only 2 of 52 sit in PHYSICIAN, and both are cardiology, not vascular: 'Non-Invasive Cardiologist' (Norristown/Blue Bell/Yardley/Lansdale/Paoli, PA) and 'Electrophysiologist' (Clifton Park/Troy/Niskayuna/Saratoga, NY). The other 50 are LPN, RN, medical assistant, sonographer, and clerical roles.",
+   "evidence": "Re-verified 2026-08-10: POST returns HTTP 200 with 50 opportunities.",
    "note": "DOWNGRADED from the original framing. Endpoint genuinely works, so it is kept as a low-cost poll, but at verification it contributed nothing to this lane. Note the tenant is shared beyond Louisiana \u2014 its physician reqs are in PA and NY, indicating the CAR1022CIS UltiPro tenant hosts other CVAUSA-affiliated practices, so it partly duplicates the CVAUSA entry.",
    "query": "vascular surgeon"
   },

@@ -44,10 +44,13 @@ export function parseEndpoint(raw) {
 function findJobArray(node, depth = 0) {
   if (!node || depth > 6) return null;
   if (Array.isArray(node)) {
-    const looksLikeJobs = node.some(
+    // Phenom (Emory, Novant, Vituity) wraps every job as {data:{...}} —
+    // unwrap before testing, or the array looks like it holds no jobs at all.
+    const unwrapped = node.map((x) => (x && typeof x === "object" && x.data && typeof x.data === "object" ? x.data : x));
+    const looksLikeJobs = unwrapped.some(
       (x) => x && typeof x === "object" && (x.title || x.name || x.Title || x.jobTitle || x.PostingTitle)
     );
-    if (looksLikeJobs) return node;
+    if (looksLikeJobs) return unwrapped;
     // Oracle Cloud Recruiting wraps the real list one level down, as
     // items[0].requisitionList. Recursing into a non-job array is what finds it.
     for (const child of node) {
@@ -263,11 +266,17 @@ async function json(src) {
     rows.map((j) => {
       // Oracle ORC nests the useful bits; Phenom and friends are flat.
       const loc =
-        pickField(j, ["primaryLocation", "location", "locationsText", "city", "jobLocation", "PrimaryLocation"]) ||
+        pickField(j, ["primaryLocation", "location", "locationsText", "full_location", "location_name", "city", "jobLocation", "PrimaryLocation"]) ||
+        (Array.isArray(j.Locations) ? j.Locations.map((l) => l?.LocalizedName).filter(Boolean).join("; ") : "") ||
         [pickField(j, ["city"]), pickField(j, ["state", "region"]), pickField(j, ["country"])]
           .filter(Boolean)
           .join(", ");
-      const href = pickField(j, ["applyUrl", "url", "jobUrl", "detailUrl", "canonicalUrl", "externalPath", "link"]);
+      let href = pickField(j, ["applyUrl", "apply_url", "url", "jobUrl", "detailUrl", "canonicalUrl", "canonicalPositionUrl", "externalPath", "link"]);
+      // UltiPro's search payload has no link per row — the detail page is
+      // always the board URL plus the opportunity id.
+      if (!href && j.Id && url.includes("ultipro.com")) {
+        href = url.replace(/\/JobBoardView\/.*$/, "") + "/OpportunityDetail?opportunityId=" + j.Id;
+      }
       return shape({
         title: pickField(j, ["title", "name", "Title", "jobTitle", "PostingTitle"]),
         org: pickField(j, ["companyName", "company", "organization"]) || src.name,
@@ -276,7 +285,7 @@ async function json(src) {
           pickField(j, ["description", "jobDescription", "shortDescription", "summary", "externalDescriptionStr"])
         ),
         url: href.startsWith("http") ? href : origin + href,
-        datePosted: pickField(j, ["postedDate", "postedOn", "PostedDate", "releasedDate", "createdDate", "publishedDate"]) || null,
+        datePosted: pickField(j, ["postedDate", "posted_date", "postedOn", "PostedDate", "releasedDate", "createdDate", "create_date", "publishedDate"]) || null,
         department: pickField(j, ["department", "category", "jobFamily", "businessUnit"]),
       });
     })
@@ -449,6 +458,28 @@ async function rss(src) {
   if (!res.ok) return fail(res.error);
   const xml = res.body ?? "";
   const items = xml.match(/<(item|entry)\b[\s\S]*?<\/\1>/gi) ?? [];
+
+  // A sitemap of job pages (vRad) has <url><loc> entries instead of items.
+  // The slug is the only title available; the pages themselves are JS-shells.
+  if (!items.length && /<urlset\b/i.test(xml)) {
+    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
+      .map((m) => m[1].trim())
+      .filter((u) => /job/i.test(u));
+    if (!locs.length) return fail("sitemap contained no job URLs");
+    return ok(
+      locs.map((u) => {
+        const slug = u.replace(/\/$/, "").split("/").pop() ?? "";
+        const title = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+        return shape({
+          title,
+          org: src.name,
+          location: /remote/i.test(slug) ? "Remote" : "",
+          description: "",
+          url: u,
+        });
+      })
+    );
+  }
   if (!items.length) return fail("feed contained no items");
 
   const pick = (chunk, tag) => {
