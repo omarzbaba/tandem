@@ -189,12 +189,20 @@ export function classify(posting) {
   else if (org) setting = "hospital-employed";
 
   const location = String(posting?.location ?? "");
-  const workModel =
-    LOCATION_IS_REMOTE_RE.test(location) || WORK_MODEL.remote.test(full)
-      ? "remote"
-      : WORK_MODEL.hybrid.test(full)
-        ? "hybrid"
-        : "onsite";
+  // The title outranks body prose: "On-site Pediatric Radiologist" whose ad
+  // happens to mention the group's remote arm must stay on-site, and
+  // "(Onsite or Remote)" is a genuine choice — the remote option is real.
+  const titleSaysRemote = /\bremote\b|\bteleradiolog/i.test(titleish);
+  const titleSaysOnsite = /\bon-?\s?site\b/i.test(titleish);
+  const workModel = titleSaysRemote
+    ? "remote"
+    : titleSaysOnsite
+      ? "onsite"
+      : LOCATION_IS_REMOTE_RE.test(location) || WORK_MODEL.remote.test(full)
+        ? "remote"
+        : WORK_MODEL.hybrid.test(full)
+          ? "hybrid"
+          : "onsite";
 
   return {
     specialty,

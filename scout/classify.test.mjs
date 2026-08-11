@@ -191,6 +191,20 @@ describe("classify — attributes", () => {
     expect(at("Vascular Surgeon", { description }).workModel).toBe("onsite");
   });
 
+  test("an On-site title beats remote mentions in the ad body", () => {
+    // Live example: "SDI: On-site Pediatric Radiologist" whose body pitches
+    // the group's remote arm was showing under the Remote filter.
+    expect(
+      at("On-site Pediatric Radiologist I Partnership track", {
+        description: "Our group also offers remote reading positions with a home workstation.",
+      }).workModel
+    ).toBe("onsite");
+  });
+
+  test("an '(Onsite or Remote)' title is a real remote option", () => {
+    expect(at("Cardiothoracic Radiologist (Onsite or Remote): Flexible").workModel).toBe("remote");
+  });
+
   test("a remote hospital is not a remote job", () => {
     expect(
       at("Diagnostic Radiologist", {
