@@ -105,3 +105,39 @@
     flex-wrap: wrap;
   }
 }
+
+/* Work-model chips — one click to remote, matching the pill language used
+   elsewhere on the board. The Remote chip carries the radiology hue: on this
+   board "remote" in practice means her reading from anywhere. */
+.filters__work {
+  gap: var(--space-1);
+}
+
+.filters__work-chip {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  transition:
+    background var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out);
+}
+
+.filters__work-chip:hover {
+  border-color: var(--ink-faint);
+  color: var(--ink);
+}
+
+.filters__work-chip--on {
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
+  font-weight: 600;
+}
+
+.filters__work-chip--remote.filters__work-chip--on {
+  background: var(--radiology);
+  border-color: var(--radiology);
+}

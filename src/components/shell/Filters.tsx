@@ -63,6 +63,30 @@ export function Filters({
           </select>
         </label>
 
+        {/* One-click remote toggle. Radiology reads from anywhere, so this is
+            the filter Samia actually reaches for — a chip, not a dropdown. */}
+        <div className="filters__field filters__work" role="group" aria-label="Work model">
+          <span>Work</span>
+          {(
+            [
+              ["all", "Any"],
+              ["remote", "Remote"],
+              ["hybrid", "Hybrid"],
+              ["onsite", "On-site"],
+            ] as const
+          ).map(([value, label]) => (
+            <button
+              key={value}
+              type="button"
+              className={`filters__work-chip${filters.workModel === value ? " filters__work-chip--on" : ""}${value === "remote" ? " filters__work-chip--remote" : ""}`}
+              aria-pressed={filters.workModel === value}
+              onClick={() => set("workModel", value)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
         <label className="filters__field">
           <span>Min fit</span>
           <select
