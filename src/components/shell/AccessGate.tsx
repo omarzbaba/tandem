@@ -3,6 +3,9 @@ import { setAccessCode, setWho, verifyAccessCode } from "../../lib/shared-state"
 import "./access-gate.css";
 
 interface Props {
+  title: string;
+  tagline: string;
+  byline: string;
   partnerAName: string;
   partnerBName: string;
   onEntered: (code: string) => void;
@@ -17,7 +20,7 @@ interface Props {
  * board is that the code IS the identity boundary, and "who are you" below is
  * for attributing pins to each other, not for security.
  */
-export function AccessGate({ partnerAName, partnerBName, onEntered }: Props) {
+export function AccessGate({ title, tagline, byline, partnerAName, partnerBName, onEntered }: Props) {
   const [code, setCode] = useState("");
   const [who, setWhoChoice] = useState("");
   const [busy, setBusy] = useState(false);
@@ -50,8 +53,10 @@ export function AccessGate({ partnerAName, partnerBName, onEntered }: Props) {
   return (
     <main className="gate">
       <form className="gate__card" onSubmit={submit}>
-        <h1 className="gate__title display">Tandem</h1>
-        <p className="gate__tagline">Two careers, one map.</p>
+        <h1 className="gate__title display">{title}</h1>
+        <p className="gate__tagline">
+          {tagline} <span className="gate__byline">{byline}</span>
+        </p>
 
         <label className="gate__label" htmlFor="gate-code">
           Access code

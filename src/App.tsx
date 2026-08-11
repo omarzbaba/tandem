@@ -151,6 +151,9 @@ export default function App() {
   if (!accessCode) {
     return (
       <AccessGate
+        title={config.boardTitle}
+        tagline={config.boardTagline}
+        byline={config.boardByline}
         partnerAName={config.partnerAName || config.partnerALabel}
         partnerBName={config.partnerBName || config.partnerBLabel}
         onEntered={(code) => {
@@ -171,7 +174,9 @@ export default function App() {
         <div className="shell masthead__inner">
           <div className="masthead__brand">
             <h1 className="masthead__title display">{config.boardTitle}</h1>
-            <p className="masthead__tagline">{config.boardTagline}</p>
+            <p className="masthead__tagline">
+              {config.boardTagline} <span className="masthead__byline">{config.boardByline}</span>
+            </p>
           </div>
 
           <div className="masthead__meta">

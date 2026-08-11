@@ -79,7 +79,7 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           from: Tandem <${{ secrets.MAIL_USERNAME }}>
           to: ${{ vars.MAIL_TO || secrets.MAIL_TO }}
-          subject: "Tandem — new postings this week"
+          subject: "Job Navigator — new postings this week"
           html_body: file://public/data/digest.html
 
       - name: Summary

@@ -16,8 +16,8 @@
 }
 
 .gate__title {
-  font-size: 2.5rem;
-  line-height: 0.95;
+  font-size: 1.75rem;
+  line-height: 1.1;
 }
 
 /* Same two-hue mark as the masthead — this is the same product, before the door. */
@@ -145,5 +145,14 @@
   font-family: var(--font-ui);
   font-style: normal;
   font-size: var(--text-micro);
+  color: var(--ink-faint);
+}
+
+.gate__byline {
+  font-family: var(--font-ui);
+  font-style: normal;
+  font-size: var(--text-micro);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
   color: var(--ink-faint);
 }

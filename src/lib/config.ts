@@ -10,6 +10,7 @@ import type { RemoteConfig } from "./shared-state";
 export interface AppConfig extends RemoteConfig {
   boardTitle: string;
   boardTagline: string;
+  boardByline: string;
   partnerALabel: string;
   partnerBLabel: string;
   partnerAName: string;
@@ -18,8 +19,9 @@ export interface AppConfig extends RemoteConfig {
 }
 
 export const FALLBACK_CONFIG: AppConfig = {
-  boardTitle: "Tandem",
+  boardTitle: "Bespoke Job Navigator for the Wehbes",
   boardTagline: "Two careers, one map.",
+  boardByline: "by OZB",
   partnerALabel: "Vascular surgery",
   partnerBLabel: "Diagnostic radiology",
   partnerAName: "",

@@ -1,4 +1,6 @@
-# Tandem
+# Bespoke Job Navigator for the Wehbes
+
+*(repository/deployment slug: `tandem`)*
 
 > Created for Dr. Rachad W. Wehbe (vascular surgery) and
 > Dr. Samia K. Al Sayyid Wehbe (diagnostic radiology).

@@ -115,7 +115,8 @@ function renderEmail(d) {
   return `<!doctype html>
 <html><body style="margin:0;padding:0;background:#faf7f2;">
 <div style="max-width:560px;margin:0 auto;padding:28px 20px;font-family:Georgia,'Times New Roman',serif;color:#241f1a;">
-  <h1 style="font-size:30px;margin:0;font-weight:400;">Tandem</h1>
+  <h1 style="font-size:24px;margin:0;font-weight:400;">Bespoke Job Navigator for the Wehbes</h1>
+  <p style="margin:2px 0 0;font-size:12px;color:#b6ac9f;font-family:Helvetica,Arial,sans-serif;">by OZB</p>
   <div style="width:52px;height:2px;background:linear-gradient(to right,#8c2f3d,#6d3d8c,#3d558c);margin:6px 0 4px;"></div>
   <p style="font-style:italic;color:#7a7166;margin:0 0 22px;">Weekly digest · ${esc(d.today)}</p>
 

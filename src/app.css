@@ -16,8 +16,9 @@
 }
 
 .masthead__title {
-  font-size: clamp(2rem, 1.5rem + 2vw, 3.25rem);
-  line-height: 0.95;
+  font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.5rem);
+  line-height: 1.05;
+  max-inline-size: 22ch;
 }
 
 /*
@@ -204,4 +205,13 @@
   font-style: italic;
   font-size: var(--text-sm);
   color: var(--ink-muted);
+}
+
+.masthead__byline {
+  font-family: var(--font-ui);
+  font-style: normal;
+  font-size: var(--text-micro);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-faint);
 }

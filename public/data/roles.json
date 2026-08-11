@@ -28779,55 +28779,6 @@
    "isNew": false
   },
   {
-   "id": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
-   "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
-   "title": "Physician - Interventional Radiology - Inter-Community Hospital",
-   "org": "Vituity — Radiology physician jobs (Phenom)",
-   "specialty": "radiology",
-   "isInterventional": true,
-   "isLeadership": false,
-   "isLocum": false,
-   "setting": "hospital-employed",
-   "workModel": "onsite",
-   "locationText": "Covina, California",
-   "geo": {
-    "lat": 34.09,
-    "lon": -117.8903,
-    "city": "Covina",
-    "region": "CA",
-    "country": "US",
-    "population": 48984,
-    "precision": "city",
-    "raw": "Covina, California"
-   },
-   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=260000M1",
-   "datePosted": "2026-06-01",
-   "description": "",
-   "source": {
-    "name": "Vituity — Radiology physician jobs (Phenom)",
-    "url": "https://careers.vituity.com/search-results?keyword=radiology",
-    "category": "health-system"
-   },
-   "score": 46,
-   "tier": "stretch",
-   "subscores": {
-    "specialtyFit": 9,
-    "seniority": 8,
-    "practiceQuality": 11,
-    "location": 12,
-    "recency": 5,
-    "signal": 1
-   },
-   "reasons": [],
-   "concerns": [
-    "interventional-only — outside a diagnostic/general practice",
-    "thin posting — little detail to evaluate"
-   ],
-   "ageDays": 71,
-   "alsoSeenOn": [],
-   "isNew": false
-  },
-  {
    "id": "vituity radiology physician jobs phenom::physician interventional radiology queen of the valley hospital::west covina",
    "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology queen of the valley hospital::west covina",
    "title": "Physician - Interventional Radiology - Queen of the Valley Hospital",
@@ -28873,6 +28824,55 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 48,
+   "alsoSeenOn": [],
+   "isNew": false
+  },
+  {
+   "id": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
+   "fingerprint": "vituity radiology physician jobs phenom::physician interventional radiology inter community hospital::covina",
+   "title": "Physician - Interventional Radiology - Inter-Community Hospital",
+   "org": "Vituity — Radiology physician jobs (Phenom)",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Covina, California",
+   "geo": {
+    "lat": 34.09,
+    "lon": -117.8903,
+    "city": "Covina",
+    "region": "CA",
+    "country": "US",
+    "population": 48984,
+    "precision": "city",
+    "raw": "Covina, California"
+   },
+   "url": "https://s01medamerica.taleo.net/careersection/jobdetail.ftl?job=260000M1",
+   "datePosted": "2026-06-01",
+   "description": "",
+   "source": {
+    "name": "Vituity — Radiology physician jobs (Phenom)",
+    "url": "https://careers.vituity.com/search-results?keyword=radiology",
+    "category": "health-system"
+   },
+   "score": 46,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 71,
    "alsoSeenOn": [],
    "isNew": false
   },

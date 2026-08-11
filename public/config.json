@@ -1,5 +1,5 @@
 {
-  "boardTitle": "Tandem",
+  "boardTitle": "Bespoke Job Navigator for the Wehbes",
   "boardTagline": "Two careers, one map.",
   "partnerALabel": "Vascular surgery",
   "partnerBLabel": "Diagnostic radiology",
@@ -7,5 +7,6 @@
   "partnerBName": "Samia",
   "defaultRadiusMiles": 45,
   "sharedBoard": true,
-  "boardId": ""
+  "boardId": "",
+  "boardByline": "by OZB"
 }

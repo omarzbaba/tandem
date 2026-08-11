@@ -41,10 +41,10 @@ function sendWeeklyDigest() {
   const c = digest.counts;
   const subject =
     c.newThisRun > 0
-      ? "Tandem — " + c.newThisRun + " new posting" + (c.newThisRun === 1 ? "" : "s") + " this week"
-      : "Tandem — no new postings this week";
+      ? "Job Navigator — " + c.newThisRun + " new posting" + (c.newThisRun === 1 ? "" : "s") + " this week"
+      : "Job Navigator — no new postings this week";
 
-  MailApp.sendEmail({ to: RECIPIENTS, subject: subject, htmlBody: html, name: "Tandem" });
+  MailApp.sendEmail({ to: RECIPIENTS, subject: subject, htmlBody: html, name: "Job Navigator" });
   props.setProperty("lastSentRanAt", digest.ranAt);
   Logger.log("Sent to " + RECIPIENTS);
 }
