@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { createBackend, getWho, type SharedStateBackend } from "../lib/shared-state";
+import { CodeRejectedError, createBackend, getWho, type SharedStateBackend } from "../lib/shared-state";
 import { EMPTY_MARK, type Marks, type RoleMark } from "../lib/types";
 
 /**
@@ -18,16 +18,23 @@ export function useMarks(accessCode: string | null) {
   const [marks, setMarks] = useState<Marks>({});
   const [syncing, setSyncing] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  // The stored code was refused by the server — this device must re-enter it.
+  // Happens whenever the owner rotates the code; without this flag the board
+  // dead-ends with an error the user cannot act on.
+  const [codeRejected, setCodeRejected] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
+    setCodeRejected(false);
     backend
       .load()
       .then((loaded) => {
         if (!cancelled) setMarks(loaded);
       })
       .catch((err: Error) => {
-        if (!cancelled) setError(`Could not load shared pins: ${err.message}`);
+        if (cancelled) return;
+        if (err instanceof CodeRejectedError) setCodeRejected(true);
+        else setError(`Could not load shared pins: ${err.message}`);
       })
       .finally(() => {
         if (!cancelled) setSyncing(false);
@@ -51,7 +58,8 @@ export function useMarks(accessCode: string | null) {
 
       backend.save(roleId, next).catch((err: Error) => {
         setMarks((cur) => ({ ...cur, [roleId]: previous }));
-        setError(`Could not save — ${err.message}`);
+        if (err instanceof CodeRejectedError) setCodeRejected(true);
+        else setError(`Could not save — ${err.message}`);
       });
     },
     [backend, marks]
@@ -71,6 +79,7 @@ export function useMarks(accessCode: string | null) {
     togglePin,
     syncing,
     error,
+    codeRejected,
     backendKind: backend.kind,
     pinnedCount: Object.values(marks).filter((m) => m.pinned).length,
   };

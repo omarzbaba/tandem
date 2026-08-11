@@ -3,7 +3,7 @@ import { useBoardData, useRadius } from "./hooks/useBoardData";
 import { useMarks } from "./hooks/useMarks";
 import { useTheme } from "./hooks/useTheme";
 import { loadConfig, FALLBACK_CONFIG, type AppConfig } from "./lib/config";
-import { getAccessCode, getWho, setWho } from "./lib/shared-state";
+import { clearAccessCode, getAccessCode, getWho, setWho } from "./lib/shared-state";
 import { AccessGate } from "./components/shell/AccessGate";
 import { formatRunTime } from "./lib/format";
 import { TogetherView } from "./components/together/TogetherView";
@@ -52,7 +52,7 @@ export default function App() {
 
   const { status, data, error } = useBoardData(BASE);
   const { metros, pairs } = useRadius(data, radius);
-  const { marks, update, togglePin, error: markError, backendKind, pinnedCount } = useMarks(accessCode);
+  const { marks, update, togglePin, error: markError, backendKind, pinnedCount, codeRejected } = useMarks(accessCode);
   const { theme, cycle } = useTheme();
 
   useEffect(() => {
@@ -76,6 +76,15 @@ export default function App() {
     () => new Map(data.roles.map((r) => [r.id, r])),
     [data.roles]
   );
+
+  // A stored code the server now refuses (the owner rotated it) sends this
+  // device straight back to the gate — the alternative is a permanently
+  // broken board that only clearing site data would fix.
+  useEffect(() => {
+    if (!codeRejected) return;
+    clearAccessCode();
+    setAccessCodeState("");
+  }, [codeRejected]);
 
   // The weekly email links straight to a posting: #role=<id> opens its drawer
   // as soon as the data arrives (and after the gate, on a first visit).

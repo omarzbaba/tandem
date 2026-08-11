@@ -141,6 +141,7 @@ class ApiBackend implements SharedStateBackend {
     const res = await fetch(`${API_ROUTE}?board=${encodeURIComponent(this.boardId)}`, {
       headers: { accept: "application/json" },
     });
+    if (res.status === 403) throw new CodeRejectedError(await describe(res));
     if (!res.ok) throw new Error(await describe(res));
     const body = (await res.json()) as { marks?: Marks };
     return body.marks ?? {};
@@ -152,11 +153,24 @@ class ApiBackend implements SharedStateBackend {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ boardId: this.boardId, roleId, ...mark }),
     });
+    if (res.status === 403) throw new CodeRejectedError(await describe(res));
     if (!res.ok) throw new Error(await describe(res));
   }
 }
 
 const API_ROUTE = "/api/marks";
+
+/**
+ * The server refused the stored code. Distinct from a network or server
+ * failure because the remedies are opposites: a flaky network deserves a
+ * retry; a rejected code means this device must go back to the gate.
+ */
+export class CodeRejectedError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "CodeRejectedError";
+  }
+}
 
 async function describe(res: Response): Promise<string> {
   try {
