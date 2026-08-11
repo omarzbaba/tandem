@@ -205,6 +205,18 @@ describe("classify — attributes", () => {
     expect(at("Cardiothoracic Radiologist (Onsite or Remote): Flexible").workModel).toBe("remote");
   });
 
+  test("a Hybrid title is hybrid even when the body says fully remote", () => {
+    expect(
+      at("Body Imager - Hybrid Role in Tyler, Texas", {
+        description: "Some weeks can be fully remote from your home workstation.",
+      }).workModel
+    ).toBe("hybrid");
+  });
+
+  test("Hybrid OR in a title is still equipment, not a work model", () => {
+    expect(at("Vascular Surgeon — brand-new Hybrid OR").workModel).toBe("onsite");
+  });
+
   test("a remote hospital is not a remote job", () => {
     expect(
       at("Diagnostic Radiologist", {

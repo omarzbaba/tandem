@@ -194,15 +194,20 @@ export function classify(posting) {
   // "(Onsite or Remote)" is a genuine choice — the remote option is real.
   const titleSaysRemote = /\bremote\b|\bteleradiolog/i.test(titleish);
   const titleSaysOnsite = /\bon-?\s?site\b/i.test(titleish);
+  // "Hybrid Role in Tyler" is a work model; "Hybrid OR available" is theatre
+  // equipment — the lookahead keeps the surgical sense out.
+  const titleSaysHybrid = /\bhybrid\b(?!\s*(?:or\b|operating|suite|theatre|room|lab))/i.test(titleish);
   const workModel = titleSaysRemote
     ? "remote"
     : titleSaysOnsite
       ? "onsite"
-      : LOCATION_IS_REMOTE_RE.test(location) || WORK_MODEL.remote.test(full)
-        ? "remote"
-        : WORK_MODEL.hybrid.test(full)
-          ? "hybrid"
-          : "onsite";
+      : titleSaysHybrid
+        ? "hybrid"
+        : LOCATION_IS_REMOTE_RE.test(location) || WORK_MODEL.remote.test(full)
+          ? "remote"
+          : WORK_MODEL.hybrid.test(full)
+            ? "hybrid"
+            : "onsite";
 
   return {
     specialty,

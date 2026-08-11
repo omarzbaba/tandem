@@ -216,7 +216,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "Tyler, Texas",
    "geo": {
     "lat": 32.3513,
@@ -250,8 +250,7 @@
     "general diagnostic scope",
     "body / cross-sectional emphasis",
     "partnership track",
-    "private / group practice",
-    "remote / teleradiology"
+    "private / group practice"
    ],
    "concerns": [
     "posting is 1959 days old"
@@ -372,7 +371,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "onsite",
+   "workModel": "hybrid",
    "locationText": "Colorado Springs, Colorado",
    "geo": {
     "lat": 38.8339,
@@ -425,7 +424,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "onsite",
+   "workModel": "hybrid",
    "locationText": "Colorado Springs, Colorado",
    "geo": {
     "lat": 38.8339,
@@ -2075,7 +2074,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "hospital-employed",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "Hayward, WI",
    "geo": {
     "lat": 46.013,
@@ -2107,8 +2106,7 @@
    },
    "reasons": [
     "general diagnostic scope",
-    "call covered or none",
-    "remote / teleradiology"
+    "call covered or none"
    ],
    "concerns": [
     "posting is 454 days old"
@@ -2127,7 +2125,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "academic",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "Boston, MA",
    "geo": {
     "lat": 42.3584,
@@ -2160,8 +2158,7 @@
    "reasons": [
     "body / cross-sectional emphasis",
     "academic setting",
-    "Level I trauma centre",
-    "remote / teleradiology"
+    "Level I trauma centre"
    ],
    "concerns": [
     "posting is 244 days old"
@@ -4585,7 +4582,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "Charleston, WV",
    "geo": {
     "lat": 38.3498,
@@ -4617,8 +4614,7 @@
    },
    "reasons": [
     "general diagnostic scope",
-    "private / group practice",
-    "remote / teleradiology"
+    "private / group practice"
    ],
    "concerns": [
     "posting is 700 days old"
@@ -4637,7 +4633,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "Greenville, SC",
    "geo": {
     "lat": 34.8526,
@@ -4669,8 +4665,7 @@
    },
    "reasons": [
     "general diagnostic scope",
-    "private / group practice",
-    "remote / teleradiology"
+    "private / group practice"
    ],
    "concerns": [
     "posting is 700 days old"
@@ -5092,7 +5087,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "hospital-employed",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "Cleveland",
    "geo": {
     "lat": 41.4995,
@@ -5124,8 +5119,7 @@
    },
    "reasons": [
     "body / cross-sectional emphasis",
-    "home workstation / hybrid reading",
-    "remote / teleradiology"
+    "home workstation / hybrid reading"
    ],
    "concerns": [
     "posting is 235 days old"
@@ -7522,7 +7516,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "hospital-employed",
-   "workModel": "onsite",
+   "workModel": "hybrid",
    "locationText": "Tampa",
    "geo": {
     "lat": 27.9475,
@@ -7904,7 +7898,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "Pittsburgh, PA",
    "geo": {
     "lat": 40.4406,
@@ -7935,8 +7929,7 @@
     "signal": 6
    },
    "reasons": [
-    "private / group practice",
-    "remote / teleradiology"
+    "private / group practice"
    ],
    "concerns": [
     "posting is 481 days old"
@@ -8055,7 +8048,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "14901 N Scottsdale Rd Ste 101, Scottsdale, AZ 85254",
    "geo": {
     "lat": 33.3447,
@@ -8085,8 +8078,7 @@
     "signal": 2
    },
    "reasons": [
-    "private / group practice",
-    "remote / teleradiology"
+    "private / group practice"
    ],
    "concerns": [
     "location is vague — resolved only to a state or country"
@@ -8461,7 +8453,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "Pensacola, Florida",
    "geo": {
     "lat": 30.4213,
@@ -8493,8 +8485,7 @@
    },
    "reasons": [
     "body / cross-sectional emphasis",
-    "private / group practice",
-    "remote / teleradiology"
+    "private / group practice"
    ],
    "concerns": [
     "posting is 1376 days old"
@@ -16451,7 +16442,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "onsite",
+   "workModel": "hybrid",
    "locationText": "",
    "geo": {
     "lat": null,
@@ -20441,7 +20432,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "",
    "geo": {
     "lat": null,
@@ -20449,7 +20440,7 @@
     "city": null,
     "region": null,
     "country": null,
-    "precision": "remote",
+    "precision": "none",
     "raw": ""
    },
    "url": "http://www.radworking.com/radiology-jobs/600425.html",
@@ -20471,8 +20462,7 @@
     "signal": 6
    },
    "reasons": [
-    "private / group practice",
-    "remote / teleradiology"
+    "private / group practice"
    ],
    "concerns": [
     "location is vague — resolved only to a state or country",
@@ -20892,7 +20882,7 @@
    "isLeadership": false,
    "isLocum": false,
    "setting": "private",
-   "workModel": "remote",
+   "workModel": "hybrid",
    "locationText": "",
    "geo": {
     "lat": null,
@@ -20900,7 +20890,7 @@
     "city": null,
     "region": null,
     "country": null,
-    "precision": "remote",
+    "precision": "none",
     "raw": ""
    },
    "url": "http://www.radworking.com/radiology-jobs/600648.html",
@@ -20922,8 +20912,7 @@
     "signal": 5
    },
    "reasons": [
-    "private / group practice",
-    "remote / teleradiology"
+    "private / group practice"
    ],
    "concerns": [
     "location is vague — resolved only to a state or country",
