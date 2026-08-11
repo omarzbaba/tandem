@@ -1,6 +1,6 @@
 {
- "today": "2026-08-10",
- "ranAt": "2026-08-10T23:42:30.519Z",
+ "today": "2026-08-11",
+ "ranAt": "2026-08-11T00:04:27.592Z",
  "siteUrl": "https://tandem-rs.vercel.app",
  "counts": {
   "totalRoles": 620,
@@ -29,7 +29,7 @@
   },
   {
    "label": "College Station, TX",
-   "score": 68,
+   "score": 67,
    "vascularCount": 1,
    "radiologyCount": 1,
    "sameOrg": true

@@ -103,7 +103,7 @@ export function AccessGate({ partnerAName, partnerBName, onEntered }: Props) {
         </p>
 
         <p className="gate__dedication">
-          Made for Dr. Rashad W. Wehbe &amp; Dr. Samia K. Al Sayyid Wehbe
+          Made for Dr. Rachad W. Wehbe &amp; Dr. Samia K. Al Sayyid Wehbe
           <span className="gate__copyright">© 2026 Omar Z. Baba, MD</span>
         </p>
       </form>

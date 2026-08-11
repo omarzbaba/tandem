@@ -1,6 +1,6 @@
 # Tandem
 
-> Created for Dr. Rashad W. Wehbe (vascular surgery) and
+> Created for Dr. Rachad W. Wehbe (vascular surgery) and
 > Dr. Samia K. Al Sayyid Wehbe (diagnostic radiology).
 > © 2026 Omar Z. Baba, MD. Code under the MIT License.
 

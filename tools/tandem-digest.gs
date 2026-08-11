@@ -15,7 +15,7 @@
  * Script Properties), so a re-run or a failed harvest never double-sends.
  */
 
-const RECIPIENTS = "rashad@example.com, samia@example.com"; // ← EDIT
+const RECIPIENTS = "omar.z.baba@gmail.com"; // ← EDIT: add Rachad and Samia, comma-separated
 const SITE = "https://tandem-rs.vercel.app";
 
 function setup() {

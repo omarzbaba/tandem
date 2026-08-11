@@ -55,7 +55,7 @@ describe("classify — rejecting non-attending posts", () => {
 
 describe("classify — real misclassifications caught on the live board", () => {
   // Every title here appeared on the production board on 2026-08-10. Each is a
-  // job Rashad or Samia cannot take, so each was diluting the board's claim.
+  // job Rachad or Samia cannot take, so each was diluting the board's claim.
 
   test.each([
     "Medical Assistant II, Vascular Surgery",

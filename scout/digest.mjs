@@ -141,7 +141,7 @@ function renderEmail(d) {
 
   <p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#b6ac9f;margin-top:26px;line-height:1.5;">
     First time on a new device you'll be asked for your access code — after that it remembers you.<br>
-    Made for Dr. Rashad W. Wehbe &amp; Dr. Samia K. Al Sayyid Wehbe · © 2026 Omar Z. Baba, MD
+    Made for Dr. Rachad W. Wehbe &amp; Dr. Samia K. Al Sayyid Wehbe · © 2026 Omar Z. Baba, MD
   </p>
 </div>
 </body></html>`;
