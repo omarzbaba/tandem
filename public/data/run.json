@@ -1,22 +1,22 @@
 {
-  "ranAt": "2026-08-11T02:48:38.207Z",
-  "today": "2026-08-11",
+  "ranAt": "2026-08-17T06:49:12.993Z",
+  "today": "2026-08-17",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 89,
     "sourcesAttempted": 44,
-    "sourcesFailed": 6,
-    "rawPostings": 2376,
-    "irrelevant": 1716,
-    "duplicates": 40,
-    "unlocated": 213,
-    "roles": 620,
-    "vascular": 70,
+    "sourcesFailed": 8,
+    "rawPostings": 1859,
+    "irrelevant": 1558,
+    "duplicates": 45,
+    "unlocated": 106,
+    "roles": 622,
+    "vascular": 72,
     "radiology": 550,
-    "newThisRun": 0,
-    "carriedOver": 0,
-    "pairs": 9170,
-    "metros": 103,
+    "newThisRun": 24,
+    "carriedOver": 366,
+    "pairs": 8955,
+    "metros": 107,
     "togetherMetros": 16
   },
   "failedSources": [
@@ -26,8 +26,18 @@
       "error": "HTTP 500"
     },
     {
+      "name": "Care Bridge — GCC Clinician Recruitment (Job Openings)",
+      "url": "https://carebridge.ae/job-openings/",
+      "error": "fetch failed"
+    },
+    {
       "name": "Careerjet Public Job Search API",
       "url": "http://public.api.careerjet.net/search",
+      "error": "HTTP 403"
+    },
+    {
+      "name": "RadWorking.com",
+      "url": "https://www.radworking.com/jobs/radiology-jobs.html",
       "error": "HTTP 403"
     },
     {
@@ -52,7 +62,6 @@
     }
   ],
   "emptySources": [
-    "Care Bridge — GCC Clinician Recruitment (Job Openings)",
     "IHR Canada — Gulf Consultant Vacancy Board (KFSH&RC / KFMC listings)"
   ],
   "sweepOnlySources": [
