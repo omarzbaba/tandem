@@ -115,6 +115,7 @@ export interface RunReport {
   radiusMiles: number;
   counts: Record<string, number>;
   failedSources: { name: string; url: string; error: string }[];
+  needsCredentials?: { name: string; url: string; needs: string }[];
   emptySources: string[];
   sweepOnlySources: { name: string; url: string; query: string | null }[];
 }

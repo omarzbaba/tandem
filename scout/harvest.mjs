@@ -162,6 +162,10 @@ async function main() {
     emptySources: harvested
       .filter((r) => !r.error && !r.skipped && r.postings.length === 0)
       .map((r) => r.source.name),
+    // Distinct from a failure: these work, they just have no credentials yet.
+    needsCredentials: harvested
+      .filter((r) => r.skipped?.startsWith("needs "))
+      .map((r) => ({ name: r.source.name, url: r.source.url, needs: r.skipped.replace("needs ", "") })),
     sweepOnlySources: SOURCES.filter(
       (s) => !s.machineReadable?.endpoint || s.machineReadable.kind === "none"
     ).map((s) => ({ name: s.name, url: s.url, query: s.query ?? null })),

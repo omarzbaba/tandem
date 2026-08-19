@@ -66,6 +66,7 @@ function load() {
     .filter(validate)
     .map((e) => ({
       ...e,
+      requiresEnv: e.requiresEnv ?? [],
       machineReadable: e.machineReadable ?? { kind: "none", endpoint: "", confirmed: false },
     }))
     // Confirmed feeds first: if a run is ever cut short, the highest-yield

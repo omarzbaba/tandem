@@ -1,14 +1,14 @@
 {
  "today": "2026-08-19",
- "ranAt": "2026-08-19T02:30:46.024Z",
+ "ranAt": "2026-08-19T03:20:37.821Z",
  "siteUrl": "https://tandem-rs.vercel.app",
  "counts": {
-  "totalRoles": 539,
+  "totalRoles": 538,
   "newThisRun": 0,
   "newVascular": 0,
   "newRadiology": 0,
   "togetherMetros": 15,
-  "failedSources": 7
+  "failedSources": 2
  },
  "newVascular": [],
  "newRadiology": [],

@@ -143,7 +143,10 @@
    "yield": "high",
    "query": "vascular surgeon / radiologist",
    "evidence": "Re-fetched live. CORRECTION: the endpoint as originally written FAILS \u2014 a bare call returns {\"error\":\"Undeclared referrer. Please add a Referer header...\"}. With `Referer: http://example.com/` added it returns JSON. Verified counts: United States/en_US hits=678 for \"vascular surgeon\" (e.g. \"Locum Physician (MD/DO) - Surgery - Vascular in Roanoke, VA\", LocumJobsOnline). Gulf verified for \"radiologist\": UAE/en_GB hits=38 (\"Consultant Cardiothoracic Radiologist in Dubai\", \"Consultant Radiologist - PET-CT Imaging\", Dubai); Saudi hits=3 (\"Consultant MSK Radiologists - Riyadh\"); Kuwait hits=3 (\"Radiologist | Kuwait\", \"Registrar - Radiology\"); Qatar returns \"Consultant Radiologist\" and \"RADIOLOGIST (MESAIEED)\". Best Gulf-capable source in this lane.",
-   "note": "MUST send a Referer header or every call errors out. affid is required; the public demo affid worked. locale_code drives geo (en_US, en_GB for Gulf)."
+   "note": "MUST send a Referer header or every call errors out. affid is required; the public demo affid worked. locale_code drives geo (en_US, en_GB for Gulf).",
+   "requiresEnv": [
+    "CAREERJET_AFFID"
+   ]
   },
   {
    "name": "Cedars-Sinai",
@@ -842,7 +845,11 @@
    "yield": "medium",
    "query": "vascular surgeon / diagnostic radiologist",
    "evidence": "Developer portal loads (HTTP 200) and is a working API portal \u2014 copy reads \"Register for an API key now\" with docs and a \"Get ad listings\" search endpoint. Could NOT confirm job payload: calling the endpoint without app_id/app_key returns an HTML error page (\"Uh oh, something isn't right\"), not a clean JSON 401, so liveness of the search route itself is inferred from docs rather than observed.",
-   "note": "Self-serve free-tier registration. Geo tag left at [us] and NOT expanded to Gulf \u2014 Adzuna's country coverage is US/UK/AU/CA/EU/IN/SG/ZA/MX/BR and does not include Qatar, UAE, Saudi, Kuwait, Bahrain or Oman. Use Careerjet for Gulf instead."
+   "note": "Self-serve free-tier registration. Geo tag left at [us] and NOT expanded to Gulf \u2014 Adzuna's country coverage is US/UK/AU/CA/EU/IN/SG/ZA/MX/BR and does not include Qatar, UAE, Saudi, Kuwait, Bahrain or Oman. Use Careerjet for Gulf instead.",
+   "requiresEnv": [
+    "ADZUNA_APP_ID",
+    "ADZUNA_APP_KEY"
+   ]
   },
   {
    "name": "Allocation Assist Middle East \u2014 GoHire Job Board",
@@ -1191,7 +1198,10 @@
    "yield": "low",
    "query": "vascular surgeon / radiologist",
    "evidence": "RapidAPI marketplace page loads (HTTP 200, 429KB). The API host is live \u2014 an unauthenticated call returns a clean {\"message\":\"Invalid API key...\"} with HTTP 401, confirming the route resolves. Could NOT verify any job payload without a key, so no physician listing was actually observed from this source.",
-   "note": "GEOS TRIMMED: the original entry asserted qatar, uae, saudi, kuwait, bahrain, oman and gulf coverage \u2014 none of that is verifiable without a key and I am not carrying it forward as fact. Also note this is a third-party reseller scraping Google for Jobs, not a first-party board: results will duplicate other entries in this lane and are subject to RapidAPI quota/ToS. Prefer Careerjet for Gulf, which I verified directly."
+   "note": "GEOS TRIMMED: the original entry asserted qatar, uae, saudi, kuwait, bahrain, oman and gulf coverage \u2014 none of that is verifiable without a key and I am not carrying it forward as fact. Also note this is a third-party reseller scraping Google for Jobs, not a first-party board: results will duplicate other entries in this lane and are subject to RapidAPI quota/ToS. Prefer Careerjet for Gulf, which I verified directly.",
+   "requiresEnv": [
+    "RAPIDAPI_KEY"
+   ]
   },
   {
    "name": "Jackson Physician Search",
@@ -1251,7 +1261,10 @@
    "yield": "low",
    "query": "vascular surgeon / radiologist",
    "evidence": "Cloudflare returns HTTP 403 to curl on both jooble.org/api/about and the API path \u2014 no programmatic access at all. Loaded in a real browser to confirm it is not dead: the page is genuine and titled \"Jooble REST API\" with working code samples (PHP, JS, Ruby, C#, Python 2.7/3.5). Observed ZERO physician job listings from this source \u2014 the URL is an API docs page, and the payload could not be reached.",
-   "note": "Weakest entry in the lane, kept only because it is real and documented. Barrier is material: the key is NOT self-serve \u2014 jooble.org/api/about gates it behind a manual business-contact form (name, position, email, website, phone) requiring approval. Combined with the Cloudflare block and no physician specialisation, deprioritise behind Careerjet and USAJOBS."
+   "note": "Weakest entry in the lane, kept only because it is real and documented. Barrier is material: the key is NOT self-serve \u2014 jooble.org/api/about gates it behind a manual business-contact form (name, position, email, website, phone) requiring approval. Combined with the Cloudflare block and no physician specialisation, deprioritise behind Careerjet and USAJOBS.",
+   "requiresEnv": [
+    "JOOBLE_API_KEY"
+   ]
   },
   {
    "name": "King Faisal Specialist Hospital & Research Centre (KFSH&RC) \u2014 Vacancies List",
@@ -1675,7 +1688,11 @@
    "yield": "high",
    "query": "diagnostic radiologist / vascular surgeon",
    "evidence": "Endpoint is live and correct but key-gated: unauthenticated call returns a clean JSON 401 {\"title\":\"Unauthorized\",\"status\":401}, proving the route exists. Developer portal (HTTP 200) documents \"GET /api/Search\" plus RSS feeds and job exports. Confirmed the underlying data is real and highly relevant by loading the public search in a browser: \"1 \u2013 25 of 152 jobs\" for diagnostic radiologist, e.g. \"Diagnostic Radiologist \u2014 Veterans Health Administration, Fayetteville NC, starting $360,000/yr (VM 15)\" and Durham NC at $380,000/yr.",
-   "note": "Free self-serve API key from developer.usajobs.gov; requires Authorization-Key header plus a User-Agent set to the registered email. Nearly all hits are VA/VHA \u2014 strong, uncontested lane with real posted salaries."
+   "note": "Free self-serve API key from developer.usajobs.gov; requires Authorization-Key header plus a User-Agent set to the registered email. Nearly all hits are VA/VHA \u2014 strong, uncontested lane with real posted salaries.",
+   "requiresEnv": [
+    "USAJOBS_API_KEY",
+    "USAJOBS_EMAIL"
+   ]
   },
   {
    "name": "Weatherby Healthcare (CHG Healthcare)",
@@ -1797,6 +1814,25 @@
    },
    "note": "CCAD physician vacancies are posted through the main Cleveland Clinic Workday tenant, so this covers both the US system and Abu Dhabi.",
    "evidence": "Fetched 2026-08-10: HTTP 200, 66 results for 'radiologist' across Cleveland Clinic sites."
+  },
+  {
+   "name": "Northwell Health (Oracle Cloud Recruiting)",
+   "url": "https://jobs.northwell.edu/",
+   "category": "health-system",
+   "specialty": "both",
+   "geos": [
+    "us"
+   ],
+   "sweepMethod": "api",
+   "fetchable": "yes",
+   "yield": "high",
+   "machineReadable": {
+    "kind": "json",
+    "confirmed": true,
+    "endpoint": "https://eppr.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber=CX_2,limit=200"
+   },
+   "note": "Largest New York health system, 21 hospitals.",
+   "evidence": "Fetched 2026-08-19: HTTP 200, 270 requisitions across the unfiltered and keyword sweeps, with genuine Northwell NY locations (Ossining, Port Jefferson, Sleepy Hollow)."
   }
  ]
 }

@@ -1,23 +1,23 @@
 {
-  "ranAt": "2026-08-19T02:30:46.024Z",
+  "ranAt": "2026-08-19T03:20:37.821Z",
   "today": "2026-08-19",
   "radiusMiles": 45,
   "counts": {
-    "sourcesRegistered": 89,
-    "sourcesAttempted": 44,
-    "sourcesFailed": 7,
-    "rawPostings": 2354,
-    "irrelevant": 1686,
-    "duplicates": 45,
+    "sourcesRegistered": 90,
+    "sourcesAttempted": 45,
+    "sourcesFailed": 2,
+    "rawPostings": 2520,
+    "irrelevant": 1862,
+    "duplicates": 36,
     "expired": 84,
-    "unlocated": 194,
-    "roles": 539,
+    "unlocated": 189,
+    "roles": 538,
     "vascular": 71,
-    "radiology": 468,
+    "radiology": 467,
     "newThisRun": 0,
     "carriedOver": 0,
     "pairs": 7569,
-    "metros": 98,
+    "metros": 99,
     "togetherMetros": 15
   },
   "failedSources": [
@@ -30,35 +30,37 @@
       "name": "Care Bridge — GCC Clinician Recruitment (Job Openings)",
       "url": "https://carebridge.ae/job-openings/",
       "error": "HTTP 500"
-    },
-    {
-      "name": "Careerjet Public Job Search API",
-      "url": "http://public.api.careerjet.net/search",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "Adzuna Jobs API",
-      "url": "https://developer.adzuna.com/",
-      "error": "HTTP 401"
-    },
-    {
-      "name": "JSearch (RapidAPI, Google-for-Jobs index)",
-      "url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch",
-      "error": "HTTP 401"
-    },
-    {
-      "name": "Jooble REST API",
-      "url": "https://jooble.org/api/about",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "USAJOBS REST API (federal / VA / DHA)",
-      "url": "https://developer.usajobs.gov/",
-      "error": "HTTP 401"
     }
   ],
   "emptySources": [
     "IHR Canada — Gulf Consultant Vacancy Board (KFSH&RC / KFMC listings)"
+  ],
+  "needsCredentials": [
+    {
+      "name": "Careerjet Public Job Search API",
+      "url": "http://public.api.careerjet.net/search",
+      "needs": "CAREERJET_AFFID"
+    },
+    {
+      "name": "Adzuna Jobs API",
+      "url": "https://developer.adzuna.com/",
+      "needs": "ADZUNA_APP_ID + ADZUNA_APP_KEY"
+    },
+    {
+      "name": "JSearch (RapidAPI, Google-for-Jobs index)",
+      "url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch",
+      "needs": "RAPIDAPI_KEY"
+    },
+    {
+      "name": "Jooble REST API",
+      "url": "https://jooble.org/api/about",
+      "needs": "JOOBLE_API_KEY"
+    },
+    {
+      "name": "USAJOBS REST API (federal / VA / DHA)",
+      "url": "https://developer.usajobs.gov/",
+      "needs": "USAJOBS_API_KEY + USAJOBS_EMAIL"
+    }
   ],
   "sweepOnlySources": [
     {

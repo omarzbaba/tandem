@@ -69,6 +69,26 @@ export function CoverageView({ run }: { run: RunReport | null }) {
         </section>
       )}
 
+      {(run.needsCredentials?.length ?? 0) > 0 && (
+        <section className="coverage__section">
+          <h2 className="coverage__heading">Waiting on a free API key</h2>
+          <p className="coverage__note">
+            These aggregators work, but each needs its own free account before the harvester may
+            call it. Until then they contribute nothing — which is a setup gap, not a fault.
+          </p>
+          <ul className="coverage__sources">
+            {run.needsCredentials!.map((s) => (
+              <li key={s.url}>
+                <a href={s.url} target="_blank" rel="noopener noreferrer">
+                  {s.name}
+                </a>
+                <span className="coverage__query">{s.needs}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {run.emptySources.length > 0 && (
         <section className="coverage__section">
           <h2 className="coverage__heading">Swept, nothing matching</h2>

@@ -90,6 +90,34 @@ function findJobArray(node, depth = 0) {
  */
 const SPECIALTY_TERMS = ["radiologist", "vascular surgeon"];
 
+/**
+ * Oracle Cloud Recruiting takes a keyword inside its `finder` expression. A
+ * bare request returns the first N requisitions in no useful order, which for
+ * a system with thousands of openings is an arbitrary slice of mostly nursing
+ * posts — the physician jobs are simply never reached. Sweeping the URL once
+ * per specialty is the difference between a large employer contributing
+ * nothing and contributing its actual consultant vacancies.
+ */
+function oracleKeywordUrls(url) {
+  if (!/hcmRestApi\/resources\/.*recruitingCEJobRequisitions/i.test(url)) return null;
+  if (/[;,]keyword=/i.test(url)) return null; // already scoped by the registry
+  const finder = url.match(/finder=findReqs;([^&]*)/i);
+  if (!finder) return null;
+  // The unfiltered call is kept alongside the keyword sweeps and the results
+  // merged: a small employer returns its whole board unfiltered, and a keyword
+  // that misses a wording variant ("Vascular Surgery" vs "vascular surgeon")
+  // would otherwise silently drop a real post.
+  return [
+    url,
+    ...SPECIALTY_TERMS.map((term) =>
+      url.replace(
+        /finder=findReqs;([^&]*)/i,
+        `finder=findReqs;$1,keyword=${encodeURIComponent(term)}`
+      )
+    ),
+  ];
+}
+
 /** Rewrite a recorded POST body once per specialty term. */
 function bodiesForEachSpecialty(rawBody) {
   if (!rawBody) return [null];
@@ -227,14 +255,16 @@ async function json(src) {
   // A keyword-driven endpoint is swept once per specialty; anything else runs
   // a single time.
   const bodies = method === "POST" ? bodiesForEachSpecialty(body ?? "{}") : [null];
+  const urls = method === "GET" ? (oracleKeywordUrls(url) ?? [url]) : [url];
   const rows = [];
   let lastError = null;
 
-  for (const b of bodies) {
-    const res = await request(url, {
+  for (const [i, b] of (method === "POST" ? bodies : urls).entries()) {
+    const target = method === "GET" ? urls[i] : url;
+    const res = await request(target, {
       method,
       headers: { "content-type": "application/json", accept: "application/json" },
-      body: method === "POST" ? (b ?? "{}") : null,
+      body: method === "POST" ? (bodies[i] ?? "{}") : null,
     });
     if (!res.ok) {
       lastError = res.error;
@@ -250,9 +280,23 @@ async function json(src) {
     const found = findJobArray(payload);
     if (found) rows.push(...found);
     else lastError = "no job array found in payload";
+
   }
 
   if (!rows.length) return fail(lastError ?? "no rows returned");
+
+  // The unfiltered and keyword sweeps overlap, so the same requisition arrives
+  // several times; dedupe on its identifier before shaping.
+  const deduped = [];
+  const seenIds = new Set();
+  for (const j of rows) {
+    const id = String(j.Id ?? j.id ?? j.requisitionId ?? j.slug ?? j.title ?? j.Title ?? "");
+    if (id && seenIds.has(id)) continue;
+    if (id) seenIds.add(id);
+    deduped.push(j);
+  }
+  rows.length = 0;
+  rows.push(...deduped);
 
   const origin = (() => {
     try {
@@ -573,6 +617,13 @@ export async function harvestSource(src, env) {
   const kind = src.machineReadable?.kind;
   if (!kind || kind === "none" || !src.machineReadable?.endpoint) {
     return { postings: [], error: null, skipped: "no machine-readable endpoint" };
+  }
+  // A source whose credentials are absent has not failed — it was never asked.
+  // Reporting the two identically would make the coverage report useless for
+  // deciding what to actually go and fix.
+  const missing = (src.requiresEnv ?? []).filter((k) => !env?.[k]);
+  if (missing.length) {
+    return { postings: [], error: null, skipped: `needs ${missing.join(" + ")}` };
   }
   const adapter = ADAPTERS[kind];
   if (!adapter) return { postings: [], error: `no adapter for "${kind}"`, skipped: null };
