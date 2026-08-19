@@ -112,6 +112,37 @@ describe("classify — real misclassifications caught on the live board", () => 
     expect(at("Consultant Pediatric Vascular Surgery (SKMC)").specialty).toBe("vascular");
   });
 
+  test.each([
+    "Registered Radiologist Assistant",
+    "Radiologist Assistant",
+    "Radiologist Assistant - GI Procedures",
+    "Radiology Assistant",
+  ])("a Radiologist Assistant is a mid-level provider, not a radiologist: %s", (title) => {
+    expect(isRelevant(at(title))).toBe(false);
+  });
+
+  test.each([
+    "Assistant Professor-Interventional Radiology",
+    "Vascular Surgeon & Clinical Assistant/Associate Professor",
+  ])("but a seniority rank containing 'assistant' survives: %s", (title) => {
+    // Word order is the whole distinction — reject the job, keep the rank.
+    expect(isRelevant(at(title))).toBe(true);
+  });
+
+  test("'Assistant Chief' is seniority, not an assistant's job", () => {
+    // The VA writes "Physician (Radiology-Diagnostic) - Assistant Chief". The
+    // title alone carries no 'radiologist' token, so it is the body that
+    // assigns the specialty — as it does on the real board.
+    const c = classify({
+      title: "Physician (Radiology-Diagnostic) - Assistant Chief",
+      description: "Serve as Assistant Chief of the diagnostic radiology service at this VA medical center.",
+      org: "Veterans Health Administration",
+    });
+    expect(c.isAttending).toBe(true);
+    expect(c.specialty).toBe("radiology");
+    expect(c.isLeadership).toBe(true);
+  });
+
   test("an imaging manager is administration, not a radiologist", () => {
     expect(isRelevant(at("Imaging Manager, Diagnostic Radiology"))).toBe(false);
   });

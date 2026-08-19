@@ -554,6 +554,74 @@ async function jooble(src, env) {
   return ok([...seen.values()]);
 }
 
+/**
+ * USAJOBS — the federal listing service, and the only route to VA and
+ * Department of Defense physician posts.
+ *
+ * Authenticates with a header pair rather than a query string, and the
+ * User-Agent must be the exact email the key was issued to — a mismatch is a
+ * 401, not a warning. Swept once per specialty.
+ */
+async function usajobs(src, env) {
+  const key = env?.USAJOBS_API_KEY;
+  const email = env?.USAJOBS_EMAIL;
+  if (!key || !email) return fail("USAJOBS_API_KEY / USAJOBS_EMAIL not set");
+
+  const seen = new Map();
+  let anyOk = false;
+  let lastError = null;
+
+  for (const term of SPECIALTY_TERMS) {
+    for (let page = 1; page <= 3; page++) {
+      const url =
+        `https://data.usajobs.gov/api/search?Keyword=${encodeURIComponent(term)}` +
+        `&ResultsPerPage=100&Page=${page}`;
+      const res = await request(url, {
+        headers: { Host: "data.usajobs.gov", "User-Agent": email, "Authorization-Key": key },
+      });
+      if (!res.ok) {
+        lastError = res.error;
+        break;
+      }
+      anyOk = true;
+      let data;
+      try {
+        data = JSON.parse(res.body);
+      } catch {
+        lastError = "invalid JSON";
+        break;
+      }
+      const items = data?.SearchResult?.SearchResultItems ?? [];
+      for (const it of items) {
+        const f = it.MatchedObjectDescriptor ?? {};
+        const url2 = f.PositionURI;
+        if (!url2 || seen.has(url2)) continue;
+        const loc = (f.PositionLocation ?? [])[0]?.LocationName ?? f.PositionLocationDisplay ?? "";
+        const summary = f.UserArea?.Details?.JobSummary ?? f.QualificationSummary ?? "";
+        seen.set(
+          url2,
+          shape({
+            title: f.PositionTitle,
+            // The employing agency, not "USAJOBS" — otherwise every federal
+            // post collapses onto one employer and the same-employer signal
+            // in the pair engine becomes meaningless.
+            org: f.OrganizationName ?? f.DepartmentName ?? "",
+            location: loc,
+            description: htmlToText(summary),
+            url: url2,
+            datePosted: f.PublicationStartDate ?? null,
+            department: f.DepartmentName ?? "",
+          })
+        );
+      }
+      if (items.length < 100) break;
+    }
+  }
+
+  if (!anyOk) return fail(lastError ?? "no successful page");
+  return ok([...seen.values()]);
+}
+
 /** RSS / Atom — covers iCIMS, Taleo, and most society job boards. */
 async function rss(src) {
   const res = await request(parseEndpoint(src.machineReadable.endpoint).url);
@@ -659,6 +727,7 @@ const ADAPTERS = {
   successfactors,
   jobvite,
   jooble,
+  usajobs,
   rss,
   "icims-rss": rss,
   "taleo-rss": rss,

@@ -1681,14 +1681,14 @@
    "sweepMethod": "api",
    "fetchable": "partial",
    "machineReadable": {
-    "kind": "json",
+    "kind": "usajobs",
     "endpoint": "https://data.usajobs.gov/api/search?Keyword=diagnostic%20radiologist&ResultsPerPage=500",
     "confirmed": false
    },
    "yield": "high",
    "query": "diagnostic radiologist / vascular surgeon",
-   "evidence": "Endpoint is live and correct but key-gated: unauthenticated call returns a clean JSON 401 {\"title\":\"Unauthorized\",\"status\":401}, proving the route exists. Developer portal (HTTP 200) documents \"GET /api/Search\" plus RSS feeds and job exports. Confirmed the underlying data is real and highly relevant by loading the public search in a browser: \"1 \u2013 25 of 152 jobs\" for diagnostic radiologist, e.g. \"Diagnostic Radiologist \u2014 Veterans Health Administration, Fayetteville NC, starting $360,000/yr (VM 15)\" and Durham NC at $380,000/yr.",
-   "note": "Free self-serve API key from developer.usajobs.gov; requires Authorization-Key header plus a User-Agent set to the registered email. Nearly all hits are VA/VHA \u2014 strong, uncontested lane with real posted salaries.",
+   "evidence": "Verified 2026-08-19 with a live key: HTTP 200, VA vascular surgeon posts in Asheville, Amarillo, Detroit and Clarksburg.",
+   "note": "Federal listings: VA, DoD, Indian Health Service. Header auth; User-Agent must be the email the key was issued to.",
    "requiresEnv": [
     "USAJOBS_API_KEY",
     "USAJOBS_EMAIL"

@@ -23,6 +23,7 @@ export const ADAPTER_KINDS = new Set([
   "successfactors",
   "jobvite",
   "jooble",
+  "usajobs",
   "rss",
   "icims-rss",
   "taleo-rss",

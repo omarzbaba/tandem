@@ -64,6 +64,10 @@ const NON_ATTENDING = [
   // the department name must not make it a surgeon. "Clinical Assistant
   // Professor" stays: the rank word follows immediately.
   /\b(?:medical|technical|surgical|nursing|patient care|physician office|clinic) assistant\b(?!\s*\/?\s*(?:professor|prof\b))/i,
+  // A Radiologist Assistant (RRA) is a mid-level provider, not a radiologist.
+  // Word order is what separates it from a rank: "Radiologist Assistant" is a
+  // job, "Assistant Professor" and "Assistant Chief" are seniority.
+  /\b(?:radiologist|radiology|vascular|surgeon)s?\s+assistant\b/i,
   /\b(?:practice|office|imaging|radiology|clinic|department|operations|business) (?:manager|supervisor)\b/i,
   /\b(technologist|technician|\btech\b|sonographer|ultrasonographer|radiographer|\bRT\b\(?R?\)?)\b/i,
   /\b(scheduler|coordinator|registrar|receptionist|clerk|transcription|biller|coder|coding)\b/i,

@@ -1,24 +1,24 @@
 {
-  "ranAt": "2026-08-19T03:37:30.693Z",
+  "ranAt": "2026-08-19T03:50:48.702Z",
   "today": "2026-08-19",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
     "sourcesFailed": 2,
-    "rawPostings": 2940,
-    "irrelevant": 2183,
-    "duplicates": 55,
+    "rawPostings": 3143,
+    "irrelevant": 2314,
+    "duplicates": 60,
     "expired": 84,
-    "unlocated": 203,
-    "roles": 618,
-    "vascular": 106,
-    "radiology": 512,
-    "newThisRun": 80,
+    "unlocated": 199,
+    "roles": 685,
+    "vascular": 115,
+    "radiology": 570,
+    "newThisRun": 5,
     "carriedOver": 0,
-    "pairs": 12669,
-    "metros": 127,
-    "togetherMetros": 24
+    "pairs": 14732,
+    "metros": 139,
+    "togetherMetros": 33
   },
   "failedSources": [
     {
@@ -45,11 +45,6 @@
       "name": "JSearch (RapidAPI, Google-for-Jobs index)",
       "url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch",
       "needs": "RAPIDAPI_KEY"
-    },
-    {
-      "name": "USAJOBS REST API (federal / VA / DHA)",
-      "url": "https://developer.usajobs.gov/",
-      "needs": "USAJOBS_API_KEY + USAJOBS_EMAIL"
     }
   ],
   "sweepOnlySources": [
