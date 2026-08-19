@@ -60,6 +60,8 @@ export interface Role {
   concerns: string[];
   ageDays: number | null;
   isNew?: boolean;
+  /** Date this posting first entered the board; never changes afterwards. */
+  firstSeen?: string;
   stale?: boolean;
   staleSince?: string;
 }

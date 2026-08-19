@@ -115,6 +115,22 @@ async function main() {
   const previousIds = new Set((previous?.roles ?? []).map((r) => r.id));
   for (const r of roles) r.isNew = previousIds.size > 0 && !previousIds.has(r.id);
 
+  // `firstSeen` is the date a posting entered the board and never changes
+  // afterwards. `isNew` only covers the most recent run, so on its own it
+  // cannot answer "what appeared while I was away for three weeks" — which is
+  // exactly what the notifications panel is for.
+  const previousFirstSeen = new Map(
+    (previous?.roles ?? []).map((r) => [r.id, r.firstSeen])
+  );
+  const previousToday = previous?.today ?? today;
+  for (const r of roles) {
+    r.firstSeen =
+      previousFirstSeen.get(r.id) ??
+      // Backfill: a role already on last week's board predates this run, so
+      // date it to that run rather than making the whole board look new.
+      (previousIds.has(r.id) ? previousToday : today);
+  }
+
   const pairs = buildPairs(roles, { radiusMiles: args.radius });
   const metros = buildMetros(roles, { radiusMiles: args.radius });
   const together = metros.filter((m) => m.isTogether);

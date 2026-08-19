@@ -94,3 +94,23 @@ describe("mailtoUrl", () => {
     expect(mailtoUrl(undefined, "S", "B").startsWith("mailto:?")).toBe(true);
   });
 });
+
+describe("formatRunTime", () => {
+  test("a date-only value renders as that same calendar day", async () => {
+    // Parsed as UTC midnight then rendered locally, "2026-08-19" showed as the
+    // 18th to anyone west of Greenwich — the notification panel dated every
+    // batch a day early.
+    const { formatRunTime } = await import("./format");
+    expect(formatRunTime("2026-08-19")).toContain("19");
+  });
+
+  test("a full timestamp still renders its own instant", async () => {
+    const { formatRunTime } = await import("./format");
+    expect(formatRunTime("2026-08-19T14:00:00.000Z")).toContain("19");
+  });
+
+  test("an unparseable value says so rather than throwing", async () => {
+    const { formatRunTime } = await import("./format");
+    expect(formatRunTime("not a date")).toBe("unknown");
+  });
+});

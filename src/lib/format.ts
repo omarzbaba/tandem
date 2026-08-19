@@ -59,8 +59,17 @@ export function formatSeparation(miles: number, driveMinutes: number | null): st
   return `${m} · ~${h}h${rem ? ` ${rem}m` : ""}`;
 }
 
+/**
+ * A bare "YYYY-MM-DD" is parsed by JS as UTC midnight, so rendering it in a
+ * negative-offset timezone silently shows the previous day — the harvest dated
+ * the 19th appeared to readers in the US as the 18th. Date-only values are
+ * therefore constructed in local time; full timestamps keep their instant.
+ */
 export function formatRunTime(iso: string): string {
-  const d = new Date(iso);
+  const dateOnly = /^\d{4}-\d{2}-\d{2}$/.exec(iso);
+  const d = dateOnly
+    ? new Date(Number(iso.slice(0, 4)), Number(iso.slice(5, 7)) - 1, Number(iso.slice(8, 10)))
+    : new Date(iso);
   if (Number.isNaN(d.getTime())) return "unknown";
   return d.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
 }

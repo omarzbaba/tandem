@@ -145,4 +145,11 @@
 .filters__undated {
   font-weight: 400;
   color: var(--ink-faint);
+  /* The count above is nowrap so "37 posts" never breaks; this sentence is far
+     too long for that and was pushing the whole page sideways on a phone. */
+  white-space: normal;
+}
+
+.filters__count--inline {
+  white-space: normal;
 }

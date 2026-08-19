@@ -5,6 +5,8 @@ import { useTheme } from "./hooks/useTheme";
 import { loadConfig, FALLBACK_CONFIG, type AppConfig } from "./lib/config";
 import { clearAccessCode, getAccessCode, getWho, setWho } from "./lib/shared-state";
 import { AccessGate } from "./components/shell/AccessGate";
+import { NotificationPanel } from "./components/shell/NotificationPanel";
+import { useNotifications } from "./hooks/useNotifications";
 import { formatRunTime } from "./lib/format";
 import { TogetherView } from "./components/together/TogetherView";
 import {
@@ -62,6 +64,7 @@ export default function App() {
   const [radius, setRadius] = useState(restored?.radius ?? FALLBACK_CONFIG.defaultRadiusMiles);
   const [sort, setSort] = useState<SortKey>(restored?.sort ?? "fit");
   const [openRoleId, setOpenRoleId] = useState<string | null>(null);
+  const [notifOpen, setNotifOpen] = useState(false);
   const [who, setWhoState] = useState(getWho());
   // Dev has no /api route, so the gate only guards real deployments.
   const [accessCode, setAccessCodeState] = useState(() =>
@@ -72,6 +75,12 @@ export default function App() {
   const { metros, pairs } = useRadius(data, radius);
   const { marks, update, togglePin, error: markError, backendKind, pinnedCount, codeRejected } = useMarks(accessCode);
   const { theme, cycle } = useTheme();
+  const { groups, newTogetherAreas, unreadCount, lastSeen, markAllSeen } = useNotifications(
+    data.roles,
+    metros,
+    who,
+    data.run?.today ?? null
+  );
 
   useEffect(() => {
     void loadConfig(BASE).then((c) => {
@@ -225,6 +234,31 @@ export default function App() {
               </label>
               <button
                 type="button"
+                className={`bell${unreadCount > 0 ? " bell--unread" : ""}`}
+                onClick={() => setNotifOpen(true)}
+                aria-label={
+                  unreadCount > 0
+                    ? `What's new — ${unreadCount} since you last looked`
+                    : "What's new — nothing since you last looked"
+                }
+                title="What's new"
+              >
+                <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+                  <path
+                    d="M8 1.7a3.9 3.9 0 0 0-3.9 3.9c0 3-1 4.2-1.4 4.6a.5.5 0 0 0 .35.86h9.9a.5.5 0 0 0 .35-.86c-.4-.4-1.4-1.6-1.4-4.6A3.9 3.9 0 0 0 8 1.7Z"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.3"
+                    strokeLinejoin="round"
+                  />
+                  <path d="M6.6 13.2a1.5 1.5 0 0 0 2.8 0" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
+                </svg>
+                {unreadCount > 0 && (
+                  <span className="bell__count tnum">{unreadCount > 99 ? "99+" : unreadCount}</span>
+                )}
+              </button>
+              <button
+                type="button"
                 className="masthead__theme"
                 onClick={cycle}
                 aria-label={`Theme: ${theme}. Click to change.`}
@@ -365,6 +399,21 @@ export default function App() {
           © 2026 Omar Z. Baba, MD. All rights reserved.
         </p>
       </footer>
+
+      {notifOpen && (
+        <NotificationPanel
+          groups={groups}
+          newTogetherAreas={newTogetherAreas}
+          unreadCount={unreadCount}
+          lastSeen={lastSeen}
+          marks={marks}
+          partnerALabel={config.partnerALabel}
+          partnerBLabel={config.partnerBLabel}
+          onOpenRole={setOpenRoleId}
+          onMarkAllSeen={markAllSeen}
+          onClose={() => setNotifOpen(false)}
+        />
+      )}
 
       {openRole && (
         <RoleDrawer
