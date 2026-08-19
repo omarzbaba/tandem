@@ -1,23 +1,24 @@
 {
-  "ranAt": "2026-08-17T06:49:12.993Z",
-  "today": "2026-08-17",
+  "ranAt": "2026-08-19T02:20:46.180Z",
+  "today": "2026-08-19",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 89,
     "sourcesAttempted": 44,
-    "sourcesFailed": 8,
-    "rawPostings": 1859,
-    "irrelevant": 1558,
+    "sourcesFailed": 7,
+    "rawPostings": 2354,
+    "irrelevant": 1685,
     "duplicates": 45,
-    "unlocated": 106,
-    "roles": 622,
+    "expired": 84,
+    "unlocated": 195,
+    "roles": 540,
     "vascular": 72,
-    "radiology": 550,
-    "newThisRun": 24,
-    "carriedOver": 366,
-    "pairs": 8955,
-    "metros": 107,
-    "togetherMetros": 16
+    "radiology": 468,
+    "newThisRun": 52,
+    "carriedOver": 0,
+    "pairs": 7569,
+    "metros": 98,
+    "togetherMetros": 15
   },
   "failedSources": [
     {
@@ -28,16 +29,11 @@
     {
       "name": "Care Bridge — GCC Clinician Recruitment (Job Openings)",
       "url": "https://carebridge.ae/job-openings/",
-      "error": "fetch failed"
+      "error": "HTTP 500"
     },
     {
       "name": "Careerjet Public Job Search API",
       "url": "http://public.api.careerjet.net/search",
-      "error": "HTTP 403"
-    },
-    {
-      "name": "RadWorking.com",
-      "url": "https://www.radworking.com/jobs/radiology-jobs.html",
       "error": "HTTP 403"
     },
     {

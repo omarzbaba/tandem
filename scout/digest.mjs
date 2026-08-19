@@ -113,7 +113,7 @@ function renderEmail(d) {
   const nothingNew = c.newThisRun === 0;
 
   return `<!doctype html>
-<html><body style="margin:0;padding:0;background:#faf7f2;">
+<html><body style="margin:0;padding:0;background:#ffffff;">
 <div style="max-width:560px;margin:0 auto;padding:28px 20px;font-family:Georgia,'Times New Roman',serif;color:#241f1a;">
   <h1 style="font-size:24px;margin:0;font-weight:400;">Bespoke Job Navigator for the Wehbes</h1>
   <p style="margin:2px 0 0;font-size:12px;color:#b6ac9f;font-family:Helvetica,Arial,sans-serif;">by OZB</p>
@@ -137,7 +137,7 @@ function renderEmail(d) {
   <p style="font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:1.6;color:#4a443c;">${togetherLine}</p>
 
   <p style="margin:26px 0 0;">
-    <a href="${esc(d.siteUrl)}" style="display:inline-block;background:#241f1a;color:#faf7f2;padding:10px 18px;border-radius:5px;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;text-decoration:none;">Open the board</a>
+    <a href="${esc(d.siteUrl)}" style="display:inline-block;background:#241f1a;color:#ffffff;padding:10px 18px;border-radius:5px;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;text-decoration:none;">Open the board</a>
   </p>
 
   <p style="font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#b6ac9f;margin-top:26px;line-height:1.5;">

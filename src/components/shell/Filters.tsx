@@ -1,5 +1,5 @@
-import type { RoleFilters } from "../roles/RoleList";
-import { DEFAULT_FILTERS } from "../roles/RoleList";
+import type { RoleFilters, SortKey } from "../roles/RoleList";
+import { DEFAULT_FILTERS, SORT_LABELS } from "../roles/RoleList";
 import { COUNTRY_NAMES, SETTING_LABELS } from "../../lib/format";
 import "./filters.css";
 
@@ -9,12 +9,26 @@ interface Props {
   radius: number;
   onRadiusChange: (r: number) => void;
   showRadius: boolean;
+  /** Sorting only applies to the flat specialty lists, not the metro view. */
+  showSort: boolean;
+  sort: SortKey;
+  onSortChange: (s: SortKey) => void;
   resultCount: number;
+  /** Postings held back purely because they carry no date. */
+  undatedHeldBack: number;
 }
 
 const COUNTRIES = ["all", "US", "QA", "AE", "SA", "KW", "BH", "OM"];
 const SETTINGS = ["all", "academic", "private", "hospital-employed", "government"] as const;
 const RADIUS_STOPS = [15, 30, 45, 60, 90, 120];
+const POSTED_WITHIN: { value: number; label: string }[] = [
+  { value: 0, label: "Any time" },
+  { value: 7, label: "Past week" },
+  { value: 14, label: "Past 2 weeks" },
+  { value: 30, label: "Past month" },
+  { value: 90, label: "Past 3 months" },
+];
+const SORTS: SortKey[] = ["fit", "newest", "oldest"];
 
 export function Filters({
   filters,
@@ -22,7 +36,11 @@ export function Filters({
   radius,
   onRadiusChange,
   showRadius,
+  showSort,
+  sort,
+  onSortChange,
   resultCount,
+  undatedHeldBack,
 }: Props) {
   const dirty = JSON.stringify(filters) !== JSON.stringify(DEFAULT_FILTERS);
   const set = <K extends keyof RoleFilters>(key: K, value: RoleFilters[K]) =>
@@ -88,6 +106,20 @@ export function Filters({
         </div>
 
         <label className="filters__field">
+          <span>Posted</span>
+          <select
+            value={String(filters.postedWithin)}
+            onChange={(e) => set("postedWithin", Number(e.target.value))}
+          >
+            {POSTED_WITHIN.map((p) => (
+              <option key={p.value} value={p.value}>
+                {p.label}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="filters__field">
           <span>Min fit</span>
           <select
             value={String(filters.minScore)}
@@ -100,6 +132,23 @@ export function Filters({
             ))}
           </select>
         </label>
+
+        {showSort && (
+          <div className="filters__field filters__work" role="group" aria-label="Sort by">
+            <span>Sort</span>
+            {SORTS.map((value) => (
+              <button
+                key={value}
+                type="button"
+                className={`filters__work-chip${sort === value ? " filters__work-chip--on" : ""}`}
+                aria-pressed={sort === value}
+                onClick={() => onSortChange(value)}
+              >
+                {SORT_LABELS[value]}
+              </button>
+            ))}
+          </div>
+        )}
 
         <label className="filters__toggle">
           <input
@@ -148,6 +197,13 @@ export function Filters({
       {!showRadius && (
         <p className="filters__count filters__count--inline tnum" role="status">
           {resultCount} {resultCount === 1 ? "post" : "posts"}
+          {undatedHeldBack > 0 && (
+            <span className="filters__undated">
+              {" "}
+              · {undatedHeldBack} more {undatedHeldBack === 1 ? "post has" : "posts have"} no date and
+              {undatedHeldBack === 1 ? " is" : " are"} hidden by this filter
+            </span>
+          )}
         </p>
       )}
     </section>

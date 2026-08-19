@@ -185,9 +185,13 @@ export function scoreRole(role, specialty, ctx) {
     reasons.push("posted within two weeks");
   } else if (age <= 45) recency = 0.75;
   else if (age <= 90) recency = 0.45;
+  else if (age <= 180) recency = 0.25;
   else {
-    recency = 0.15;
-    concerns.push(`posting is ${age} days old`);
+    // Beyond six months a physician post has usually been filled or quietly
+    // withdrawn; the board should not rank it beside a live one.
+    recency = 0.08;
+    const months = Math.round(age / 30);
+    concerns.push(`posting is about ${months} months old — likely filled`);
   }
 
   // --- Signal quality ------------------------------------------------------

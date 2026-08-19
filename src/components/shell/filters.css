@@ -141,3 +141,8 @@
   background: var(--radiology);
   border-color: var(--radiology);
 }
+
+.filters__undated {
+  font-weight: 400;
+  color: var(--ink-faint);
+}

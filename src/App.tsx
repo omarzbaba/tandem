@@ -7,7 +7,14 @@ import { clearAccessCode, getAccessCode, getWho, setWho } from "./lib/shared-sta
 import { AccessGate } from "./components/shell/AccessGate";
 import { formatRunTime } from "./lib/format";
 import { TogetherView } from "./components/together/TogetherView";
-import { RoleList, applyFilters, DEFAULT_FILTERS, type RoleFilters } from "./components/roles/RoleList";
+import {
+  RoleList,
+  applyFilters,
+  countUndated,
+  DEFAULT_FILTERS,
+  type RoleFilters,
+  type SortKey,
+} from "./components/roles/RoleList";
 import { RoleDrawer } from "./components/roles/RoleDrawer";
 import { CoverageView } from "./components/coverage/CoverageView";
 import { Filters } from "./components/shell/Filters";
@@ -22,15 +29,25 @@ type Tab = (typeof TABS)[number];
 const UI_STATE_KEY = "tandem:ui:v1";
 
 /** Last tab, filters and radius — restored on the next visit, per device. */
-function loadUiState(): { tab: Tab; filters: RoleFilters; radius: number } | null {
+function loadUiState(): { tab: Tab; filters: RoleFilters; radius: number; sort: SortKey } | null {
   try {
     const raw = localStorage.getItem(UI_STATE_KEY);
     if (!raw) return null;
-    const parsed = JSON.parse(raw) as { tab?: Tab; filters?: RoleFilters; radius?: number };
+    const parsed = JSON.parse(raw) as {
+      tab?: Tab;
+      filters?: RoleFilters;
+      radius?: number;
+      sort?: SortKey;
+    };
     return {
       tab: TABS.includes(parsed.tab as Tab) ? (parsed.tab as Tab) : "together",
+      // Spread over the defaults so a state saved before a new filter existed
+      // still loads, with the new key at its default.
       filters: { ...DEFAULT_FILTERS, ...(parsed.filters ?? {}) },
       radius: typeof parsed.radius === "number" ? parsed.radius : FALLBACK_CONFIG.defaultRadiusMiles,
+      sort: (["fit", "newest", "oldest"] as const).includes(parsed.sort as SortKey)
+        ? (parsed.sort as SortKey)
+        : "fit",
     };
   } catch {
     return null;
@@ -43,6 +60,7 @@ export default function App() {
   const [tab, setTab] = useState<Tab>(restored?.tab ?? "together");
   const [filters, setFilters] = useState<RoleFilters>(restored?.filters ?? DEFAULT_FILTERS);
   const [radius, setRadius] = useState(restored?.radius ?? FALLBACK_CONFIG.defaultRadiusMiles);
+  const [sort, setSort] = useState<SortKey>(restored?.sort ?? "fit");
   const [openRoleId, setOpenRoleId] = useState<string | null>(null);
   const [who, setWhoState] = useState(getWho());
   // Dev has no /api route, so the gate only guards real deployments.
@@ -65,11 +83,11 @@ export default function App() {
   // Persist the working state so the board reopens where they left it.
   useEffect(() => {
     try {
-      localStorage.setItem(UI_STATE_KEY, JSON.stringify({ tab, filters, radius }));
+      localStorage.setItem(UI_STATE_KEY, JSON.stringify({ tab, filters, radius, sort }));
     } catch {
       /* private browsing */
     }
-  }, [tab, filters, radius]);
+  }, [tab, filters, radius, sort]);
 
 
   const rolesById = useMemo(
@@ -269,12 +287,20 @@ export default function App() {
                 radius={radius}
                 onRadiusChange={setRadius}
                 showRadius={tab === "together"}
+                showSort={tab !== "together"}
+                sort={sort}
+                onSortChange={setSort}
                 resultCount={
                   tab === "together"
                     ? togetherCount
                     : tab === "pinned"
                       ? pinnedRoles.length
                       : applyFilters(data.roles, filters, tab === "vascular" ? "vascular" : "radiology").length
+                }
+                undatedHeldBack={
+                  tab === "vascular" || tab === "radiology"
+                    ? countUndated(data.roles, filters, tab === "vascular" ? "vascular" : "radiology")
+                    : 0
                 }
               />
             )}
@@ -296,6 +322,7 @@ export default function App() {
               <RoleList
                 roles={applyFilters(data.roles, filters, tab === "vascular" ? "vascular" : "radiology")}
                 marks={marks}
+                sort={sort}
                 emptyMessage="No posts match these filters. Try clearing them, or check the Coverage tab to see whether a source failed this week."
                 onOpenRole={setOpenRoleId}
                 onTogglePin={togglePin}
@@ -306,6 +333,7 @@ export default function App() {
               <RoleList
                 roles={pinnedRoles}
                 marks={marks}
+                sort={sort}
                 emptyMessage={
                   backendKind === "local"
                     ? "Nothing pinned yet. Pins are stored in this browser only — deploy with a shared board id to sync them between the two of you."

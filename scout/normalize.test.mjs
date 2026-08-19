@@ -154,6 +154,37 @@ describe("fingerprintOf", () => {
   });
 });
 
+describe("expired postings", () => {
+  const daysAgo = (n) => new Date(Date.parse(TODAY) - n * 86_400_000).toISOString().slice(0, 10);
+
+  test("drops a posting older than eighteen months", () => {
+    // RadWorking was serving live-looking ads dated 2018.
+    const { roles, stats } = normalizeAll(
+      [{ source: source(), postings: [posting({ datePosted: "2018-11-02" })] }],
+      { today: TODAY }
+    );
+    expect(roles).toHaveLength(0);
+    expect(stats.expired).toBe(1);
+  });
+
+  test("keeps one just inside the cutoff", () => {
+    const { roles } = normalizeAll(
+      [{ source: source(), postings: [posting({ datePosted: daysAgo(540) })] }],
+      { today: TODAY }
+    );
+    expect(roles).toHaveLength(1);
+  });
+
+  test("never drops an undated posting — a missing date is not an old date", () => {
+    const { roles, stats } = normalizeAll(
+      [{ source: source(), postings: [posting({ datePosted: null })] }],
+      { today: TODAY }
+    );
+    expect(roles).toHaveLength(1);
+    expect(stats.expired).toBe(0);
+  });
+});
+
 describe("normalizeAll", () => {
   test("keeps relevant attending posts and drops the rest", () => {
     const { roles, stats } = normalizeAll(

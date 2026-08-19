@@ -223,13 +223,25 @@ function sourceRank(src) {
 }
 
 /**
+ * Postings older than this are dropped outright.
+ *
+ * Some boards — RadWorking especially — keep listings up for years and report
+ * the original posting date; the board was carrying ads dated 2018. No
+ * physician post sits genuinely unfilled for eighteen months, so these are dead
+ * listings, and ranking them beside live ones is worse than not showing them.
+ * Undated postings are never dropped by this rule: a missing date is not
+ * evidence of age.
+ */
+const MAX_AGE_DAYS = 548;
+
+/**
  * @param {Array<{source: object, postings: Array}>} harvested
  * @param {{today: string, preferredCountries?: string[]}} ctx
  */
 export function normalizeAll(harvested, ctx) {
   /** @type {Map<string, any>} */
   const byFingerprint = new Map();
-  const stats = { raw: 0, irrelevant: 0, unlocated: 0, duplicates: 0 };
+  const stats = { raw: 0, irrelevant: 0, unlocated: 0, duplicates: 0, expired: 0 };
 
   for (const { source, postings } of harvested) {
     for (const posting of postings) {
@@ -249,6 +261,15 @@ export function normalizeAll(harvested, ctx) {
       if (!isRelevant(classified)) {
         stats.irrelevant++;
         continue;
+      }
+
+      const postedOn = posting.datePosted ? isoOrNull(posting.datePosted) : null;
+      if (postedOn) {
+        const age = Math.round((Date.parse(ctx.today) - Date.parse(postedOn)) / 86_400_000);
+        if (age > MAX_AGE_DAYS) {
+          stats.expired++;
+          continue;
+        }
       }
 
       // A remote job has no location by nature. Recording that as "we could not
@@ -300,7 +321,7 @@ export function normalizeAll(harvested, ctx) {
         locationText,
         geo,
         url: posting.url,
-        datePosted: posting.datePosted ? isoOrNull(posting.datePosted) : null,
+        datePosted: postedOn,
         // Trimmed for the committed payload: the drawer shows an excerpt and the
         // full text is one click away at the source. Scoring already ran on the
         // untruncated body above.

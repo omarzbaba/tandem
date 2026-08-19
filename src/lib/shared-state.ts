@@ -187,6 +187,10 @@ async function describe(res: Response): Promise<string> {
  * they stay in this browser.
  */
 export function createBackend(accessCode: string | null): SharedStateBackend {
+  // `vite dev` has no serverless routes, so /api/marks resolves to the raw
+  // source file and parsing it throws a confusing JSON error. Local runs use
+  // browser storage; the shared path is exercised against a deployment.
+  if (import.meta.env.DEV) return new LocalBackend();
   const code = accessCode?.trim();
   if (code && code.length >= 4) return new ApiBackend(code);
   return new LocalBackend();

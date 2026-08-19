@@ -30,6 +30,7 @@ export function CoverageView({ run }: { run: RunReport | null }) {
             ["Postings read", c.rawPostings ?? 0],
             ["Not relevant", c.irrelevant ?? 0],
             ["Duplicates merged", c.duplicates ?? 0],
+            ["Expired, dropped", c.expired ?? 0],
             ["On the board", c.roles ?? 0],
             ["New this run", c.newThisRun ?? 0],
             ["Commutable pairs", c.pairs ?? 0],

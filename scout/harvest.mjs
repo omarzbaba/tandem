@@ -130,6 +130,7 @@ async function main() {
       rawPostings: stats.raw,
       irrelevant: stats.irrelevant,
       duplicates: stats.duplicates,
+      expired: stats.expired,
       unlocated: stats.unlocated,
       roles: roles.length,
       vascular: roles.filter((r) => r.specialty === "vascular").length,
