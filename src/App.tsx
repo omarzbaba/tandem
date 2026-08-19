@@ -6,7 +6,9 @@ import { loadConfig, FALLBACK_CONFIG, type AppConfig } from "./lib/config";
 import { clearAccessCode, getAccessCode, getWho, setWho } from "./lib/shared-state";
 import { AccessGate } from "./components/shell/AccessGate";
 import { NotificationPanel } from "./components/shell/NotificationPanel";
+import { Tour, type TourStep } from "./components/shell/Tour";
 import { useNotifications } from "./hooks/useNotifications";
+import { useTour } from "./hooks/useTour";
 import { formatRunTime } from "./lib/format";
 import { TogetherView } from "./components/together/TogetherView";
 import {
@@ -56,6 +58,68 @@ function loadUiState(): { tab: Tab; filters: RoleFilters; radius: number; sort: 
   }
 }
 
+/**
+ * The walkthrough. Each step points at a real control rather than a picture of
+ * one, and says what it is FOR — a couple deciding where to move needs to know
+ * why the Together tab exists, not merely that a tab exists.
+ */
+function tourSteps(partnerA: string, partnerB: string): TourStep[] {
+  const a = partnerA.toLowerCase();
+  const b = partnerB.toLowerCase();
+  return [
+    {
+      title: "Welcome to your board",
+      body: `This is not two job searches side by side. It looks for the places where a ${a} post and a ${b} post sit close enough together that you could both take one. Ninety seconds and you will know your way around.`,
+    },
+    {
+      tab: "together",
+      target: "tabs",
+      title: "Start with Together",
+      body: "The first tab is the whole point: areas with a live opening for each of you. The rest are your two full lists, anything either of you has pinned, and an honest account of what could and could not be read this week.",
+    },
+    {
+      tab: "together",
+      target: "metro-card",
+      title: "Reading an area",
+      body: "Each card is one commutable area — his side, her side, and the distance between them stated plainly. Watch for \u201cSame employer hiring both\u201d: one system hiring you both means one negotiation and one relocation instead of two.",
+    },
+    {
+      tab: "together",
+      target: "radius",
+      title: "Set your own commute",
+      body: "Drag this to the furthest apart you would genuinely accept and the map redraws instantly. Underneath you will also find places where only one of you has a post \u2014 worth a call, kept separate so they never pad the real matches.",
+    },
+    {
+      tab: "radiology",
+      target: "work",
+      title: "Remote changes everything",
+      body: `Radiology reads from anywhere; vascular surgery does not. Tap Remote to see every post ${b} could take from home \u2014 which makes a surgical job anywhere in the country workable. That is a far larger opportunity space than physical co-location.`,
+    },
+    {
+      tab: "radiology",
+      target: "filters",
+      title: "Narrow it down",
+      body: "Filter by country, practice setting, how recently a post appeared or minimum fit, and sort by newest when you only want to see what changed. Your choices are remembered on this device.",
+    },
+    {
+      tab: "radiology",
+      target: "role-card",
+      title: "Open anything promising",
+      body: "Tap a post for the full detail: why it scored what it did, what to watch out for, any recruiter contact found in the advert, and an enquiry email already written around your situation. The star pins it \u2014 and pins are shared, so whatever one of you pins, the other sees.",
+    },
+    {
+      target: "bell",
+      title: "What turned up while you were away",
+      body: "The board re-sweeps every Monday morning. The bell gathers everything that has appeared since you last looked, however long that has been, and each of you has your own unread count.",
+    },
+    {
+      target: "help",
+      title: "That is everything",
+      body: "This question mark reopens the tour whenever you want it. Now go and find somewhere you both want to live.",
+    },
+  ];
+}
+
 export default function App() {
   const restored = useMemo(loadUiState, []);
   const [config, setConfig] = useState<AppConfig>(FALLBACK_CONFIG);
@@ -75,6 +139,7 @@ export default function App() {
   const { metros, pairs } = useRadius(data, radius);
   const { marks, update, togglePin, error: markError, backendKind, pinnedCount, codeRejected } = useMarks(accessCode);
   const { theme, cycle } = useTheme();
+  const tour = useTour(who, status === "ready" && data.roles.length > 0);
   const { groups, newTogetherAreas, unreadCount, lastSeen, markAllSeen } = useNotifications(
     data.roles,
     metros,
@@ -162,6 +227,11 @@ export default function App() {
   const togetherCount = visibleMetros.filter((m) => m.isTogether || m.remoteUnlocked).length;
   const pinnedRoles = data.roles.filter((r) => marks[r.id]?.pinned);
 
+  const steps = useMemo(
+    () => tourSteps(config.partnerALabel, config.partnerBLabel),
+    [config.partnerALabel, config.partnerBLabel]
+  );
+
   const identity: OutreachIdentity = useMemo(() => {
     const isA = who === "a";
     return {
@@ -234,6 +304,17 @@ export default function App() {
               </label>
               <button
                 type="button"
+                className="help"
+                data-tour="help"
+                onClick={tour.start}
+                aria-label="How to use this board"
+                title="How to use this board"
+              >
+                ?
+              </button>
+              <button
+                type="button"
+                data-tour="bell"
                 className={`bell${unreadCount > 0 ? " bell--unread" : ""}`}
                 onClick={() => setNotifOpen(true)}
                 aria-label={
@@ -271,7 +352,7 @@ export default function App() {
         </div>
 
         <div className="shell">
-          <nav className="tabs" aria-label="Board sections">
+          <nav className="tabs" aria-label="Board sections" data-tour="tabs">
             {TABS.map((t) => (
               <button
                 key={t}
@@ -399,6 +480,15 @@ export default function App() {
           © 2026 Omar Z. Baba, MD. All rights reserved.
         </p>
       </footer>
+
+      {tour.open && (
+        <Tour
+          steps={steps}
+          onRequestTab={(t) => setTab(t as Tab)}
+          onClose={tour.close}
+          onFinish={tour.finish}
+        />
+      )}
 
       {notifOpen && (
         <NotificationPanel

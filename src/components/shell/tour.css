@@ -1,0 +1,185 @@
+.tour {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+}
+
+/*
+ * The dimming is a huge spread shadow around a transparent box, so the real
+ * control underneath stays visible and in place — no screenshots to drift out
+ * of date, and the user is looking at the thing they will actually click.
+ */
+.tour__spotlight {
+  position: fixed;
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 0 0 9999px rgb(20 17 14 / 0.58),
+    0 0 0 2px var(--together);
+  transition:
+    top var(--duration-normal) var(--ease-out-expo),
+    left var(--duration-normal) var(--ease-out-expo),
+    width var(--duration-normal) var(--ease-out-expo),
+    height var(--duration-normal) var(--ease-out-expo);
+  pointer-events: none;
+}
+
+.tour__spotlight--still {
+  transition: none;
+}
+
+ /* No target: keep the dimming shadow, drop the ring around the empty box. */
+.tour__spotlight--none {
+  box-shadow: 0 0 0 9999px rgb(20 17 14 / 0.58);
+}
+
+.tour__card {
+  position: fixed;
+  inline-size: 330px;
+  max-inline-size: calc(100vw - 2rem);
+  padding: var(--space-5);
+  background: var(--paper-raised);
+  border: var(--border);
+  border-block-start: 3px solid var(--together);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-float);
+  animation: tour-in var(--duration-normal) var(--ease-out-expo);
+}
+
+.tour__card:focus-visible {
+  outline: none;
+}
+
+/* Centred on a first step, and pinned to the bottom on a phone where a
+   floating card next to a target has nowhere to go. */
+.tour__card--anchored {
+  inset-block-end: var(--space-4);
+  inset-inline: var(--space-4);
+  inline-size: auto;
+  margin-inline: auto;
+  max-inline-size: 420px;
+}
+
+@media (min-width: 641px) {
+  .tour__card--anchored {
+    inset-block: 50% auto;
+    inset-inline: 50% auto;
+    inline-size: 380px;
+    max-inline-size: calc(100vw - 2rem);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes tour-in {
+  from { opacity: 0; transform: translateY(6px); }
+}
+
+@media (min-width: 641px) {
+  @keyframes tour-in {
+    from { opacity: 0; }
+  }
+}
+
+.tour__progress {
+  display: block;
+  margin-block-end: var(--space-2);
+}
+
+.tour__title {
+  font-size: var(--text-title);
+  line-height: var(--leading-snug);
+}
+
+.tour__body {
+  margin-block-start: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--ink-muted);
+}
+
+.tour__dots {
+  display: flex;
+  gap: 5px;
+  margin-block-start: var(--space-4);
+}
+
+.tour__dot {
+  inline-size: 5px;
+  block-size: 5px;
+  border-radius: 999px;
+  background: var(--rule-strong);
+}
+
+.tour__dot--on {
+  background: var(--together);
+  inline-size: 14px;
+}
+
+.tour__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-block-start: var(--space-4);
+}
+
+.tour__next {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--paper);
+  background: var(--ink);
+  border-radius: var(--radius);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.tour__next:hover {
+  background: var(--ink-muted);
+}
+
+.tour__back {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.tour__back:hover {
+  color: var(--ink);
+  border-color: var(--ink-faint);
+}
+
+.tour__dismiss {
+  display: block;
+  margin-block-start: var(--space-3);
+  font-size: var(--text-micro);
+  color: var(--ink-faint);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.tour__dismiss:hover {
+  color: var(--ink-muted);
+}
+
+/* --- The help button in the masthead ------------------------------------ */
+
+.help {
+  display: grid;
+  place-items: center;
+  inline-size: 30px;
+  block-size: 30px;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--ink-muted);
+  border: var(--border);
+  border-radius: var(--radius);
+  transition:
+    background var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+}
+
+.help:hover {
+  background: var(--paper-sunk);
+  color: var(--together);
+  border-color: var(--together-line);
+}

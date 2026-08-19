@@ -13,7 +13,7 @@ interface Props {
 
 export function RoleCard({ role, mark, onOpen, onTogglePin }: Props) {
   return (
-    <article className={`role-card role-card--${role.specialty}`}>
+    <article className={`role-card role-card--${role.specialty}`} data-tour="role-card">
       <div className="role-card__bar" aria-hidden="true" />
 
       <div className="role-card__body">

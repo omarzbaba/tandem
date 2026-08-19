@@ -4,7 +4,7 @@
   z-index: 60;
   display: flex;
   justify-content: flex-end;
-  background: color-mix(in oklch, var(--ink) 32%, transparent);
+  background: rgb(20 17 14 / 0.32);
   backdrop-filter: blur(2px);
   animation: notif-fade var(--duration-normal) var(--ease-out);
 }

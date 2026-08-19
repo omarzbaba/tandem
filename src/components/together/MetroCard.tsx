@@ -37,7 +37,7 @@ export function MetroCard({
   ).length;
 
   return (
-    <article className={`metro-card${lead ? " metro-card--lead" : ""}`}>
+    <article className={`metro-card${lead ? " metro-card--lead" : ""}`} data-tour="metro-card">
       <header className="metro-card__head">
         <div className="metro-card__identity">
           <h3 className="metro-card__name display">{metro.label}</h3>

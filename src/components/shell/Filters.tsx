@@ -47,7 +47,7 @@ export function Filters({
     onChange({ ...filters, [key]: value });
 
   return (
-    <section className="filters" aria-label="Filters">
+    <section className="filters" aria-label="Filters" data-tour="filters">
       <div className="filters__row">
         <label className="filters__search">
           <span className="sr-only">Search titles, employers and locations</span>
@@ -83,7 +83,7 @@ export function Filters({
 
         {/* One-click remote toggle. Radiology reads from anywhere, so this is
             the filter Samia actually reaches for — a chip, not a dropdown. */}
-        <div className="filters__field filters__work" role="group" aria-label="Work model">
+        <div className="filters__field filters__work" role="group" aria-label="Work model" data-tour="work">
           <span>Work</span>
           {(
             [
@@ -168,7 +168,7 @@ export function Filters({
 
       {showRadius && (
         <div className="filters__row filters__row--radius">
-          <label className="filters__radius">
+          <label className="filters__radius" data-tour="radius">
             <span>
               How far apart you would accept:{" "}
               <strong className="tnum">{radius} miles</strong>
