@@ -1,24 +1,24 @@
 {
-  "ranAt": "2026-08-19T03:50:48.702Z",
+  "ranAt": "2026-08-19T04:00:00.571Z",
   "today": "2026-08-19",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
     "sourcesFailed": 2,
-    "rawPostings": 3143,
-    "irrelevant": 2314,
-    "duplicates": 60,
+    "rawPostings": 3163,
+    "irrelevant": 2313,
+    "duplicates": 61,
     "expired": 84,
-    "unlocated": 199,
-    "roles": 685,
-    "vascular": 115,
-    "radiology": 570,
-    "newThisRun": 5,
+    "unlocated": 200,
+    "roles": 705,
+    "vascular": 124,
+    "radiology": 581,
+    "newThisRun": 23,
     "carriedOver": 0,
-    "pairs": 14732,
-    "metros": 139,
-    "togetherMetros": 33
+    "pairs": 16801,
+    "metros": 143,
+    "togetherMetros": 34
   },
   "failedSources": [
     {
@@ -40,11 +40,6 @@
       "name": "Careerjet Public Job Search API",
       "url": "http://public.api.careerjet.net/search",
       "needs": "CAREERJET_AFFID"
-    },
-    {
-      "name": "JSearch (RapidAPI, Google-for-Jobs index)",
-      "url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch",
-      "needs": "RAPIDAPI_KEY"
     }
   ],
   "sweepOnlySources": [

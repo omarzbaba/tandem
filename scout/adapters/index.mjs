@@ -622,6 +622,72 @@ async function usajobs(src, env) {
   return ok([...seen.values()]);
 }
 
+/**
+ * JSearch (RapidAPI) — an index over Google for Jobs, so it reaches boards
+ * that publish nowhere else machine-readable.
+ *
+ * The free tier is 200 requests a month as a HARD limit, so this is
+ * deliberately frugal: one request per specialty, no paging. Exceeding the
+ * quota cannot incur a charge, it simply stops returning data — but spending
+ * the month's allowance in one run would leave later runs blind.
+ */
+async function jsearch(src, env) {
+  const key = env?.RAPIDAPI_KEY;
+  if (!key) return fail("RAPIDAPI_KEY not set");
+
+  const seen = new Map();
+  let anyOk = false;
+  let lastError = null;
+
+  for (const term of SPECIALTY_TERMS) {
+    const url =
+      `https://jsearch.p.rapidapi.com/search-v2?query=${encodeURIComponent(`${term} in USA`)}` +
+      `&num_pages=1&country=us&date_posted=all`;
+    const res = await request(url, {
+      headers: {
+        "content-type": "application/json",
+        "x-rapidapi-host": "jsearch.p.rapidapi.com",
+        "x-rapidapi-key": key,
+      },
+    });
+    if (!res.ok) {
+      lastError = res.error;
+      continue;
+    }
+    anyOk = true;
+    let data;
+    try {
+      data = JSON.parse(res.body);
+    } catch {
+      lastError = "invalid JSON";
+      continue;
+    }
+    // v5 nests the list under data.jobs; earlier versions returned data[].
+    const jobs = Array.isArray(data?.data) ? data.data : (data?.data?.jobs ?? []);
+    for (const j of jobs) {
+      const url2 = j.job_apply_link ?? j.job_google_link;
+      if (!url2 || seen.has(url2)) continue;
+      const location =
+        j.job_location ?? [j.job_city, j.job_state].filter(Boolean).join(", ");
+      seen.set(
+        url2,
+        shape({
+          title: j.job_title,
+          org: j.employer_name ?? "",
+          // job_is_remote is authoritative and beats parsing prose for it.
+          location: j.job_is_remote ? "Remote" : location,
+          description: htmlToText(j.job_description ?? ""),
+          url: url2,
+          datePosted: j.job_posted_at_datetime_utc ?? null,
+        })
+      );
+    }
+  }
+
+  if (!anyOk) return fail(lastError ?? "no successful request");
+  return ok([...seen.values()]);
+}
+
 /** RSS / Atom — covers iCIMS, Taleo, and most society job boards. */
 async function rss(src) {
   const res = await request(parseEndpoint(src.machineReadable.endpoint).url);
@@ -728,6 +794,7 @@ const ADAPTERS = {
   jobvite,
   jooble,
   usajobs,
+  jsearch,
   rss,
   "icims-rss": rss,
   "taleo-rss": rss,

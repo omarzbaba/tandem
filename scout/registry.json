@@ -1191,14 +1191,14 @@
    "sweepMethod": "api",
    "fetchable": "partial",
    "machineReadable": {
-    "kind": "json",
-    "endpoint": "https://jsearch.p.rapidapi.com/search?query=vascular%20surgeon%20in%20Qatar&page=1&num_pages=1",
+    "kind": "jsearch",
+    "endpoint": "https://jsearch.p.rapidapi.com/search-v2",
     "confirmed": false
    },
    "yield": "low",
    "query": "vascular surgeon / radiologist",
-   "evidence": "RapidAPI marketplace page loads (HTTP 200, 429KB). The API host is live \u2014 an unauthenticated call returns a clean {\"message\":\"Invalid API key...\"} with HTTP 401, confirming the route resolves. Could NOT verify any job payload without a key, so no physician listing was actually observed from this source.",
-   "note": "GEOS TRIMMED: the original entry asserted qatar, uae, saudi, kuwait, bahrain, oman and gulf coverage \u2014 none of that is verifiable without a key and I am not carrying it forward as fact. Also note this is a third-party reseller scraping Google for Jobs, not a first-party board: results will duplicate other entries in this lane and are subject to RapidAPI quota/ToS. Prefer Careerjet for Gulf, which I verified directly.",
+   "evidence": "Verified 2026-08-19 with a live key on the v5 /search-v2 path: HTTP 200, dated vascular surgeon posts from Commonwealth of Virginia, Banner Health and private practices.",
+   "note": "Google-for-Jobs index. Free tier is 200 requests/month HARD limit, so one request per specialty and no paging.",
    "requiresEnv": [
     "RAPIDAPI_KEY"
    ]

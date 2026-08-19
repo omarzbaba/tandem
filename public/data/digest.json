@@ -1,72 +1,259 @@
 {
  "today": "2026-08-19",
- "ranAt": "2026-08-19T03:50:48.702Z",
+ "ranAt": "2026-08-19T04:00:00.571Z",
  "siteUrl": "https://tandem-rs.vercel.app",
  "counts": {
-  "totalRoles": 685,
-  "newThisRun": 5,
-  "newVascular": 3,
-  "newRadiology": 2,
-  "togetherMetros": 33,
+  "totalRoles": 705,
+  "newThisRun": 23,
+  "newVascular": 10,
+  "newRadiology": 13,
+  "togetherMetros": 34,
   "failedSources": 2
  },
  "newVascular": [
   {
-   "id": "pulse heart institute::vascular surgeon::washington",
-   "title": "Vascular Surgeon",
-   "org": "Pulse Heart Institute",
-   "location": "Washington, DC",
+   "id": "commonwealth of va careers::vascular surgeon department of surgery m89546::richmond",
+   "title": "Vascular Surgeon, Department of Surgery (M89546)",
+   "org": "Commonwealth of VA Careers",
+   "location": "Richmond, VA",
    "specialty": "vascular",
-   "score": 61,
-   "setting": "hospital-employed",
-   "postingUrl": "https://jooble.org/desc/5613807834319459795?ckey=vascular+surgeon&rgn=0&pos=2&groupId=38999&elckey=7072990925338690683&p=1&aq=-971092584412453062&cid=18098&jobAge=189&brelb=100&bscr=283.03214&scr=283.03214",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=pulse%20heart%20institute%3A%3Avascular%20surgeon%3A%3Awashington"
+   "score": 75,
+   "setting": "academic",
+   "postingUrl": "https://www.jobs.virginia.gov/jobs/vascular-surgeon-department-of-surgery-m89546-mcv-main-campus-virginia-united-states",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=commonwealth%20of%20va%20careers%3A%3Avascular%20surgeon%20department%20of%20surgery%20m89546%3A%3Arichmond"
   },
   {
-   "id": "american vascular access::vascular surgeon::nashville",
+   "id": "jobleads us::vascular surgeon maryland private practice partnership considered north of washington::takoma park",
+   "title": "Vascular Surgeon, Maryland Private Practice, Partnership Considered, North of Washington...",
+   "org": "Jobleads-US",
+   "location": "Takoma Park, MD",
+   "specialty": "vascular",
+   "score": 74,
+   "setting": "private",
+   "postingUrl": "https://bebee.com/us/jobs/vascular-surgeon-maryland-private-practice-partnership-considered-north-of-washington-jobleads-us-ta--jooble--4175642425254217339",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=jobleads%20us%3A%3Avascular%20surgeon%20maryland%20private%20practice%20partnership%20considered%20north%20of%20washington%3A%3Atakoma%20park"
+  },
+  {
+   "id": "madison and sports rehabilitation::vascular surgeon vein center amp vascular procedures::madison",
+   "title": "Vascular Surgeon — Vein Center &amp; Vascular Procedures",
+   "org": "Madison Medical and Sports Rehabilitation Center",
+   "location": "Madison, NJ",
+   "specialty": "vascular",
+   "score": 71,
+   "setting": "private",
+   "postingUrl": "https://www.linkedin.com/jobs/view/vascular-surgeon-%E2%80%94-vein-center-amp-vascular-procedures-at-madison-medical-and-sports-rehabilitation-center-4452538761",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=madison%20and%20sports%20rehabilitation%3A%3Avascular%20surgeon%20vein%20center%20amp%20vascular%20procedures%3A%3Amadison"
+  },
+  {
+   "id": "us::vascular surgeon::laurel",
    "title": "Vascular Surgeon",
-   "org": "American Vascular Access, LLC",
+   "org": "US Health Partners",
+   "location": "Laurel, MD",
+   "specialty": "vascular",
+   "score": 67,
+   "setting": "private",
+   "postingUrl": "https://www.marithealth.com/jobs/6b16a84c-1f7b-4fa8-aa75-a1bfa0194bd0",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=us%3A%3Avascular%20surgeon%3A%3Alaurel"
+  },
+  {
+   "id": "masc recruitment firm::vascular surgeon endovascular partnership sign on home call::prescott",
+   "title": "Vascular Surgeon (Endovascular) | Partnership + Sign-On | Home Call",
+   "org": "MASC Medical Recruitment Firm",
+   "location": "Prescott, AZ",
+   "specialty": "vascular",
+   "score": 66,
+   "setting": "hospital-employed",
+   "postingUrl": "https://www.linkedin.com/jobs/view/vascular-surgeon-endovascular-partnership-%2B-sign-on-home-call-at-masc-medical-recruitment-firm-4454414750",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=masc%20recruitment%20firm%3A%3Avascular%20surgeon%20endovascular%20partnership%20sign%20on%20home%20call%3A%3Aprescott"
+  },
+  {
+   "id": "us::vascular surgeon in silver spring maryland::maryland city",
+   "title": "Vascular Surgeon in Silver Spring, Maryland",
+   "org": "US Health Partners",
+   "location": "Maryland City, MD",
+   "specialty": "vascular",
+   "score": 65,
+   "setting": "private",
+   "postingUrl": "https://www.tealhq.com/job/vascular-surgeon_7ea1ad8d6262baa335c4ce4e3ef17b9d22482",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=us%3A%3Avascular%20surgeon%20in%20silver%20spring%20maryland%3A%3Amaryland%20city"
+  },
+  {
+   "id": "wellspan::vascular surgeon::gettysburg",
+   "title": "Vascular Surgeon",
+   "org": "WellSpan Health",
+   "location": "Gettysburg, PA",
+   "specialty": "vascular",
+   "score": 62,
+   "setting": "hospital-employed",
+   "postingUrl": "https://www.joinwellspan.org/job-listings?jobId=3007",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=wellspan%3A%3Avascular%20surgeon%3A%3Agettysburg"
+  },
+  {
+   "id": "stridecare::vascular surgeon baltimore maryland::baltimore",
+   "title": "Vascular Surgeon - Baltimore Maryland",
+   "org": "StrideCare",
+   "location": "Baltimore, MD",
+   "specialty": "vascular",
+   "score": 62,
+   "setting": "hospital-employed",
+   "postingUrl": "https://www.doccafe.com/job/physician/surgery-vascular/20249766/vascular-surgeon-baltimore-maryland",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=stridecare%3A%3Avascular%20surgeon%20baltimore%20maryland%3A%3Abaltimore"
+  },
+  {
+   "id": "tennessee valley hcs nashville::physician vascular surgery::nashville",
+   "title": "Physician-Vascular Surgery",
+   "org": "Tennessee Valley HCS  - Nashville",
    "location": "Nashville, TN",
    "specialty": "vascular",
-   "score": 57,
-   "setting": "private",
-   "postingUrl": "https://jooble.org/desc/-2262836519204198900?ckey=vascular+surgeon&rgn=0&pos=12&groupId=38999&elckey=7072990925338690683&p=1&aq=-971092584412453062&cid=18098&jobAge=2379&brelb=100&bscr=281.11935&scr=281.11935",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=american%20vascular%20access%3A%3Avascular%20surgeon%3A%3Anashville"
+   "score": 61,
+   "setting": "academic",
+   "postingUrl": "https://www.usajobs.gov/job/869212500",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=tennessee%20valley%20hcs%20nashville%3A%3Aphysician%20vascular%20surgery%3A%3Anashville"
   },
   {
-   "id": "url https jooble org desc 6711754449751769997 ckey vascular surgeon rgn 0 pos 29 groupid 38999 elckey 7072990925338690683 p 2 aq 4891834201225441246 cid 18098 jobage 24 brelb 100 bscr 122 3512 scr 122 3512::vascular surgeon is wanted for locums assistance in in::fort wayne",
+   "id": "url https jooble org desc 6711754449751769997 ckey vascular surgeon rgn 0 pos 29 groupid 38999 elckey 7072990925338690683 p 2 aq 1442209880531722086 cid 18098 jobage 24 brelb 100 bscr 122 3512 scr 122 3512::vascular surgeon is wanted for locums assistance in in::fort wayne",
    "title": "Vascular Surgeon Is Wanted for Locums Assistance in IN",
    "org": null,
    "location": "Fort Wayne, IN",
    "specialty": "vascular",
    "score": 56,
    "setting": "hospital-employed",
-   "postingUrl": "https://jooble.org/desc/6711754449751769997?ckey=vascular+surgeon&rgn=0&pos=29&groupId=38999&elckey=7072990925338690683&p=2&aq=4891834201225441246&cid=18098&jobAge=24&brelb=100&bscr=122.3512&scr=122.3512",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20jooble%20org%20desc%206711754449751769997%20ckey%20vascular%20surgeon%20rgn%200%20pos%2029%20groupid%2038999%20elckey%207072990925338690683%20p%202%20aq%204891834201225441246%20cid%2018098%20jobage%2024%20brelb%20100%20bscr%20122%203512%20scr%20122%203512%3A%3Avascular%20surgeon%20is%20wanted%20for%20locums%20assistance%20in%20in%3A%3Afort%20wayne"
+   "postingUrl": "https://jooble.org/desc/6711754449751769997?ckey=vascular+surgeon&rgn=0&pos=29&groupId=38999&elckey=7072990925338690683&p=2&aq=1442209880531722086&cid=18098&jobAge=24&brelb=100&bscr=122.3512&scr=122.3512",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20jooble%20org%20desc%206711754449751769997%20ckey%20vascular%20surgeon%20rgn%200%20pos%2029%20groupid%2038999%20elckey%207072990925338690683%20p%202%20aq%201442209880531722086%20cid%2018098%20jobage%2024%20brelb%20100%20bscr%20122%203512%20scr%20122%203512%3A%3Avascular%20surgeon%20is%20wanted%20for%20locums%20assistance%20in%20in%3A%3Afort%20wayne"
   }
  ],
  "newRadiology": [
   {
-   "id": "url https jooble org desc 8646564163359128861 ckey radiologist rgn 0 pos 11 groupid 38996 elckey 6875788796273963488 p 1 aq 8362587664678662358 cid 18098 jobage 717 brelb 100 bscr 36 58235 scr 36 58235::radiologist opportunity central new york 1 hour from syracuse and 4 hours to nyc and boston ma 3442630::syracuse",
+   "id": "of maryland school of medicine::general multispecialty radiologist::baltimore",
+   "title": "General/Multispecialty Radiologist",
+   "org": "University of Maryland School of Medicine",
+   "location": "Baltimore, MD",
+   "specialty": "radiology",
+   "score": 76,
+   "setting": "academic",
+   "postingUrl": "https://jobs.acr.org/job/generalmultispecialty-radiologist/84812296/",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=of%20maryland%20school%20of%20medicine%3A%3Ageneral%20multispecialty%20radiologist%3A%3Abaltimore"
+  },
+  {
+   "id": "of maryland school of medicine::cardiothoracic radiologist::baltimore",
+   "title": "Cardiothoracic Radiologist",
+   "org": "University of Maryland School of Medicine",
+   "location": "Baltimore, MD",
+   "specialty": "radiology",
+   "score": 76,
+   "setting": "academic",
+   "postingUrl": "https://jobs.acr.org/job/cardiothoracic-radiologist/84919795/",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=of%20maryland%20school%20of%20medicine%3A%3Acardiothoracic%20radiologist%3A%3Abaltimore"
+  },
+  {
+   "id": "beth israel lahey::radiologist nuclear medicine::burlington",
+   "title": "Radiologist- Nuclear Medicine",
+   "org": "Beth Israel Lahey Health",
+   "location": "Burlington, MA",
+   "specialty": "radiology",
+   "score": 73,
+   "setting": "academic",
+   "postingUrl": "https://jobs.bilh.org/jobs/radiologist-nuclear-medicine-burlington-ma-jr99292/",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=beth%20israel%20lahey%3A%3Aradiologist%20nuclear%20medicine%3A%3Aburlington"
+  },
+  {
+   "id": "uva northern virginia culpeper::interventional radiologist::manassas",
+   "title": "Interventional Radiologist",
+   "org": "UVA Health Northern Virginia & Culpeper",
+   "location": "Manassas, VA",
+   "specialty": "radiology",
+   "score": 71,
+   "setting": "academic",
+   "postingUrl": "https://communityhealthcareers.uvahealth.org/us/en/job/UOVUHNUS2170EXTERNALENUS/Interventional-Radiologist",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=uva%20northern%20virginia%20culpeper%3A%3Ainterventional%20radiologist%3A%3Amanassas"
+  },
+  {
+   "id": "mid atlantic permanente pc::radiologist::mclean",
+   "title": "Radiologist",
+   "org": "Mid-Atlantic Permanente Medical Group PC",
+   "location": "McLean, VA",
+   "specialty": "radiology",
+   "score": 70,
+   "setting": "private",
+   "postingUrl": "https://www.midatlanticpermanentecareers.org/us/en/job/RADIO006480/Radiologist",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=mid%20atlantic%20permanente%20pc%3A%3Aradiologist%3A%3Amclean"
+  },
+  {
+   "id": "emory::fully remote abdominal radiologist::",
+   "title": "Fully Remote Abdominal Radiologist",
+   "org": "Emory University",
+   "location": "Remote",
+   "specialty": "radiology",
+   "score": 66,
+   "setting": "academic",
+   "postingUrl": "https://www.linkedin.com/jobs/view/fully-remote-abdominal-radiologist-at-emory-university-4450826050",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=emory%3A%3Afully%20remote%20abdominal%20radiologist%3A%3A"
+  },
+  {
+   "id": "boise va::physician radiologist::boise",
+   "title": "Physician-Radiologist",
+   "org": "Boise VA Medical Center",
+   "location": "Boise, ID",
+   "specialty": "radiology",
+   "score": 62,
+   "setting": "government",
+   "postingUrl": "https://www.usajobs.gov/job/880635700",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=boise%20va%3A%3Aphysician%20radiologist%3A%3Aboise"
+  },
+  {
+   "id": "url https jooble org desc 8646564163359128861 ckey radiologist rgn 0 pos 11 groupid 38996 elckey 6875788796273963488 p 1 aq 8762997325763624885 cid 18098 jobage 717 brelb 100 bscr 36 58235 scr 36 58235::radiologist opportunity central new york 1 hour from syracuse and 4 hours to nyc and boston ma 3442630::syracuse",
    "title": "Radiologist Opportunity - Central New York - 1 hour from Syracuse and 4 hours to NYC and Boston, MA) - 3442630",
    "org": null,
    "location": "Syracuse, NY",
    "specialty": "radiology",
    "score": 62,
    "setting": "private",
-   "postingUrl": "https://jooble.org/desc/8646564163359128861?ckey=radiologist&rgn=0&pos=11&groupId=38996&elckey=6875788796273963488&p=1&aq=8362587664678662358&cid=18098&jobAge=717&brelb=100&bscr=36.58235&scr=36.58235",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20jooble%20org%20desc%208646564163359128861%20ckey%20radiologist%20rgn%200%20pos%2011%20groupid%2038996%20elckey%206875788796273963488%20p%201%20aq%208362587664678662358%20cid%2018098%20jobage%20717%20brelb%20100%20bscr%2036%2058235%20scr%2036%2058235%3A%3Aradiologist%20opportunity%20central%20new%20york%201%20hour%20from%20syracuse%20and%204%20hours%20to%20nyc%20and%20boston%20ma%203442630%3A%3Asyracuse"
+   "postingUrl": "https://jooble.org/desc/8646564163359128861?ckey=radiologist&rgn=0&pos=11&groupId=38996&elckey=6875788796273963488&p=1&aq=-8762997325763624885&cid=18098&jobAge=717&brelb=100&bscr=36.58235&scr=36.58235",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20jooble%20org%20desc%208646564163359128861%20ckey%20radiologist%20rgn%200%20pos%2011%20groupid%2038996%20elckey%206875788796273963488%20p%201%20aq%208762997325763624885%20cid%2018098%20jobage%20717%20brelb%20100%20bscr%2036%2058235%20scr%2036%2058235%3A%3Aradiologist%20opportunity%20central%20new%20york%201%20hour%20from%20syracuse%20and%204%20hours%20to%20nyc%20and%20boston%20ma%203442630%3A%3Asyracuse"
   },
   {
-   "id": "url https jooble org desc 8123199298697481787 ckey radiologist rgn 0 pos 15 groupid 38996 elckey 6875788796273963488 p 1 aq 8362587664678662358 cid 18098 jobage 6 brelb 100 bscr 36 566566 scr 36 566566::radiologist opportunity in the northern mariana islands::",
-   "title": "Radiologist Opportunity in the Northern Mariana Islands",
-   "org": null,
-   "location": "Northern Mariana Islands",
+   "id": "samuel s stratton va albany::physician diagnostic radiologist::",
+   "title": "Physician - Diagnostic Radiologist",
+   "org": "Samuel S Stratton VA Medical Center - Albany",
+   "location": "New York",
    "specialty": "radiology",
-   "score": 54,
+   "score": 60,
+   "setting": "government",
+   "postingUrl": "https://www.usajobs.gov/job/880056400",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=samuel%20s%20stratton%20va%20albany%3A%3Aphysician%20diagnostic%20radiologist%3A%3A"
+  },
+  {
+   "id": "url https www doccafe com job physician pediatric radiology 20074716 pediatric radiology physician::pediatric radiology physician::",
+   "title": "Pediatric Radiology - Physician",
+   "org": null,
+   "location": null,
+   "specialty": "radiology",
+   "score": 57,
+   "setting": "private",
+   "postingUrl": "https://www.doccafe.com/job/physician/pediatric-radiology/20074716/pediatric-radiology-physician",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20www%20doccafe%20com%20job%20physician%20pediatric%20radiology%2020074716%20pediatric%20radiology%20physician%3A%3Apediatric%20radiology%20physician%3A%3A"
+  },
+  {
+   "id": "va maryland care::staff physician radiologist::baltimore",
+   "title": "Staff Physician-Radiologist",
+   "org": "VA Maryland Health Care System",
+   "location": "Baltimore, MD",
+   "specialty": "radiology",
+   "score": 57,
    "setting": "hospital-employed",
-   "postingUrl": "https://jooble.org/desc/8123199298697481787?ckey=radiologist&rgn=0&pos=15&groupId=38996&elckey=6875788796273963488&p=1&aq=8362587664678662358&cid=18098&jobAge=6&brelb=100&bscr=36.566566&scr=36.566566",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20jooble%20org%20desc%208123199298697481787%20ckey%20radiologist%20rgn%200%20pos%2015%20groupid%2038996%20elckey%206875788796273963488%20p%201%20aq%208362587664678662358%20cid%2018098%20jobage%206%20brelb%20100%20bscr%2036%20566566%20scr%2036%20566566%3A%3Aradiologist%20opportunity%20in%20the%20northern%20mariana%20islands%3A%3A"
+   "postingUrl": "https://www.usajobs.gov/job/873134700?utm_source=vacareers.va.gov&utm_medium=jobmap&utm_campaign=ar_vha_job_boards_feeds",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=va%20maryland%20care%3A%3Astaff%20physician%20radiologist%3A%3Abaltimore"
+  },
+  {
+   "id": "va providence::physician diagnostic and interventional radiologist recruitment incentive and no ir call::providence",
+   "title": "Physician Diagnostic and Interventional Radiologist-Recruitment Incentive and No IR call",
+   "org": "VA Providence Healthcare System",
+   "location": "Providence, RI",
+   "specialty": "radiology",
+   "score": 57,
+   "setting": "hospital-employed",
+   "postingUrl": "https://www.usajobs.gov/job/868694700",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=va%20providence%3A%3Aphysician%20diagnostic%20and%20interventional%20radiologist%20recruitment%20incentive%20and%20no%20ir%20call%3A%3Aprovidence"
   }
  ],
  "topTogether": [
@@ -76,6 +263,13 @@
    "vascularCount": 2,
    "radiologyCount": 2,
    "sameOrg": true
+  },
+  {
+   "label": "Baltimore, MD",
+   "score": 74,
+   "vascularCount": 4,
+   "radiologyCount": 5,
+   "sameOrg": false
   },
   {
    "label": "Detroit, MI",
@@ -97,13 +291,6 @@
    "vascularCount": 1,
    "radiologyCount": 2,
    "sameOrg": true
-  },
-  {
-   "label": "Houston, TX",
-   "score": 67,
-   "vascularCount": 2,
-   "radiologyCount": 2,
-   "sameOrg": false
   }
  ]
 }
