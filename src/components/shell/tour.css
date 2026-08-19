@@ -15,16 +15,11 @@
   box-shadow:
     0 0 0 9999px rgb(20 17 14 / 0.58),
     0 0 0 2px var(--together);
-  transition:
-    top var(--duration-normal) var(--ease-out-expo),
-    left var(--duration-normal) var(--ease-out-expo),
-    width var(--duration-normal) var(--ease-out-expo),
-    height var(--duration-normal) var(--ease-out-expo);
+  /* Deliberately not animated. Transitioning the geometry meant the painted
+     position could lag the real one whenever a step re-measured mid-flight
+     (scroll, tab switch, list re-render); landing on the target immediately is
+     both more reliable and easier to follow. */
   pointer-events: none;
-}
-
-.tour__spotlight--still {
-  transition: none;
 }
 
  /* No target: keep the dimming shadow, drop the ring around the empty box. */

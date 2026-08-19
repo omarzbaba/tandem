@@ -69,12 +69,16 @@ export function Tour({ steps, onRequestTab, onClose, onFinish }: Props) {
       return;
     }
     const r = el.getBoundingClientRect();
-    // A zero-size element is present but not laid out — treat as missing.
-    if (r.width === 0 && r.height === 0) {
+    // A horizontally scrolling flex row (the tab bar) reports zero width from
+    // getBoundingClientRect even though it is plainly on screen, so fall back
+    // to its scroll size and clamp to the viewport.
+    const width = Math.min(r.width || el.scrollWidth, window.innerWidth - 8);
+    const height = r.height || el.scrollHeight;
+    if (!width || !height) {
       setBox(null);
       return;
     }
-    setBox({ top: r.top, left: r.left, width: r.width, height: r.height });
+    setBox({ top: r.top, left: r.width ? r.left : 4, width, height });
   }, [stepTarget]);
 
   // Bring the target into view, then measure once it has settled.
@@ -148,7 +152,7 @@ export function Tour({ steps, onRequestTab, onClose, onFinish }: Props) {
       */}
       <div
         className={
-          `tour__spotlight${reducedMotion ? " tour__spotlight--still" : ""}` +
+          "tour__spotlight" +
           (box ? "" : " tour__spotlight--none")
         }
         style={
