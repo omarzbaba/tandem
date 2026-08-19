@@ -838,13 +838,13 @@
    "sweepMethod": "api",
    "fetchable": "partial",
    "machineReadable": {
-    "kind": "json",
+    "kind": "adzuna",
     "endpoint": "https://api.adzuna.com/v1/api/jobs/us/search/1?app_id={APP_ID}&app_key={APP_KEY}&results_per_page=50&what=vascular%20surgeon",
     "confirmed": false
    },
    "yield": "medium",
    "query": "vascular surgeon / diagnostic radiologist",
-   "evidence": "Developer portal loads (HTTP 200) and is a working API portal \u2014 copy reads \"Register for an API key now\" with docs and a \"Get ad listings\" search endpoint. Could NOT confirm job payload: calling the endpoint without app_id/app_key returns an HTML error page (\"Uh oh, something isn't right\"), not a clean JSON 401, so liveness of the search route itself is inferred from docs rather than observed.",
+   "evidence": "Verified 2026-08-19 with live credentials: HTTP 200, 1,144 matches for \"vascular surgeon\".",
    "note": "Self-serve free-tier registration. Geo tag left at [us] and NOT expanded to Gulf \u2014 Adzuna's country coverage is US/UK/AU/CA/EU/IN/SG/ZA/MX/BR and does not include Qatar, UAE, Saudi, Kuwait, Bahrain or Oman. Use Careerjet for Gulf instead.",
    "requiresEnv": [
     "ADZUNA_APP_ID",
@@ -1254,13 +1254,13 @@
    "sweepMethod": "api",
    "fetchable": "blocked",
    "machineReadable": {
-    "kind": "json",
+    "kind": "jooble",
     "endpoint": "https://jooble.org/api/{API_KEY}",
     "confirmed": false
    },
    "yield": "low",
    "query": "vascular surgeon / radiologist",
-   "evidence": "Cloudflare returns HTTP 403 to curl on both jooble.org/api/about and the API path \u2014 no programmatic access at all. Loaded in a real browser to confirm it is not dead: the page is genuine and titled \"Jooble REST API\" with working code samples (PHP, JS, Ruby, C#, Python 2.7/3.5). Observed ZERO physician job listings from this source \u2014 the URL is an API docs page, and the payload could not be reached.",
+   "evidence": "Verified 2026-08-19 with a live key: HTTP 200, totalCount 26,105 for \"vascular surgeon\", real US postings.",
    "note": "Weakest entry in the lane, kept only because it is real and documented. Barrier is material: the key is NOT self-serve \u2014 jooble.org/api/about gates it behind a manual business-contact form (name, position, email, website, phone) requiring approval. Combined with the Cloudflare block and no physician specialisation, deprioritise behind Careerjet and USAJOBS.",
    "requiresEnv": [
     "JOOBLE_API_KEY"

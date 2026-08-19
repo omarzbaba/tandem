@@ -22,6 +22,7 @@ export const ADAPTER_KINDS = new Set([
   "workday",
   "successfactors",
   "jobvite",
+  "jooble",
   "rss",
   "icims-rss",
   "taleo-rss",

@@ -1,23 +1,296 @@
 {
  "today": "2026-08-19",
- "ranAt": "2026-08-19T03:20:37.821Z",
+ "ranAt": "2026-08-19T03:37:30.693Z",
  "siteUrl": "https://tandem-rs.vercel.app",
  "counts": {
-  "totalRoles": 538,
-  "newThisRun": 0,
-  "newVascular": 0,
-  "newRadiology": 0,
-  "togetherMetros": 15,
+  "totalRoles": 618,
+  "newThisRun": 80,
+  "newVascular": 35,
+  "newRadiology": 45,
+  "togetherMetros": 24,
   "failedSources": 2
  },
- "newVascular": [],
- "newRadiology": [],
+ "newVascular": [
+  {
+   "id": "altru::vascular surgeon at altru::grand forks",
+   "title": "Vascular Surgeon at Altru",
+   "org": "Altru Health System",
+   "location": "Grand Forks, ND",
+   "specialty": "vascular",
+   "score": 65,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/-1621602518143036434?ckey=vascular+surgeon&rgn=0&pos=16&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=1046&brelb=100&bscr=281.37173&scr=281.37173",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=altru%3A%3Avascular%20surgeon%20at%20altru%3A%3Agrand%20forks"
+  },
+  {
+   "id": "commonspirit::vascular surgeon::chattanooga",
+   "title": "Vascular Surgeon",
+   "org": "CommonSpirit Health",
+   "location": "Chattanooga, TN",
+   "specialty": "vascular",
+   "score": 62,
+   "setting": "private",
+   "postingUrl": "https://jooble.org/desc/8320290006030307099?ckey=vascular+surgeon&rgn=0&pos=3&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=361&brelb=100&bscr=283.15808&scr=283.15808",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=commonspirit%3A%3Avascular%20surgeon%3A%3Achattanooga"
+  },
+  {
+   "id": "of iowa::vascular surgeon::iowa city",
+   "title": "VASCULAR SURGEON",
+   "org": "The University of Iowa",
+   "location": "Iowa City, IA",
+   "specialty": "vascular",
+   "score": 62,
+   "setting": "academic",
+   "postingUrl": "https://jooble.org/jdp/3603759724489912194?ckey=vascular+surgeon&rgn=0&pos=14&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=636&brelb=100&bscr=281.74707&scr=281.74707",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=of%20iowa%3A%3Avascular%20surgeon%3A%3Aiowa%20city"
+  },
+  {
+   "id": "hca::surgery vascular physician::thousand oaks",
+   "title": "Surgery Vascular Physician",
+   "org": "HCA Healthcare",
+   "location": "Thousand Oaks, CA",
+   "specialty": "vascular",
+   "score": 62,
+   "setting": "private",
+   "postingUrl": "https://jooble.org/desc/-5714416675927549249?ckey=vascular+surgeon&rgn=0&pos=25&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=542&brelb=100&bscr=141.11635&scr=141.11635",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=hca%3A%3Asurgery%20vascular%20physician%3A%3Athousand%20oaks"
+  },
+  {
+   "id": "commonspirit::vascular surgeon::sacramento",
+   "title": "Vascular Surgeon",
+   "org": "CommonSpirit Health",
+   "location": "Sacramento, CA",
+   "specialty": "vascular",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/-9154096869627012078?ckey=vascular+surgeon&rgn=0&pos=5&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=46&brelb=100&bscr=282.8853&scr=282.8853",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=commonspirit%3A%3Avascular%20surgeon%3A%3Asacramento"
+  },
+  {
+   "id": "vohra physicians::vascular surgeon::cullman",
+   "title": "Vascular Surgeon",
+   "org": "Vohra Physicians",
+   "location": "Cullman, AL",
+   "specialty": "vascular",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/-8715601450397633666?ckey=vascular+surgeon&rgn=0&pos=6&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=45&brelb=100&bscr=282.2327&scr=282.2327",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=vohra%20physicians%3A%3Avascular%20surgeon%3A%3Acullman"
+  },
+  {
+   "id": "pulse heart institute::vascular surgeon::yakima",
+   "title": "Vascular Surgeon",
+   "org": "Pulse Heart Institute",
+   "location": "Yakima, WA",
+   "specialty": "vascular",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/-3087481898530833211?ckey=vascular+surgeon&rgn=0&pos=7&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=189&brelb=100&bscr=282.2327&scr=282.2327",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=pulse%20heart%20institute%3A%3Avascular%20surgeon%3A%3Ayakima"
+  },
+  {
+   "id": "mohawk valley::vascular surgeon::utica",
+   "title": "Vascular Surgeon",
+   "org": "Mohawk Valley Health System",
+   "location": "Utica, NY",
+   "specialty": "vascular",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/-268614731332514416?ckey=vascular+surgeon&rgn=0&pos=8&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=237&brelb=100&bscr=282.13538&scr=282.13538",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=mohawk%20valley%3A%3Avascular%20surgeon%3A%3Autica"
+  },
+  {
+   "id": "houston methodist::vascular surgeon houston methodist willowbrook::houston",
+   "title": "Vascular Surgeon - Houston Methodist Willowbrook",
+   "org": "Houston Methodist",
+   "location": "Houston, TX",
+   "specialty": "vascular",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/4376836987208895540?ckey=vascular+surgeon&rgn=0&pos=15&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=198&brelb=100&bscr=281.74707&scr=281.74707",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=houston%20methodist%3A%3Avascular%20surgeon%20houston%20methodist%20willowbrook%3A%3Ahouston"
+  },
+  {
+   "id": "adventhealth west florida ambulatory services::vascular surgeon adventhealth sebring::sebring",
+   "title": "Vascular Surgeon - AdventHealth Sebring",
+   "org": "AdventHealth West Florida Ambulatory Services",
+   "location": "Sebring, FL",
+   "specialty": "vascular",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/-6913477057862104157?ckey=vascular+surgeon&rgn=0&pos=20&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=262&brelb=100&bscr=280.85934&scr=280.85934",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=adventhealth%20west%20florida%20ambulatory%20services%3A%3Avascular%20surgeon%20adventhealth%20sebring%3A%3Asebring"
+  },
+  {
+   "id": "veterans affairs veterans administration::physician vascular surgeon::salt lake city",
+   "title": "Physician - Vascular Surgeon",
+   "org": "Veterans Affairs, Veterans Health Administration",
+   "location": "Salt Lake City, UT",
+   "specialty": "vascular",
+   "score": 60,
+   "setting": "government",
+   "postingUrl": "https://jooble.org/desc/-7015887686320448365?ckey=vascular+surgeon&rgn=0&pos=17&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=865&brelb=100&bscr=281.37173&scr=281.37173",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=veterans%20affairs%20veterans%20administration%3A%3Aphysician%20vascular%20surgeon%3A%3Asalt%20lake%20city"
+  },
+  {
+   "id": "veterans affairs veterans administration::physician vascular surgeon recruitment relocation incentive edrp authorized::dallas",
+   "title": "Physician (Vascular Surgeon)- Recruitment/Relocation Incentive/EDRP Authorized",
+   "org": "Veterans Affairs, Veterans Health Administration",
+   "location": "Dallas, TX",
+   "specialty": "vascular",
+   "score": 60,
+   "setting": "government",
+   "postingUrl": "https://jooble.org/desc/-2814734274147256051?ckey=vascular+surgeon&rgn=0&pos=23&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=361&brelb=100&bscr=244.67108&scr=244.67108",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=veterans%20affairs%20veterans%20administration%3A%3Aphysician%20vascular%20surgeon%20recruitment%20relocation%20incentive%20edrp%20authorized%3A%3Adallas"
+  }
+ ],
+ "newRadiology": [
+  {
+   "id": "spectrum::radiologist::bangor",
+   "title": "Radiologist",
+   "org": "Spectrum Healthcare Partners",
+   "location": "Bangor, ME",
+   "specialty": "radiology",
+   "score": 65,
+   "setting": "private",
+   "postingUrl": "https://jooble.org/desc/-3197578152028315509?ckey=radiologist&rgn=0&pos=37&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=501&brelb=100&bscr=36.5759&scr=36.5759",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=spectrum%3A%3Aradiologist%3A%3Abangor"
+  },
+  {
+   "id": "spectrum::radiologist::portland",
+   "title": "Radiologist",
+   "org": "Spectrum Healthcare Partners",
+   "location": "Portland, ME",
+   "specialty": "radiology",
+   "score": 63,
+   "setting": "academic",
+   "postingUrl": "https://jooble.org/desc/-548368019744113557?ckey=radiologist&rgn=0&pos=16&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=669&brelb=100&bscr=36.686554&scr=36.686554",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=spectrum%3A%3Aradiologist%3A%3Aportland"
+  },
+  {
+   "id": "of cincinnati::musculoskeletal radiologist::cincinnati",
+   "title": "Musculoskeletal Radiologist",
+   "org": "University of Cincinnati",
+   "location": "Cincinnati, OH",
+   "specialty": "radiology",
+   "score": 63,
+   "setting": "academic",
+   "postingUrl": "https://jooble.org/desc/7943146105422063738?ckey=radiologist&rgn=0&pos=36&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=562&brelb=100&bscr=36.5759&scr=36.5759",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=of%20cincinnati%3A%3Amusculoskeletal%20radiologist%3A%3Acincinnati"
+  },
+  {
+   "id": "of cincinnati::abdominal radiologist department of radiology::cincinnati",
+   "title": "Abdominal Radiologist, Department of Radiology",
+   "org": "University of Cincinnati",
+   "location": "Cincinnati, OH",
+   "specialty": "radiology",
+   "score": 63,
+   "setting": "academic",
+   "postingUrl": "https://jooble.org/desc/7449264016583554139?ckey=radiologist&rgn=0&pos=46&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=393&brelb=100&bscr=36.365017&scr=36.365017",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=of%20cincinnati%3A%3Aabdominal%20radiologist%20department%20of%20radiology%3A%3Acincinnati"
+  },
+  {
+   "id": "url https jooble org desc 8646564163359128861 ckey radiologist rgn 0 pos 11 groupid 38996 elckey 4585306947557229382 p 1 aq 361438230118228626 cid 18098 jobage 717 brelb 100 bscr 36 698296 scr 36 698296::radiologist opportunity central new york 1 hour from syracuse and 4 hours to nyc and boston ma 3442630::syracuse",
+   "title": "Radiologist Opportunity - Central New York - 1 hour from Syracuse and 4 hours to NYC and Boston, MA) - 3442630",
+   "org": null,
+   "location": "Syracuse, NY",
+   "specialty": "radiology",
+   "score": 62,
+   "setting": "private",
+   "postingUrl": "https://jooble.org/desc/8646564163359128861?ckey=radiologist&rgn=0&pos=11&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=717&brelb=100&bscr=36.698296&scr=36.698296",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20jooble%20org%20desc%208646564163359128861%20ckey%20radiologist%20rgn%200%20pos%2011%20groupid%2038996%20elckey%204585306947557229382%20p%201%20aq%20361438230118228626%20cid%2018098%20jobage%20717%20brelb%20100%20bscr%2036%20698296%20scr%2036%20698296%3A%3Aradiologist%20opportunity%20central%20new%20york%201%20hour%20from%20syracuse%20and%204%20hours%20to%20nyc%20and%20boston%20ma%203442630%3A%3Asyracuse"
+  },
+  {
+   "id": "med source consultants::radiologist 4310::san antonio",
+   "title": "Radiologist - 4310",
+   "org": "Med Source Consultants",
+   "location": "San Antonio, TX",
+   "specialty": "radiology",
+   "score": 62,
+   "setting": "private",
+   "postingUrl": "https://jooble.org/desc/-6991967482525324635?ckey=radiologist&rgn=0&pos=21&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=669&brelb=100&bscr=36.686554&scr=36.686554",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=med%20source%20consultants%3A%3Aradiologist%204310%3A%3Asan%20antonio"
+  },
+  {
+   "id": "nitelines usa::diagnostic radiologist atlanta ga::atlanta",
+   "title": "Diagnostic Radiologist Atlanta, GA",
+   "org": "NITELINES USA, INC",
+   "location": "Atlanta, GA",
+   "specialty": "radiology",
+   "score": 62,
+   "setting": "government",
+   "postingUrl": "https://jooble.org/desc/3108346154276541096?ckey=radiologist&rgn=0&pos=33&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=131&brelb=100&bscr=36.64103&scr=36.64103",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=nitelines%20usa%3A%3Adiagnostic%20radiologist%20atlanta%20ga%3A%3Aatlanta"
+  },
+  {
+   "id": "northern light radiology::radiologist::hollywood",
+   "title": "Radiologist",
+   "org": "Northern Light Radiology Associates, Inc",
+   "location": "Hollywood, FL",
+   "specialty": "radiology",
+   "score": 62,
+   "setting": "private",
+   "postingUrl": "https://jooble.org/desc/2847854130439275903?ckey=radiologist&rgn=0&pos=41&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=686&brelb=100&bscr=36.48705&scr=36.48705",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=northern%20light%20radiology%3A%3Aradiologist%3A%3Ahollywood"
+  },
+  {
+   "id": "veterans administration::physician diagnostic radiologist::honolulu",
+   "title": "Physician - Diagnostic Radiologist",
+   "org": "Veterans Health Administration",
+   "location": "Honolulu, HI",
+   "specialty": "radiology",
+   "score": 61,
+   "setting": "government",
+   "postingUrl": "https://www.adzuna.com/details/5817621003?utm_medium=api&utm_source=d24d468b",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=veterans%20administration%3A%3Aphysician%20diagnostic%20radiologist%3A%3Ahonolulu"
+  },
+  {
+   "id": "veterans administration::physician diagnostic radiologist::salem",
+   "title": "Physician - Diagnostic Radiologist",
+   "org": "Veterans Health Administration",
+   "location": "Salem, VA",
+   "specialty": "radiology",
+   "score": 61,
+   "setting": "government",
+   "postingUrl": "https://www.adzuna.com/details/5817620242?utm_medium=api&utm_source=d24d468b",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=veterans%20administration%3A%3Aphysician%20diagnostic%20radiologist%3A%3Asalem"
+  },
+  {
+   "id": "beth israel lahey::radiologist msk::boston",
+   "title": "Radiologist - MSK",
+   "org": "Beth Israel Lahey Health",
+   "location": "Boston, MA",
+   "specialty": "radiology",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/-6947793512340148903?ckey=radiologist&rgn=0&pos=27&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=117&brelb=100&bscr=36.66331&scr=36.66331",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=beth%20israel%20lahey%3A%3Aradiologist%20msk%3A%3Aboston"
+  },
+  {
+   "id": "centracare::seeking a dedicated and motivated interventional radiologist::sartell",
+   "title": "Seeking a Dedicated and Motivated Interventional Radiologist",
+   "org": "CentraCare",
+   "location": "Sartell, MN",
+   "specialty": "radiology",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://jooble.org/desc/2106926842435969962?ckey=radiologist&rgn=0&pos=45&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=30&brelb=100&bscr=36.48705&scr=36.48705",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=centracare%3A%3Aseeking%20a%20dedicated%20and%20motivated%20interventional%20radiologist%3A%3Asartell"
+  }
+ ],
  "topTogether": [
   {
    "label": "Detroit, MI",
    "score": 69,
    "vascularCount": 1,
    "radiologyCount": 5,
+   "sameOrg": true
+  },
+  {
+   "label": "Iowa City, IA",
+   "score": 68,
+   "vascularCount": 1,
+   "radiologyCount": 1,
    "sameOrg": true
   },
   {
@@ -31,7 +304,7 @@
    "label": "Columbia, SC",
    "score": 65,
    "vascularCount": 1,
-   "radiologyCount": 1,
+   "radiologyCount": 3,
    "sameOrg": false
   },
   {
@@ -40,13 +313,6 @@
    "vascularCount": 1,
    "radiologyCount": 1,
    "sameOrg": true
-  },
-  {
-   "label": "Jacksonville, FL",
-   "score": 63,
-   "vascularCount": 2,
-   "radiologyCount": 6,
-   "sameOrg": false
   }
  ]
 }

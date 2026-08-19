@@ -4051,6 +4051,110 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "spectrum::radiologist::bangor",
+   "fingerprint": "spectrum::radiologist::bangor",
+   "title": "Radiologist",
+   "org": "Spectrum Healthcare Partners",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Bangor, ME",
+   "geo": {
+    "lat": 44.7988,
+    "lon": -68.7726,
+    "city": "Bangor",
+    "region": "ME",
+    "country": "US",
+    "population": 32391,
+    "precision": "city",
+    "raw": "Bangor, ME"
+   },
+   "url": "https://jooble.org/desc/-3197578152028315509?ckey=radiologist&rgn=0&pos=37&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=501&brelb=100&bscr=36.5759&scr=36.5759",
+   "datePosted": "2026-07-29",
+   "description": "...Abdominal / Body Imaging Radiologist \r\n Spectrum Healthcare Partners is seeking a Board Eligible/Board Certified Diagnostic Radiologist with Abdominal/Body fellowship training to join our highly profitable, progressive Radiology group. \r\n The successful candidate will...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 65,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 22,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "body / cross-sectional emphasis",
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 21,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "altru::vascular surgeon at altru::grand forks",
+   "fingerprint": "altru::vascular surgeon at altru::grand forks",
+   "title": "Vascular Surgeon at Altru",
+   "org": "Altru Health System",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Grand Forks, ND",
+   "geo": {
+    "lat": 47.9253,
+    "lon": -97.0328,
+    "city": "Grand Forks",
+    "region": "ND",
+    "country": "US",
+    "population": 57011,
+    "precision": "city",
+    "raw": "Grand Forks, ND"
+   },
+   "url": "https://jooble.org/desc/-1621602518143036434?ckey=vascular+surgeon&rgn=0&pos=16&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=1046&brelb=100&bscr=281.37173&scr=281.37173",
+   "datePosted": "2026-07-06",
+   "description": "... Vascular Surgeon at Altru \r\n~ Excellent partnership with Heart and Vascular Team \r\n\r\n~ APP support in both clinic and inpatient \r\n\r\n~ New hospital with a specific hybrid OR designed for Vascular Surgery \r\n\r\n~ Required Procedures: EVAR, Angiography with endovascular intervention...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 65,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 25,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "complex aortic work",
+    "hybrid OR available"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 44,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "url http www radworking com radiology jobs 601905 html::up to 100k starting bonus diagnostic radiologist onsite or remote for orlando health in florida::orlando",
    "fingerprint": "url http www radworking com radiology jobs 601905 html::up to 100k starting bonus diagnostic radiologist onsite or remote for orlando health in florida::orlando",
    "title": "Up to $100K Starting Bonus Diagnostic Radiologist Onsite or Remote for Orlando Health in Florida",
@@ -4875,6 +4979,159 @@
    "ageDays": 40,
    "alsoSeenOn": [],
    "isNew": false,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "spectrum::radiologist::portland",
+   "fingerprint": "spectrum::radiologist::portland",
+   "title": "Radiologist",
+   "org": "Spectrum Healthcare Partners",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Portland, ME",
+   "geo": {
+    "lat": 43.6574,
+    "lon": -70.2589,
+    "city": "Portland",
+    "region": "ME",
+    "country": "US",
+    "population": 66881,
+    "precision": "city",
+    "raw": "Portland, ME"
+   },
+   "url": "https://jooble.org/desc/-548368019744113557?ckey=radiologist&rgn=0&pos=16&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=669&brelb=100&bscr=36.686554&scr=36.686554",
+   "datePosted": "2026-07-22",
+   "description": "...| Academic Affiliation \r\n About the Opportunity \r\n Spectrum Healthcare Partners is seeking a fellowship-trained breast imaging radiologist to join a collaborative, high-performing team dedicated exclusively to breast imaging and intervention. This role offers the opportunity...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 63,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 28,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "of cincinnati::musculoskeletal radiologist::cincinnati",
+   "fingerprint": "of cincinnati::musculoskeletal radiologist::cincinnati",
+   "title": "Musculoskeletal Radiologist",
+   "org": "University of Cincinnati",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Cincinnati, OH",
+   "geo": {
+    "lat": 39.1271,
+    "lon": -84.5144,
+    "city": "Cincinnati",
+    "region": "OH",
+    "country": "US",
+    "population": 311097,
+    "precision": "city",
+    "raw": "Cincinnati, OH"
+   },
+   "url": "https://jooble.org/desc/7943146105422063738?ckey=radiologist&rgn=0&pos=36&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=562&brelb=100&bscr=36.5759&scr=36.5759",
+   "datePosted": "2026-07-26",
+   "description": "...day. The Department of Radiology is a top-tier department with world-renowned faculty and staff. \r\n \r\n A full time Musculoskeletal Radiologist (MSK) faculty position is available in the Department of Radiology at the University of Cincinnati College of Medicine. This...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 63,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 24,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "of cincinnati::abdominal radiologist department of radiology::cincinnati",
+   "fingerprint": "of cincinnati::abdominal radiologist department of radiology::cincinnati",
+   "title": "Abdominal Radiologist, Department of Radiology",
+   "org": "University of Cincinnati",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Cincinnati, OH",
+   "geo": {
+    "lat": 39.1271,
+    "lon": -84.5144,
+    "city": "Cincinnati",
+    "region": "OH",
+    "country": "US",
+    "population": 311097,
+    "precision": "city",
+    "raw": "Cincinnati, OH"
+   },
+   "url": "https://jooble.org/desc/7449264016583554139?ckey=radiologist&rgn=0&pos=46&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=393&brelb=100&bscr=36.365017&scr=36.365017",
+   "datePosted": "2026-08-02",
+   "description": "Current UC employees must apply internally via  SuccessFactors  \r\n \r\n Faculty rank and compensation will be based on experience and academic credentials. \r\n \r\n Next Lives at the University of Cincinnati \r\n \r\n Founded in 1819, the University of Cincinnati ranks among...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 63,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 17,
+   "alsoSeenOn": [],
+   "isNew": true,
    "firstSeen": "2026-08-19"
   },
   {
@@ -5809,6 +6066,364 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "url https jooble org desc 8646564163359128861 ckey radiologist rgn 0 pos 11 groupid 38996 elckey 4585306947557229382 p 1 aq 361438230118228626 cid 18098 jobage 717 brelb 100 bscr 36 698296 scr 36 698296::radiologist opportunity central new york 1 hour from syracuse and 4 hours to nyc and boston ma 3442630::syracuse",
+   "fingerprint": "url https jooble org desc 8646564163359128861 ckey radiologist rgn 0 pos 11 groupid 38996 elckey 4585306947557229382 p 1 aq 361438230118228626 cid 18098 jobage 717 brelb 100 bscr 36 698296 scr 36 698296::radiologist opportunity central new york 1 hour from syracuse and 4 hours to nyc and boston ma 3442630::syracuse",
+   "title": "Radiologist Opportunity - Central New York - 1 hour from Syracuse and 4 hours to NYC and Boston, MA) - 3442630",
+   "org": "",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Syracuse, NY",
+   "geo": {
+    "lat": 43.0481,
+    "lon": -76.1474,
+    "city": "Syracuse",
+    "region": "NY",
+    "country": "US",
+    "population": 144142,
+    "precision": "city",
+    "raw": "Syracuse, NY"
+   },
+   "url": "https://jooble.org/desc/8646564163359128861?ckey=radiologist&rgn=0&pos=11&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=717&brelb=100&bscr=36.698296&scr=36.698296",
+   "datePosted": "2026-07-20",
+   "description": "... Radiologist – Central New York (1 Hour from Syracuse | 4 Hours to NYC & Boston)\r\n\r\n Opportunity Highlights: \r\n Full-time opportunity within a large, physician-owned multi-specialty group \r\n Join a collaborative radiology team currently consisting of two radiologists...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 30,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "med source consultants::radiologist 4310::san antonio",
+   "fingerprint": "med source consultants::radiologist 4310::san antonio",
+   "title": "Radiologist - 4310",
+   "org": "Med Source Consultants",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "San Antonio, TX",
+   "geo": {
+    "lat": 29.4241,
+    "lon": -98.4936,
+    "city": "San Antonio",
+    "region": "TX",
+    "country": "US",
+    "population": 1526656,
+    "precision": "city",
+    "raw": "San Antonio, TX"
+   },
+   "url": "https://jooble.org/desc/-6991967482525324635?ckey=radiologist&rgn=0&pos=21&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=669&brelb=100&bscr=36.686554&scr=36.686554",
+   "datePosted": "2026-07-22",
+   "description": "... Radiologist – 4310\r\n Radiologist Opportunity | Advanced Diagnostic Imaging | Physician-Led Organization | San Antonio, TX \r\n*Join a physician-led healthcare organization with 60+ years of commitment to exceptional patient care. \r\n*Provide diagnostic imaging expertise within...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 28,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "nitelines usa::diagnostic radiologist atlanta ga::atlanta",
+   "fingerprint": "nitelines usa::diagnostic radiologist atlanta ga::atlanta",
+   "title": "Diagnostic Radiologist Atlanta, GA",
+   "org": "NITELINES USA, INC",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "Atlanta, GA",
+   "geo": {
+    "lat": 33.749,
+    "lon": -84.388,
+    "city": "Atlanta",
+    "region": "GA",
+    "country": "US",
+    "population": 510823,
+    "precision": "city",
+    "raw": "Atlanta, GA"
+   },
+   "url": "https://jooble.org/desc/3108346154276541096?ckey=radiologist&rgn=0&pos=33&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=131&brelb=100&bscr=36.64103&scr=36.64103",
+   "datePosted": "2026-08-13",
+   "description": "...among our core principles. Work with a dedicated and caring organization and start doing your life's best work. Board Certified Radiologists (1099)\r\n Pay rate : $390.00 hr (1099)\r\n Duration: 1 year. \r\n Locations: VA Medical Center Atlanta, GA. \r\n Schedule: \r\n VA...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 12,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "government / VA employment",
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 6,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "northern light radiology::radiologist::hollywood",
+   "fingerprint": "northern light radiology::radiologist::hollywood",
+   "title": "Radiologist",
+   "org": "Northern Light Radiology Associates, Inc",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Hollywood, FL",
+   "geo": {
+    "lat": 26.0112,
+    "lon": -80.1495,
+    "city": "Hollywood",
+    "region": "FL",
+    "country": "US",
+    "population": 149728,
+    "precision": "city",
+    "raw": "Hollywood, FL"
+   },
+   "url": "https://jooble.org/desc/2847854130439275903?ckey=radiologist&rgn=0&pos=41&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=686&brelb=100&bscr=36.48705&scr=36.48705",
+   "datePosted": "2026-07-21",
+   "description": "...established by The Joint Commission, to maintain a safe and compliant care environment.  \r\n POSITION SUMMARY: \r\n The Diagnostic Radiologist serves as a key member of the clinical team, responsible for delivering accurate and timely interpretations of diagnostic...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 29,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "commonspirit::vascular surgeon::chattanooga",
+   "fingerprint": "commonspirit::vascular surgeon::chattanooga",
+   "title": "Vascular Surgeon",
+   "org": "CommonSpirit Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Chattanooga, TN",
+   "geo": {
+    "lat": 35.0456,
+    "lon": -85.3097,
+    "city": "Chattanooga",
+    "region": "TN",
+    "country": "US",
+    "population": 181099,
+    "precision": "city",
+    "raw": "Chattanooga, TN"
+   },
+   "url": "https://jooble.org/desc/8320290006030307099?ckey=vascular+surgeon&rgn=0&pos=3&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=361&brelb=100&bscr=283.15808&scr=283.15808",
+   "datePosted": "2026-08-04",
+   "description": "...Job Summary and Responsibilities \r\n As our Vascular Surgeon, you will join CommonSpirit Memorial Vascular Surgery Specialists, as a member of our growing team in Chattanooga, Tennessee. You will practice within a collaborative medical staff supported by a strong regional...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 13,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 15,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "of iowa::vascular surgeon::iowa city",
+   "fingerprint": "of iowa::vascular surgeon::iowa city",
+   "title": "VASCULAR SURGEON",
+   "org": "The University of Iowa",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Iowa City, IA",
+   "geo": {
+    "lat": 41.6611,
+    "lon": -91.5302,
+    "city": "Iowa City",
+    "region": "IA",
+    "country": "US",
+    "population": 74220,
+    "precision": "city",
+    "raw": "Iowa City, IA"
+   },
+   "url": "https://jooble.org/jdp/3603759724489912194?ckey=vascular+surgeon&rgn=0&pos=14&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=636&brelb=100&bscr=281.74707&scr=281.74707",
+   "datePosted": "2026-07-23",
+   "description": "Full/Part Time Status:Full Time\r\nPosition Description:The Department of Surgery Division of Vascular Surgery and the Heart and Vascular Center at the University of Iowa invites applicants interested in a faculty position in Vascular Surgery.  Appointment will be for Assistant...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 27,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "hca::surgery vascular physician::thousand oaks",
+   "fingerprint": "hca::surgery vascular physician::thousand oaks",
+   "title": "Surgery Vascular Physician",
+   "org": "HCA Healthcare",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Thousand Oaks, CA",
+   "geo": {
+    "lat": 34.1706,
+    "lon": -118.8376,
+    "city": "Thousand Oaks",
+    "region": "CA",
+    "country": "US",
+    "population": 129339,
+    "precision": "city",
+    "raw": "Thousand Oaks, CA"
+   },
+   "url": "https://jooble.org/desc/-5714416675927549249?ckey=vascular+surgeon&rgn=0&pos=25&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=542&brelb=100&bscr=141.11635&scr=141.11635",
+   "datePosted": "2026-07-27",
+   "description": "...Description \r\n Specialization: \r\n Surgery Vascular \r\n\r\n$ Salary Estimate: $400,000 - $450,000 / year \r\n Job Summary: \r\n A private practice... ...in Thousand Oaks, California is seeking a motivated vascular surgeon to join their team. This is a turn-key opportunity for a...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 62,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 13,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 23,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "diversified radiology lumexa imaging partner practice lever::remote evening body imaging radiologist 5 pm 2 am mst 7 on 14 off::",
    "fingerprint": "diversified radiology lumexa imaging partner practice lever::remote evening body imaging radiologist 5 pm 2 am mst 7 on 14 off::",
    "title": "Remote Evening Body Imaging Radiologist | 5 PM–2 AM MST | 7 On/14 Off",
@@ -5958,7 +6573,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 6,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -7537,6 +8158,614 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "veterans administration::physician diagnostic radiologist::honolulu",
+   "fingerprint": "veterans administration::physician diagnostic radiologist::honolulu",
+   "title": "Physician - Diagnostic Radiologist",
+   "org": "Veterans Health Administration",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "Honolulu, Hawaii",
+   "geo": {
+    "lat": 21.3069,
+    "lon": -157.8583,
+    "city": "Honolulu",
+    "region": "HI",
+    "country": "US",
+    "population": 350964,
+    "precision": "city",
+    "raw": "Honolulu, Hawaii"
+   },
+   "url": "https://www.adzuna.com/details/5817621003?utm_medium=api&utm_source=d24d468b",
+   "datePosted": "2026-07-27",
+   "description": "Qualifications To qualify for this position, you must meet the basic requirements as well as any additional requirements (if applicable) listed in the job announcement. Applicants pending the completion of training or license requirements may be referred and tentatively selected but may not be hired until all requirements are met. Currently employed physician(s) in VA who met the requirements for appointment under the previous qualification standard at the time of their initial appointment are …",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 12,
+    "location": 12,
+    "recency": 8,
+    "signal": 2
+   },
+   "reasons": [
+    "government / VA employment"
+   ],
+   "concerns": [],
+   "ageDays": 23,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "veterans administration::physician diagnostic radiologist::salem",
+   "fingerprint": "veterans administration::physician diagnostic radiologist::salem",
+   "title": "Physician - Diagnostic Radiologist",
+   "org": "Veterans Health Administration",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "Salem, Virginia",
+   "geo": {
+    "lat": 37.2935,
+    "lon": -80.0548,
+    "city": "Salem",
+    "region": "VA",
+    "country": "US",
+    "population": 25432,
+    "precision": "city",
+    "raw": "Salem, Virginia"
+   },
+   "url": "https://www.adzuna.com/details/5817620242?utm_medium=api&utm_source=d24d468b",
+   "datePosted": "2026-07-27",
+   "description": "Qualifications To qualify for this position, you must meet the basic requirements as well as any additional requirements (if applicable) listed in the job announcement. Applicants pending the completion of training or license requirements may be referred and tentatively selected but may not be hired until all requirements are met. Currently employed physician(s) in VA who met the requirements for appointment under the previous qualification standard at the time of their initial appointment are …",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 12,
+    "location": 12,
+    "recency": 8,
+    "signal": 2
+   },
+   "reasons": [
+    "government / VA employment"
+   ],
+   "concerns": [],
+   "ageDays": 23,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "beth israel lahey::radiologist msk::boston",
+   "fingerprint": "beth israel lahey::radiologist msk::boston",
+   "title": "Radiologist - MSK",
+   "org": "Beth Israel Lahey Health",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Boston, MA",
+   "geo": {
+    "lat": 42.3584,
+    "lon": -71.0598,
+    "city": "Boston",
+    "region": "MA",
+    "country": "US",
+    "population": 653833,
+    "precision": "city",
+    "raw": "Boston, MA"
+   },
+   "url": "https://jooble.org/desc/-6947793512340148903?ckey=radiologist&rgn=0&pos=27&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=117&brelb=100&bscr=36.66331&scr=36.66331",
+   "datePosted": "2026-08-14",
+   "description": "...BILH team, you're not just taking a job, you’re making a difference in people’s lives. Job Description: \r\n Musculoskeletal (MSK) Radiologist \r\n BILH \r\n Lahey Clinic, Burlington, MA \r\n Join our exceptional team in suburban Boston! Lahey Clinic , a founding member of...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 5,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "centracare::seeking a dedicated and motivated interventional radiologist::sartell",
+   "fingerprint": "centracare::seeking a dedicated and motivated interventional radiologist::sartell",
+   "title": "Seeking a Dedicated and Motivated Interventional Radiologist",
+   "org": "CentraCare",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Sartell, MN",
+   "geo": {
+    "lat": 45.6216,
+    "lon": -94.2069,
+    "city": "Sartell",
+    "region": "MN",
+    "country": "US",
+    "population": 16788,
+    "precision": "city",
+    "raw": "Sartell, MN"
+   },
+   "url": "https://jooble.org/desc/2106926842435969962?ckey=radiologist&rgn=0&pos=45&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=30&brelb=100&bscr=36.48705&scr=36.48705",
+   "datePosted": "2026-08-17",
+   "description": "...Minneapolis \r\n# Technically advanced diagnostic imaging and interventional services \r\n#18 general and 3 fellowship trained Interventional Radiologists with 1:5 IR call \r\n# Proficient in interventional and diagnostic procedures and in general diagnostic modalities, ability to...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 2,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "nitelines usa::board certified radiologist 1099 columbia sc::columbia",
+   "fingerprint": "nitelines usa::board certified radiologist 1099 columbia sc::columbia",
+   "title": "Board Certified Radiologist (1099) Columbia, SC",
+   "org": "NITELINES USA, INC",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Columbia, SC",
+   "geo": {
+    "lat": 34.0007,
+    "lon": -81.0348,
+    "city": "Columbia",
+    "region": "SC",
+    "country": "US",
+    "population": 142416,
+    "precision": "city",
+    "raw": "Columbia, SC"
+   },
+   "url": "https://jooble.org/desc/-4896831874544028428?ckey=radiologist&rgn=0&pos=47&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=327&brelb=100&bscr=36.365017&scr=36.365017",
+   "datePosted": "2026-08-05",
+   "description": "...our core principles. Work with a dedicated and caring organization and start doing your life's best work. \r\n Board Certified Radiologists (1099) \r\n Pay rate:  $350.00 per hour (1099). \r\n Duration: 1 year. \r\n Locations:  Columbia, SC. \r\n Schedule:  8:00am to 4:30pm...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 14,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "staffing::radiologist::houston",
+   "fingerprint": "staffing::radiologist::houston",
+   "title": "Radiologist",
+   "org": "Health Staffing Group",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Houston, TX",
+   "geo": {
+    "lat": 29.7633,
+    "lon": -95.3633,
+    "city": "Houston",
+    "region": "TX",
+    "country": "US",
+    "population": 2314157,
+    "precision": "city",
+    "raw": "Houston, TX"
+   },
+   "url": "https://jooble.org/desc/4125780119355349875?ckey=radiologist&rgn=0&pos=54&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=189&brelb=100&bscr=36.361206&scr=36.361206",
+   "datePosted": "2026-08-11",
+   "description": "...Job Title: Radiologist \r\n \r\n Department: Diagnostic Imaging / Radiology \r\n \r\n Reports To: Chief Medical Officer / Director of Radiology \r\n \r\n Location: [Insert Location]\r\n \r\n Job Type: Full-Time \r\n \r\n Industry: Healthcare / Medical Imaging / Hospital...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 8,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "commonspirit::vascular surgeon::sacramento",
+   "fingerprint": "commonspirit::vascular surgeon::sacramento",
+   "title": "Vascular Surgeon",
+   "org": "CommonSpirit Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Sacramento, CA",
+   "geo": {
+    "lat": 38.5816,
+    "lon": -121.4944,
+    "city": "Sacramento",
+    "region": "CA",
+    "country": "US",
+    "population": 524943,
+    "precision": "city",
+    "raw": "Sacramento, CA"
+   },
+   "url": "https://jooble.org/desc/-9154096869627012078?ckey=vascular+surgeon&rgn=0&pos=5&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=46&brelb=100&bscr=282.8853&scr=282.8853",
+   "datePosted": "2026-08-17",
+   "description": "...Job Summary and Responsibilities \r\n As our Vascular Surgeon , you will join an established and expanding surgical team at Mercy Medical Group, a CommonSpirit Health affiliate, directly impacting patient health at Mercy General Hospital in Sacramento, CA. This pivotal...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 2,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "vohra physicians::vascular surgeon::cullman",
+   "fingerprint": "vohra physicians::vascular surgeon::cullman",
+   "title": "Vascular Surgeon",
+   "org": "Vohra Physicians",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Cullman, AL",
+   "geo": {
+    "lat": 34.1748,
+    "lon": -86.8436,
+    "city": "Cullman",
+    "region": "AL",
+    "country": "US",
+    "population": 15350,
+    "precision": "city",
+    "raw": "Cullman, AL"
+   },
+   "url": "https://jooble.org/desc/-8715601450397633666?ckey=vascular+surgeon&rgn=0&pos=6&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=45&brelb=100&bscr=282.2327&scr=282.2327",
+   "datePosted": "2026-08-17",
+   "description": "... Vascular Surgeon Position with National Wound Physician Group Clinical satisfaction, autonomy and flexibility, work-life balance \r\n No Nights, No Call, No Weekend Clinical Responsibilities \r\n Become an expert in wound management , learn from highly qualified wound-certified...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 2,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "pulse heart institute::vascular surgeon::yakima",
+   "fingerprint": "pulse heart institute::vascular surgeon::yakima",
+   "title": "Vascular Surgeon",
+   "org": "Pulse Heart Institute",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Yakima, WA",
+   "geo": {
+    "lat": 46.6021,
+    "lon": -120.5059,
+    "city": "Yakima",
+    "region": "WA",
+    "country": "US",
+    "population": 93701,
+    "precision": "city",
+    "raw": "Yakima, WA"
+   },
+   "url": "https://jooble.org/desc/-3087481898530833211?ckey=vascular+surgeon&rgn=0&pos=7&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=189&brelb=100&bscr=282.2327&scr=282.2327",
+   "datePosted": "2026-08-12",
+   "description": "...with multi-specialty partnership with Cardiothoracic surgery, vascular and cardiovascular service lines. Our team and state-of-the-art... ...with cutting edge technologies. \r\n Join a team with 12 Vascular Surgeons across the state of Washington able to provide mentorship and collaboration...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 7,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "mohawk valley::vascular surgeon::utica",
+   "fingerprint": "mohawk valley::vascular surgeon::utica",
+   "title": "Vascular Surgeon",
+   "org": "Mohawk Valley Health System",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Utica, NY",
+   "geo": {
+    "lat": 43.1009,
+    "lon": -75.2327,
+    "city": "Utica",
+    "region": "NY",
+    "country": "US",
+    "population": 61100,
+    "precision": "city",
+    "raw": "Utica, NY"
+   },
+   "url": "https://jooble.org/desc/-268614731332514416?ckey=vascular+surgeon&rgn=0&pos=8&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=237&brelb=100&bscr=282.13538&scr=282.13538",
+   "datePosted": "2026-08-09",
+   "description": "...Job Summary Mohawk Valley Health System (MVHS) is currently seeking a skilled and dynamic Vascular Surgeon to join our growing vascular team. This full-time, hospital-employed position offers a balanced schedule with dedicated outpatient clinic time, inpatient rounding...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 10,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "houston methodist::vascular surgeon houston methodist willowbrook::houston",
+   "fingerprint": "houston methodist::vascular surgeon houston methodist willowbrook::houston",
+   "title": "Vascular Surgeon - Houston Methodist Willowbrook",
+   "org": "Houston Methodist",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Houston, TX",
+   "geo": {
+    "lat": 29.7633,
+    "lon": -95.3633,
+    "city": "Houston",
+    "region": "TX",
+    "country": "US",
+    "population": 2314157,
+    "precision": "city",
+    "raw": "Houston, TX"
+   },
+   "url": "https://jooble.org/desc/4376836987208895540?ckey=vascular+surgeon&rgn=0&pos=15&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=198&brelb=100&bscr=281.74707&scr=281.74707",
+   "datePosted": "2026-08-10",
+   "description": "...Houston Methodist Specialty Physician Group is currently seeking a board certified or board eligible Vascular Surgeon to join a well-respected practice in Willowbrook, a rapidly growing area. Our surgeons have expertise in minimally invasive therapies, robotics, endoscopy...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 9,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "adventhealth west florida ambulatory services::vascular surgeon adventhealth sebring::sebring",
+   "fingerprint": "adventhealth west florida ambulatory services::vascular surgeon adventhealth sebring::sebring",
+   "title": "Vascular Surgeon - AdventHealth Sebring",
+   "org": "AdventHealth West Florida Ambulatory Services",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Sebring, FL",
+   "geo": {
+    "lat": 27.4956,
+    "lon": -81.4409,
+    "city": "Sebring",
+    "region": "FL",
+    "country": "US",
+    "population": 10497,
+    "precision": "city",
+    "raw": "Sebring, FL"
+   },
+   "url": "https://jooble.org/desc/-6913477057862104157?ckey=vascular+surgeon&rgn=0&pos=20&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=262&brelb=100&bscr=280.85934&scr=280.85934",
+   "datePosted": "2026-08-08",
+   "description": "...We are currently seeking a Vascular Surgeon  to join our expanding cardiovascular program in Sebring, Florida. This is an exciting opportunity to practice in a collaborative, mission-driven environment while enjoying an exceptional quality of life in a rapidly growing...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 61,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 11,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "diversified radiology lumexa imaging partner practice lever::body imaging radiologist opportunity in vail co 75k sign on bonus::vail",
    "fingerprint": "diversified radiology lumexa imaging partner practice lever::body imaging radiologist opportunity in vail co 75k sign on bonus::vail",
    "title": "Body Imaging Radiologist Opportunity in Vail, CO ($75k Sign On Bonus)",
@@ -8734,6 +9963,108 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "veterans affairs veterans administration::physician vascular surgeon::salt lake city",
+   "fingerprint": "veterans affairs veterans administration::physician vascular surgeon::salt lake city",
+   "title": "Physician - Vascular Surgeon",
+   "org": "Veterans Affairs, Veterans Health Administration",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "Salt Lake City, UT",
+   "geo": {
+    "lat": 40.7608,
+    "lon": -111.891,
+    "city": "Salt Lake City",
+    "region": "UT",
+    "country": "US",
+    "population": 215548,
+    "precision": "city",
+    "raw": "Salt Lake City, UT"
+   },
+   "url": "https://jooble.org/desc/-7015887686320448365?ckey=vascular+surgeon&rgn=0&pos=17&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=865&brelb=100&bscr=281.37173&scr=281.37173",
+   "datePosted": "2026-07-14",
+   "description": "...team environment \r\n~ familiarity with the management of complex vascular conditions prevalent among the Veteran population \r\n~... ...significant restriction on moonlighting The Physician - Vascular Surgeon is specially trained in the diagnosis - management - and treatment...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 60,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "government / VA employment"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 36,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "veterans affairs veterans administration::physician vascular surgeon recruitment relocation incentive edrp authorized::dallas",
+   "fingerprint": "veterans affairs veterans administration::physician vascular surgeon recruitment relocation incentive edrp authorized::dallas",
+   "title": "Physician (Vascular Surgeon)- Recruitment/Relocation Incentive/EDRP Authorized",
+   "org": "Veterans Affairs, Veterans Health Administration",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "Dallas, TX",
+   "geo": {
+    "lat": 32.7831,
+    "lon": -96.8067,
+    "city": "Dallas",
+    "region": "TX",
+    "country": "US",
+    "population": 1326087,
+    "precision": "city",
+    "raw": "Dallas, TX"
+   },
+   "url": "https://jooble.org/desc/-2814734274147256051?ckey=vascular+surgeon&rgn=0&pos=23&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=361&brelb=100&bscr=244.67108&scr=244.67108",
+   "datePosted": "2026-08-04",
+   "description": "...~ Completion of an ACOE-accredited postgraduate residency in Vascular Surgery \r\n~ Possession of an unrestricted license to practice Vascular... ...are not intended to be all inclusive \r\n Carry out surgeon duties independently and in a professional manner - without immediate...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 60,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "government / VA employment"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 15,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "baylor scott white::vascular surgery college station::college station",
    "fingerprint": "baylor scott white::vascular surgery college station::college station",
    "title": "Vascular Surgery, College Station",
@@ -8978,7 +10309,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 16,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -9125,7 +10462,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 22,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -10403,6 +11746,897 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "florida orlando::radiologist in zephyrhills florida::land o lakes",
+   "fingerprint": "florida orlando::radiologist in zephyrhills florida::land o lakes",
+   "title": "Radiologist in Zephyrhills, Florida",
+   "org": "Florida Medical Clinic Orlando Health",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Land O Lakes, FL",
+   "geo": {
+    "lat": 28.2189,
+    "lon": -82.4576,
+    "city": "Land O' Lakes",
+    "region": "FL",
+    "country": "US",
+    "population": 31996,
+    "precision": "city",
+    "raw": "Land O Lakes, FL"
+   },
+   "url": "https://jooble.org/desc/1747402303693259072?ckey=radiologist&rgn=0&pos=8&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=982&brelb=100&bscr=36.698296&scr=36.698296",
+   "datePosted": "2026-07-09",
+   "description": "...of the largest multi-specialty groups in the Hillsborough, Pasco and Pinellas County areas . \r\n Role Requirements: \r\n~ Radiologist – MD or DO - Outpatient \r\n\r\n~ Board Certified or Board Eligible required \r\n\r\n~ Must possess/ability to obtain a Florida Medical...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 41,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "cardiovascular of america::interventional radiologist::orlando",
+   "fingerprint": "cardiovascular of america::interventional radiologist::orlando",
+   "title": "Interventional Radiologist",
+   "org": "Cardiovascular Associates of America",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Orlando, FL",
+   "geo": {
+    "lat": 28.5383,
+    "lon": -81.3792,
+    "city": "Orlando",
+    "region": "FL",
+    "country": "US",
+    "population": 334854,
+    "precision": "city",
+    "raw": "Orlando, FL"
+   },
+   "url": "https://jooble.org/desc/593335855040823012?ckey=radiologist&rgn=0&pos=9&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=477&brelb=100&bscr=36.698296&scr=36.698296",
+   "datePosted": "2026-07-30",
+   "description": "...Interventional Radiologist (100% Outpatient ASC/OBL)\r\n Locations: Miami, FL | Orlando, FL \r\n Schedule: Full-Time | Monday – Friday | No Nights, No Weekends, No Call \r\n Compensation: Competitive Base + Incentive Bonuses + Partnership Track + Equity \r\n Position Overview...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 16,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "call covered or none",
+    "partnership track",
+    "private / group practice"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 20,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "mangrum career solutions::radiologist breast imaging::denver",
+   "fingerprint": "mangrum career solutions::radiologist breast imaging::denver",
+   "title": "Radiologist Breast Imaging",
+   "org": "Mangrum Career Solutions LLC",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Denver, CO",
+   "geo": {
+    "lat": 39.7392,
+    "lon": -104.9847,
+    "city": "Denver",
+    "region": "CO",
+    "country": "US",
+    "population": 729019,
+    "precision": "city",
+    "raw": "Denver, CO"
+   },
+   "url": "https://jooble.org/desc/-4618921060735948141?ckey=radiologist&rgn=0&pos=12&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=2013&brelb=100&bscr=36.698296&scr=36.698296",
+   "datePosted": "2026-05-27",
+   "description": "...OB/GYN Physician  \r\n \r\n Overview: \r\n Join a dynamic and patient-focused medical team as a Radiologist specializing in Breast Imaging. This is a highly desirable lifestyle position offering a full-time schedule without the demands of on-call duties, weekends, or holidays...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 84,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "mrinetwork jobs::radiologist::montclair",
+   "fingerprint": "mrinetwork jobs::radiologist::montclair",
+   "title": "Radiologist",
+   "org": "MRINetwork Jobs",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Montclair, NJ",
+   "geo": {
+    "lat": 40.8259,
+    "lon": -74.209,
+    "city": "Montclair",
+    "region": "NJ",
+    "country": "US",
+    "population": 39701,
+    "precision": "city",
+    "raw": "Montclair, NJ"
+   },
+   "url": "https://jooble.org/desc/-4795363204701631884?ckey=radiologist&rgn=0&pos=13&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=645&brelb=100&bscr=36.698296&scr=36.698296",
+   "datePosted": "2026-07-23",
+   "description": "...Life Insurance \r\n~401(k) Plan \r\n~ Paid Vacation & Holiday \r\n\r\n Job Description \r\n Job ID : 3517107 \r\n Job Title: Permanent Radiologist \r\n Location: Montclair, NJ 07042 \r\n Job Responsibilities: \r\n~ Work with physicians, nurses and radiology technicians to provide...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 27,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "gotham broadway::diagnostic radiologist::brooklyn",
+   "fingerprint": "gotham broadway::diagnostic radiologist::brooklyn",
+   "title": "Diagnostic Radiologist",
+   "org": "Gotham Health/Broadway",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Brooklyn, NY",
+   "geo": {
+    "lat": 40.6501,
+    "lon": -73.9496,
+    "city": "Brooklyn",
+    "region": "NY",
+    "country": "US",
+    "population": 2736074,
+    "precision": "city",
+    "raw": "Brooklyn, NY"
+   },
+   "url": "https://jooble.org/desc/4962454566074614572?ckey=radiologist&rgn=0&pos=19&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=621&brelb=100&bscr=36.686554&scr=36.686554",
+   "datePosted": "2026-07-24",
+   "description": "...Description \r\n Physician Affiliate Group of New York (PAGNY)is adding a Diagnostic Radiologist to the group at  NYC Health + Hospitals/Gotham Health, Broadway.  Gotham Health provides culturally sensitive outpatient care to patients from all five New York City boroughs...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 26,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "french consulting::radiologist::columbia",
+   "fingerprint": "french consulting::radiologist::columbia",
+   "title": "Radiologist",
+   "org": "French Consulting",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Columbia, SC",
+   "geo": {
+    "lat": 34.0007,
+    "lon": -81.0348,
+    "city": "Columbia",
+    "region": "SC",
+    "country": "US",
+    "population": 142416,
+    "precision": "city",
+    "raw": "Columbia, SC"
+   },
+   "url": "https://jooble.org/desc/-2250768960711970481?ckey=radiologist&rgn=0&pos=22&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=525&brelb=100&bscr=36.66331&scr=36.66331",
+   "datePosted": "2026-07-28",
+   "description": "...We are looking for qualified physicians to join our team \r\n Apply now!\r\n \r\n \r\n Job Opportunity : Radiologist \r\n Location : Columbia, South Carolina \r\n Start Date : Immediate \r\n Schedule : Full-Time (Monday–Friday, 8:00 AM–4:30 PM, with on-call rotation)\r\n Make a Difference...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 22,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "southern california permanente kaiser permane::radiologist all sub specialties welcome to apply san diego::san diego",
+   "fingerprint": "southern california permanente kaiser permane::radiologist all sub specialties welcome to apply san diego::san diego",
+   "title": "Radiologist (All sub-specialties welcome to apply) - San Diego",
+   "org": "Southern California Permanente Medical Group (Kaiser Permane...",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "San Diego, CA",
+   "geo": {
+    "lat": 32.7157,
+    "lon": -117.1647,
+    "city": "San Diego",
+    "region": "CA",
+    "country": "US",
+    "population": 1404452,
+    "precision": "city",
+    "raw": "San Diego, CA"
+   },
+   "url": "https://jooble.org/desc/-2843066387541373330?ckey=radiologist&rgn=0&pos=42&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=383&brelb=100&bscr=36.48705&scr=36.48705",
+   "datePosted": "2026-08-03",
+   "description": "...We are seeking Radiologists trained in any of the following sub-specialties: Breast, Neuro, Pediatrics, Body, Chest, MSK or Generalist - welcome to apply. \r\n Competitive Compensation and Benefit Package \r\n The comprehensive benefits and longevity-based compensation package...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 16,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "cambridge alliance::diagnostic radiologist::everett",
+   "fingerprint": "cambridge alliance::diagnostic radiologist::everett",
+   "title": "Diagnostic Radiologist",
+   "org": "Cambridge Health Alliance",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Everett, MA",
+   "geo": {
+    "lat": 42.4084,
+    "lon": -71.0537,
+    "city": "Everett",
+    "region": "MA",
+    "country": "US",
+    "population": 46050,
+    "precision": "city",
+    "raw": "Everett, MA"
+   },
+   "url": "https://jooble.org/jdp/-4863963544807093622?ckey=radiologist&rgn=0&pos=43&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=832&brelb=100&bscr=36.48705&scr=36.48705",
+   "datePosted": "2026-07-15",
+   "description": "...population through an established network of outpatient clinics and two full service hospitals. CHA is recruiting for a diagnostic radiologist to join our well-established and thriving Department of Radiology. \r\n\r\nPractice diagnostic radiology using CHA’s state of the art...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 35,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "banner::diagnostic radiologist banner md anderson cancer center::gilbert",
+   "fingerprint": "banner::diagnostic radiologist banner md anderson cancer center::gilbert",
+   "title": "Diagnostic Radiologist | Banner MD Anderson Cancer Center",
+   "org": "Banner Health",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Gilbert, AZ",
+   "geo": {
+    "lat": 33.3528,
+    "lon": -111.789,
+    "city": "Gilbert",
+    "region": "AZ",
+    "country": "US",
+    "population": 247542,
+    "precision": "city",
+    "raw": "Gilbert, AZ"
+   },
+   "url": "https://jooble.org/desc/-3924470748115131650?ckey=radiologist&rgn=0&pos=44&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=878&brelb=100&bscr=36.48705&scr=36.48705",
+   "datePosted": "2026-07-13",
+   "description": "...DIAGNOSTIC RADIOLOGIST \r\n BANNER MD ANDERSON CANCER CENTER PHOENIX, AZ \r\n\r\n Banner MD Anderson Cancer Center (BMDACC) is actively recruiting a full-time Diagnostic Radiologist to join our growing team on the Banner MD Anderson Center campus located in Gilbert, AZ a part...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 37,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "spectrum::radiologist diagnostic lewiston portland maine::lewiston",
+   "fingerprint": "spectrum::radiologist diagnostic lewiston portland maine::lewiston",
+   "title": "Radiologist - Diagnostic, Lewiston& Portland, Maine",
+   "org": "Spectrum Healthcare Partners",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Lewiston, ME",
+   "geo": {
+    "lat": 44.1004,
+    "lon": -70.2148,
+    "city": "Lewiston",
+    "region": "ME",
+    "country": "US",
+    "population": 36202,
+    "precision": "city",
+    "raw": "Lewiston, ME"
+   },
+   "url": "https://jooble.org/desc/1176741745564768354?ckey=radiologist&rgn=0&pos=53&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=669&brelb=100&bscr=36.361206&scr=36.361206",
+   "datePosted": "2026-07-22",
+   "description": "...Diagnostic Radiologist Opportunities in Maine \r\n J-1 Waiver Applicants Encouraged to Apply \r\n Spectrum Healthcare Partners is seeking Diagnostic Radiologists (board-certified / board-eligible) to become an integral member of our distinguished team of 40+ skilled professionals...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 28,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "commonspirit::vascular surgeon::lexington",
+   "fingerprint": "commonspirit::vascular surgeon::lexington",
+   "title": "Vascular Surgeon",
+   "org": "CommonSpirit Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Lexington, KY",
+   "geo": {
+    "lat": 37.9887,
+    "lon": -84.4777,
+    "city": "Lexington",
+    "region": "KY",
+    "country": "US",
+    "population": 320347,
+    "precision": "city",
+    "raw": "Lexington, KY"
+   },
+   "url": "https://jooble.org/desc/-7637448733300501312?ckey=vascular+surgeon&rgn=0&pos=4&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=792&brelb=100&bscr=282.8853&scr=282.8853",
+   "datePosted": "2026-07-17",
+   "description": "...Job Summary and Responsibilities \r\n As our Fellowship-trained, Board Certified/Board Eligible Vascular Surgeon , you will help patients in Lexington, KY, and the surrounding area receive comprehensive vascular surgical care so they can achieve excellent patient care...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 33,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "nitelines usa::vascular surgeon::wilkes barre",
+   "fingerprint": "nitelines usa::vascular surgeon::wilkes barre",
+   "title": "Vascular Surgeon",
+   "org": "NITELINES USA, INC",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Wilkes Barre, PA",
+   "geo": {
+    "lat": 41.2459,
+    "lon": -75.8813,
+    "city": "Wilkes-Barre",
+    "region": "PA",
+    "country": "US",
+    "population": 40780,
+    "precision": "city",
+    "raw": "Wilkes Barre, PA"
+   },
+   "url": "https://jooble.org/desc/3898362455734964829?ckey=vascular+surgeon&rgn=0&pos=10&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=615&brelb=100&bscr=282.10992&scr=282.10992",
+   "datePosted": "2026-07-24",
+   "description": "...country. Work with a dedicated and caring organization and start doing your life's best work. We are currently looking to hire Vascular Surgeons with NiteLines USA. \r\n Annual salary: $230.00 per hour. \r\n Benefits: \r\n~ Health insurance. \r\n~ Dental insurance. \r\n~ Vision...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 26,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "wellspan::vascular surgeon::york",
+   "fingerprint": "wellspan::vascular surgeon::york",
+   "title": "Vascular Surgeon",
+   "org": "WellSpan Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "York, PA",
+   "geo": {
+    "lat": 39.9626,
+    "lon": -76.7277,
+    "city": "York",
+    "region": "PA",
+    "country": "US",
+    "population": 43992,
+    "precision": "city",
+    "raw": "York, PA"
+   },
+   "url": "https://jooble.org/desc/4021259460919009612?ckey=vascular+surgeon&rgn=0&pos=18&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=878&brelb=100&bscr=281.37173&scr=281.37173",
+   "datePosted": "2026-07-13",
+   "description": "...Supported. Rewarded. Investing in You. \r\n Job Title: Vascular Surgeon \r\n Location: York, PA \r\n Employment Type: Fulltime \r\n What You’ll Champion: \r\n Experience Required: Board-certified vascular surgeon \r\n Team Environment: Join a well-established group of vascular...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 37,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "northeast recruitment::vascular surgeon::denver",
+   "fingerprint": "northeast recruitment::vascular surgeon::denver",
+   "title": "Vascular Surgeon",
+   "org": "Northeast Healthcare Recruitment, Inc.",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Denver, CO",
+   "geo": {
+    "lat": 39.7392,
+    "lon": -104.9847,
+    "city": "Denver",
+    "region": "CO",
+    "country": "US",
+    "population": 729019,
+    "precision": "city",
+    "raw": "Denver, CO"
+   },
+   "url": "https://jooble.org/jdp/9139901364770639780?ckey=vascular+surgeon&rgn=0&pos=19&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=525&brelb=100&bscr=281.37173&scr=281.37173",
+   "datePosted": "2026-07-28",
+   "description": "A thriving regional\nhealthcare system northwest of Denver is seeking a full-time,\nBoard-Certified/Board-Eligible Vascular Surgeon to serve as the cornerstone\nphysician and leader of a growing vascular surgery program. This is a unique\nopportunity to build and shape a service...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 22,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "northeast recruitment::vascular surgery physician join a leading vascular surgery team::brooklyn",
+   "fingerprint": "northeast recruitment::vascular surgery physician join a leading vascular surgery team::brooklyn",
+   "title": "Vascular Surgery Physician - Join a Leading Vascular Surgery Team",
+   "org": "Northeast Healthcare Recruitment, Inc.",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Brooklyn, NY",
+   "geo": {
+    "lat": 40.6501,
+    "lon": -73.9496,
+    "city": "Brooklyn",
+    "region": "NY",
+    "country": "US",
+    "population": 2736074,
+    "precision": "city",
+    "raw": "Brooklyn, NY"
+   },
+   "url": "https://jooble.org/jdp/-6691211765503777535?ckey=vascular+surgeon&rgn=0&pos=26&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=525&brelb=100&bscr=141.05496&scr=141.05496",
+   "datePosted": "2026-07-28",
+   "description": "We are seeking a\nBoard-Certified or Board-Eligible Vascular Surgeon to join a growing,\nmultidisciplinary healthcare organization in Brooklyn, New York. This full-time\nopportunity offers a diverse case mix, advanced surgical technology, and\ncollaboration with specialists...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 22,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "mangrum career solutions::vascular surgery physician::moultrie",
+   "fingerprint": "mangrum career solutions::vascular surgery physician::moultrie",
+   "title": "Vascular Surgery Physician",
+   "org": "Mangrum Career Solutions LLC",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Moultrie, GA",
+   "geo": {
+    "lat": 31.1799,
+    "lon": -83.7891,
+    "city": "Moultrie",
+    "region": "GA",
+    "country": "US",
+    "population": 14377,
+    "precision": "city",
+    "raw": "Moultrie, GA"
+   },
+   "url": "https://jooble.org/desc/716035983643153663?ckey=vascular+surgeon&rgn=0&pos=27&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=2013&brelb=100&bscr=140.42967&scr=140.42967",
+   "datePosted": "2026-05-27",
+   "description": "... Vascular Surgery Physician \r\n \r\n We are seeking a dedicated and skilled Vascular Surgery Physician to join our dynamic surgical team in... ...Practice Environment: Collaborate with four board-certified general surgeons and leverage full hospital resources. \r\n Teaching Opportunities...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 13,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 84,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "mercy::physician cardiac and thoracic surgeon fort smith ar::fort smith",
+   "fingerprint": "mercy::physician cardiac and thoracic surgeon fort smith ar::fort smith",
+   "title": "Physician - Cardiac and Thoracic Surgeon - Fort Smith AR",
+   "org": "Mercy",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Fort Smith, AR",
+   "geo": {
+    "lat": 35.3859,
+    "lon": -94.3985,
+    "city": "Fort Smith",
+    "region": "AR",
+    "country": "US",
+    "population": 88194,
+    "precision": "city",
+    "raw": "Fort Smith, AR"
+   },
+   "url": "https://jooble.org/desc/1052283289512520723?ckey=vascular+surgeon&rgn=0&pos=38&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=526&brelb=100&bscr=70.52748&scr=70.52748",
+   "datePosted": "2026-07-28",
+   "description": "...seeking a BoardCertified or BoardEligible Cardiac and Thoracic Surgeon to join our established Cardiovascular and Thoracic Surgery... ...Surgery team is comprised of two experienced CV surgeons, one vascular surgeon and one advanced practice provider, and a dedicated, engaged...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 22,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "houston methodist::cardiothoracic surgeon houston methodist baytown::houston",
+   "fingerprint": "houston methodist::cardiothoracic surgeon houston methodist baytown::houston",
+   "title": "Cardiothoracic Surgeon - Houston Methodist Baytown",
+   "org": "Houston Methodist Hospital",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Houston, TX",
+   "geo": {
+    "lat": 29.7633,
+    "lon": -95.3633,
+    "city": "Houston",
+    "region": "TX",
+    "country": "US",
+    "population": 2314157,
+    "precision": "city",
+    "raw": "Houston, TX"
+   },
+   "url": "https://jooble.org/desc/3413995350835097082?ckey=vascular+surgeon&rgn=0&pos=41&groupId=38999&elckey=4782509076621956577&p=3&aq=2213133367557407801&cid=18098&jobAge=454&brelb=100&bscr=70.214836&scr=70.214836",
+   "datePosted": "2026-07-31",
+   "description": "...the East of Houston, is seeking a board-certified cardiothoracic surgeon with 3-5 years of experience with a broad range of general... ...have a specialized suite with fixed imaging to support peripheral vascular surgery and one suite dedicated to Cardiothoracic Surgery, including...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 59,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 19,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "diversified radiology lumexa imaging partner practice lever::7 nights on 21 nights off overnight emergency body imaging radiologist 10p 7a mst::",
    "fingerprint": "diversified radiology lumexa imaging partner practice lever::7 nights on 21 nights off overnight emergency body imaging radiologist 10p 7a mst::",
    "title": "7 Nights On /21 Nights Off, Overnight Emergency Body Imaging Radiologist - 10p - 7a MST",
@@ -11076,6 +13310,59 @@
    "ageDays": 2,
    "alsoSeenOn": [],
    "isNew": false,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "jobgether::general radiologist lakefront imaging::",
+   "fingerprint": "jobgether::general radiologist lakefront imaging::",
+   "title": "General Radiologist - Lakefront Imaging",
+   "org": "Jobgether",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Remote",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Remote"
+   },
+   "url": "https://jooble.org/desc/-9171684495692768074?ckey=radiologist&rgn=0&pos=29&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=45&brelb=100&bscr=36.66331&scr=36.66331",
+   "datePosted": "2026-08-17",
+   "description": "...position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a General Radiologist - Lakefront Imaging based in United States. This fully remote opportunity is designed for a radiologist seeking a flexible...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 58,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 23,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "general diagnostic scope",
+    "remote / teleradiology",
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 2,
+   "alsoSeenOn": [],
+   "isNew": true,
    "firstSeen": "2026-08-19"
   },
   {
@@ -12059,6 +14346,208 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "ansible government solutions::vascular surgeon physician::oklahoma city",
+   "fingerprint": "ansible government solutions::vascular surgeon physician::oklahoma city",
+   "title": "Vascular Surgeon (Physician)",
+   "org": "Ansible Government Solutions",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "Oklahoma City, OK",
+   "geo": {
+    "lat": 35.4676,
+    "lon": -97.5164,
+    "city": "Oklahoma City",
+    "region": "OK",
+    "country": "US",
+    "population": 681054,
+    "precision": "city",
+    "raw": "Oklahoma City, OK"
+   },
+   "url": "https://jooble.org/desc/-1235192572935883172?ckey=vascular+surgeon&rgn=0&pos=2&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=1725&brelb=100&bscr=283.15808&scr=283.15808",
+   "datePosted": "2026-06-08",
+   "description": "...Overview \r\n Ansible Government Solutions, LLC (Ansible) is currently seeking a Vascular Surgeon to support operations at the Oklahoma City VA Medical Center located at 921 NE 13th St., Oklahoma City, OK 73104. Full-time and Locum Tenens positions with generous compensation...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 57,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "government / VA employment"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 72,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "american vascular access::vascular surgeon::nashville",
+   "fingerprint": "american vascular access::vascular surgeon::nashville",
+   "title": "Vascular Surgeon",
+   "org": "American Vascular Access, LLC",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Nashville, TN",
+   "geo": {
+    "lat": 36.1659,
+    "lon": -86.7844,
+    "city": "Nashville",
+    "region": "TN",
+    "country": "US",
+    "population": 689447,
+    "precision": "city",
+    "raw": "Nashville, TN"
+   },
+   "url": "https://jooble.org/desc/-2262836519204198900?ckey=vascular+surgeon&rgn=0&pos=13&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=2379&brelb=100&bscr=281.74707&scr=281.74707",
+   "datePosted": "2026-05-11",
+   "description": "...Join a Premier Outpatient Vascular Platform American Vascular is seeking experienced vascular surgeons interested in practicing in a high‑performing OBL/ASC environment. We offer exceptional flexibility, with opportunities that include full‑time, part‑time, 1–2 days...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 57,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 13,
+    "location": 12,
+    "recency": 3,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 100,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "chs recruiting::general or vascular surgeon physician vein clinic role::brooklyn",
+   "fingerprint": "chs recruiting::general or vascular surgeon physician vein clinic role::brooklyn",
+   "title": "General or Vascular Surgeon (Physician) - Vein Clinic Role",
+   "org": "CHS Recruiting",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Brooklyn, NY",
+   "geo": {
+    "lat": 40.6501,
+    "lon": -73.9496,
+    "city": "Brooklyn",
+    "region": "NY",
+    "country": "US",
+    "population": 2736074,
+    "precision": "city",
+    "raw": "Brooklyn, NY"
+   },
+   "url": "https://jooble.org/desc/2590627944456800645?ckey=vascular+surgeon&rgn=0&pos=22&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=1677&brelb=100&bscr=267.78976&scr=267.78976",
+   "datePosted": "2026-06-10",
+   "description": "...Annual CME Allowance \r\n- 401k \r\n- Full Details Negotiable \r\n LOCATION: \r\n Brooklyn, New York \r\n COMPANY PROFILE: \r\n This regional vascular medicine organization opened its first clinic in 2010 and, today, operates more than 40 offices in 7 states.  They currently boast...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 57,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 20,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [
+    "venous practice component"
+   ],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 70,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "lee::vascular surgeon hospitalist::",
+   "fingerprint": "lee::vascular surgeon hospitalist::",
+   "title": "Vascular Surgeon/Hospitalist",
+   "org": "Lee Health",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Lane County, KS",
+   "geo": {
+    "lat": 38.4826,
+    "lon": -96.3102,
+    "city": null,
+    "region": "KS",
+    "country": "US",
+    "precision": "region",
+    "raw": "Lane County, KS"
+   },
+   "url": "https://jooble.org/desc/7030636680421119504?ckey=vascular+surgeon&rgn=0&pos=24&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=378&brelb=100&bscr=218.8009&scr=218.8009",
+   "datePosted": "2026-08-03",
+   "description": "...places Lee Health among an elite group of only 10 organizations nationwide to receive this honor. \r\n\r\n Lee Health is seeking a Vascular Surgeon/ Hospitalist!\r\n Lee Health is a nonprofit organization with more than 17,000 employees, 4,500 volunteers, and more than 1,200...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 57,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 10,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 16,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "baylor scott white::diagnostic radiologist::college station",
    "fingerprint": "baylor scott white::diagnostic radiologist::college station",
    "title": "Diagnostic Radiologist",
@@ -12103,7 +14592,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 64,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -12865,7 +15360,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 56,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -12963,7 +15464,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 64,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -13012,7 +15519,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 78,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -13672,6 +16185,159 @@
    "ageDays": 63,
    "alsoSeenOn": [],
    "isNew": false,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "of iowa::dept of radiology academic radiologist::iowa city",
+   "fingerprint": "of iowa::dept of radiology academic radiologist::iowa city",
+   "title": "DEPT OF RADIOLOGY - ACADEMIC RADIOLOGIST",
+   "org": "The University of Iowa",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Iowa City, IA",
+   "geo": {
+    "lat": 41.6611,
+    "lon": -91.5302,
+    "city": "Iowa City",
+    "region": "IA",
+    "country": "US",
+    "population": 74220,
+    "precision": "city",
+    "raw": "Iowa City, IA"
+   },
+   "url": "https://jooble.org/jdp/8366512107911933312?ckey=radiologist&rgn=0&pos=56&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=4847&brelb=100&bscr=30.581913&scr=30.581913",
+   "datePosted": "2026-01-29",
+   "description": "...Position Description:The University of Iowa\r\nRoy J. and Lucille A. Carver College of Medicine\r\nDepartment of Radiology\r\nAcademic Radiologist\r \nThe Roy J. and Lucille A. Carver College is seeking faculty for a position as a Clinical Radiologist. Appointment will be as a Clinician...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 15,
+    "location": 12,
+    "recency": 1,
+    "signal": 1
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "posting is about 7 months old — likely filled",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 202,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "mymdcareers::radiologist physician::tampa",
+   "fingerprint": "mymdcareers::radiologist physician::tampa",
+   "title": "Radiologist - physician",
+   "org": "Mymdcareers",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Tampa, FL",
+   "geo": {
+    "lat": 27.9475,
+    "lon": -82.4584,
+    "city": "Tampa",
+    "region": "FL",
+    "country": "US",
+    "population": 414547,
+    "precision": "city",
+    "raw": "Tampa, FL"
+   },
+   "url": "https://jooble.org/desc/5249043012072587942?ckey=radiologist&rgn=0&pos=60&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=2013&brelb=10&bscr=30.581913&scr=30.581913",
+   "datePosted": "2026-05-27",
+   "description": "Well established multi specialty group in Tampa continues to experience growth. The group is now looking to add a BE/BC Radiologist.  \n Board Certified or Board Eligible required\n Must possess/ability to obtain a Florida Medical License\n This is an outpatient position\n Competitive...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 5,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 84,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "url https jooble org desc 6711754449751769997 ckey vascular surgeon rgn 0 pos 29 groupid 38999 elckey 4782509076621956577 p 2 aq 8015960378990811158 cid 18098 jobage 24 brelb 100 bscr 122 66756 scr 122 66756::vascular surgeon is wanted for locums assistance in in::fort wayne",
+   "fingerprint": "url https jooble org desc 6711754449751769997 ckey vascular surgeon rgn 0 pos 29 groupid 38999 elckey 4782509076621956577 p 2 aq 8015960378990811158 cid 18098 jobage 24 brelb 100 bscr 122 66756 scr 122 66756::vascular surgeon is wanted for locums assistance in in::fort wayne",
+   "title": "Vascular Surgeon Is Wanted for Locums Assistance in IN",
+   "org": "",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": true,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Fort Wayne, IN",
+   "geo": {
+    "lat": 41.1306,
+    "lon": -85.1289,
+    "city": "Fort Wayne",
+    "region": "IN",
+    "country": "US",
+    "population": 260326,
+    "precision": "city",
+    "raw": "Fort Wayne, IN"
+   },
+   "url": "https://jooble.org/desc/6711754449751769997?ckey=vascular+surgeon&rgn=0&pos=29&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=24&brelb=100&bscr=122.66756&scr=122.66756",
+   "datePosted": "2026-08-18",
+   "description": "Job quick facts \r\n \r\n~ Call only coverage — in-house call required \r\n~ Call ratio: 1:3\r\n~10 – 15 patients seen per 24-hour call period \r\n~20 phone consults average per 24-hour period \r\n~ Inpatient practice setting — admissions required \r\n~ Trauma and laparoscopic surgery...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 56,
+   "tier": "worth-a-look",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 4,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "locum / temporary, not a permanent post",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 1,
+   "alsoSeenOn": [],
+   "isNew": true,
    "firstSeen": "2026-08-19"
   },
   {
@@ -15381,6 +18047,159 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "dba moffitt::prn diagnostic radiologist::",
+   "fingerprint": "dba moffitt::prn diagnostic radiologist::",
+   "title": "Prn Diagnostic Radiologist",
+   "org": "dba Moffitt Medical Group",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": true,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "US",
+   "geo": {
+    "lat": 37.5797,
+    "lon": -92.7345,
+    "city": null,
+    "region": null,
+    "country": "US",
+    "precision": "country",
+    "raw": "US"
+   },
+   "url": "https://www.adzuna.com/details/5834635120?utm_medium=api&utm_source=d24d468b",
+   "datePosted": "2026-08-09",
+   "description": "Working at Moffitt is both a career and a mission: to contribute to the prevention and cure of cancer. As the only National Cancer Institute-designated Comprehensive Cancer Center based in Florida, Moffitt employs some of the best and brightest minds from around the world. Join a dedicated team of nearly 11,000 who are shaping the future we envision. Moffitt has been recognized as a Best and Brightest Company to Work For in the Nation and is continually named one of the Tampa Bay Times’ Top Wor…",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 55,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 4,
+    "practiceQuality": 11,
+    "location": 10,
+    "recency": 10,
+    "signal": 2
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "locum / temporary, not a permanent post",
+    "location is vague — resolved only to a state or country"
+   ],
+   "ageDays": 10,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "columbus vascular::vascular surgeon outpatient center::columbus",
+   "fingerprint": "columbus vascular::vascular surgeon outpatient center::columbus",
+   "title": "Vascular Surgeon Outpatient Center",
+   "org": "Columbus Vascular Center, LLC",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Columbus, GA",
+   "geo": {
+    "lat": 32.461,
+    "lon": -84.9877,
+    "city": "Columbus",
+    "region": "GA",
+    "country": "US",
+    "population": 206922,
+    "precision": "city",
+    "raw": "Columbus, GA"
+   },
+   "url": "https://jooble.org/desc/2672850451602513578?ckey=vascular+surgeon&rgn=0&pos=1&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=4851&brelb=100&bscr=283.15808&scr=283.15808",
+   "datePosted": "2026-01-28",
+   "description": "...American Vascular Associates is seeking a full-time  Vascular Surgeon for our center in Columbus, GA. This is a unique opportunity to join a well-established outpatient Office-Based Lab (OBL) focused on delivering cutting-edge vascular and interventional procedures, with...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 55,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 13,
+    "location": 12,
+    "recency": 1,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "posting is about 7 months old — likely filled",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 203,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "community::vascular surgeon build and grow a comprehensive vascular surgery program::fort wayne",
+   "fingerprint": "community::vascular surgeon build and grow a comprehensive vascular surgery program::fort wayne",
+   "title": "Vascular Surgeon | Build and Grow a Comprehensive Vascular Surgery Program",
+   "org": "Community Health Systems",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Fort Wayne, IN",
+   "geo": {
+    "lat": 41.1306,
+    "lon": -85.1289,
+    "city": "Fort Wayne",
+    "region": "IN",
+    "country": "US",
+    "population": 260326,
+    "precision": "city",
+    "raw": "Fort Wayne, IN"
+   },
+   "url": "https://jooble.org/desc/2485261108807975738?ckey=vascular+surgeon&rgn=0&pos=9&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=998&brelb=100&bscr=282.10992&scr=282.10992",
+   "datePosted": "2026-07-08",
+   "description": "...Lutheran Health Network is seeking a BC/BE Vascular Surgeon to help build and grow a comprehensive vascular surgery program serving Northeast Indiana. This opportunity is ideal for both experienced surgeons and new graduates seeking to build and shape the future...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 55,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 6,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "pitched at entry level",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 42,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "ascension::diagnostic radiologist::",
    "fingerprint": "ascension::diagnostic radiologist::",
    "title": "Diagnostic Radiologist",
@@ -15629,7 +18448,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 92,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -15825,7 +18650,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 98,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -16911,6 +19742,210 @@
    "ageDays": 16,
    "alsoSeenOn": [],
    "isNew": false,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "nyc hospitals metropolitan::diagnostic radiologist::new york city",
+   "fingerprint": "nyc hospitals metropolitan::diagnostic radiologist::new york city",
+   "title": "Diagnostic Radiologist",
+   "org": "NYC Health + Hospitals/Metropolitan",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "New York, NY",
+   "geo": {
+    "lat": 40.7143,
+    "lon": -74.006,
+    "city": "New York City",
+    "region": "NY",
+    "country": "US",
+    "population": 8804190,
+    "precision": "city",
+    "raw": "New York, NY"
+   },
+   "url": "https://jooble.org/desc/-1957756330499447060?ckey=radiologist&rgn=0&pos=7&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=4077&brelb=100&bscr=36.698296&scr=36.698296",
+   "datePosted": "2026-03-02",
+   "description": "...Description \r\n Physician Affiliate Group of New York (PAGNY)is adding a Diagnostic Radiologist to the group at  NYC Health + Hospitals/Metropolitan. Metropolitan Hospital is a full-service community hospital that provides state-of-the-art care and leading-edge technology...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 54,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 3,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 170,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "url https jooble org desc 3429537161138207969 ckey radiologist rgn 0 pos 35 groupid 38996 elckey 4585306947557229382 p 2 aq 2095509086856670599 cid 18098 jobage 6 brelb 100 bscr 36 64103 scr 36 64103::radiologist opportunity in the northern mariana islands::",
+   "fingerprint": "url https jooble org desc 3429537161138207969 ckey radiologist rgn 0 pos 35 groupid 38996 elckey 4585306947557229382 p 2 aq 2095509086856670599 cid 18098 jobage 6 brelb 100 bscr 36 64103 scr 36 64103::radiologist opportunity in the northern mariana islands::",
+   "title": "Radiologist Opportunity in the Northern Mariana Islands",
+   "org": "",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Northern Mariana Islands",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Northern Mariana Islands"
+   },
+   "url": "https://jooble.org/desc/3429537161138207969?ckey=radiologist&rgn=0&pos=35&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=6&brelb=100&bscr=36.64103&scr=36.64103",
+   "datePosted": "2026-08-18",
+   "description": "...snorkeling and dive spots in crystal-clear waters \r\n Tropical island climate \r\n Description \r\n A position has opened up for a radiologist to practice in the Pacific Islands. You can plan to work 8-hour shifts in a hospital setting. Your travel will be paid for,...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 54,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 1,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "protouch staffing::interventional radiologist::jackson",
+   "fingerprint": "protouch staffing::interventional radiologist::jackson",
+   "title": "Interventional Radiologist",
+   "org": "Protouch Staffing",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Jackson, TN",
+   "geo": {
+    "lat": 35.6145,
+    "lon": -88.8139,
+    "city": "Jackson",
+    "region": "TN",
+    "country": "US",
+    "population": 66975,
+    "precision": "city",
+    "raw": "Jackson, TN"
+   },
+   "url": "https://jooble.org/desc/1394999929944193215?ckey=radiologist&rgn=0&pos=40&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=189&brelb=100&bscr=36.48705&scr=36.48705",
+   "datePosted": "2026-08-12",
+   "description": "...Interventional Radiologist (MD/DO) Location: Jackson, TN \r\n Schedule: Full-Time - On-Site \r\n Summary \r\n Seeking \r\n Interventional Radiologists to join its established, physician-owned private practice in West Tennessee. \r\n Position Highlights \r\n~ Experienced IR physicians...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 54,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice",
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 7,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "cardiovascular of america::vascular surgeon::",
+   "fingerprint": "cardiovascular of america::vascular surgeon::",
+   "title": "Vascular Surgeon",
+   "org": "Cardiovascular Associates of America",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Oregon State",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Oregon State"
+   },
+   "url": "https://jooble.org/desc/-7298828221558435662?ckey=vascular+surgeon&rgn=0&pos=11&groupId=38999&elckey=4782509076621956577&p=1&aq=6740108743547788096&cid=18098&jobAge=477&brelb=100&bscr=282.10992&scr=282.10992",
+   "datePosted": "2026-07-30",
+   "description": "... Vascular Surgeon \r\n Location Options: Miami or Orlando Florida \r\n Position Overview \r\n Cardiovascular Associates of America (CVAUSA) is seeking a full-time, board-certified Vascular Surgeon to join one of our established, physician-led cardiovascular practices in Florida...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 54,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 13,
+    "location": 4,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 20,
+   "alsoSeenOn": [],
+   "isNew": true,
    "firstSeen": "2026-08-19"
   },
   {
@@ -18335,6 +21370,156 @@
    "ageDays": 75,
    "alsoSeenOn": [],
    "isNew": false,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "veterans administration::diagnostic radiologist::",
+   "fingerprint": "veterans administration::diagnostic radiologist::",
+   "title": "DIAGNOSTIC RADIOLOGIST",
+   "org": "Veterans Health Administration",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "Madison, Dane County",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Madison, Dane County"
+   },
+   "url": "https://www.adzuna.com/details/5817618436?utm_medium=api&utm_source=d24d468b",
+   "datePosted": "2026-07-27",
+   "description": "Qualifications To qualify for this position, you must meet the basic requirements as well as any additional requirements (if applicable) listed in the job announcement. Applicants pending the completion of training or license requirements may be referred and tentatively selected but may not be hired until all requirements are met. Currently employed physician(s) in VA who met the requirements for appointment under the previous qualification standard at the time of their initial appointment are …",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 12,
+    "location": 4,
+    "recency": 8,
+    "signal": 2
+   },
+   "reasons": [
+    "government / VA employment"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country"
+   ],
+   "ageDays": 23,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "veterans administration::physician diagnostic radiologist::",
+   "fingerprint": "veterans administration::physician diagnostic radiologist::",
+   "title": "Physician (Diagnostic Radiologist)",
+   "org": "Veterans Health Administration",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "North Chicago, Lake County",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "North Chicago, Lake County"
+   },
+   "url": "https://www.adzuna.com/details/5817619344?utm_medium=api&utm_source=d24d468b",
+   "datePosted": "2026-07-27",
+   "description": "Qualifications To qualify for this position, you must meet the basic requirements as well as any additional requirements (if applicable) listed in the job announcement. Applicants pending the completion of training or license requirements may be referred and tentatively selected but may not be hired until all requirements are met. Currently employed physician(s) in VA who met the requirements for appointment under the previous qualification standard at the time of their initial appointment are …",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 12,
+    "location": 4,
+    "recency": 8,
+    "signal": 2
+   },
+   "reasons": [
+    "government / VA employment"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country"
+   ],
+   "ageDays": 23,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "northeast recruitment::locums vascular surgery physician::twin falls",
+   "fingerprint": "northeast recruitment::locums vascular surgery physician::twin falls",
+   "title": "Locums Vascular Surgery Physician",
+   "org": "Northeast Healthcare Recruitment, Inc.",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": true,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Twin Falls, ID",
+   "geo": {
+    "lat": 42.563,
+    "lon": -114.4609,
+    "city": "Twin Falls",
+    "region": "ID",
+    "country": "US",
+    "population": 47468,
+    "precision": "city",
+    "raw": "Twin Falls, ID"
+   },
+   "url": "https://jooble.org/jdp/-1320311075946386054?ckey=vascular+surgeon&rgn=0&pos=28&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=525&brelb=100&bscr=122.99362&scr=122.99362",
+   "datePosted": "2026-07-28",
+   "description": "A\nleading regional medical center in Twin Falls, Idaho is seeking a Locums\n Vascular Surgery Physician to provide call coverage and support an established\nvascular surgery program serving Southern Idaho and surrounding communities.\nThis is an excellent opportunity to join...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 53,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 4,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "locum / temporary, not a permanent post",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 22,
+   "alsoSeenOn": [],
+   "isNew": true,
    "firstSeen": "2026-08-19"
   },
   {
@@ -20278,6 +23463,255 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "logan::physician vascular surgeon::",
+   "fingerprint": "logan::physician vascular surgeon::",
+   "title": "Physician - Vascular Surgeon",
+   "org": "Logan Health Medical Center",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Kalispell, Flathead County",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Kalispell, Flathead County"
+   },
+   "url": "https://www.adzuna.com/details/5792117333?utm_medium=api&utm_source=d24d468b",
+   "datePosted": "2026-07-08",
+   "description": "Seeking Vascular Surgeon&xa;&xa; Our Mission : Quality, compassionate care for all. Our Vision : Reimagine health care through connection, service and innovation. Our Core Values : Be Kind | Trust and Be Trusted | Work Together | Strive for Excellence. &xa;&xa; Seeking Vascular Surgeon Situated at the edge of Glacier National Park, Logan Health offers an opportunity like none other against the backdrop of one of the most beautiful places in the world. Enjoy world-class amenities alongside prist…",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 52,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 4,
+    "recency": 8,
+    "signal": 2
+   },
+   "reasons": [],
+   "concerns": [
+    "location is vague — resolved only to a state or country"
+   ],
+   "ageDays": 42,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "radiology of albuquerque pa::diagnostic radiologist 33::",
+   "fingerprint": "radiology of albuquerque pa::diagnostic radiologist 33::",
+   "title": "Diagnostic Radiologist (33)",
+   "org": "Radiology Associates Of Albuquerque, Pa",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Albuquerque, Bernalillo County",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Albuquerque, Bernalillo County"
+   },
+   "url": "https://www.adzuna.com/land/ad/5581063649?se=1nQRSn-b8RGhLrNRAnh5GQ&utm_medium=api&utm_source=d24d468b&v=1DDA486B908D8C4D33DEC4632B5F91CBBE4B611C",
+   "datePosted": "2026-01-12",
+   "description": "Description Partnership track Diagnostic Radiologist needed for busy private practice in Albuquerque, NM. Our partners are dynamic and active. We work hard and enjoy time off. We value expertise and the ability to enjoy the great outdoors. The group consists of sub-specialists and seeks hard-working partners, who share our vision. We value fast and accurate interpretation. We love self-starters who take initiative and share their expertise and experience. Our group prides itself on a high degre…",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 52,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 22,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 4,
+    "recency": 1,
+    "signal": 2
+   },
+   "reasons": [
+    "partnership track",
+    "private / group practice"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "posting is about 7 months old — likely filled"
+   ],
+   "ageDays": 219,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "med source consultants::radiologist 7180::burlington",
+   "fingerprint": "med source consultants::radiologist 7180::burlington",
+   "title": "Radiologist - 7180",
+   "org": "Med Source Consultants",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Burlington, VT",
+   "geo": {
+    "lat": 44.4759,
+    "lon": -73.2121,
+    "city": "Burlington",
+    "region": "VT",
+    "country": "US",
+    "population": 42452,
+    "precision": "city",
+    "raw": "Burlington, VT"
+   },
+   "url": "https://jooble.org/desc/-5997119692789969746?ckey=radiologist&rgn=0&pos=49&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=8613&brelb=100&bscr=36.365017&scr=36.365017",
+   "datePosted": "2025-08-25",
+   "description": "... Radiologist – 7180\r\n Locums IR Radiologist Needed \r\n* Fall/Winter assignment in beautiful Northern Vermont! \r\n*Full-time coverage for an IR Radiology physician at a well-renowned facility. \r\n*Monday-Friday 8:30am-5:00pm. \r\n* Daily OT after 8 hours!\r\n* Anticipated 25 Procedures...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 52,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 1,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is about 12 months old — likely filled",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 359,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "med source consultants::surgeon 4253::",
+   "fingerprint": "med source consultants::surgeon 4253::",
+   "title": "Surgeon - 4253",
+   "org": "Med Source Consultants",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Mississippi",
+   "geo": {
+    "lat": 32.4051,
+    "lon": -89.589,
+    "city": null,
+    "region": "MS",
+    "country": "US",
+    "precision": "region",
+    "raw": "Mississippi"
+   },
+   "url": "https://jooble.org/desc/719221057717026843?ckey=vascular+surgeon&rgn=0&pos=31&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=2229&brelb=100&bscr=70.78952&scr=70.78952",
+   "datePosted": "2026-05-18",
+   "description": "... Surgeon – 4253\r\n Vascular Surgery Leadership Opportunity to Build and Expand a New Program in a Regional Midwest Health System \r\n*Board-Certified Vascular Surgeon (MD/DO) opportunity to establish and grow a new vascular surgery program within a large regional hospital...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 52,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 10,
+    "recency": 3,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 93,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "med source consultants::surgeon 3955::florence",
+   "fingerprint": "med source consultants::surgeon 3955::florence",
+   "title": "Surgeon - 3955",
+   "org": "Med Source Consultants",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Florence, SC",
+   "geo": {
+    "lat": 34.1954,
+    "lon": -79.7626,
+    "city": "Florence",
+    "region": "SC",
+    "country": "US",
+    "population": 38228,
+    "precision": "city",
+    "raw": "Florence, SC"
+   },
+   "url": "https://jooble.org/desc/3266931507013660803?ckey=vascular+surgeon&rgn=0&pos=32&groupId=38999&elckey=4782509076621956577&p=2&aq=-8015960378990811158&cid=18098&jobAge=4821&brelb=100&bscr=70.72133&scr=70.72133",
+   "datePosted": "2026-01-30",
+   "description": "... Surgeon – 3955\r\n Vascular Surgery | $40K Sign-On + Loan Assistance | No Local Competition \r\n*Rare OPP for a Vascular Surgeon to build Your Legacy: Launch and lead a brand-new Vascular service line; currently, all regional cases are referred out -own the market from Day...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 52,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 10,
+    "location": 12,
+    "recency": 1,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "posting is about 7 months old — likely filled",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 201,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "url https www nejmcareercenter org job 1009179 vascular surgery opportunity high volume tertiary program trackid 1 amp utm source rss amp utm medium feed amp utm campaign general::jackson physician search vascular surgery opportunity high volume tertiary program::",
    "fingerprint": "url https www nejmcareercenter org job 1009179 vascular surgery opportunity high volume tertiary program trackid 1 amp utm source rss amp utm medium feed amp utm campaign general::jackson physician search vascular surgery opportunity high volume tertiary program::",
    "title": "Jackson Physician Search: Vascular Surgery Opportunity | High-Volume Tertiary Program",
@@ -21617,6 +25051,58 @@
    "ageDays": 174,
    "alsoSeenOn": [],
    "isNew": false,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "veterans affairs veterans administration::join our team as an interventional radiologist in beautiful phoenix::phoenix",
+   "fingerprint": "veterans affairs veterans administration::join our team as an interventional radiologist in beautiful phoenix::phoenix",
+   "title": "Join Our Team as an Interventional Radiologist in Beautiful Phoenix!",
+   "org": "Veterans Affairs, Veterans Health Administration",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "government",
+   "workModel": "onsite",
+   "locationText": "Phoenix, AZ",
+   "geo": {
+    "lat": 33.4484,
+    "lon": -112.074,
+    "city": "Phoenix",
+    "region": "AZ",
+    "country": "US",
+    "population": 1650070,
+    "precision": "city",
+    "raw": "Phoenix, AZ"
+   },
+   "url": "https://jooble.org/desc/1325279630076287823?ckey=radiologist&rgn=0&pos=51&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=1057&brelb=100&bscr=36.365017&scr=36.365017",
+   "datePosted": "2026-07-06",
+   "description": "...Join Our Team as an Interventional Radiologist in Beautiful Phoenix!Phoenix VA Interventional Radiology seeks a talented Interventional Radiologist to join our growing three?physician IR team. We are part of a well?established practice in Phoenix, Arizona, supporting the...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 50,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 12,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "government / VA employment"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 44,
+   "alsoSeenOn": [],
+   "isNew": true,
    "firstSeen": "2026-08-19"
   },
   {
@@ -23598,6 +27084,259 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "unc chapel hill::vascular surgeon::",
+   "fingerprint": "unc chapel hill::vascular surgeon::",
+   "title": "Vascular Surgeon",
+   "org": "UNC-Chapel Hill",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "academic",
+   "workModel": "onsite",
+   "locationText": "Chapel Hill, Orange County",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Chapel Hill, Orange County"
+   },
+   "url": "https://www.adzuna.com/land/ad/5535374332?se=SIm0SH-b8RGofthPKnR1kQ&utm_medium=api&utm_source=d24d468b&v=7AD54224381A444F9B56C146A17CA372E8DE2018",
+   "datePosted": "2025-12-09",
+   "description": "Position Summary The Department of Surgery at The University of North Carolina is seeking applications for a full-time academic vascular surgeon to join our Division of Vascular Surgery. The Division of Vascular Surgery is among nine clinical Divisions in the Department of Surgery. The Division currently includes 11 faculty members (8 vascular surgeons and 3 podiatrists) who provide exceptional care to patients from across the state of North Carolina. This position is being recruited as an open…",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 14,
+    "location": 4,
+    "recency": 1,
+    "signal": 2
+   },
+   "reasons": [
+    "academic setting"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "posting is about 8 months old — likely filled"
+   ],
+   "ageDays": 253,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "northeast recruitment::interventional radiologist::phoenix",
+   "fingerprint": "northeast recruitment::interventional radiologist::phoenix",
+   "title": "Interventional Radiologist",
+   "org": "Northeast Healthcare Recruitment, Inc.",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Phoenix, AZ",
+   "geo": {
+    "lat": 33.4484,
+    "lon": -112.074,
+    "city": "Phoenix",
+    "region": "AZ",
+    "country": "US",
+    "population": 1650070,
+    "precision": "city",
+    "raw": "Phoenix, AZ"
+   },
+   "url": "https://jooble.org/jdp/1099997424399178824?ckey=radiologist&rgn=0&pos=17&groupId=38996&elckey=4585306947557229382&p=1&aq=-361438230118228626&cid=18098&jobAge=525&brelb=100&bscr=36.686554&scr=36.686554",
+   "datePosted": "2026-07-28",
+   "description": "We\nare seeking a full-time Board Certified/Board Eligible Interventional\n Radiologist with fellowship training and a strong interest in academics to join\nour team in Phoenix, AZ. This is an exceptional opportunity to work in a\ndiverse and dynamic environment at a 449-bed...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 22,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "terrestris global solutions::interventional radiologist::brooklyn",
+   "fingerprint": "terrestris global solutions::interventional radiologist::brooklyn",
+   "title": "Interventional Radiologist",
+   "org": "Terrestris Global Solutions",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Brooklyn, NY",
+   "geo": {
+    "lat": 40.6501,
+    "lon": -73.9496,
+    "city": "Brooklyn",
+    "region": "NY",
+    "country": "US",
+    "population": 2736074,
+    "precision": "city",
+    "raw": "Brooklyn, NY"
+   },
+   "url": "https://jooble.org/desc/-6562042806229674852?ckey=radiologist&rgn=0&pos=23&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=429&brelb=110&bscr=36.66331&scr=36.66331",
+   "datePosted": "2026-08-01",
+   "description": "...for an innovative organization and the opportunity to learn and grow professionally? We can help! We are seeking an Interventional Radiologist to support the Veteran community in the Brooklyn, NY area. This position is open to all candidates, including Locum or Traveling...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 18,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "commonspirit::interventional radiologist::roseburg",
+   "fingerprint": "commonspirit::interventional radiologist::roseburg",
+   "title": "Interventional Radiologist",
+   "org": "CommonSpirit Health",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Roseburg, OR",
+   "geo": {
+    "lat": 43.2165,
+    "lon": -123.3417,
+    "city": "Roseburg",
+    "region": "OR",
+    "country": "US",
+    "population": 22114,
+    "precision": "city",
+    "raw": "Roseburg, OR"
+   },
+   "url": "https://jooble.org/desc/8810867553752577502?ckey=radiologist&rgn=0&pos=30&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=625&brelb=100&bscr=36.64103&scr=36.64103",
+   "datePosted": "2026-07-24",
+   "description": "...Job Summary and Responsibilities \r\n As our Interventional Radiologist, you will join a highly collaborative and well-established interventional radiology team making a significant impact in Roseburg, Oregon. This unique opportunity allows you to practice the full spectrum...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 12,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 26,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "rieles::board certified interventional radiologist::",
+   "fingerprint": "rieles::board certified interventional radiologist::",
+   "title": "Board-Certified Interventional Radiologist",
+   "org": "Rieles Group",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Minnesota",
+   "geo": {
+    "lat": 45.0807,
+    "lon": -93.4332,
+    "city": null,
+    "region": "MN",
+    "country": "US",
+    "precision": "region",
+    "raw": "Minnesota"
+   },
+   "url": "https://jooble.org/desc/-8143246990494183801?ckey=radiologist&rgn=0&pos=52&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=189&brelb=100&bscr=36.365017&scr=36.365017",
+   "datePosted": "2026-08-11",
+   "description": "...RieLes Group is seeking 2 Board-Certified Interventional Radiologists. If you meet the qualifications, RieLes Group has the perfect opportunity for you. \r\n RieLes Group has been providing meaningful opportunities that move people to social and economic empowerment...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 49,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 10,
+    "recency": 10,
+    "signal": 1
+   },
+   "reasons": [
+    "posted within two weeks"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 8,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "ascension::vascular surgeon::",
    "fingerprint": "ascension::vascular surgeon::",
    "title": "Vascular Surgeon",
@@ -24269,6 +28008,160 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "sterling physician recruiters::vascular surgeon::",
+   "fingerprint": "sterling physician recruiters::vascular surgeon::",
+   "title": "Vascular Surgeon",
+   "org": "Sterling Physician Recruiters",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Toledo, Lucas County",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Toledo, Lucas County"
+   },
+   "url": "https://www.adzuna.com/details/5619895356?utm_medium=api&utm_source=d24d468b",
+   "datePosted": "2026-02-07",
+   "description": "Vascular Surgeon Join an independent physician led health system and partnership with a prominent academic university to support further development of a robust program. Non-profit integrated regional health system in NW Ohio. Top research affiliate. Located outside of Toledo Metro, suburban community offering a higher quality of life, affordable housing and lower cost of living with outdoor recreational activities. Join an established Vascular Surgical team of 2 providers. Support complex case…",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 48,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 13,
+    "location": 4,
+    "recency": 1,
+    "signal": 2
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "posting is about 6 months old — likely filled"
+   ],
+   "ageDays": 193,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "progressive physician::vascular surgeon::",
+   "fingerprint": "progressive physician::vascular surgeon::",
+   "title": "Vascular Surgeon",
+   "org": "Progressive Physician Associates",
+   "specialty": "vascular",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Bethlehem, Northampton County",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "none",
+    "raw": "Bethlehem, Northampton County"
+   },
+   "url": "https://www.adzuna.com/land/ad/5342239497?se=ZCo4SX-b8RG1-r2bSeqFRA&utm_medium=api&utm_source=d24d468b&v=A952448A9D20EAAE3EDC51D9378D9B8F5A9EA78B",
+   "datePosted": "2025-08-07",
+   "description": "We currently do not have openings available for this role however, we are actively building our talent pool. If you are interested in being considered for future opportunities, please apply! If you have any questions, please contact: Tamara Noel, Physician Recruiter Progressive Physician Associates [email protected] Phone 610-360-2429",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 48,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 10,
+    "practiceQuality": 13,
+    "location": 4,
+    "recency": 1,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "posting is about 13 months old — likely filled"
+   ],
+   "ageDays": 377,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "nyc hospitals jacobi::interventional radiologist::",
+   "fingerprint": "nyc hospitals jacobi::interventional radiologist::",
+   "title": "Interventional Radiologist",
+   "org": "NYC Health + Hospitals/Jacobi",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "onsite",
+   "locationText": "Bronx, NY",
+   "geo": {
+    "lat": 41.0034,
+    "lon": -74.1915,
+    "city": null,
+    "region": "NY",
+    "country": "US",
+    "precision": "region",
+    "raw": "Bronx, NY"
+   },
+   "url": "https://jooble.org/desc/8012421437954471118?ckey=radiologist&rgn=0&pos=31&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=813&brelb=100&bscr=36.64103&scr=36.64103",
+   "datePosted": "2026-07-16",
+   "description": "...Description \r\n Physician Affiliate Group of New York (PAGNY)is adding an Interventional Radiologist to the group at  NYC Health + Hospitals/Jacobi and North Central Bronx . Jacobi Medical Center is a 457-bed, Level I Trauma Center and North Central Bronx Hospital (NCB...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 48,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 13,
+    "location": 10,
+    "recency": 8,
+    "signal": 1
+   },
+   "reasons": [
+    "Level I trauma centre"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "location is vague — resolved only to a state or country",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 34,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "url http www radworking com radiology jobs 604515 html::late morning start time swing shift teleradiology::",
    "fingerprint": "url http www radworking com radiology jobs 604515 html::late morning start time swing shift teleradiology::",
    "title": "Late Morning Start Time Swing Shift Teleradiology",
@@ -24720,6 +28613,110 @@
    "ageDays": 141,
    "alsoSeenOn": [],
    "isNew": false,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "american vascular access::interventional radiologist plattsburgh ny::plattsburgh",
+   "fingerprint": "american vascular access::interventional radiologist plattsburgh ny::plattsburgh",
+   "title": "Interventional Radiologist, Plattsburgh, NY",
+   "org": "American Vascular Access, LLC",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Plattsburgh, NY",
+   "geo": {
+    "lat": 44.6995,
+    "lon": -73.4529,
+    "city": "Plattsburgh",
+    "region": "NY",
+    "country": "US",
+    "population": 19806,
+    "precision": "city",
+    "raw": "Plattsburgh, NY"
+   },
+   "url": "https://jooble.org/desc/3031521753217069260?ckey=radiologist&rgn=0&pos=25&groupId=38996&elckey=4585306947557229382&p=2&aq=-2095509086856670599&cid=18098&jobAge=2787&brelb=100&bscr=36.66331&scr=36.66331",
+   "datePosted": "2026-04-24",
+   "description": "...We have an opportunity for a Full-Time Interventional Radiologist in a mature, successful OBL in Upstate New York. This is an opportunity to join a well established practice with a fantastic reputation in beautiful Champlain Valley.  Why This Role Stands Out \r\n This vascular...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 47,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 3,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 117,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "american vascular access::interventional radiologist obl::biloxi",
+   "fingerprint": "american vascular access::interventional radiologist obl::biloxi",
+   "title": "Interventional Radiologist/OBL",
+   "org": "American Vascular Access, LLC",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Biloxi, MS",
+   "geo": {
+    "lat": 30.396,
+    "lon": -88.8853,
+    "city": "Biloxi",
+    "region": "MS",
+    "country": "US",
+    "population": 45637,
+    "precision": "city",
+    "raw": "Biloxi, MS"
+   },
+   "url": "https://jooble.org/desc/-401151751003023715?ckey=radiologist&rgn=0&pos=50&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=2379&brelb=100&bscr=36.365017&scr=36.365017",
+   "datePosted": "2026-05-11",
+   "description": "...Interventional Radiologist/ Outpatient Based Lab (OBL) We are seeking a highly skilled and motivated Interventional Radiologist to join our team in our Outpatient Based Lab (OBL) in Biloxi, MS. This position offers a unique opportunity for an IR to apply their expertise...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 47,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 3,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 100,
+   "alsoSeenOn": [],
+   "isNew": true,
    "firstSeen": "2026-08-19"
   },
   {
@@ -25224,6 +29221,110 @@
    "firstSeen": "2026-08-19"
   },
   {
+   "id": "noor locum::diagnostic radiologist physician::",
+   "fingerprint": "noor locum::diagnostic radiologist physician::",
+   "title": "Diagnostic Radiologist (Physician)",
+   "org": "Noor Locum",
+   "specialty": "radiology",
+   "isInterventional": false,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "hospital-employed",
+   "workModel": "remote",
+   "locationText": "Yonkers, Westchester County",
+   "geo": {
+    "lat": null,
+    "lon": null,
+    "city": null,
+    "region": null,
+    "country": null,
+    "precision": "remote",
+    "raw": "Yonkers, Westchester County"
+   },
+   "url": "https://www.adzuna.com/details/5417846758?utm_medium=api&utm_source=d24d468b",
+   "datePosted": "2025-09-27",
+   "description": "Diagnostic Radiologist (Physician) – Remote Opportunity in New York Start Date: January 1, 2026 | Open-Ended Assignment Setting: 100% Remote | Shift: Overnights, 12a–8a EST, 7 days/week We’re seeking an experienced Board Certified Diagnostic Radiologist to provide remote overnight coverage. This role is ideal for a physician comfortable with high-volume reads, particularly in PET and MRI. Position Highlights: Flexible, fully remote locum assignment Productivity expectation: 60 RVUs per shift Es…",
+   "source": {
+    "name": "Adzuna Jobs API",
+    "url": "https://developer.adzuna.com/",
+    "category": "aggregator"
+   },
+   "score": 45,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 19,
+    "seniority": 8,
+    "practiceQuality": 11,
+    "location": 4,
+    "recency": 1,
+    "signal": 2
+   },
+   "reasons": [
+    "remote / teleradiology"
+   ],
+   "concerns": [
+    "location is vague — resolved only to a state or country",
+    "posting is about 11 months old — likely filled"
+   ],
+   "ageDays": 326,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
+   "id": "gulf coast vascular care::interventional radiologist outpatient center biloxi ms::biloxi",
+   "fingerprint": "gulf coast vascular care::interventional radiologist outpatient center biloxi ms::biloxi",
+   "title": "Interventional Radiologist-Outpatient Center, Biloxi, MS",
+   "org": "Gulf Coast Vascular Care LLC",
+   "specialty": "radiology",
+   "isInterventional": true,
+   "isLeadership": false,
+   "isLocum": false,
+   "setting": "private",
+   "workModel": "onsite",
+   "locationText": "Biloxi, MS",
+   "geo": {
+    "lat": 30.396,
+    "lon": -88.8853,
+    "city": "Biloxi",
+    "region": "MS",
+    "country": "US",
+    "population": 45637,
+    "precision": "city",
+    "raw": "Biloxi, MS"
+   },
+   "url": "https://jooble.org/desc/-8591750974383664991?ckey=radiologist&rgn=0&pos=48&groupId=38996&elckey=4585306947557229382&p=3&aq=6363730599660504404&cid=18098&jobAge=6697&brelb=100&bscr=36.365017&scr=36.365017",
+   "datePosted": "2025-11-13",
+   "description": "...quality of life through innovative treatments and personalized care. We are seeking a highly skilled and dedicated Interventional Radiologist or Vascular Surgeon with experience doing GAE, PAD to join our team. The ideal candidate will have a strong background in patient...",
+   "source": {
+    "name": "Jooble REST API",
+    "url": "https://jooble.org/api/about",
+    "category": "aggregator"
+   },
+   "score": 45,
+   "tier": "stretch",
+   "subscores": {
+    "specialtyFit": 9,
+    "seniority": 8,
+    "practiceQuality": 14,
+    "location": 12,
+    "recency": 1,
+    "signal": 1
+   },
+   "reasons": [
+    "private / group practice"
+   ],
+   "concerns": [
+    "interventional-only — outside a diagnostic/general practice",
+    "posting is about 9 months old — likely filled",
+    "thin posting — little detail to evaluate"
+   ],
+   "ageDays": 279,
+   "alsoSeenOn": [],
+   "isNew": true,
+   "firstSeen": "2026-08-19"
+  },
+  {
    "id": "intermountain::prn radiologist nevada::",
    "fingerprint": "intermountain::prn radiologist nevada::",
    "title": "PRN Radiologist - Nevada",
@@ -25369,7 +29470,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 120,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },
@@ -26331,7 +30438,13 @@
     "thin posting — little detail to evaluate"
    ],
    "ageDays": 209,
-   "alsoSeenOn": [],
+   "alsoSeenOn": [
+    {
+     "name": "Jooble REST API",
+     "url": "https://jooble.org/api/about",
+     "category": "aggregator"
+    }
+   ],
    "isNew": false,
    "firstSeen": "2026-08-19"
   },

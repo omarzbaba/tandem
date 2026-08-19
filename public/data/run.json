@@ -1,24 +1,24 @@
 {
-  "ranAt": "2026-08-19T03:20:37.821Z",
+  "ranAt": "2026-08-19T03:37:30.693Z",
   "today": "2026-08-19",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
     "sourcesFailed": 2,
-    "rawPostings": 2520,
-    "irrelevant": 1862,
-    "duplicates": 36,
+    "rawPostings": 2940,
+    "irrelevant": 2183,
+    "duplicates": 55,
     "expired": 84,
-    "unlocated": 189,
-    "roles": 538,
-    "vascular": 71,
-    "radiology": 467,
-    "newThisRun": 0,
+    "unlocated": 203,
+    "roles": 618,
+    "vascular": 106,
+    "radiology": 512,
+    "newThisRun": 80,
     "carriedOver": 0,
-    "pairs": 7569,
-    "metros": 99,
-    "togetherMetros": 15
+    "pairs": 12669,
+    "metros": 127,
+    "togetherMetros": 24
   },
   "failedSources": [
     {
@@ -42,19 +42,9 @@
       "needs": "CAREERJET_AFFID"
     },
     {
-      "name": "Adzuna Jobs API",
-      "url": "https://developer.adzuna.com/",
-      "needs": "ADZUNA_APP_ID + ADZUNA_APP_KEY"
-    },
-    {
       "name": "JSearch (RapidAPI, Google-for-Jobs index)",
       "url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch",
       "needs": "RAPIDAPI_KEY"
-    },
-    {
-      "name": "Jooble REST API",
-      "url": "https://jooble.org/api/about",
-      "needs": "JOOBLE_API_KEY"
     },
     {
       "name": "USAJOBS REST API (federal / VA / DHA)",

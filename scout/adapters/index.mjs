@@ -496,6 +496,64 @@ async function successfactors(src) {
   return ok([...seen.values()]);
 }
 
+/**
+ * Jooble — POST https://jooble.org/api/{key} with a JSON body.
+ *
+ * The credential goes in the URL path rather than a header or query string,
+ * which is why this cannot ride on the generic JSON adapter. Swept once per
+ * specialty and paged, since a single call returns only the first 20.
+ */
+async function jooble(src, env) {
+  const key = env?.JOOBLE_API_KEY;
+  if (!key) return fail("JOOBLE_API_KEY not set");
+
+  const seen = new Map();
+  let anyOk = false;
+  let lastError = null;
+
+  for (const term of SPECIALTY_TERMS) {
+    for (let page = 1; page <= 3; page++) {
+      const res = await request(`https://jooble.org/api/${encodeURIComponent(key)}`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ keywords: term, location: "United States", page: String(page) }),
+      });
+      if (!res.ok) {
+        lastError = res.error;
+        break;
+      }
+      anyOk = true;
+      let data;
+      try {
+        data = JSON.parse(res.body);
+      } catch {
+        lastError = "invalid JSON";
+        break;
+      }
+      const jobs = data?.jobs ?? [];
+      for (const j of jobs) {
+        const url = j.link;
+        if (!url || seen.has(url)) continue;
+        seen.set(
+          url,
+          shape({
+            title: j.title,
+            org: j.company ?? "",
+            location: j.location ?? "",
+            description: htmlToText(j.snippet ?? ""),
+            url,
+            datePosted: j.updated ?? null,
+          })
+        );
+      }
+      if (jobs.length < 20) break;
+    }
+  }
+
+  if (!anyOk) return fail(lastError ?? "no successful page");
+  return ok([...seen.values()]);
+}
+
 /** RSS / Atom — covers iCIMS, Taleo, and most society job boards. */
 async function rss(src) {
   const res = await request(parseEndpoint(src.machineReadable.endpoint).url);
@@ -600,6 +658,7 @@ const ADAPTERS = {
   workday,
   successfactors,
   jobvite,
+  jooble,
   rss,
   "icims-rss": rss,
   "taleo-rss": rss,
