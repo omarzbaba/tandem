@@ -1,24 +1,24 @@
 {
-  "ranAt": "2026-08-19T04:00:00.571Z",
-  "today": "2026-08-19",
+  "ranAt": "2026-08-24T06:52:22.117Z",
+  "today": "2026-08-24",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
-    "sourcesFailed": 2,
-    "rawPostings": 3163,
-    "irrelevant": 2313,
-    "duplicates": 61,
-    "expired": 84,
-    "unlocated": 200,
-    "roles": 705,
-    "vascular": 124,
-    "radiology": 581,
-    "newThisRun": 23,
-    "carriedOver": 0,
-    "pairs": 16801,
-    "metros": 143,
-    "togetherMetros": 34
+    "sourcesFailed": 3,
+    "rawPostings": 2310,
+    "irrelevant": 2021,
+    "duplicates": 40,
+    "expired": 29,
+    "unlocated": 104,
+    "roles": 533,
+    "vascular": 75,
+    "radiology": 458,
+    "newThisRun": 27,
+    "carriedOver": 313,
+    "pairs": 7101,
+    "metros": 99,
+    "togetherMetros": 16
   },
   "failedSources": [
     {
@@ -30,6 +30,11 @@
       "name": "Care Bridge — GCC Clinician Recruitment (Job Openings)",
       "url": "https://carebridge.ae/job-openings/",
       "error": "HTTP 500"
+    },
+    {
+      "name": "RadWorking.com",
+      "url": "https://www.radworking.com/jobs/radiology-jobs.html",
+      "error": "HTTP 403"
     }
   ],
   "emptySources": [
@@ -40,6 +45,21 @@
       "name": "Careerjet Public Job Search API",
       "url": "http://public.api.careerjet.net/search",
       "needs": "CAREERJET_AFFID"
+    },
+    {
+      "name": "JSearch (RapidAPI, Google-for-Jobs index)",
+      "url": "https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch",
+      "needs": "RAPIDAPI_KEY"
+    },
+    {
+      "name": "Jooble REST API",
+      "url": "https://jooble.org/api/about",
+      "needs": "JOOBLE_API_KEY"
+    },
+    {
+      "name": "USAJOBS REST API (federal / VA / DHA)",
+      "url": "https://developer.usajobs.gov/",
+      "needs": "USAJOBS_API_KEY + USAJOBS_EMAIL"
     }
   ],
   "sweepOnlySources": [
