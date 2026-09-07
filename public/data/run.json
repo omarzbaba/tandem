@@ -1,24 +1,24 @@
 {
-  "ranAt": "2026-08-31T12:38:40.900Z",
-  "today": "2026-08-31",
+  "ranAt": "2026-09-07T11:32:40.404Z",
+  "today": "2026-09-07",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
     "sourcesFailed": 3,
-    "rawPostings": 2248,
-    "irrelevant": 1943,
-    "duplicates": 37,
+    "rawPostings": 2200,
+    "irrelevant": 1922,
+    "duplicates": 30,
     "expired": 29,
-    "unlocated": 105,
-    "roles": 552,
-    "vascular": 79,
-    "radiology": 473,
-    "newThisRun": 44,
-    "carriedOver": 313,
-    "pairs": 7670,
-    "metros": 97,
-    "togetherMetros": 16
+    "unlocated": 84,
+    "roles": 538,
+    "vascular": 72,
+    "radiology": 466,
+    "newThisRun": 40,
+    "carriedOver": 319,
+    "pairs": 8196,
+    "metros": 92,
+    "togetherMetros": 19
   },
   "failedSources": [
     {
@@ -27,9 +27,9 @@
       "error": "HTTP 500"
     },
     {
-      "name": "Care Bridge — GCC Clinician Recruitment (Job Openings)",
-      "url": "https://carebridge.ae/job-openings/",
-      "error": "HTTP 500"
+      "name": "Baylor Scott & White Health",
+      "url": "https://jobs.bswhealth.com/us/en",
+      "error": "fetch failed"
     },
     {
       "name": "RadWorking.com",
@@ -38,6 +38,7 @@
     }
   ],
   "emptySources": [
+    "Care Bridge — GCC Clinician Recruitment (Job Openings)",
     "IHR Canada — Gulf Consultant Vacancy Board (KFSH&RC / KFMC listings)"
   ],
   "needsCredentials": [
