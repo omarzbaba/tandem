@@ -1,35 +1,30 @@
 {
-  "ranAt": "2026-09-07T11:32:40.404Z",
-  "today": "2026-09-07",
+  "ranAt": "2026-09-14T11:45:00.827Z",
+  "today": "2026-09-14",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
-    "sourcesFailed": 3,
-    "rawPostings": 2200,
-    "irrelevant": 1922,
-    "duplicates": 30,
+    "sourcesFailed": 2,
+    "rawPostings": 2310,
+    "irrelevant": 2005,
+    "duplicates": 40,
     "expired": 29,
-    "unlocated": 84,
-    "roles": 538,
-    "vascular": 72,
-    "radiology": 466,
-    "newThisRun": 40,
-    "carriedOver": 319,
-    "pairs": 8196,
-    "metros": 92,
-    "togetherMetros": 19
+    "unlocated": 94,
+    "roles": 236,
+    "vascular": 75,
+    "radiology": 161,
+    "newThisRun": 41,
+    "carriedOver": 0,
+    "pairs": 2334,
+    "metros": 58,
+    "togetherMetros": 8
   },
   "failedSources": [
     {
       "name": "Allina Health",
       "url": "https://allina.wd5.myworkdayjobs.com/External",
       "error": "HTTP 500"
-    },
-    {
-      "name": "Baylor Scott & White Health",
-      "url": "https://jobs.bswhealth.com/us/en",
-      "error": "fetch failed"
     },
     {
       "name": "RadWorking.com",
