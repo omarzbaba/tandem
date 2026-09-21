@@ -1,30 +1,35 @@
 {
-  "ranAt": "2026-09-14T11:45:00.827Z",
-  "today": "2026-09-14",
+  "ranAt": "2026-09-21T11:57:25.358Z",
+  "today": "2026-09-21",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
-    "sourcesFailed": 2,
-    "rawPostings": 2310,
-    "irrelevant": 2005,
-    "duplicates": 40,
+    "sourcesFailed": 3,
+    "rawPostings": 2341,
+    "irrelevant": 2038,
+    "duplicates": 39,
     "expired": 29,
-    "unlocated": 94,
-    "roles": 236,
-    "vascular": 75,
-    "radiology": 161,
-    "newThisRun": 41,
-    "carriedOver": 0,
-    "pairs": 2334,
-    "metros": 58,
-    "togetherMetros": 8
+    "unlocated": 97,
+    "roles": 238,
+    "vascular": 78,
+    "radiology": 160,
+    "newThisRun": 30,
+    "carriedOver": 3,
+    "pairs": 2355,
+    "metros": 53,
+    "togetherMetros": 10
   },
   "failedSources": [
     {
       "name": "Allina Health",
       "url": "https://allina.wd5.myworkdayjobs.com/External",
       "error": "HTTP 500"
+    },
+    {
+      "name": "Ascension",
+      "url": "https://jobs.ascension.org/us/en",
+      "error": "no job array found in payload"
     },
     {
       "name": "RadWorking.com",
