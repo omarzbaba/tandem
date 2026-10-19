@@ -1,293 +1,275 @@
 {
- "today": "2026-10-12",
- "ranAt": "2026-10-12T14:22:42.152Z",
+ "today": "2026-10-19",
+ "ranAt": "2026-10-19T12:04:54.109Z",
  "siteUrl": "https://tandem-rs.vercel.app",
  "counts": {
-  "totalRoles": 247,
-  "newThisRun": 45,
-  "newVascular": 26,
-  "newRadiology": 19,
+  "totalRoles": 239,
+  "newThisRun": 34,
+  "newVascular": 23,
+  "newRadiology": 11,
   "togetherMetros": 8,
   "failedSources": 3
  },
  "newVascular": [
   {
-   "id": "wvu medicine::physician vascular surgery::martinsburg",
-   "title": "Physician - Vascular Surgery",
-   "org": "WVU Medicine",
-   "location": "Martinsburg, WV",
+   "id": "commonspirit::division chief vascular surgery::omaha",
+   "title": "Division Chief - Vascular Surgery",
+   "org": "CommonSpirit Health",
+   "location": "Omaha, NE",
+   "specialty": "vascular",
+   "score": 68,
+   "setting": "academic",
+   "postingUrl": "https://careers.jamanetwork.com/job/110722304/division-chief-vascular-surgery/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=commonspirit%3A%3Adivision%20chief%20vascular%20surgery%3A%3Aomaha"
+  },
+  {
+   "id": "duke::duke comprehensive vascular surgeon::durham",
+   "title": "Duke Comprehensive Vascular Surgeon",
+   "org": "Duke Health",
+   "location": "Durham, NC",
    "specialty": "vascular",
    "score": 65,
    "setting": "academic",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1036121/physician-vascular-surgery/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=wvu%20medicine%3A%3Aphysician%20vascular%20surgery%3A%3Amartinsburg"
+   "postingUrl": "https://www.nejmcareercenter.org/job/1037978/duke-comprehensive-vascular-surgeon/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=duke%3A%3Aduke%20comprehensive%20vascular%20surgeon%3A%3Adurham"
   },
   {
-   "id": "wvu medicine::physician vascular surgery::morgantown",
-   "title": "Physician - Vascular Surgery",
-   "org": "WVU Medicine",
-   "location": "Morgantown, WV",
+   "id": "musc::vascular surgery clinical opening musc health columbia medical center::columbia",
+   "title": "Vascular Surgery - Clinical Opening - MUSC Health Columbia Medical Center",
+   "org": "MUSC Health",
+   "location": "Columbia, SC",
    "specialty": "vascular",
    "score": 65,
    "setting": "academic",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1036108/physician-vascular-surgery/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=wvu%20medicine%3A%3Aphysician%20vascular%20surgery%3A%3Amorgantown"
+   "postingUrl": "https://www.nejmcareercenter.org/job/1038370/vascular-surgery-clinical-opening-musc-health-columbia-medical-center/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=musc%3A%3Avascular%20surgery%20clinical%20opening%20musc%20health%20columbia%20medical%20center%3A%3Acolumbia"
   },
   {
-   "id": "trinity of new england::vascular surgery opportunity::boise",
-   "title": "Vascular Surgery Opportunity",
-   "org": "Trinity Health Of New England",
-   "location": "Boise, ID",
-   "specialty": "vascular",
-   "score": 64,
-   "setting": "private",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1034940/vascular-surgery-opportunity/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=trinity%20of%20new%20england%3A%3Avascular%20surgery%20opportunity%3A%3Aboise"
-  },
-  {
-   "id": "url https careers jamanetwork com job 110730389 vascular surgeon trackid 24 amp utm source rss amp utm medium feed amp utm campaign general::department of veterans affairs vascular surgeon::albany",
-   "title": "Department of Veterans Affairs: Vascular Surgeon",
-   "org": null,
-   "location": "Albany, NY",
+   "id": "commonspirit::faculty vascular surgeon::omaha",
+   "title": "Faculty Vascular Surgeon",
+   "org": "CommonSpirit Health",
+   "location": "Omaha, NE",
    "specialty": "vascular",
    "score": 62,
-   "setting": "government",
-   "postingUrl": "https://careers.jamanetwork.com/job/110730389/vascular-surgeon/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20careers%20jamanetwork%20com%20job%20110730389%20vascular%20surgeon%20trackid%2024%20amp%20utm%20source%20rss%20amp%20utm%20medium%20feed%20amp%20utm%20campaign%20general%3A%3Adepartment%20of%20veterans%20affairs%20vascular%20surgeon%3A%3Aalbany"
+   "setting": "academic",
+   "postingUrl": "https://careers.jamanetwork.com/job/110722305/faculty-vascular-surgeon/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=commonspirit%3A%3Afaculty%20vascular%20surgeon%3A%3Aomaha"
   },
   {
-   "id": "url https www nejmcareercenter org job 1032034 chief of vascular surgery western montana rocky mountains 4 day work week trackid 1 amp utm source rss amp utm medium feed amp utm campaign general::jackson physician search chief of vascular surgery western montana rocky mountains 4 day work week::",
-   "title": "Jackson Physician Search: Chief of Vascular Surgery | Western Montana Rocky Mountains | 4 Day Work Week",
-   "org": null,
-   "location": null,
-   "specialty": "vascular",
-   "score": 62,
-   "setting": "private",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1032034/chief-of-vascular-surgery-western-montana-rocky-mountains-4-day-work-week/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20www%20nejmcareercenter%20org%20job%201032034%20chief%20of%20vascular%20surgery%20western%20montana%20rocky%20mountains%204%20day%20work%20week%20trackid%201%20amp%20utm%20source%20rss%20amp%20utm%20medium%20feed%20amp%20utm%20campaign%20general%3A%3Ajackson%20physician%20search%20chief%20of%20vascular%20surgery%20western%20montana%20rocky%20mountains%204%20day%20work%20week%3A%3A"
-  },
-  {
-   "id": "ssm::physician md do vascular surgeon::oklahoma city",
-   "title": "Physician - MD/DO - Vascular Surgeon",
-   "org": "SSM Health",
-   "location": "Oklahoma City, OK",
+   "id": "baylor scott white::vascular surgery temple::temple",
+   "title": "Vascular Surgery, Temple",
+   "org": "Baylor Scott & White Health",
+   "location": "Temple, TX",
    "specialty": "vascular",
    "score": 61,
    "setting": "hospital-employed",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1036507/physician-md-do-vascular-surgeon/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=ssm%3A%3Aphysician%20md%20do%20vascular%20surgeon%3A%3Aoklahoma%20city"
+   "postingUrl": "https://bswhealth.taleo.net/careersection/expa/jobapply.ftl?job=26019086&lang=en&csNo=10060&portal=8100025590",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=baylor%20scott%20white%3A%3Avascular%20surgery%20temple%3A%3Atemple"
   },
   {
-   "id": "trinity of new england::vascular surgery::fort lauderdale",
-   "title": "Vascular Surgery",
-   "org": "Trinity Health Of New England",
-   "location": "Fort Lauderdale, FL",
-   "specialty": "vascular",
-   "score": 61,
-   "setting": "hospital-employed",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1034713/vascular-surgery/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=trinity%20of%20new%20england%3A%3Avascular%20surgery%3A%3Afort%20lauderdale"
-  },
-  {
-   "id": "intermountain::vascular surgeon::saint george",
+   "id": "dartmouth::vascular surgeon::nashua",
    "title": "Vascular Surgeon",
-   "org": "Intermountain Health",
-   "location": "Saint George, UT",
+   "org": "Dartmouth Health",
+   "location": "Nashua, NH",
    "specialty": "vascular",
    "score": 61,
    "setting": "hospital-employed",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1034343/vascular-surgeon/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=intermountain%3A%3Avascular%20surgeon%3A%3Asaint%20george"
+   "postingUrl": "https://www.nejmcareercenter.org/job/1039433/vascular-surgeon/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=dartmouth%3A%3Avascular%20surgeon%3A%3Anashua"
   },
   {
-   "id": "url https www nejmcareercenter org job 1036828 vascular surgeon trackid 1 amp utm source rss amp utm medium feed amp utm campaign general::kadlec vascular surgeon::richland",
-   "title": "Kadlec: Vascular Surgeon",
+   "id": "url https www nejmcareercenter org job 1039297 vascular surgery el paso tx 3 hybrid ors unlimited pto trackid 1 amp utm source rss amp utm medium feed amp utm campaign general::jackson physician search vascular surgery el paso tx 3 hybrid ors unlimited pto::el paso",
+   "title": "Jackson Physician Search: Vascular Surgery | El Paso, TX | 3 Hybrid ORs | Unlimited PTO",
    "org": null,
-   "location": "Richland, WA",
+   "location": "El Paso, TX",
    "specialty": "vascular",
    "score": 61,
    "setting": "hospital-employed",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1036828/vascular-surgeon/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20www%20nejmcareercenter%20org%20job%201036828%20vascular%20surgeon%20trackid%201%20amp%20utm%20source%20rss%20amp%20utm%20medium%20feed%20amp%20utm%20campaign%20general%3A%3Akadlec%20vascular%20surgeon%3A%3Arichland"
+   "postingUrl": "https://www.nejmcareercenter.org/job/1039297/vascular-surgery-el-paso-tx-3-hybrid-ors-unlimited-pto/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20www%20nejmcareercenter%20org%20job%201039297%20vascular%20surgery%20el%20paso%20tx%203%20hybrid%20ors%20unlimited%20pto%20trackid%201%20amp%20utm%20source%20rss%20amp%20utm%20medium%20feed%20amp%20utm%20campaign%20general%3A%3Ajackson%20physician%20search%20vascular%20surgery%20el%20paso%20tx%203%20hybrid%20ors%20unlimited%20pto%3A%3Ael%20paso"
   },
   {
-   "id": "trinity of new england::vascular surgeon des moines 150 000 recruitment incentive::des moines",
-   "title": "Vascular Surgeon - Des Moines - $150,000 Recruitment Incentive",
-   "org": "Trinity Health Of New England",
-   "location": "Des Moines, IA",
+   "id": "optimum permanent placement services::lead vascular surgery opening in memphis tn sign on and relocation bonus::memphis",
+   "title": "Lead Vascular Surgery Opening in Memphis, TN - Sign-On and Relocation Bonus",
+   "org": "Optimum Permanent Placement Services",
+   "location": "Memphis, TN",
    "specialty": "vascular",
    "score": 61,
    "setting": "hospital-employed",
-   "postingUrl": "https://www.nejmcareercenter.org/job/1034573/vascular-surgeon-des-moines-150-000-recruitment-incentive/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=trinity%20of%20new%20england%3A%3Avascular%20surgeon%20des%20moines%20150%20000%20recruitment%20incentive%3A%3Ades%20moines"
+   "postingUrl": "https://www.nejmcareercenter.org/job/1039119/lead-vascular-surgery-opening-in-memphis-tn-sign-on-and-relocation-bonus/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=optimum%20permanent%20placement%20services%3A%3Alead%20vascular%20surgery%20opening%20in%20memphis%20tn%20sign%20on%20and%20relocation%20bonus%3A%3Amemphis"
   },
   {
-   "id": "url https careers jamanetwork com job 110723707 vascular surgeon opportunity san leandro ca trackid 24 amp utm source rss amp utm medium feed amp utm campaign general::kaiser permanente the permanente medical group inc northern california vascular surgeon opportunity::san leandro",
-   "title": "Kaiser Permanente - The Permanente Medical Group, Inc. -Northern California: Vascular Surgeon Opportunity",
-   "org": null,
-   "location": "San Leandro, CA",
+   "id": "uf::uf health physician vascular surgeon st johns::st johns",
+   "title": "UF Health Physician- Vascular Surgeon - St. Johns",
+   "org": "UF Health",
+   "location": "St. Johns, FL",
+   "specialty": "vascular",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://www.nejmcareercenter.org/job/1029492/uf-health-physician-vascular-surgeon-st-johns/?TrackID=1&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=uf%3A%3Auf%20health%20physician%20vascular%20surgeon%20st%20johns%3A%3Ast%20johns"
+  },
+  {
+   "id": "catholic::board::",
+   "title": "Board",
+   "org": "Catholic Health",
+   "location": "Certified Vascular Surgeon Needed for Nassau County, NY",
    "specialty": "vascular",
    "score": 59,
    "setting": "hospital-employed",
-   "postingUrl": "https://careers.jamanetwork.com/job/110723707/vascular-surgeon-opportunity-san-leandro-ca/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20careers%20jamanetwork%20com%20job%20110723707%20vascular%20surgeon%20opportunity%20san%20leandro%20ca%20trackid%2024%20amp%20utm%20source%20rss%20amp%20utm%20medium%20feed%20amp%20utm%20campaign%20general%3A%3Akaiser%20permanente%20the%20permanente%20medical%20group%20inc%20northern%20california%20vascular%20surgeon%20opportunity%3A%3Asan%20leandro"
+   "postingUrl": "https://careers.jamanetwork.com/job/110733319/board-certified-vascular-surgeon-needed-for-nassau-county-ny/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=catholic%3A%3Aboard%3A%3A"
   },
   {
-   "id": "url https careers jamanetwork com job 110720061 ohio facility seeks a temp to perm vascular surgeon trackid 24 amp utm source rss amp utm medium feed amp utm campaign general::comphealth ohio facility seeks a temp to perm vascular surgeon::norwalk",
-   "title": "CompHealth: Ohio Facility Seeks a Temp to Perm Vascular Surgeon",
-   "org": null,
-   "location": "Norwalk, OH",
+   "id": "cambridge alliance::vascular surgeon opportunity part time::boston",
+   "title": "Vascular Surgeon Opportunity (part-time)",
+   "org": "Cambridge Health Alliance",
+   "location": "Boston, MA",
    "specialty": "vascular",
    "score": 59,
    "setting": "hospital-employed",
-   "postingUrl": "https://careers.jamanetwork.com/job/110720061/ohio-facility-seeks-a-temp-to-perm-vascular-surgeon/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20careers%20jamanetwork%20com%20job%20110720061%20ohio%20facility%20seeks%20a%20temp%20to%20perm%20vascular%20surgeon%20trackid%2024%20amp%20utm%20source%20rss%20amp%20utm%20medium%20feed%20amp%20utm%20campaign%20general%3A%3Acomphealth%20ohio%20facility%20seeks%20a%20temp%20to%20perm%20vascular%20surgeon%3A%3Anorwalk"
+   "postingUrl": "https://careers.jamanetwork.com/job/110725786/vascular-surgeon-opportunity-part-time-/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=cambridge%20alliance%3A%3Avascular%20surgeon%20opportunity%20part%20time%3A%3Aboston"
+  },
+  {
+   "id": "all star solutions::vascular surgery locum need in oh::fairfield",
+   "title": "Vascular Surgery locum need in OH",
+   "org": "All Star Healthcare Solutions",
+   "location": "Fairfield, OH",
+   "specialty": "vascular",
+   "score": 56,
+   "setting": "hospital-employed",
+   "postingUrl": "https://careers.jamanetwork.com/job/110733050/vascular-surgery-locum-need-in-oh/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=all%20star%20solutions%3A%3Avascular%20surgery%20locum%20need%20in%20oh%3A%3Afairfield"
   }
  ],
  "newRadiology": [
   {
-   "id": "mercor::diagnostic radiologist fully remote::new york city",
-   "title": "Diagnostic Radiologist - Fully Remote",
-   "org": "Mercor",
+   "id": "corewell::physician radiologist royal oak::royal oak",
+   "title": "Physician - Radiologist - Royal Oak",
+   "org": "Corewell Health",
+   "location": "Royal Oak, MI",
+   "specialty": "radiology",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://spectrumhealth.wd5.myworkdayjobs.com/CorewellHealthCareers/job/Royal-Oak-MI/Physician---Radiologist---Royal-Oak_R230576/apply",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=corewell%3A%3Aphysician%20radiologist%20royal%20oak%3A%3Aroyal%20oak"
+  },
+  {
+   "id": "seha abu dhabi services oracle cloud recruiting::consultant radiology breast imaging::abu dhabi",
+   "title": "Consultant Radiology (Breast Imaging)",
+   "org": "SEHA — Abu Dhabi Health Services (Oracle Cloud Recruiting)",
+   "location": "Abu Dhabi, AE",
+   "specialty": "radiology",
+   "score": 61,
+   "setting": "hospital-employed",
+   "postingUrl": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=seha%20abu%20dhabi%20services%20oracle%20cloud%20recruiting%3A%3Aconsultant%20radiology%20breast%20imaging%3A%3Aabu%20dhabi"
+  },
+  {
+   "id": "united states government::physician diagnostic radiologist::new york city",
+   "title": "Physician - Diagnostic Radiologist",
+   "org": "United States Government",
    "location": "New York City, NY",
    "specialty": "radiology",
-   "score": 67,
-   "setting": "academic",
-   "postingUrl": "https://www.adzuna.com/details/5886086728?utm_medium=api&utm_source=d24d468b",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=mercor%3A%3Adiagnostic%20radiologist%20fully%20remote%3A%3Anew%20york%20city"
+   "score": 60,
+   "setting": "government",
+   "postingUrl": "https://www.adzuna.com/details/5886473436?utm_medium=api&utm_source=d24d468b",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=united%20states%20government%3A%3Aphysician%20diagnostic%20radiologist%3A%3Anew%20york%20city"
   },
   {
-   "id": "wvu medicine::physician neuroradiology::morgantown",
-   "title": "Physician, Neuroradiology",
-   "org": "WVU Medicine",
-   "location": "Morgantown, WV",
-   "specialty": "radiology",
-   "score": 65,
-   "setting": "academic",
-   "postingUrl": "https://careers.jamanetwork.com/job/110726598/physician-neuroradiology/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=wvu%20medicine%3A%3Aphysician%20neuroradiology%3A%3Amorgantown"
-  },
-  {
-   "id": "optigy::md do diagnostic radiologist remote 90 rvu shift hudson florida::",
-   "title": "MD/DO Diagnostic Radiologist | REMOTE 90 RVU/Shift | Hudson, Florida",
-   "org": "Optigy Group",
-   "location": "Remote",
-   "specialty": "radiology",
-   "score": 62,
-   "setting": "hospital-employed",
-   "postingUrl": "https://www.adzuna.com/land/ad/5905963255?se=AMwfYkjG8RGWsPUaVM20eg&utm_medium=api&utm_source=d24d468b&v=B81DA64E93963183F559D42DE714BC98C21C9C17",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=optigy%3A%3Amd%20do%20diagnostic%20radiologist%20remote%2090%20rvu%20shift%20hudson%20florida%3A%3A"
-  },
-  {
-   "id": "optigy::diagnostic radiologist md do::",
-   "title": "Diagnostic Radiologist MD/DO",
-   "org": "Optigy Group",
-   "location": "Remote",
-   "specialty": "radiology",
-   "score": 59,
-   "setting": "hospital-employed",
-   "postingUrl": "https://www.adzuna.com/land/ad/5923973464?se=ZE2uYUjG8RG5KLscXH6aYA&utm_medium=api&utm_source=d24d468b&v=098C3D6A158259FA8AF257E34AF197333170E997",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=optigy%3A%3Adiagnostic%20radiologist%20md%20do%3A%3A"
-  },
-  {
-   "id": "mercor::diagnostic radiologist ai trainer::",
-   "title": "Diagnostic Radiologist - AI Trainer",
-   "org": "Mercor",
-   "location": "Remote",
-   "specialty": "radiology",
-   "score": 59,
-   "setting": "academic",
-   "postingUrl": "https://www.adzuna.com/details/5886086729?utm_medium=api&utm_source=d24d468b",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=mercor%3A%3Adiagnostic%20radiologist%20ai%20trainer%3A%3A"
-  },
-  {
-   "id": "west virginia::msk radiologist::",
+   "id": "of california davis::msk radiologist::",
    "title": "MSK Radiologist",
-   "org": "West Virginia University",
+   "org": "University of California Davis Health System",
    "location": null,
    "specialty": "radiology",
    "score": 58,
    "setting": "academic",
-   "postingUrl": "https://skeletalrad.org/west-virginia-university-msk-radiologist/",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=west%20virginia%3A%3Amsk%20radiologist%3A%3A"
+   "postingUrl": "https://skeletalrad.org/university-of-california-davis-health-system-msk-radiologist/",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=of%20california%20davis%3A%3Amsk%20radiologist%3A%3A"
   },
   {
-   "id": "cmi radiology::msk imaging radiologist::",
-   "title": "MSK Imaging Radiologist",
-   "org": "CMI Radiology Group",
-   "location": null,
-   "specialty": "radiology",
-   "score": 57,
-   "setting": "private",
-   "postingUrl": "https://skeletalrad.org/cmi-radiology-group-msk-imaging-radiologist/",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=cmi%20radiology%3A%3Amsk%20imaging%20radiologist%3A%3A"
-  },
-  {
-   "id": "radiology of northern kentucky::msk radiologist::",
-   "title": "MSK Radiologist",
-   "org": "Radiology Associates of Northern Kentucky",
-   "location": null,
-   "specialty": "radiology",
-   "score": 57,
-   "setting": "private",
-   "postingUrl": "https://skeletalrad.org/radiology-associates-of-northern-kentucky-msk-radiologist/",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=radiology%20of%20northern%20kentucky%3A%3Amsk%20radiologist%3A%3A"
-  },
-  {
-   "id": "mediclinic al ain::specialist radiologist::al ain city",
+   "id": "mediclinic airport road::specialist radiologist::abu dhabi",
    "title": "Specialist Radiologist",
-   "org": "Mediclinic Al Ain Hospital",
-   "location": "Al Ain City, AE",
+   "org": "Mediclinic Airport Road Hospital",
+   "location": "Abu Dhabi, AE",
    "specialty": "radiology",
    "score": 57,
    "setting": "hospital-employed",
-   "postingUrl": "https://careers.mediclinic.com/MiddleEast/job/Mediclinic-Al-Ain-Hospital-Specialist-Radiologist-Al-A-14444/1445469333/",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=mediclinic%20al%20ain%3A%3Aspecialist%20radiologist%3A%3Aal%20ain%20city"
+   "postingUrl": "https://careers.mediclinic.com/MiddleEast/job/Mediclinic-Airport-Road-Hospit-Specialist-Radiologist-Abu-48481/1446654633/",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=mediclinic%20airport%20road%3A%3Aspecialist%20radiologist%3A%3Aabu%20dhabi"
   },
   {
-   "id": "veterans administration::diagnostic radiologist::",
-   "title": "Diagnostic Radiologist",
-   "org": "Veterans Health Administration",
-   "location": "Fayetteville, Cumberland County",
+   "id": "mediclinic airport road::consultant radiologist hod::abu dhabi",
+   "title": "Consultant Radiologist / HOD",
+   "org": "Mediclinic Airport Road Hospital",
+   "location": "Abu Dhabi, AE",
+   "specialty": "radiology",
+   "score": 57,
+   "setting": "hospital-employed",
+   "postingUrl": "https://careers.mediclinic.com/MiddleEast/job/Mediclinic-Airport-Road-Hospit-Consultant-Radiologist-HOD-Abu-48481/1447862533/",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=mediclinic%20airport%20road%3A%3Aconsultant%20radiologist%20hod%3A%3Aabu%20dhabi"
+  },
+  {
+   "id": "geisinger::abdominal imaging radiologist onsite 1 week on 1 week off m f 140k starting bonus::danville",
+   "title": "Abdominal Imaging Radiologist - Onsite | 1 week on / 1 week off (M-F) | $140K Starting Bonus",
+   "org": "Geisinger",
+   "location": "Danville, PA",
    "specialty": "radiology",
    "score": 56,
-   "setting": "government",
-   "postingUrl": "https://www.adzuna.com/details/5905091233?utm_medium=api&utm_source=d24d468b",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=veterans%20administration%3A%3Adiagnostic%20radiologist%3A%3A"
+   "setting": "hospital-employed",
+   "postingUrl": "https://geisinger.wd5.myworkdayjobs.com/GeisingerExternal/job/Danville-PA/Body-Imaging-Radiologist---Onsite---5-Days-On---9-Days-Off--Mon-Fri-_R-95980",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=geisinger%3A%3Aabdominal%20imaging%20radiologist%20onsite%201%20week%20on%201%20week%20off%20m%20f%20140k%20starting%20bonus%3A%3Adanville"
   },
   {
-   "id": "alameda::diagnostic radiologist part time::",
-   "title": "Diagnostic Radiologist - Part-Time",
-   "org": "Alameda Health",
-   "location": "Piedmont, Alameda County",
+   "id": "geisinger::abdominal imaging radiologist 1 week on 1 week off m f 140k starting bonus::wilkes barre",
+   "title": "Abdominal Imaging Radiologist | 1 week on / 1 week off (M-F) | $140K Starting Bonus",
+   "org": "Geisinger",
+   "location": "Wilkes-Barre, PA",
+   "specialty": "radiology",
+   "score": 56,
+   "setting": "hospital-employed",
+   "postingUrl": "https://geisinger.wd5.myworkdayjobs.com/GeisingerExternal/job/Wilkes-Barre-PA/Body-Imaging-Radiologist---Onsite---5-Days-On---9-Days-Off--Mon-Fri-_R-95981",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=geisinger%3A%3Aabdominal%20imaging%20radiologist%201%20week%20on%201%20week%20off%20m%20f%20140k%20starting%20bonus%3A%3Awilkes%20barre"
+  },
+  {
+   "id": "provider finder::100 remote diagnostic radiologist overnight coverage::",
+   "title": "100% Remote Diagnostic Radiologist Overnight Coverage",
+   "org": "The Provider Finder",
+   "location": "Remote",
    "specialty": "radiology",
    "score": 55,
    "setting": "hospital-employed",
-   "postingUrl": "https://www.adzuna.com/land/ad/5914214880?se=hmcsYUjG8RGWsPUaVM20eg&utm_medium=api&utm_source=d24d468b&v=0711451F9A1015ED992E443E898892FB38D25C1A",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=alameda%3A%3Adiagnostic%20radiologist%20part%20time%3A%3A"
+   "postingUrl": "https://www.adzuna.com/land/ad/5928593123?se=_MkRRbXL8RGdyeIfwUvJGw&utm_medium=api&utm_source=d24d468b&v=835D1A19CF2D15A4312715056E840962C2ED9832",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=provider%20finder%3A%3A100%20remote%20diagnostic%20radiologist%20overnight%20coverage%3A%3A"
   },
   {
-   "id": "ssm::physician md do radiologist::",
-   "title": "Physician - MD/DO - Radiologist",
-   "org": "SSM Health",
+   "id": "locumtenens com::interventional diagnostic radiologist needed for locum tenens coverage at facility in michigan::",
+   "title": "Interventional/Diagnostic Radiologist Needed for Locum Tenens Coverage at Facility in Michigan",
+   "org": "LocumTenens.com",
+   "location": "Sanford, Midland County",
+   "specialty": "radiology",
+   "score": 50,
+   "setting": "hospital-employed",
+   "postingUrl": "https://www.adzuna.com/land/ad/5930820297?se=MM93QbXL8RGdyeIfwUvJGw&utm_medium=api&utm_source=d24d468b&v=A2C5F5149D8E0FCBF233BB2E279E39ED9EE58C13",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=locumtenens%20com%3A%3Ainterventional%20diagnostic%20radiologist%20needed%20for%20locum%20tenens%20coverage%20at%20facility%20in%20michigan%3A%3A"
+  },
+  {
+   "id": "url https www doccafe com job physician radiology interventional 20209528 southwest missouri interventional radiologist job::southwest missouri interventional radiologist job::",
+   "title": "Southwest Missouri Interventional Radiologist Job",
+   "org": null,
    "location": null,
    "specialty": "radiology",
-   "score": 54,
+   "score": 43,
    "setting": "hospital-employed",
-   "postingUrl": "https://careers.jamanetwork.com/job/110729736/physician-md-do-radiologist/?TrackID=24&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=general",
-   "boardUrl": "https://tandem-rs.vercel.app/#role=ssm%3A%3Aphysician%20md%20do%20radiologist%3A%3A"
+   "postingUrl": "https://www.doccafe.com/job/physician/radiology-interventional/20209528/southwest-missouri-interventional-radiologist-job",
+   "boardUrl": "https://tandem-rs.vercel.app/#role=url%20https%20www%20doccafe%20com%20job%20physician%20radiology%20interventional%2020209528%20southwest%20missouri%20interventional%20radiologist%20job%3A%3Asouthwest%20missouri%20interventional%20radiologist%20job%3A%3A"
   }
  ],
  "topTogether": [
   {
    "label": "Morgantown, WV",
-   "score": 73,
-   "vascularCount": 1,
-   "radiologyCount": 2,
-   "sameOrg": true
-  },
-  {
-   "label": "Wheeling, WV",
    "score": 68,
    "vascularCount": 1,
    "radiologyCount": 1,
@@ -295,9 +277,16 @@
   },
   {
    "label": "Abu Dhabi, UAE",
+   "score": 68,
+   "vascularCount": 1,
+   "radiologyCount": 5,
+   "sameOrg": true
+  },
+  {
+   "label": "Wheeling, WV",
    "score": 67,
    "vascularCount": 1,
-   "radiologyCount": 2,
+   "radiologyCount": 1,
    "sameOrg": true
   },
   {
@@ -310,7 +299,7 @@
   {
    "label": "Jacksonville, FL",
    "score": 63,
-   "vascularCount": 1,
+   "vascularCount": 2,
    "radiologyCount": 5,
    "sameOrg": false
   }
