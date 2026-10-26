@@ -1,24 +1,24 @@
 {
-  "ranAt": "2026-10-19T12:04:54.109Z",
-  "today": "2026-10-19",
+  "ranAt": "2026-10-26T12:13:38.942Z",
+  "today": "2026-10-26",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
     "sourcesFailed": 3,
-    "rawPostings": 2344,
-    "irrelevant": 2038,
-    "duplicates": 44,
+    "rawPostings": 2356,
+    "irrelevant": 2044,
+    "duplicates": 37,
     "expired": 30,
-    "unlocated": 87,
-    "roles": 239,
+    "unlocated": 94,
+    "roles": 252,
     "vascular": 72,
-    "radiology": 167,
-    "newThisRun": 34,
+    "radiology": 180,
+    "newThisRun": 36,
     "carriedOver": 7,
-    "pairs": 2541,
-    "metros": 57,
-    "togetherMetros": 8
+    "pairs": 2749,
+    "metros": 55,
+    "togetherMetros": 9
   },
   "failedSources": [
     {
