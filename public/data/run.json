@@ -1,24 +1,24 @@
 {
-  "ranAt": "2026-11-02T14:43:03.085Z",
-  "today": "2026-11-02",
+  "ranAt": "2026-11-09T15:07:08.519Z",
+  "today": "2026-11-09",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
-    "sourcesFailed": 3,
-    "rawPostings": 2236,
-    "irrelevant": 1929,
-    "duplicates": 38,
+    "sourcesFailed": 2,
+    "rawPostings": 2324,
+    "irrelevant": 2030,
+    "duplicates": 34,
     "expired": 30,
-    "unlocated": 95,
-    "roles": 239,
-    "vascular": 70,
-    "radiology": 169,
-    "newThisRun": 30,
+    "unlocated": 88,
+    "roles": 230,
+    "vascular": 71,
+    "radiology": 159,
+    "newThisRun": 26,
     "carriedOver": 0,
-    "pairs": 2827,
-    "metros": 57,
-    "togetherMetros": 7
+    "pairs": 2589,
+    "metros": 58,
+    "togetherMetros": 8
   },
   "failedSources": [
     {
@@ -30,11 +30,6 @@
       "name": "RadWorking.com",
       "url": "https://www.radworking.com/jobs/radiology-jobs.html",
       "error": "HTTP 403"
-    },
-    {
-      "name": "Society of Thoracic Radiology (STR) Jobs and Fellowships",
-      "url": "https://thoracicrad.org/?portfolio=jobs-and-fellowships",
-      "error": "feed contained no items"
     }
   ],
   "emptySources": [
