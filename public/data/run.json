@@ -1,35 +1,60 @@
 {
-  "ranAt": "2026-11-09T15:07:08.519Z",
-  "today": "2026-11-09",
+  "ranAt": "2026-11-16T14:43:28.277Z",
+  "today": "2026-11-16",
   "radiusMiles": 45,
   "counts": {
     "sourcesRegistered": 90,
     "sourcesAttempted": 45,
-    "sourcesFailed": 2,
-    "rawPostings": 2324,
-    "irrelevant": 2030,
-    "duplicates": 34,
+    "sourcesFailed": 7,
+    "rawPostings": 1974,
+    "irrelevant": 1727,
+    "duplicates": 26,
     "expired": 30,
-    "unlocated": 88,
-    "roles": 230,
-    "vascular": 71,
-    "radiology": 159,
-    "newThisRun": 26,
-    "carriedOver": 0,
-    "pairs": 2589,
-    "metros": 58,
+    "unlocated": 48,
+    "roles": 238,
+    "vascular": 70,
+    "radiology": 168,
+    "newThisRun": 33,
+    "carriedOver": 47,
+    "pairs": 2490,
+    "metros": 55,
     "togetherMetros": 8
   },
   "failedSources": [
     {
       "name": "Allina Health",
       "url": "https://allina.wd5.myworkdayjobs.com/External",
-      "error": "HTTP 500"
+      "error": "HTTP 429"
+    },
+    {
+      "name": "Geisinger",
+      "url": "https://jobs.geisinger.org/",
+      "error": "HTTP 429"
+    },
+    {
+      "name": "Mass General Brigham",
+      "url": "https://massgeneralbrigham.wd1.myworkdayjobs.com/MGBExternal",
+      "error": "HTTP 429"
+    },
+    {
+      "name": "Ochsner Health",
+      "url": "https://careers.ochsner.org/",
+      "error": "HTTP 429"
     },
     {
       "name": "RadWorking.com",
       "url": "https://www.radworking.com/jobs/radiology-jobs.html",
       "error": "HTTP 403"
+    },
+    {
+      "name": "Sanford Health (incl. Marshfield Clinic)",
+      "url": "https://sanfordcareers.com/",
+      "error": "HTTP 429"
+    },
+    {
+      "name": "Cleveland Clinic incl. Cleveland Clinic Abu Dhabi (Workday)",
+      "url": "https://jobs.clevelandclinic.org/",
+      "error": "HTTP 429"
     }
   ],
   "emptySources": [
